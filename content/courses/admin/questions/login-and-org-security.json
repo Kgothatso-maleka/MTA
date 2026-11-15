@@ -1,0 +1,675 @@
+[
+  {
+    "id": "los-01",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Explain MFA, password policies and sessions",
+    "type": "single",
+    "stem": "Which authentication method is required for all user-interface logins to Salesforce?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Multi-factor authentication"
+      },
+      {
+        "id": "b",
+        "text": "Security questions"
+      },
+      {
+        "id": "c",
+        "text": "SMS code only"
+      },
+      {
+        "id": "d",
+        "text": "Email link only"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Salesforce requires MFA for every user logging in to the UI. SSO users meet this through their identity provider.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "los-02",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Explain MFA, password policies and sessions",
+    "type": "single",
+    "stem": "A user logs in using single sign-on through the company identity provider. How is the MFA requirement met?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Through the identity provider's MFA"
+      },
+      {
+        "id": "b",
+        "text": "It is not required"
+      },
+      {
+        "id": "c",
+        "text": "By the Salesforce password alone"
+      },
+      {
+        "id": "d",
+        "text": "By security questions"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "With SSO, the identity provider handles authentication, including MFA.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "los-03",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Tell login IP ranges from trusted IP ranges",
+    "type": "single",
+    "stem": "The CEO wants finance users to be able to log in only from the head office network. What should the admin configure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Login IP ranges on the Finance profile"
+      },
+      {
+        "id": "b",
+        "text": "Trusted IP ranges"
+      },
+      {
+        "id": "c",
+        "text": "Field history tracking"
+      },
+      {
+        "id": "d",
+        "text": "A sharing rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Login IP ranges on a profile block logins from other addresses. Trusted IP ranges do not block anyone.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "los-04",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Tell login IP ranges from trusted IP ranges",
+    "type": "single",
+    "stem": "What does adding a trusted IP range in Network Access do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Users logging in from that range are not asked for identity verification"
+      },
+      {
+        "id": "b",
+        "text": "It blocks logins from other IPs"
+      },
+      {
+        "id": "c",
+        "text": "It grants admin rights"
+      },
+      {
+        "id": "d",
+        "text": "It encrypts the connection"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Trusted IP ranges skip the identity verification prompt but do not block access from elsewhere.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "los-05",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Tell login IP ranges from trusted IP ranges",
+    "type": "single",
+    "stem": "Which setting limits the times of day a profile can log in?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Login hours"
+      },
+      {
+        "id": "b",
+        "text": "Session timeout"
+      },
+      {
+        "id": "c",
+        "text": "Password policy"
+      },
+      {
+        "id": "d",
+        "text": "Business hours"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Login hours are configured on the profile. Business hours are for support, not security.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "los-06",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Explain MFA, password policies and sessions",
+    "type": "single",
+    "stem": "Which setting decides how long an inactive user stays logged in?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Session timeout"
+      },
+      {
+        "id": "b",
+        "text": "Password expiry"
+      },
+      {
+        "id": "c",
+        "text": "Login hours"
+      },
+      {
+        "id": "d",
+        "text": "Trusted IP ranges"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Session settings include the idle timeout, which logs users out after a period of inactivity.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "los-07",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Explain MFA, password policies and sessions",
+    "type": "single",
+    "stem": "Which password policy setting locks an account after repeated wrong attempts?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maximum invalid login attempts"
+      },
+      {
+        "id": "b",
+        "text": "Password history"
+      },
+      {
+        "id": "c",
+        "text": "Minimum length"
+      },
+      {
+        "id": "d",
+        "text": "Complexity requirement"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The invalid login attempts setting locks the account. An admin can then unlock it.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "los-08",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Describe single sign-on and connected apps",
+    "type": "single",
+    "stem": "What is single sign-on (SSO)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Logging in with a company identity instead of a separate Salesforce password"
+      },
+      {
+        "id": "b",
+        "text": "Using one profile for all users"
+      },
+      {
+        "id": "c",
+        "text": "Using one password for all orgs"
+      },
+      {
+        "id": "d",
+        "text": "A type of sharing rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "SSO lets an identity provider prove who the user is, and Salesforce trusts it.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "los-09",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Describe single sign-on and connected apps",
+    "type": "single",
+    "stem": "What is a connected app?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The way an external application is allowed to connect to Salesforce"
+      },
+      {
+        "id": "b",
+        "text": "A custom object"
+      },
+      {
+        "id": "c",
+        "text": "A permission set"
+      },
+      {
+        "id": "d",
+        "text": "A page layout"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Connected apps let external apps, such as mobile apps and integrations, authenticate with Salesforce, and admins control who may use them.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "los-10",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Choose between auditing tools",
+    "type": "single",
+    "stem": "How many fields per object can be tracked with standard field history tracking?",
+    "options": [
+      {
+        "id": "a",
+        "text": "20"
+      },
+      {
+        "id": "b",
+        "text": "5"
+      },
+      {
+        "id": "c",
+        "text": "50"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Standard field history tracking can track up to 20 fields per object.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "los-11",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Choose between auditing tools",
+    "type": "single",
+    "stem": "Which tool shows which setup changes were made and by whom?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Setup Audit Trail"
+      },
+      {
+        "id": "b",
+        "text": "Field history tracking"
+      },
+      {
+        "id": "c",
+        "text": "Login history"
+      },
+      {
+        "id": "d",
+        "text": "Debug log"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Setup Audit Trail records configuration changes for 180 days.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "los-12",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Choose between auditing tools",
+    "type": "single",
+    "stem": "Which tool shows who logged in, from where, and whether the login succeeded?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Login History"
+      },
+      {
+        "id": "b",
+        "text": "Setup Audit Trail"
+      },
+      {
+        "id": "c",
+        "text": "Field Audit Trail"
+      },
+      {
+        "id": "d",
+        "text": "Report type"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Login History lists login attempts with IP address and status.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "los-13",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Choose between auditing tools",
+    "type": "single",
+    "stem": "The business wants to see old and new values for the Credit Limit field on accounts. What should the admin use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Field history tracking"
+      },
+      {
+        "id": "b",
+        "text": "Setup Audit Trail"
+      },
+      {
+        "id": "c",
+        "text": "Login history"
+      },
+      {
+        "id": "d",
+        "text": "A validation rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Field history tracking stores old and new values of selected fields on records.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "los-14",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Choose between auditing tools",
+    "type": "single",
+    "stem": "Which tool provides detailed activity data, such as who exported a report?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Event Monitoring"
+      },
+      {
+        "id": "b",
+        "text": "Field history tracking"
+      },
+      {
+        "id": "c",
+        "text": "Setup Audit Trail"
+      },
+      {
+        "id": "d",
+        "text": "Duplicate rules"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Event Monitoring is a paid add-on that logs detailed user activity.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "los-15",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Choose between auditing tools",
+    "type": "single",
+    "stem": "The company needs encryption at rest for sensitive standard and custom fields and files. Which product is designed for this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shield Platform Encryption"
+      },
+      {
+        "id": "b",
+        "text": "Field history tracking"
+      },
+      {
+        "id": "c",
+        "text": "Page layouts"
+      },
+      {
+        "id": "d",
+        "text": "Login hours"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Shield Platform Encryption encrypts data at rest and has implications for features such as search, so it needs planning.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "los-16",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Layer org-level controls",
+    "type": "single",
+    "stem": "Hiding a field from a page layout is enough to stop a user seeing the data anywhere. True or false?",
+    "options": [
+      {
+        "id": "a",
+        "text": "False, field-level security is the real control"
+      },
+      {
+        "id": "b",
+        "text": "True"
+      },
+      {
+        "id": "c",
+        "text": "True, but only in reports"
+      },
+      {
+        "id": "d",
+        "text": "True, but only on mobile"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Page layouts only control the layout screen. The field can still appear in reports, list views and the API unless field-level security hides it.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "los-17",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Respond to a suspected account compromise",
+    "type": "single",
+    "stem": "Which is the BEST first step when an admin suspects a user's account has been compromised?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Freeze the user and reset the password"
+      },
+      {
+        "id": "b",
+        "text": "Delete the user"
+      },
+      {
+        "id": "c",
+        "text": "Wait and watch for a week"
+      },
+      {
+        "id": "d",
+        "text": "Change the org's currency"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Freeze the account, reset the password, then check Login History and the audit trail before deciding next steps.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "los-18",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Tell login IP ranges from trusted IP ranges",
+    "type": "multi",
+    "stem": "Which TWO statements about login IP ranges are true? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are set on a profile"
+      },
+      {
+        "id": "b",
+        "text": "They block logins from outside the range"
+      },
+      {
+        "id": "c",
+        "text": "They apply to the whole org by default"
+      },
+      {
+        "id": "d",
+        "text": "They only prompt the user for a code"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Login IP ranges belong to a profile and block logins from outside. Trusted IP ranges are org-wide and only skip verification.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "los-19",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Layer org-level controls",
+    "type": "single",
+    "stem": "Which security layer controls which individual records a user can see?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sharing (OWD, roles, rules)"
+      },
+      {
+        "id": "b",
+        "text": "Login IP ranges"
+      },
+      {
+        "id": "c",
+        "text": "Password policy"
+      },
+      {
+        "id": "d",
+        "text": "MFA"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The sharing model decides record visibility. Login controls decide who gets in at all.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "los-20",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Choose between auditing tools",
+    "type": "single",
+    "stem": "How long does standard Login History data stay available in Setup?",
+    "options": [
+      {
+        "id": "a",
+        "text": "About six months"
+      },
+      {
+        "id": "b",
+        "text": "Seven days"
+      },
+      {
+        "id": "c",
+        "text": "Forever"
+      },
+      {
+        "id": "d",
+        "text": "Five years"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Login History shows roughly the last six months. Download the data if you need to keep it longer.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "los-21",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Choose between auditing tools",
+    "type": "single",
+    "stem": "Which product keeps field history for years, beyond the standard retention?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Field Audit Trail"
+      },
+      {
+        "id": "b",
+        "text": "Setup Audit Trail"
+      },
+      {
+        "id": "c",
+        "text": "Login History"
+      },
+      {
+        "id": "d",
+        "text": "Chatter feed"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Field Audit Trail is a paid add-on that extends field history retention.",
+    "difficulty": 3,
+    "tags": []
+  }
+]

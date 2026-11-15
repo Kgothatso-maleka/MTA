@@ -1,0 +1,579 @@
+[
+  {
+    "id": "cam-01",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Set up a campaign",
+    "type": "single",
+    "stem": "What is a campaign in Salesforce?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A record of a marketing effort and its results"
+      },
+      {
+        "id": "b",
+        "text": "A type of sales process"
+      },
+      {
+        "id": "c",
+        "text": "A case status"
+      },
+      {
+        "id": "d",
+        "text": "A page layout"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Campaigns track marketing efforts such as events and emails, along with cost and results.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cam-02",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Add members to campaigns",
+    "type": "single",
+    "stem": "Which records can be campaign members?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leads, contacts and person accounts"
+      },
+      {
+        "id": "b",
+        "text": "Accounts and opportunities"
+      },
+      {
+        "id": "c",
+        "text": "Cases and quotes"
+      },
+      {
+        "id": "d",
+        "text": "Products"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Only leads, contacts and person accounts can be added to a campaign as members.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cam-03",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Add members to campaigns",
+    "type": "single",
+    "stem": "What does marking a campaign member status as Responded do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Counts the member as a response in campaign statistics"
+      },
+      {
+        "id": "b",
+        "text": "Deletes the member"
+      },
+      {
+        "id": "c",
+        "text": "Converts the lead"
+      },
+      {
+        "id": "d",
+        "text": "Closes the campaign"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Responded flag decides which statuses count as responses.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cam-04",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Add members to campaigns",
+    "type": "single",
+    "stem": "Which default member statuses does a campaign start with?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sent and Responded"
+      },
+      {
+        "id": "b",
+        "text": "Won and Lost"
+      },
+      {
+        "id": "c",
+        "text": "New and Closed"
+      },
+      {
+        "id": "d",
+        "text": "Open and Pending"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "By default, campaigns have Sent and Responded statuses, and you can add your own.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cam-05",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Set up a campaign",
+    "type": "single",
+    "stem": "What does a campaign hierarchy provide?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Results rolled up from child campaigns to a parent"
+      },
+      {
+        "id": "b",
+        "text": "A sales process"
+      },
+      {
+        "id": "c",
+        "text": "Territory rules"
+      },
+      {
+        "id": "d",
+        "text": "Duplicate detection"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A parent campaign shows the combined statistics of its children.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cam-06",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Add members to campaigns",
+    "type": "single",
+    "stem": "Which tool can import campaign members from a CSV without Data Loader?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The Data Import Wizard"
+      },
+      {
+        "id": "b",
+        "text": "Mass Transfer Records"
+      },
+      {
+        "id": "c",
+        "text": "Merge"
+      },
+      {
+        "id": "d",
+        "text": "A validation rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Data Import Wizard supports campaign members among its objects.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cam-07",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Add members to campaigns",
+    "type": "single",
+    "stem": "Which of these CANNOT be added to a campaign as a member?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An opportunity"
+      },
+      {
+        "id": "b",
+        "text": "A lead"
+      },
+      {
+        "id": "c",
+        "text": "A contact"
+      },
+      {
+        "id": "d",
+        "text": "A person account"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Opportunities are not campaign members. They are connected to campaigns through campaign influence and the primary campaign source.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cam-08",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Explain campaign influence",
+    "type": "single",
+    "stem": "What does campaign influence show?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Which campaigns contributed to an opportunity"
+      },
+      {
+        "id": "b",
+        "text": "Which leads are duplicates"
+      },
+      {
+        "id": "c",
+        "text": "Which cases are escalated"
+      },
+      {
+        "id": "d",
+        "text": "Which products are sold"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Campaign influence credits campaigns for opportunities they helped create or progress.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cam-09",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Explain campaign influence",
+    "type": "single",
+    "stem": "Which fields help calculate the return on a campaign?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Budgeted cost, actual cost and expected revenue"
+      },
+      {
+        "id": "b",
+        "text": "Probability and stage"
+      },
+      {
+        "id": "c",
+        "text": "Case number and priority"
+      },
+      {
+        "id": "d",
+        "text": "Product code"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "ROI uses cost and revenue fields on the campaign along with won opportunity value.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cam-10",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Describe marketing tools",
+    "type": "single",
+    "stem": "Which product is B2B marketing automation that syncs with Salesforce and was formerly named Pardot?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Marketing Cloud Account Engagement"
+      },
+      {
+        "id": "b",
+        "text": "Service Cloud"
+      },
+      {
+        "id": "c",
+        "text": "Flow Orchestrator"
+      },
+      {
+        "id": "d",
+        "text": "Experience Cloud"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Account Engagement runs email programmes, scoring and nurture journeys for B2B marketing.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cam-11",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Describe marketing tools",
+    "type": "single",
+    "stem": "Which product is aimed at large-scale, multi-channel consumer marketing such as email and SMS?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Marketing Cloud"
+      },
+      {
+        "id": "b",
+        "text": "Account Engagement"
+      },
+      {
+        "id": "c",
+        "text": "Case management"
+      },
+      {
+        "id": "d",
+        "text": "Collaborative Forecasts"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Marketing Cloud serves consumer marketing at scale. Account Engagement is for B2B.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cam-12",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Describe marketing tools",
+    "type": "single",
+    "stem": "What does lead scoring do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ranks leads by how likely they are to convert"
+      },
+      {
+        "id": "b",
+        "text": "Assigns leads to queues"
+      },
+      {
+        "id": "c",
+        "text": "Merges duplicate leads"
+      },
+      {
+        "id": "d",
+        "text": "Sends emails to leads"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Lead scoring helps reps prioritise by ranking leads, using rules or AI.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cam-13",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Report on campaign results",
+    "type": "single",
+    "stem": "Which field helps report where leads originate, such as Web or Referral?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lead Source"
+      },
+      {
+        "id": "b",
+        "text": "Lead Status"
+      },
+      {
+        "id": "c",
+        "text": "Rating"
+      },
+      {
+        "id": "d",
+        "text": "Industry"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Lead Source records the origin of a lead and supports channel reporting.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cam-14",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Report on campaign results",
+    "type": "single",
+    "stem": "Marketing wants to change member statuses mid-campaign. What is the risk?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reports based on the old statuses may break or become inconsistent"
+      },
+      {
+        "id": "b",
+        "text": "The campaign is deleted"
+      },
+      {
+        "id": "c",
+        "text": "Leads are converted"
+      },
+      {
+        "id": "d",
+        "text": "Nothing, statuses are not used in reports"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Agree statuses before the event, because reports and response counts depend on them.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cam-15",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Report on campaign results",
+    "type": "single",
+    "stem": "Which feature lets a marketing manager see pipeline created by each campaign on one page?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A dashboard built from campaign reports"
+      },
+      {
+        "id": "b",
+        "text": "A page layout"
+      },
+      {
+        "id": "c",
+        "text": "A queue"
+      },
+      {
+        "id": "d",
+        "text": "A validation rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Dashboards based on campaign reports show pipeline by campaign.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cam-16",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Explain campaign influence",
+    "type": "single",
+    "stem": "Which standard calculation helps judge a roadshow's success?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Total won opportunity value compared with actual cost"
+      },
+      {
+        "id": "b",
+        "text": "Number of profiles"
+      },
+      {
+        "id": "c",
+        "text": "Number of reports"
+      },
+      {
+        "id": "d",
+        "text": "Number of sandboxes"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Comparing won opportunity value with actual cost estimates return on investment.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cam-17",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Add members to campaigns",
+    "type": "multi",
+    "stem": "Which TWO of these are ways to add members to a campaign? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "From a lead or contact record"
+      },
+      {
+        "id": "b",
+        "text": "Import with the Data Import Wizard"
+      },
+      {
+        "id": "c",
+        "text": "From a validation rule"
+      },
+      {
+        "id": "d",
+        "text": "From a page layout"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "You can add members from records, list views and reports, or import them.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cam-18",
+    "moduleId": "campaigns-and-marketing",
+    "examSection": "sales-marketing",
+    "objective": "Describe marketing tools",
+    "type": "single",
+    "stem": "What does Web-to-Lead help with?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Capturing website form submissions as leads"
+      },
+      {
+        "id": "b",
+        "text": "Importing contacts from Excel"
+      },
+      {
+        "id": "c",
+        "text": "Routing cases"
+      },
+      {
+        "id": "d",
+        "text": "Merging accounts"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Web-to-Lead creates leads from an HTML form on your website.",
+    "difficulty": 1,
+    "tags": []
+  }
+]

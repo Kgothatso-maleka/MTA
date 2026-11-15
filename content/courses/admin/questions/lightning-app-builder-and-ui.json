@@ -1,0 +1,675 @@
+[
+  {
+    "id": "lab-01",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Create Lightning pages",
+    "type": "single",
+    "stem": "Which type of Lightning page is used for one object, such as the Account page?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Record page"
+      },
+      {
+        "id": "b",
+        "text": "Home page"
+      },
+      {
+        "id": "c",
+        "text": "App page"
+      },
+      {
+        "id": "d",
+        "text": "Utility page"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A record page is built for one object. App pages are standalone pages and home pages are the starting page.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lab-02",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Activate pages correctly",
+    "type": "single",
+    "stem": "A new Lightning record page has been built but users still see the old layout. What is the likely cause?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The page has not been activated"
+      },
+      {
+        "id": "b",
+        "text": "The page layout is deleted"
+      },
+      {
+        "id": "c",
+        "text": "The profile has no licence"
+      },
+      {
+        "id": "d",
+        "text": "The field is hidden"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A Lightning page only takes effect once it is activated as the org default, app default, or by app, record type and profile.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lab-03",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Activate pages correctly",
+    "type": "multi",
+    "stem": "Which TWO options can you use to activate a Lightning record page? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Org default"
+      },
+      {
+        "id": "b",
+        "text": "App, record type and profile assignment"
+      },
+      {
+        "id": "c",
+        "text": "Role hierarchy"
+      },
+      {
+        "id": "d",
+        "text": "Sharing rule"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "You can activate a record page as the org default, an app default, or for a combination of app, record type and profile.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lab-04",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Build and assign Lightning apps",
+    "type": "single",
+    "stem": "A service team needs to work on many cases at once with tabs and subtabs. Which navigation style fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Console navigation"
+      },
+      {
+        "id": "b",
+        "text": "Standard navigation"
+      },
+      {
+        "id": "c",
+        "text": "Mobile navigation"
+      },
+      {
+        "id": "d",
+        "text": "Setup navigation"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Console navigation uses tabs and subtabs so agents can handle multiple records without losing their place.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lab-05",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Build and assign Lightning apps",
+    "type": "single",
+    "stem": "What is a utility bar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A docked toolbar at the bottom of an app for quick tools"
+      },
+      {
+        "id": "b",
+        "text": "A list of Setup pages"
+      },
+      {
+        "id": "c",
+        "text": "A type of report"
+      },
+      {
+        "id": "d",
+        "text": "A dashboard filter"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The utility bar holds tools such as notes, phone and recent items at the bottom of the app window.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lab-06",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Build and assign Lightning apps",
+    "type": "single",
+    "stem": "How are Lightning apps made available to users?",
+    "options": [
+      {
+        "id": "a",
+        "text": "By assigning them to profiles"
+      },
+      {
+        "id": "b",
+        "text": "By sharing them with roles"
+      },
+      {
+        "id": "c",
+        "text": "By adding them to page layouts"
+      },
+      {
+        "id": "d",
+        "text": "By activating them in a report"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Apps are assigned to profiles. Users see assigned apps in the app launcher.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lab-07",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Use Dynamic Forms and component visibility",
+    "type": "single",
+    "stem": "What does Dynamic Forms let you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Place fields and sections on the Lightning page and give each a visibility rule"
+      },
+      {
+        "id": "b",
+        "text": "Create new fields automatically"
+      },
+      {
+        "id": "c",
+        "text": "Replace profiles"
+      },
+      {
+        "id": "d",
+        "text": "Set field-level security"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Dynamic Forms move fields onto the Lightning page so you can show or hide them with rules, reducing the need for many layouts.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lab-08",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Use Dynamic Forms and component visibility",
+    "type": "single",
+    "stem": "A section should appear only when Customer Type is Commercial. Which feature fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Component or field-section visibility filter"
+      },
+      {
+        "id": "b",
+        "text": "A validation rule"
+      },
+      {
+        "id": "c",
+        "text": "A duplicate rule"
+      },
+      {
+        "id": "d",
+        "text": "A sharing rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Visibility filters show or hide a component or section based on a condition such as a field value.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lab-09",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Explain page layouts and compact layouts",
+    "type": "single",
+    "stem": "What does a page layout control?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fields, sections, related lists and buttons on a record"
+      },
+      {
+        "id": "b",
+        "text": "Which records a user can see"
+      },
+      {
+        "id": "c",
+        "text": "Login times"
+      },
+      {
+        "id": "d",
+        "text": "Report folders"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A page layout arranges the record page. It does not control data access.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lab-10",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Explain page layouts and compact layouts",
+    "type": "single",
+    "stem": "What does a compact layout control?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The key fields in the highlights panel and in mobile"
+      },
+      {
+        "id": "b",
+        "text": "The columns in a report"
+      },
+      {
+        "id": "c",
+        "text": "The fields in a list view"
+      },
+      {
+        "id": "d",
+        "text": "The related lists"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A compact layout chooses the important fields shown at the top of a record and in mobile.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lab-11",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Explain page layouts and compact layouts",
+    "type": "single",
+    "stem": "How is a page layout assigned to users?",
+    "options": [
+      {
+        "id": "a",
+        "text": "By profile and record type"
+      },
+      {
+        "id": "b",
+        "text": "By role"
+      },
+      {
+        "id": "c",
+        "text": "By permission set"
+      },
+      {
+        "id": "d",
+        "text": "By public group"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The layout assignment grid sets which layout each profile and record type combination sees.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lab-12",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Explain page layouts and compact layouts",
+    "type": "single",
+    "stem": "What do search layouts control?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The columns shown in search results and lookups"
+      },
+      {
+        "id": "b",
+        "text": "Who can search"
+      },
+      {
+        "id": "c",
+        "text": "Which fields are searched"
+      },
+      {
+        "id": "d",
+        "text": "The home page"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Search layouts choose the columns shown in search results, lookup dialogs and list views of an object.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "lab-13",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Use actions and Path",
+    "type": "single",
+    "stem": "Which is available at the top of any screen, such as the plus icon, to create a task from anywhere?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A global action"
+      },
+      {
+        "id": "b",
+        "text": "An object-specific action"
+      },
+      {
+        "id": "c",
+        "text": "A related list"
+      },
+      {
+        "id": "d",
+        "text": "A compact layout"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Global actions are not tied to an object and appear in the global create menu.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lab-14",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Use actions and Path",
+    "type": "single",
+    "stem": "Which quick action type lets a user fire off a flow from a button on a record?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Flow action"
+      },
+      {
+        "id": "b",
+        "text": "Update a record action"
+      },
+      {
+        "id": "c",
+        "text": "Log a call action"
+      },
+      {
+        "id": "d",
+        "text": "Send email action"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A quick action can launch a screen flow from a record page.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lab-15",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Use actions and Path",
+    "type": "single",
+    "stem": "What does Path provide?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A stage bar with key fields and guidance for each stage"
+      },
+      {
+        "id": "b",
+        "text": "A sharing rule"
+      },
+      {
+        "id": "c",
+        "text": "An email template"
+      },
+      {
+        "id": "d",
+        "text": "A report type"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Path shows the stages of a process and prompts for key fields and tips at each stage.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lab-16",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Use actions and Path",
+    "type": "single",
+    "stem": "What can an admin configure for each stage in a Path?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Key fields to prompt for and guidance for success"
+      },
+      {
+        "id": "b",
+        "text": "A sharing rule"
+      },
+      {
+        "id": "c",
+        "text": "A validation rule only"
+      },
+      {
+        "id": "d",
+        "text": "A report filter"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "For each stage you choose key fields and write guidance for success, which appear when the user clicks the stage.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lab-17",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Use actions and Path",
+    "type": "single",
+    "stem": "A sales rep wants a saved, filtered table of her open deals to work through quickly. Which tool fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A list view"
+      },
+      {
+        "id": "b",
+        "text": "A matrix report"
+      },
+      {
+        "id": "c",
+        "text": "A dashboard"
+      },
+      {
+        "id": "d",
+        "text": "A page layout"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A list view is a filtered table of records for working through them, with inline editing.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lab-18",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Use actions and Path",
+    "type": "single",
+    "stem": "Who can see a list view you create?",
+    "options": [
+      {
+        "id": "a",
+        "text": "You choose: only you, all users, or selected groups and roles"
+      },
+      {
+        "id": "b",
+        "text": "Always everyone"
+      },
+      {
+        "id": "c",
+        "text": "Only admins"
+      },
+      {
+        "id": "d",
+        "text": "Only the owner's manager"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "List view visibility can be limited to the creator, set to all users, or shared with selected groups.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lab-19",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Plan a clean user interface",
+    "type": "single",
+    "stem": "Reps say the Opportunity page is cluttered with fields they never use. What is the best approach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use a focused Lightning record page with Dynamic Forms and hide what is irrelevant"
+      },
+      {
+        "id": "b",
+        "text": "Add more tabs"
+      },
+      {
+        "id": "c",
+        "text": "Delete the fields"
+      },
+      {
+        "id": "d",
+        "text": "Give them a different licence"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Remove and group fields, and use visibility rules, rather than deleting data or adding tabs.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lab-20",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Explain page layouts and compact layouts",
+    "type": "single",
+    "stem": "Hiding a field from a page layout does what?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hides it on that layout only, but the data can still be exposed elsewhere"
+      },
+      {
+        "id": "b",
+        "text": "Makes it secure everywhere"
+      },
+      {
+        "id": "c",
+        "text": "Deletes the field"
+      },
+      {
+        "id": "d",
+        "text": "Hides it from reports"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Layouts are about display. Field-level security is the control that truly hides a field.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lab-21",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Create Lightning pages",
+    "type": "single",
+    "stem": "Which page type is a standalone page that you add to an app navigation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "App page"
+      },
+      {
+        "id": "b",
+        "text": "Record page"
+      },
+      {
+        "id": "c",
+        "text": "Email template"
+      },
+      {
+        "id": "d",
+        "text": "Report page"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "An app page is a standalone Lightning page not tied to a single object.",
+    "difficulty": 2,
+    "tags": []
+  }
+]

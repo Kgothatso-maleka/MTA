@@ -1,0 +1,706 @@
+[
+  {
+    "id": "cmg-01",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Describe a case",
+    "type": "single",
+    "stem": "What is a case?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A record of a customer's question, problem or request"
+      },
+      {
+        "id": "b",
+        "text": "A type of lead"
+      },
+      {
+        "id": "c",
+        "text": "A marketing activity"
+      },
+      {
+        "id": "d",
+        "text": "A kind of report"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A case tracks a customer issue from the first contact to resolution.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cmg-02",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Describe a case",
+    "type": "single",
+    "stem": "Where do case status values come from?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A support process attached to a record type"
+      },
+      {
+        "id": "b",
+        "text": "A sales process"
+      },
+      {
+        "id": "c",
+        "text": "A page layout"
+      },
+      {
+        "id": "d",
+        "text": "A profile"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Support processes list the status values used by case record types, as sales processes do for opportunity stages.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cmg-03",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Describe a case",
+    "type": "single",
+    "stem": "Which case field records how the case arrived, such as Email or Phone?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Case Origin"
+      },
+      {
+        "id": "b",
+        "text": "Status"
+      },
+      {
+        "id": "c",
+        "text": "Priority"
+      },
+      {
+        "id": "d",
+        "text": "Type"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Case Origin records the channel the case came from.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cmg-04",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Describe a case",
+    "type": "single",
+    "stem": "What is the difference between a public and an internal case comment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Public comments can be seen by the customer, internal comments cannot"
+      },
+      {
+        "id": "b",
+        "text": "Public comments are deleted after 15 days"
+      },
+      {
+        "id": "c",
+        "text": "Internal comments are only for admins"
+      },
+      {
+        "id": "d",
+        "text": "They are the same"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Public comments are visible to the customer in a portal or email, while internal comments are for staff.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cmg-05",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Capture cases",
+    "type": "single",
+    "stem": "Customers email support@khanyisa.example and cases must be created without installing software on company servers. Which option fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "On-Demand Email-to-Case"
+      },
+      {
+        "id": "b",
+        "text": "Web-to-Case"
+      },
+      {
+        "id": "c",
+        "text": "Case merge"
+      },
+      {
+        "id": "d",
+        "text": "Macros"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "On-Demand Email-to-Case runs within Salesforce and needs no email agent on your servers.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cmg-06",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Capture cases",
+    "type": "single",
+    "stem": "What is the daily limit for Web-to-Case?",
+    "options": [
+      {
+        "id": "a",
+        "text": "5,000 cases per day"
+      },
+      {
+        "id": "b",
+        "text": "500 cases per day"
+      },
+      {
+        "id": "c",
+        "text": "50 cases per day"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Web-to-Case creates up to 5,000 cases per 24 hours.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cmg-07",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Route and chase cases",
+    "type": "single",
+    "stem": "Which rule decides who owns a new case?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Case assignment rule"
+      },
+      {
+        "id": "b",
+        "text": "Escalation rule"
+      },
+      {
+        "id": "c",
+        "text": "Auto-response rule"
+      },
+      {
+        "id": "d",
+        "text": "Validation rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Assignment rules set the owner, often a queue.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cmg-08",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Route and chase cases",
+    "type": "single",
+    "stem": "Which rule sends an automatic email to the customer when they create a case?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Auto-response rule"
+      },
+      {
+        "id": "b",
+        "text": "Assignment rule"
+      },
+      {
+        "id": "c",
+        "text": "Escalation rule"
+      },
+      {
+        "id": "d",
+        "text": "Approval process"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Auto-response rules acknowledge new cases and leads.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cmg-09",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Route and chase cases",
+    "type": "single",
+    "stem": "Which rule reassigns or notifies when a case is not resolved in time?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Escalation rule"
+      },
+      {
+        "id": "b",
+        "text": "Assignment rule"
+      },
+      {
+        "id": "c",
+        "text": "Auto-response rule"
+      },
+      {
+        "id": "d",
+        "text": "Sharing rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Escalation rules act on cases that exceed time limits measured in business hours.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cmg-10",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Route and chase cases",
+    "type": "single",
+    "stem": "What do escalation rules use to measure elapsed time?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Business hours"
+      },
+      {
+        "id": "b",
+        "text": "Login hours"
+      },
+      {
+        "id": "c",
+        "text": "Fiscal year"
+      },
+      {
+        "id": "d",
+        "text": "Report schedule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Business hours stop the clock outside working time and on holidays.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cmg-11",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Set up entitlements and milestones",
+    "type": "single",
+    "stem": "What is an entitlement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "What support a customer is owed, such as response times"
+      },
+      {
+        "id": "b",
+        "text": "A user permission"
+      },
+      {
+        "id": "c",
+        "text": "A sharing rule"
+      },
+      {
+        "id": "d",
+        "text": "A kind of queue"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Entitlements describe the support a customer is eligible for, often linked to a service contract.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cmg-12",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Set up entitlements and milestones",
+    "type": "single",
+    "stem": "What is a milestone in an entitlement process?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A required step with a deadline, such as first response"
+      },
+      {
+        "id": "b",
+        "text": "A case status"
+      },
+      {
+        "id": "c",
+        "text": "A price book"
+      },
+      {
+        "id": "d",
+        "text": "A report type"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Milestones track deadlines such as first response and resolution, with actions on warning, violation and success.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cmg-13",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Set up entitlements and milestones",
+    "type": "single",
+    "stem": "Which setting do entitlement processes use to calculate milestone time?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Business hours"
+      },
+      {
+        "id": "b",
+        "text": "User time zone only"
+      },
+      {
+        "id": "c",
+        "text": "Fiscal year"
+      },
+      {
+        "id": "d",
+        "text": "Role"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Milestone time is based on business hours so nights and holidays are excluded.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "cmg-14",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Work cases well",
+    "type": "single",
+    "stem": "What is the purpose of merging cases?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To combine duplicate cases into one master case"
+      },
+      {
+        "id": "b",
+        "text": "To delete old cases"
+      },
+      {
+        "id": "c",
+        "text": "To assign cases to queues"
+      },
+      {
+        "id": "d",
+        "text": "To close all cases"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Merging consolidates duplicates under a master case so the customer's history stays together.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cmg-15",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Work cases well",
+    "type": "single",
+    "stem": "Which tool automates a series of repeated steps, such as send email, update status and add comment, with one click?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Macro"
+      },
+      {
+        "id": "b",
+        "text": "Validation rule"
+      },
+      {
+        "id": "c",
+        "text": "Page layout"
+      },
+      {
+        "id": "d",
+        "text": "Queue"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Macros let agents run multiple actions at once.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cmg-16",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Work cases well",
+    "type": "single",
+    "stem": "Which tool provides pre-written text snippets agents can insert into replies?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quick Text"
+      },
+      {
+        "id": "b",
+        "text": "Macros"
+      },
+      {
+        "id": "c",
+        "text": "Assignment rules"
+      },
+      {
+        "id": "d",
+        "text": "Reports"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Quick Text speeds up replies with shared snippets.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cmg-17",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Build a service console",
+    "type": "single",
+    "stem": "Which app type lets agents work on many cases at once with tabs and subtabs?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Lightning console app"
+      },
+      {
+        "id": "b",
+        "text": "A standard navigation app"
+      },
+      {
+        "id": "c",
+        "text": "A report"
+      },
+      {
+        "id": "d",
+        "text": "A dashboard"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Console apps use tabs and subtabs so agents can multi-task.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cmg-18",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Work cases well",
+    "type": "single",
+    "stem": "What does a case team allow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Several people with defined roles to work together on a case"
+      },
+      {
+        "id": "b",
+        "text": "Cases to be routed automatically"
+      },
+      {
+        "id": "c",
+        "text": "Customers to log in"
+      },
+      {
+        "id": "d",
+        "text": "Cases to be merged"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Case teams let internal users collaborate on a case with roles such as Specialist.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cmg-19",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Work cases well",
+    "type": "single",
+    "stem": "A flood of reports comes from one outage. What helps you manage them?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A parent case with child cases linked to it"
+      },
+      {
+        "id": "b",
+        "text": "A new profile"
+      },
+      {
+        "id": "c",
+        "text": "A page layout"
+      },
+      {
+        "id": "d",
+        "text": "A sandbox"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A case hierarchy links related cases to a parent, so you can manage one problem for many customers.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cmg-20",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Describe a case",
+    "type": "single",
+    "stem": "Which statement is true about Case Status?",
+    "options": [
+      {
+        "id": "a",
+        "text": "You mark which statuses count as Closed in the support process"
+      },
+      {
+        "id": "b",
+        "text": "Every status counts as Closed"
+      },
+      {
+        "id": "c",
+        "text": "Status is set in the profile"
+      },
+      {
+        "id": "d",
+        "text": "Status cannot be changed"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "In the support process you choose which statuses represent a closed case.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "cmg-21",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Work cases well",
+    "type": "single",
+    "stem": "Which metric measures how quickly an agent first replies to a customer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "First response time"
+      },
+      {
+        "id": "b",
+        "text": "Case age"
+      },
+      {
+        "id": "c",
+        "text": "Reopened cases"
+      },
+      {
+        "id": "d",
+        "text": "Records created"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "First response time is a core service metric, often tracked with a milestone.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "cmg-22",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Capture cases",
+    "type": "single",
+    "stem": "Which way of capturing cases uses a form on your company website?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Web-to-Case"
+      },
+      {
+        "id": "b",
+        "text": "Email-to-Case"
+      },
+      {
+        "id": "c",
+        "text": "Case merge"
+      },
+      {
+        "id": "d",
+        "text": "Macros"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Web-to-Case creates cases from an HTML form.",
+    "difficulty": 1,
+    "tags": []
+  }
+]

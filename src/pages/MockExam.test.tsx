@@ -104,14 +104,15 @@ test('results show per-section percent and link the weakest section to its modul
   expect(screen.getByRole('link', { name: new RegExp(firstTitle) })).toBeInTheDocument();
 });
 
-test('partial mock shows the incomplete-bank banner on start and on results', async () => {
+test('a complete bank shows no preview banner on start or on results', async () => {
   renderApp('/c/admin/mock');
-  expect(await screen.findByText(/preview mock/i)).toBeInTheDocument();
+  await screen.findByRole('button', { name: /start mock exam/i });
+  expect(screen.queryByText(/preview mock/i)).toBeNull();
   await start();
   await userEvent.click(screen.getByRole('button', { name: /review & submit/i }));
   await userEvent.click(screen.getByRole('button', { name: /submit exam/i }));
   await screen.findByRole('heading', { name: /mock exam results/i });
-  expect(screen.getByText(/preview mock/i)).toBeInTheDocument();
+  expect(screen.queryByText(/preview mock/i)).toBeNull();
 });
 
 test('submitting clears the in-progress mock and records one attempt', async () => {
@@ -124,7 +125,8 @@ test('submitting clears the in-progress mock and records one attempt', async () 
   const p = await store.getProgress();
   expect(p.inProgressMock).toBeNull();
   expect(p.mockAttempts).toHaveLength(1);
-  expect(p.mockAttempts[0].partial).toBe(true);
+  expect(p.mockAttempts[0].partial).toBe(false);
+  expect(p.mockAttempts[0].questionIds).toHaveLength(course.exam.questionCount);
 });
 
 test('results page for a missing attempt shows not found', async () => {

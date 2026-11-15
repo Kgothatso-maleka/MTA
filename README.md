@@ -51,6 +51,6 @@ Progress is saved in the browser only (`LocalStorageStore`). Learners can export
 `npm run build`, then publish `dist/` to a static host (Netlify, Vercel or Cloudflare Pages). `public/_redirects` provides the single-page-app fallback (`/* /index.html 200`) for hosts that read it. On Vercel add an equivalent rewrite.
 
 ## Known gaps (Slice 1)
-- Only two sample Admin modules are written. The mock exam is flagged as a "preview mock" until every exam section has enough questions.
+- Admin course now has 19 modules covering all 8 exam sections (438 questions). All lessons and questions were written by Claude from general knowledge, not live docs, and are unreviewed by a Salesforce-certified person. YouTube IDs are all null. Fast-moving AI topics (Agentforce, Trust Layer) need rechecking each release.
 - Admin exam facts in `course.json` are unverified against the official guide text (it could not be fetched). Section weights are confirmed by the Salesforce Admin blog. 60 questions and 105 minutes come from several third-party sources. The pass mark is set to 68% (English), as most 2026 sources state; older sources say 65%.
 - The mock results page does not yet show a per-question review.

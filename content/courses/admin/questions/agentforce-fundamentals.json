@@ -1,0 +1,740 @@
+[
+  {
+    "id": "agf-01",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Explain what an agent is",
+    "type": "single",
+    "stem": "What is an AI agent in Agentforce?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An AI assistant that understands a request, decides what to do and takes actions"
+      },
+      {
+        "id": "b",
+        "text": "A fixed script with menu choices"
+      },
+      {
+        "id": "c",
+        "text": "A single saved prompt"
+      },
+      {
+        "id": "d",
+        "text": "A report"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Agents interpret natural language, choose topics and actions and may take several steps. Scripts and flows follow fixed paths.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "agf-02",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Explain what an agent is",
+    "type": "single",
+    "stem": "How does an agent differ from a flow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An agent chooses what to do from natural language, while a flow follows steps you defined"
+      },
+      {
+        "id": "b",
+        "text": "A flow understands natural language, an agent does not"
+      },
+      {
+        "id": "c",
+        "text": "They are identical"
+      },
+      {
+        "id": "d",
+        "text": "An agent cannot call a flow"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A flow runs the same designed steps every time. An agent decides which topics and actions to use, and can call flows.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "agf-03",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Describe the parts of an agent",
+    "type": "multi",
+    "stem": "Which TWO of these are parts of an agent? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Topics (subagents)"
+      },
+      {
+        "id": "b",
+        "text": "Actions"
+      },
+      {
+        "id": "c",
+        "text": "Page layouts"
+      },
+      {
+        "id": "d",
+        "text": "Sharing rules"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Agents are built from instructions, topics (or subagents) and actions, and are reached through channels.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "agf-04",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Describe the parts of an agent",
+    "type": "single",
+    "stem": "What is a topic (subagent) in an agent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A job the agent can do, with a description, instructions and actions"
+      },
+      {
+        "id": "b",
+        "text": "A sharing rule"
+      },
+      {
+        "id": "c",
+        "text": "A report"
+      },
+      {
+        "id": "d",
+        "text": "A data category"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Each topic groups a job with the instructions and actions that go with it.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "agf-05",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Describe the parts of an agent",
+    "type": "single",
+    "stem": "Why should a topic have a clear description?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The agent uses it to decide which topic fits the request"
+      },
+      {
+        "id": "b",
+        "text": "To satisfy a validation rule"
+      },
+      {
+        "id": "c",
+        "text": "To set permissions"
+      },
+      {
+        "id": "d",
+        "text": "To make the topic visible to users"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The agent reads topic descriptions to pick the right job, so unclear or overlapping topics confuse it.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "agf-06",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Choose action sources",
+    "type": "multi",
+    "stem": "Which TWO can be the source of an agent action? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A flow"
+      },
+      {
+        "id": "b",
+        "text": "A prompt template"
+      },
+      {
+        "id": "c",
+        "text": "A page layout"
+      },
+      {
+        "id": "d",
+        "text": "A report folder"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Actions can be built from flows, prompt templates, Apex and APIs.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "agf-07",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Choose action sources",
+    "type": "single",
+    "stem": "An admin already has a refund flow and a case summary prompt. How can an agent use them?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Add them as agent actions"
+      },
+      {
+        "id": "b",
+        "text": "Rebuild them as validation rules"
+      },
+      {
+        "id": "c",
+        "text": "They cannot be reused"
+      },
+      {
+        "id": "d",
+        "text": "Convert them to reports"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Existing flows and prompt templates can become actions an agent calls.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "agf-08",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Describe types of agent",
+    "type": "single",
+    "stem": "Which agent type is aimed at customers and can hand over to a human through Omni-Channel?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Service agent"
+      },
+      {
+        "id": "b",
+        "text": "Employee agent"
+      },
+      {
+        "id": "c",
+        "text": "Setup agent"
+      },
+      {
+        "id": "d",
+        "text": "Reporting agent"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A service agent works with customers and can escalate to a person.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "agf-09",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Describe types of agent",
+    "type": "single",
+    "stem": "Which agent type helps internal users, for example to summarise a customer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Employee agent"
+      },
+      {
+        "id": "b",
+        "text": "Service agent"
+      },
+      {
+        "id": "c",
+        "text": "Web-to-Lead agent"
+      },
+      {
+        "id": "d",
+        "text": "Marketing agent"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Employee agents support staff inside Salesforce or other work apps.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "agf-10",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Describe types of agent",
+    "type": "single",
+    "stem": "What lets other applications talk to an agent outside the standard channels?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The Agent API"
+      },
+      {
+        "id": "b",
+        "text": "Web-to-Case"
+      },
+      {
+        "id": "c",
+        "text": "Data Loader"
+      },
+      {
+        "id": "d",
+        "text": "Reports"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Agent API provides a programmatic way to reach an agent from outside standard channels.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "agf-11",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Explain agent permissions",
+    "type": "single",
+    "stem": "What determines which data an agent can read and change?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The permissions of the user the agent acts as"
+      },
+      {
+        "id": "b",
+        "text": "The agent's description"
+      },
+      {
+        "id": "c",
+        "text": "The channel"
+      },
+      {
+        "id": "d",
+        "text": "The prompt length"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "An agent acts as a user, and that user's profile and permission sets control access.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "agf-12",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Explain agent permissions",
+    "type": "single",
+    "stem": "An agent exposes data it should not. What should the admin check first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The agent user's permissions and the actions' access context"
+      },
+      {
+        "id": "b",
+        "text": "The wording of the greeting"
+      },
+      {
+        "id": "c",
+        "text": "The report types"
+      },
+      {
+        "id": "d",
+        "text": "The fiscal year"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Too many permissions, system-context flows or over-broad grounding are the usual causes.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "agf-13",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Explain agent permissions",
+    "type": "single",
+    "stem": "Which principle applies when granting permissions to an agent's user?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Least privilege"
+      },
+      {
+        "id": "b",
+        "text": "Give Modify All Data to avoid errors"
+      },
+      {
+        "id": "c",
+        "text": "Copy the admin profile"
+      },
+      {
+        "id": "d",
+        "text": "Share the CEO's login"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Give the agent only the access it needs, as for any user.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "agf-14",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Describe the agent lifecycle",
+    "type": "single",
+    "stem": "Which is the right order of the agent lifecycle?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Plan, build, test, deploy, monitor"
+      },
+      {
+        "id": "b",
+        "text": "Build, deploy, plan, test"
+      },
+      {
+        "id": "c",
+        "text": "Test, plan, deploy, build"
+      },
+      {
+        "id": "d",
+        "text": "Deploy, monitor, build"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Plan the use case, build it, test it, deploy it, then monitor and improve.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "agf-15",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Describe the agent lifecycle",
+    "type": "single",
+    "stem": "Which tool runs a batch of test requests against an agent before it is released?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Testing Center"
+      },
+      {
+        "id": "b",
+        "text": "Data Loader"
+      },
+      {
+        "id": "c",
+        "text": "Reports and dashboards"
+      },
+      {
+        "id": "d",
+        "text": "Setup Audit Trail"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Testing Center lets you run many test utterances and compare results. Use the conversation preview for quick checks.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "agf-16",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Describe the agent lifecycle",
+    "type": "single",
+    "stem": "Where should an agent be built and tested before reaching customers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In a sandbox, then moved to production"
+      },
+      {
+        "id": "b",
+        "text": "Directly in production"
+      },
+      {
+        "id": "c",
+        "text": "On a mobile phone"
+      },
+      {
+        "id": "d",
+        "text": "In a spreadsheet"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Build and test in a sandbox, then deploy.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "agf-17",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Decide when an agent is the right tool",
+    "type": "single",
+    "stem": "A compliance decision must be identical every time and auditable. Which tool is best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An approval process, validation rule or flow"
+      },
+      {
+        "id": "b",
+        "text": "An agent"
+      },
+      {
+        "id": "c",
+        "text": "A Chatter post"
+      },
+      {
+        "id": "d",
+        "text": "A prompt template"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Rules-based tools give consistent, auditable outcomes. An agent may vary its answer.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "agf-18",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Decide when an agent is the right tool",
+    "type": "single",
+    "stem": "Which request is a good fit for an agent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Varied natural-language questions that need several steps and company data"
+      },
+      {
+        "id": "b",
+        "text": "A rule that must always block a save"
+      },
+      {
+        "id": "c",
+        "text": "A nightly data clean-up"
+      },
+      {
+        "id": "d",
+        "text": "A fixed approval chain"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Agents suit varied, multi-step requests. Fixed rules and schedules belong to flows, validation rules and approvals.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "agf-19",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Decide when an agent is the right tool",
+    "type": "single",
+    "stem": "What is the best approach when starting with agents?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Start with one narrow, well-tested job and a human handover"
+      },
+      {
+        "id": "b",
+        "text": "Launch many topics at once"
+      },
+      {
+        "id": "c",
+        "text": "Skip testing"
+      },
+      {
+        "id": "d",
+        "text": "Give the agent admin access"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A narrow, tested use case builds trust and reveals problems early.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "agf-20",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Explain what an agent is",
+    "type": "single",
+    "stem": "What is grounding?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Giving the agent real company data so answers rely on facts"
+      },
+      {
+        "id": "b",
+        "text": "Turning the agent off"
+      },
+      {
+        "id": "c",
+        "text": "Encrypting the agent"
+      },
+      {
+        "id": "d",
+        "text": "Cloning the agent"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Grounding supplies factual, relevant data to the model so it does not guess.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "agf-21",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Describe the parts of an agent",
+    "type": "single",
+    "stem": "What are guardrails?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Limits that keep an agent safe and on task"
+      },
+      {
+        "id": "b",
+        "text": "A report type"
+      },
+      {
+        "id": "c",
+        "text": "A queue"
+      },
+      {
+        "id": "d",
+        "text": "A data category"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Guardrails include instructions, topic scope, permissions and Trust Layer controls.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "agf-22",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Describe types of agent",
+    "type": "single",
+    "stem": "How should a customer-facing agent hand over a request it cannot handle?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To a human through Omni-Channel"
+      },
+      {
+        "id": "b",
+        "text": "By closing the chat"
+      },
+      {
+        "id": "c",
+        "text": "By deleting the record"
+      },
+      {
+        "id": "d",
+        "text": "By changing the profile"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Human handover through Omni-Channel keeps customers from getting stuck.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "agf-23",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Describe the parts of an agent",
+    "type": "single",
+    "stem": "Which instruction style works best in a topic?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Specific and short, saying what to do and what to refuse"
+      },
+      {
+        "id": "b",
+        "text": "Long and vague"
+      },
+      {
+        "id": "c",
+        "text": "Only a company slogan"
+      },
+      {
+        "id": "d",
+        "text": "No instructions"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Clear, concise instructions and explicit refusals improve behaviour.",
+    "difficulty": 2,
+    "tags": []
+  }
+]

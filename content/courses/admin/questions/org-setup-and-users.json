@@ -1,0 +1,707 @@
+[
+  {
+    "id": "osu-01",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Find the main organization settings",
+    "type": "single",
+    "stem": "Where do you set the org's default language, locale, time zone and currency?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Company Information"
+      },
+      {
+        "id": "b",
+        "text": "Profiles"
+      },
+      {
+        "id": "c",
+        "text": "Sharing Settings"
+      },
+      {
+        "id": "d",
+        "text": "Page Layouts"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Company Information (Setup > Company Settings) holds the org defaults. Users can override locale, language and time zone for themselves.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "osu-02",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Find the main organization settings",
+    "type": "single",
+    "stem": "An admin enables multi-currency for Khanyisa Solar. What is true afterwards?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It cannot be turned off"
+      },
+      {
+        "id": "b",
+        "text": "It can be turned off after 30 days"
+      },
+      {
+        "id": "c",
+        "text": "It can be turned off by a profile setting"
+      },
+      {
+        "id": "d",
+        "text": "It only affects reports"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Multi-currency is permanent once enabled. Person accounts are also permanent.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "osu-03",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Find the main organization settings",
+    "type": "single",
+    "stem": "Which setting determines which currency reports convert amounts into by default?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Corporate currency"
+      },
+      {
+        "id": "b",
+        "text": "User locale"
+      },
+      {
+        "id": "c",
+        "text": "Fiscal year"
+      },
+      {
+        "id": "d",
+        "text": "Business hours"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The corporate currency is the org's base currency. Other currencies convert to it using exchange rates.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "osu-04",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Find the main organization settings",
+    "type": "single",
+    "stem": "Which two settings does a support team use to define when it is open and when the escalation clock runs?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Business hours and holidays"
+      },
+      {
+        "id": "b",
+        "text": "Fiscal year and currencies"
+      },
+      {
+        "id": "c",
+        "text": "Profiles and roles"
+      },
+      {
+        "id": "d",
+        "text": "Login hours and trusted IPs"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Business hours and holidays define working time, and escalation rules and entitlements can use them.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "osu-05",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Find the main organization settings",
+    "type": "single",
+    "stem": "A company's financial year starts in March and has four equal quarters. What should the admin configure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A standard fiscal year starting in March"
+      },
+      {
+        "id": "b",
+        "text": "A custom fiscal year"
+      },
+      {
+        "id": "c",
+        "text": "A business hours record"
+      },
+      {
+        "id": "d",
+        "text": "A forecast category"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A standard fiscal year lets you pick the start month. A custom fiscal year is for unusual period patterns such as 4-4-5.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "osu-06",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Create and manage users",
+    "type": "single",
+    "stem": "What must be true about a Salesforce username?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It must be unique across all Salesforce orgs and look like an email address"
+      },
+      {
+        "id": "b",
+        "text": "It must match the user's real mailbox"
+      },
+      {
+        "id": "c",
+        "text": "It must be unique only within the org"
+      },
+      {
+        "id": "d",
+        "text": "It must be a phone number"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Usernames are globally unique and in email format, but do not have to be real mailboxes. The email field holds the real address.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "osu-07",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Create and manage users",
+    "type": "single",
+    "stem": "Which items are required when creating a user?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A licence and a profile"
+      },
+      {
+        "id": "b",
+        "text": "A licence and a role"
+      },
+      {
+        "id": "c",
+        "text": "A role and a permission set"
+      },
+      {
+        "id": "d",
+        "text": "A profile and a permission set group"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Every user needs a licence and one profile. Roles and permission sets are optional.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "osu-08",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Create and manage users",
+    "type": "single",
+    "stem": "An employee resigns. The admin needs to stop their login immediately but is not ready to free the licence. What should she do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Freeze the user"
+      },
+      {
+        "id": "b",
+        "text": "Delete the user"
+      },
+      {
+        "id": "c",
+        "text": "Deactivate the user"
+      },
+      {
+        "id": "d",
+        "text": "Remove their role"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Freezing blocks login at once and keeps the licence. Deactivating blocks login and frees the licence. Users cannot be deleted.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "osu-09",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Create and manage users",
+    "type": "single",
+    "stem": "What happens to a user's licence when the user is deactivated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is freed for someone else"
+      },
+      {
+        "id": "b",
+        "text": "It stays used"
+      },
+      {
+        "id": "c",
+        "text": "It is deleted from the org"
+      },
+      {
+        "id": "d",
+        "text": "It moves to the manager"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Deactivated users do not use a licence. Frozen users do.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "osu-10",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Create and manage users",
+    "type": "single",
+    "stem": "Can an admin delete a user from Salesforce?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, users can only be deactivated or frozen"
+      },
+      {
+        "id": "b",
+        "text": "Yes, from the Users page"
+      },
+      {
+        "id": "c",
+        "text": "Yes, but only after 15 days"
+      },
+      {
+        "id": "d",
+        "text": "Yes, with a permission set"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Users cannot be deleted. Deactivating preserves history such as record ownership.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "osu-11",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Explain licences, profiles, roles and permission sets",
+    "type": "single",
+    "stem": "Which of these controls visibility of other people's records up a management chain?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Role"
+      },
+      {
+        "id": "b",
+        "text": "Profile"
+      },
+      {
+        "id": "c",
+        "text": "Licence"
+      },
+      {
+        "id": "d",
+        "text": "Permission set"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Roles form the hierarchy that can give managers access to records owned by their reports. Profiles control what a user can do.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "osu-12",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Explain licences, profiles, roles and permission sets",
+    "type": "single",
+    "stem": "Which of these decides which Salesforce features a user may use at all?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Licence"
+      },
+      {
+        "id": "b",
+        "text": "Role"
+      },
+      {
+        "id": "c",
+        "text": "Page layout"
+      },
+      {
+        "id": "d",
+        "text": "Business hours"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The licence sets the outer boundary of the features available. Profiles and permission sets work within it.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "osu-13",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Choose the right sandbox type",
+    "type": "single",
+    "stem": "Which sandbox type copies only configuration (metadata) and no real data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Developer"
+      },
+      {
+        "id": "b",
+        "text": "Full"
+      },
+      {
+        "id": "c",
+        "text": "Partial Copy"
+      },
+      {
+        "id": "d",
+        "text": "Production"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Developer and Developer Pro sandboxes copy metadata only. Partial Copy adds a sample of data, Full copies all data.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "osu-14",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Choose the right sandbox type",
+    "type": "single",
+    "stem": "Which sandbox is best for final user acceptance testing with a complete copy of production data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Full"
+      },
+      {
+        "id": "b",
+        "text": "Developer"
+      },
+      {
+        "id": "c",
+        "text": "Developer Pro"
+      },
+      {
+        "id": "d",
+        "text": "Partial Copy"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A Full sandbox copies metadata and all data, so testing reflects real volumes and values.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "osu-15",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Choose the right sandbox type",
+    "type": "single",
+    "stem": "A tester needs real-looking sample data but not the entire database. Which sandbox fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Partial Copy"
+      },
+      {
+        "id": "b",
+        "text": "Developer"
+      },
+      {
+        "id": "c",
+        "text": "Full"
+      },
+      {
+        "id": "d",
+        "text": "Scratch"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Partial Copy copies metadata plus a sample of data defined by a sandbox template.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "osu-16",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Use audit tools",
+    "type": "single",
+    "stem": "How far back does the Setup Audit Trail show changes in the Setup UI?",
+    "options": [
+      {
+        "id": "a",
+        "text": "180 days"
+      },
+      {
+        "id": "b",
+        "text": "30 days"
+      },
+      {
+        "id": "c",
+        "text": "12 months"
+      },
+      {
+        "id": "d",
+        "text": "7 days"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Setup Audit Trail keeps 180 days. You can download it to review more history you have saved.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "osu-17",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Use audit tools",
+    "type": "single",
+    "stem": "An admin wants to know who changed a validation rule last month. Where should she look?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Setup Audit Trail"
+      },
+      {
+        "id": "b",
+        "text": "Login History"
+      },
+      {
+        "id": "c",
+        "text": "Field history tracking"
+      },
+      {
+        "id": "d",
+        "text": "The report folder"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Setup Audit Trail records configuration changes: what changed, who changed it and when.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "osu-18",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Delegate some admin tasks safely",
+    "type": "single",
+    "stem": "What is delegated administration for?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Letting non-admins perform limited admin tasks, such as unlocking users"
+      },
+      {
+        "id": "b",
+        "text": "Giving someone Modify All Data"
+      },
+      {
+        "id": "c",
+        "text": "Sharing records with a manager"
+      },
+      {
+        "id": "d",
+        "text": "Transferring record ownership"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Delegated administrators can do specific tasks for chosen roles or profiles without being full admins.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "osu-19",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Find the main organization settings",
+    "type": "single",
+    "stem": "What does My Domain provide?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A custom address for your org, needed for features such as single sign-on"
+      },
+      {
+        "id": "b",
+        "text": "A sandbox"
+      },
+      {
+        "id": "c",
+        "text": "A backup of your data"
+      },
+      {
+        "id": "d",
+        "text": "A custom object"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "My Domain gives your org its own subdomain and is required for many features, including SSO.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "osu-20",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Find the main organization settings",
+    "type": "multi",
+    "stem": "Which TWO of these are permanent once enabled in an org? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Multi-currency"
+      },
+      {
+        "id": "b",
+        "text": "Person accounts"
+      },
+      {
+        "id": "c",
+        "text": "Business hours"
+      },
+      {
+        "id": "d",
+        "text": "A sandbox"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Both multi-currency and person accounts cannot be disabled once on. Business hours and sandboxes can be changed or removed.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "osu-21",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Find the main organization settings",
+    "type": "single",
+    "stem": "A user wants dates shown in their own time zone, different from the org default. What should happen?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The user changes their own time zone in their settings"
+      },
+      {
+        "id": "b",
+        "text": "The admin changes the org's time zone"
+      },
+      {
+        "id": "c",
+        "text": "A new profile is created"
+      },
+      {
+        "id": "d",
+        "text": "A new sandbox is created"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Locale, language and time zone can be set per user and override the org default.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "osu-22",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Create and manage users",
+    "type": "single",
+    "stem": "Before deactivating a user who owns many records and approvals, what should the admin do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reassign what they own and remove them from processes that depend on them"
+      },
+      {
+        "id": "b",
+        "text": "Delete their records"
+      },
+      {
+        "id": "c",
+        "text": "Freeze everyone in their role"
+      },
+      {
+        "id": "d",
+        "text": "Change their username"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Reassigning ownership, approvals, queue membership and rule references prevents broken processes.",
+    "difficulty": 2,
+    "tags": []
+  }
+]

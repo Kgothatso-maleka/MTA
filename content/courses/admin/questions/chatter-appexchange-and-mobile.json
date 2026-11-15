@@ -1,0 +1,642 @@
+[
+  {
+    "id": "caam-01",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Use Chatter",
+    "type": "single",
+    "stem": "What is Chatter?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Social collaboration tools inside Salesforce"
+      },
+      {
+        "id": "b",
+        "text": "A reporting tool"
+      },
+      {
+        "id": "c",
+        "text": "An import tool"
+      },
+      {
+        "id": "d",
+        "text": "A sandbox"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Chatter provides feeds, groups, files and conversations linked to records.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "caam-02",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Use Chatter",
+    "type": "single",
+    "stem": "What does an @mention do in Chatter?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Notifies a person or group"
+      },
+      {
+        "id": "b",
+        "text": "Creates a topic"
+      },
+      {
+        "id": "c",
+        "text": "Merges records"
+      },
+      {
+        "id": "d",
+        "text": "Closes a case"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Mentioning a person or group sends them a notification about the post.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "caam-03",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Use Chatter",
+    "type": "single",
+    "stem": "What do # topics do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Group related posts by theme"
+      },
+      {
+        "id": "b",
+        "text": "Notify people"
+      },
+      {
+        "id": "c",
+        "text": "Restrict access"
+      },
+      {
+        "id": "d",
+        "text": "Create records"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Topics, like hashtags, organise posts across the org.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "caam-04",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Control what is tracked",
+    "type": "single",
+    "stem": "What is feed tracking?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Posting automatic updates to a record's feed when chosen fields change"
+      },
+      {
+        "id": "b",
+        "text": "Tracking field history for 10 years"
+      },
+      {
+        "id": "c",
+        "text": "Tracking logins"
+      },
+      {
+        "id": "d",
+        "text": "Tracking sandbox use"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Feed tracking posts changes of selected fields to followers. It is not the same as field history tracking.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "caam-05",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Control what is tracked",
+    "type": "single",
+    "stem": "How many fields per object can feed tracking follow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "20"
+      },
+      {
+        "id": "b",
+        "text": "5"
+      },
+      {
+        "id": "c",
+        "text": "50"
+      },
+      {
+        "id": "d",
+        "text": "100"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Feed tracking can follow up to 20 fields per object.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "caam-06",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Choose the right Chatter group type",
+    "type": "single",
+    "stem": "Which Chatter group type is visible to everyone and open to anyone to join?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Public"
+      },
+      {
+        "id": "b",
+        "text": "Private"
+      },
+      {
+        "id": "c",
+        "text": "Unlisted"
+      },
+      {
+        "id": "d",
+        "text": "Broadcast-only"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Public groups are open to all users in the org.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "caam-07",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Choose the right Chatter group type",
+    "type": "single",
+    "stem": "In which group type can non-members see the group's name and description but not its posts?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Private"
+      },
+      {
+        "id": "b",
+        "text": "Public"
+      },
+      {
+        "id": "c",
+        "text": "Unlisted"
+      },
+      {
+        "id": "d",
+        "text": "Broadcast"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Private groups show their existence but members need approval to join and view posts.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "caam-08",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Choose the right Chatter group type",
+    "type": "single",
+    "stem": "Which group type is hidden from lists and joined by invitation only?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unlisted"
+      },
+      {
+        "id": "b",
+        "text": "Public"
+      },
+      {
+        "id": "c",
+        "text": "Private"
+      },
+      {
+        "id": "d",
+        "text": "Broadcast"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Unlisted groups are not listed and people join only by invitation.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "caam-09",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Choose the right Chatter group type",
+    "type": "single",
+    "stem": "Management wants announcements that only managers can post and everyone can read. Which option fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A broadcast-only group"
+      },
+      {
+        "id": "b",
+        "text": "A public group"
+      },
+      {
+        "id": "c",
+        "text": "An unlisted group"
+      },
+      {
+        "id": "d",
+        "text": "A private group"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Broadcast-only groups let only owners and managers post.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "caam-10",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Share and manage files",
+    "type": "single",
+    "stem": "Which statement is true about Salesforce Files?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They can be shared by link or with people and groups and can have versions"
+      },
+      {
+        "id": "b",
+        "text": "They can only be attached to cases"
+      },
+      {
+        "id": "c",
+        "text": "They cannot be shared"
+      },
+      {
+        "id": "d",
+        "text": "They are deleted after 30 days"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Files can be shared in several ways and keep versions.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "caam-11",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Install AppExchange apps",
+    "type": "single",
+    "stem": "What is the AppExchange?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salesforce's marketplace for apps and consultants"
+      },
+      {
+        "id": "b",
+        "text": "A type of sandbox"
+      },
+      {
+        "id": "c",
+        "text": "A reporting tool"
+      },
+      {
+        "id": "d",
+        "text": "A user licence"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "AppExchange lets you find and install ready-made apps and components.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "caam-12",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Install AppExchange apps",
+    "type": "single",
+    "stem": "Where should a new AppExchange app first be installed and tested?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In a sandbox"
+      },
+      {
+        "id": "b",
+        "text": "In production for all users"
+      },
+      {
+        "id": "c",
+        "text": "In production for the CEO only"
+      },
+      {
+        "id": "d",
+        "text": "On a mobile phone"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Install and test in a sandbox before production.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "caam-13",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Install AppExchange apps",
+    "type": "single",
+    "stem": "Which statement about a managed package is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The publisher can push upgrades and its components are protected"
+      },
+      {
+        "id": "b",
+        "text": "Its code is fully visible and editable"
+      },
+      {
+        "id": "c",
+        "text": "It cannot be installed in production"
+      },
+      {
+        "id": "d",
+        "text": "It has no licence"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Managed packages are locked and upgradeable by the publisher. Unmanaged packages are editable copies.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "caam-14",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Install AppExchange apps",
+    "type": "single",
+    "stem": "Which statement about an unmanaged package is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is a copy you can edit but it cannot be upgraded by the publisher"
+      },
+      {
+        "id": "b",
+        "text": "It is upgraded automatically"
+      },
+      {
+        "id": "c",
+        "text": "It hides its code"
+      },
+      {
+        "id": "d",
+        "text": "It cannot be edited"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Unmanaged packages are useful for samples and templates, but updates must be applied by hand.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "caam-15",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Install AppExchange apps",
+    "type": "single",
+    "stem": "When installing an app, who can you give access to?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Admins only, all users, or specific profiles"
+      },
+      {
+        "id": "b",
+        "text": "Only the CEO"
+      },
+      {
+        "id": "c",
+        "text": "Only external users"
+      },
+      {
+        "id": "d",
+        "text": "No one"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "During installation you choose which users get access.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "caam-16",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Configure the mobile app",
+    "type": "single",
+    "stem": "Which of these controls what appears in the mobile app's menu?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The mobile navigation menu"
+      },
+      {
+        "id": "b",
+        "text": "The report folder"
+      },
+      {
+        "id": "c",
+        "text": "The sandbox"
+      },
+      {
+        "id": "d",
+        "text": "The duplicate rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The mobile navigation menu sets which items appear in the Salesforce mobile app.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "caam-17",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Configure the mobile app",
+    "type": "single",
+    "stem": "Which layout choice affects the key fields at the top of a record in the mobile app?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compact layout"
+      },
+      {
+        "id": "b",
+        "text": "Search layout"
+      },
+      {
+        "id": "c",
+        "text": "Report type"
+      },
+      {
+        "id": "d",
+        "text": "Matching rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Compact layouts pick the key fields shown in the highlights panel and in mobile.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "caam-18",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Configure the mobile app",
+    "type": "single",
+    "stem": "Reps use the mobile app on the road. Which design principle is best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Focus on quick jobs such as log a call, change a stage and add a note"
+      },
+      {
+        "id": "b",
+        "text": "Show every field"
+      },
+      {
+        "id": "c",
+        "text": "Replicate the desktop screen exactly"
+      },
+      {
+        "id": "d",
+        "text": "Remove all actions"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Mobile works best for short, quick tasks with mobile-friendly actions.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "caam-19",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Select productivity tools",
+    "type": "single",
+    "stem": "Which feature is a good fit for announcing company news to everyone with no replies?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A broadcast-only Chatter group"
+      },
+      {
+        "id": "b",
+        "text": "A public campaign"
+      },
+      {
+        "id": "c",
+        "text": "A queue"
+      },
+      {
+        "id": "d",
+        "text": "A validation rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Broadcast groups keep announcements clean by limiting who can post.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "caam-20",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Use Chatter",
+    "type": "single",
+    "stem": "Which items can be shared in Chatter? ",
+    "options": [
+      {
+        "id": "a",
+        "text": "Posts, polls, questions and files"
+      },
+      {
+        "id": "b",
+        "text": "Only text"
+      },
+      {
+        "id": "c",
+        "text": "Only files"
+      },
+      {
+        "id": "d",
+        "text": "Only links"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Chatter supports posts, polls, questions, links and files.",
+    "difficulty": 1,
+    "tags": []
+  }
+]

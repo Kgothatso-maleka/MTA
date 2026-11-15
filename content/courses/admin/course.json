@@ -56,6 +56,19 @@
     "data-import-export",
     "duplicates-and-data-quality",
     "reports",
-    "dashboards"
+    "dashboards",
+    "org-setup-and-users",
+    "login-and-org-security",
+    "lightning-app-builder-and-ui",
+    "flow-builder",
+    "approvals-and-notifications",
+    "leads-and-opportunities",
+    "campaigns-and-marketing",
+    "case-management",
+    "knowledge-omni-channel-and-service-tools",
+    "activities-email-and-calendars",
+    "chatter-appexchange-and-mobile",
+    "agentforce-fundamentals",
+    "prompt-builder-and-trust-layer"
   ]
 }

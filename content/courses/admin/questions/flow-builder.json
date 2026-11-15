@@ -1,0 +1,770 @@
+[
+  {
+    "id": "flw-01",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Choose the right flow type",
+    "type": "single",
+    "stem": "Which flow type is used when a user needs to be guided through a series of questions on screen?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Screen flow"
+      },
+      {
+        "id": "b",
+        "text": "Record-triggered flow"
+      },
+      {
+        "id": "c",
+        "text": "Schedule-triggered flow"
+      },
+      {
+        "id": "d",
+        "text": "Autolaunched flow"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Only screen flows display screens for user input.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "flw-02",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Choose the right flow type",
+    "type": "single",
+    "stem": "When an opportunity is set to Closed Won, an Installation record must be created automatically. Which flow type fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Record-triggered flow"
+      },
+      {
+        "id": "b",
+        "text": "Screen flow"
+      },
+      {
+        "id": "c",
+        "text": "Schedule-triggered flow"
+      },
+      {
+        "id": "d",
+        "text": "Platform event flow"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A record-triggered flow starts when a record is created, updated or deleted.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "flw-03",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Choose the right flow type",
+    "type": "single",
+    "stem": "An admin needs a flow to run every Monday at 06:00 to create reminder tasks. Which type fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Schedule-triggered flow"
+      },
+      {
+        "id": "b",
+        "text": "Screen flow"
+      },
+      {
+        "id": "c",
+        "text": "Record-triggered flow"
+      },
+      {
+        "id": "d",
+        "text": "Autolaunched flow with no trigger"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A schedule-triggered flow starts at a set time and frequency.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "flw-04",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Choose the right flow type",
+    "type": "single",
+    "stem": "Which flow type is a reusable piece of logic that other flows or Apex can call?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Autolaunched flow"
+      },
+      {
+        "id": "b",
+        "text": "Screen flow"
+      },
+      {
+        "id": "c",
+        "text": "Schedule-triggered flow"
+      },
+      {
+        "id": "d",
+        "text": "Record-triggered flow"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Autolaunched flows have no trigger or screens and are called by other automation. A subflow is an autolaunched flow.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "flw-05",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Explain before-save and after-save",
+    "type": "single",
+    "stem": "A record-triggered flow only needs to set a field on the same record that started the flow. Which option is the most efficient?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Before-save (fast field updates)"
+      },
+      {
+        "id": "b",
+        "text": "After-save"
+      },
+      {
+        "id": "c",
+        "text": "A screen flow"
+      },
+      {
+        "id": "d",
+        "text": "A schedule-triggered flow"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Before-save flows update the triggering record without an extra database operation and are the fastest option for that job.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "flw-06",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Explain before-save and after-save",
+    "type": "single",
+    "stem": "Which of these requires an after-save record-triggered flow rather than before-save?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Creating a related record"
+      },
+      {
+        "id": "b",
+        "text": "Setting a field on the triggering record"
+      },
+      {
+        "id": "c",
+        "text": "Formatting a phone number"
+      },
+      {
+        "id": "d",
+        "text": "Setting a default value"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Before-save flows cannot create or update other records. After-save flows can create related records, send emails and call actions.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "flw-07",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Describe the order of execution",
+    "type": "single",
+    "stem": "Which statement about the order of execution is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Before-save flows run before validation rules"
+      },
+      {
+        "id": "b",
+        "text": "Validation rules run before any flows"
+      },
+      {
+        "id": "c",
+        "text": "After-save flows run before validation rules"
+      },
+      {
+        "id": "d",
+        "text": "Flows never run when a record is saved"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "In the simplified order: before-save flows, before triggers, validation and duplicate rules, then after triggers and after-save flows.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "flw-08",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Build a flow from core elements",
+    "type": "single",
+    "stem": "What is the purpose of entry conditions on a record-triggered flow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To run the flow only when certain field values are met"
+      },
+      {
+        "id": "b",
+        "text": "To limit which users can edit the flow"
+      },
+      {
+        "id": "c",
+        "text": "To rename the flow"
+      },
+      {
+        "id": "d",
+        "text": "To give the flow a new version"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Entry conditions stop a flow running for every change and help to prevent unwanted automation and loops.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "flw-09",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Build a flow from core elements",
+    "type": "single",
+    "stem": "Which element lets a flow take different paths depending on a condition?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Decision"
+      },
+      {
+        "id": "b",
+        "text": "Assignment"
+      },
+      {
+        "id": "c",
+        "text": "Loop"
+      },
+      {
+        "id": "d",
+        "text": "Subflow"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A Decision evaluates conditions and sends the flow down matching outcomes.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "flw-10",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Build a flow from core elements",
+    "type": "single",
+    "stem": "Which element sets or changes the value of a variable?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assignment"
+      },
+      {
+        "id": "b",
+        "text": "Decision"
+      },
+      {
+        "id": "c",
+        "text": "Get Records"
+      },
+      {
+        "id": "d",
+        "text": "Screen"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "An Assignment element sets values in variables, such as adding a record to a collection.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "flw-11",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Build a flow from core elements",
+    "type": "single",
+    "stem": "Which element reads records from the database into a flow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Get Records"
+      },
+      {
+        "id": "b",
+        "text": "Assignment"
+      },
+      {
+        "id": "c",
+        "text": "Decision"
+      },
+      {
+        "id": "d",
+        "text": "Wait"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Get Records finds records based on conditions and stores them in variables.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "flw-12",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Build a flow from core elements",
+    "type": "single",
+    "stem": "A flow must update 50 related records. What is the best-practice design?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Loop through the collection, add changes to a collection, and update once outside the loop"
+      },
+      {
+        "id": "b",
+        "text": "Put an Update Records element inside the loop"
+      },
+      {
+        "id": "c",
+        "text": "Create a separate flow for each record"
+      },
+      {
+        "id": "d",
+        "text": "Use a screen flow"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Putting data elements in a loop risks governor limits. Collect changes and save once after the loop.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "flw-13",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Handle errors and test",
+    "type": "single",
+    "stem": "What does a fault path do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Handles an error when a flow element fails"
+      },
+      {
+        "id": "b",
+        "text": "Skips validation rules"
+      },
+      {
+        "id": "c",
+        "text": "Speeds up a flow"
+      },
+      {
+        "id": "d",
+        "text": "Controls who can run the flow"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A fault path routes the flow down an error route so you can log the problem, notify someone or show a friendly message.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "flw-14",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Handle errors and test",
+    "type": "single",
+    "stem": "How can an admin test a flow without saving any changes to the data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use Debug with the roll-back option"
+      },
+      {
+        "id": "b",
+        "text": "Activate it in production"
+      },
+      {
+        "id": "c",
+        "text": "Run it as a screen flow only"
+      },
+      {
+        "id": "d",
+        "text": "Delete it and rebuild it"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Debug lets you run a flow with test inputs, and you can choose to roll back so no data is saved.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "flw-15",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Build a flow from core elements",
+    "type": "single",
+    "stem": "How many versions of a flow can be active at the same time?",
+    "options": [
+      {
+        "id": "a",
+        "text": "One"
+      },
+      {
+        "id": "b",
+        "text": "Two"
+      },
+      {
+        "id": "c",
+        "text": "Five"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Each save creates a new version, but only one version can be active.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "flw-16",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Handle errors and test",
+    "type": "single",
+    "stem": "When a flow fails, who receives the default error email?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The person who last modified the flow"
+      },
+      {
+        "id": "b",
+        "text": "The CEO"
+      },
+      {
+        "id": "c",
+        "text": "All admins"
+      },
+      {
+        "id": "d",
+        "text": "No one"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Salesforce sends flow error emails to the user who last modified the flow, so plan fault paths too.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "flw-17",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Explain the retirement of legacy tools",
+    "type": "single",
+    "stem": "Which statement about Workflow Rules and Process Builder is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salesforce ended support for them on 31 December 2025 and recommends Flow"
+      },
+      {
+        "id": "b",
+        "text": "They are the recommended tools for new automation"
+      },
+      {
+        "id": "c",
+        "text": "They were never supported"
+      },
+      {
+        "id": "d",
+        "text": "They are only available in Developer Edition"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Salesforce retired support for both tools at the end of 2025. New automation should be built in Flow, and the Migrate to Flow tool helps convert old ones.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "flw-18",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Explain who the flow runs as",
+    "type": "single",
+    "stem": "Which statement about record-triggered flows and security is true by default?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They run in system context, so they can touch data the user cannot"
+      },
+      {
+        "id": "b",
+        "text": "They always respect the user's field-level security"
+      },
+      {
+        "id": "c",
+        "text": "They only run for admins"
+      },
+      {
+        "id": "d",
+        "text": "They cannot update records"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Record-triggered flows run in system context by default, so design them carefully.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "flw-19",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Choose the right automation tool",
+    "type": "single",
+    "stem": "A manager needs a multi-department, multi-step process spanning weeks. Which tool is designed for this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Flow Orchestrator"
+      },
+      {
+        "id": "b",
+        "text": "A validation rule"
+      },
+      {
+        "id": "c",
+        "text": "An email alert"
+      },
+      {
+        "id": "d",
+        "text": "A page layout"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Flow Orchestrator organises automation into stages and steps across people and time.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "flw-20",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Avoid common mistakes",
+    "type": "single",
+    "stem": "Which problem is a sign of poor automation design?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A flow updates a field that triggers another flow that updates it back"
+      },
+      {
+        "id": "b",
+        "text": "A flow has a clear name"
+      },
+      {
+        "id": "c",
+        "text": "A flow has a description"
+      },
+      {
+        "id": "d",
+        "text": "A flow has entry conditions"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Automations that trigger one another can loop. Entry conditions and a register of automation help prevent it.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "flw-21",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Build a flow from core elements",
+    "type": "single",
+    "stem": "Which element lets a flow reuse another flow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Subflow"
+      },
+      {
+        "id": "b",
+        "text": "Loop"
+      },
+      {
+        "id": "c",
+        "text": "Assignment"
+      },
+      {
+        "id": "d",
+        "text": "Decision"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Subflow element runs another autolaunched flow, which keeps logic reusable.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "flw-22",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Build a flow from core elements",
+    "type": "single",
+    "stem": "What does a collection variable hold?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Multiple values or records"
+      },
+      {
+        "id": "b",
+        "text": "Exactly one record"
+      },
+      {
+        "id": "c",
+        "text": "A user's password"
+      },
+      {
+        "id": "d",
+        "text": "A page layout"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A collection variable stores many values or records. A record variable stores one.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "flw-23",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Choose the right automation tool",
+    "type": "single",
+    "stem": "Before building a flow, what is the best first step?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Write the rule in one sentence and check what already runs on that object"
+      },
+      {
+        "id": "b",
+        "text": "Create the flow and activate it"
+      },
+      {
+        "id": "c",
+        "text": "Delete other automation"
+      },
+      {
+        "id": "d",
+        "text": "Ask users to test in production"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A clear rule and knowledge of existing automation prevent conflicts, which are the most common cause of flow bugs.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "flw-24",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Explain who the flow runs as",
+    "type": "single",
+    "stem": "Which permission or access does a user need to run a screen flow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Access to run the flow, such as the Run Flows permission or flow access via profile or permission set"
+      },
+      {
+        "id": "b",
+        "text": "Modify All Data"
+      },
+      {
+        "id": "c",
+        "text": "Author Apex"
+      },
+      {
+        "id": "d",
+        "text": "View Setup"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Users need permission to run flows. A screen flow can then run in user or system context depending on its settings.",
+    "difficulty": 3,
+    "tags": []
+  }
+]

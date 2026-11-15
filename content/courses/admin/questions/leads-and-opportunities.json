@@ -1,0 +1,708 @@
+[
+  {
+    "id": "lao-01",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Convert a lead",
+    "type": "single",
+    "stem": "What does Salesforce create when a lead is converted?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An account, a contact and optionally an opportunity"
+      },
+      {
+        "id": "b",
+        "text": "Only an opportunity"
+      },
+      {
+        "id": "c",
+        "text": "Only a contact"
+      },
+      {
+        "id": "d",
+        "text": "A campaign"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Lead conversion creates (or links to) an account and a contact, and can create an opportunity. The lead is marked Converted.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lao-02",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Convert a lead",
+    "type": "single",
+    "stem": "What can you NOT do with a converted lead?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Edit it or convert it again"
+      },
+      {
+        "id": "b",
+        "text": "Run a report on it"
+      },
+      {
+        "id": "c",
+        "text": "See it in a list view"
+      },
+      {
+        "id": "d",
+        "text": "Add it to a campaign history"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Converted leads are read-only and cannot be converted again.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lao-03",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Convert a lead",
+    "type": "single",
+    "stem": "Custom lead fields must carry their values over to the opportunity on conversion. What should the admin do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Set up lead field mapping"
+      },
+      {
+        "id": "b",
+        "text": "Make the field required"
+      },
+      {
+        "id": "c",
+        "text": "Create a validation rule"
+      },
+      {
+        "id": "d",
+        "text": "Add the field to the page layout"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Custom fields do not map automatically. Use Map Lead Fields so values land in the account, contact or opportunity.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lao-04",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Capture leads automatically",
+    "type": "single",
+    "stem": "What is the maximum number of leads Web-to-Lead can capture per 24-hour period?",
+    "options": [
+      {
+        "id": "a",
+        "text": "500"
+      },
+      {
+        "id": "b",
+        "text": "50"
+      },
+      {
+        "id": "c",
+        "text": "5,000"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Web-to-Lead is limited to 500 leads per day, so high-volume sites need another method.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lao-05",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Capture leads automatically",
+    "type": "single",
+    "stem": "How many lead assignment rules can be active at one time?",
+    "options": [
+      {
+        "id": "a",
+        "text": "One"
+      },
+      {
+        "id": "b",
+        "text": "Three"
+      },
+      {
+        "id": "c",
+        "text": "Ten"
+      },
+      {
+        "id": "d",
+        "text": "As many as needed"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Only one assignment rule per object can be active. It can contain many entries.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lao-06",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Capture leads automatically",
+    "type": "single",
+    "stem": "What is a queue?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A shared list of records that members of a team can take ownership of"
+      },
+      {
+        "id": "b",
+        "text": "A type of report"
+      },
+      {
+        "id": "c",
+        "text": "A user licence"
+      },
+      {
+        "id": "d",
+        "text": "A sharing rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A queue holds records, such as leads or cases, until a member of the team takes them.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lao-07",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Configure a sales process",
+    "type": "multi",
+    "stem": "Which TWO settings does each opportunity stage carry? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Probability"
+      },
+      {
+        "id": "b",
+        "text": "Forecast category"
+      },
+      {
+        "id": "c",
+        "text": "Record type"
+      },
+      {
+        "id": "d",
+        "text": "Page layout"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Each stage has a default probability and a forecast category that controls how the deal appears in forecasts.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lao-08",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Configure a sales process",
+    "type": "multi",
+    "stem": "Which TWO of these are forecast categories? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Commit"
+      },
+      {
+        "id": "b",
+        "text": "Best Case"
+      },
+      {
+        "id": "c",
+        "text": "Hot"
+      },
+      {
+        "id": "d",
+        "text": "Lukewarm"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Forecast categories are Pipeline, Best Case, Commit, Closed and Omitted.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lao-09",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Configure a sales process",
+    "type": "single",
+    "stem": "Two business lines need different opportunity stages. What should the admin create?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Two sales processes with two record types"
+      },
+      {
+        "id": "b",
+        "text": "Two page layouts"
+      },
+      {
+        "id": "c",
+        "text": "Two profiles"
+      },
+      {
+        "id": "d",
+        "text": "Two queues"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A sales process holds the list of stages and is attached to a record type. Different record types can use different sales processes.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lao-10",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Configure a sales process",
+    "type": "single",
+    "stem": "Where is the list of stages for an opportunity defined?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In the sales process"
+      },
+      {
+        "id": "b",
+        "text": "In the page layout"
+      },
+      {
+        "id": "c",
+        "text": "In the profile"
+      },
+      {
+        "id": "d",
+        "text": "In the price book"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The sales process contains the stage values available to opportunities of a record type.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lao-11",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Use Path, teams and forecasts",
+    "type": "single",
+    "stem": "Which feature shows key fields and guidance for success at each opportunity stage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Path"
+      },
+      {
+        "id": "b",
+        "text": "Quick action"
+      },
+      {
+        "id": "c",
+        "text": "Compact layout"
+      },
+      {
+        "id": "d",
+        "text": "Duplicate rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Path displays the stage bar and, for each stage, key fields and guidance.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lao-12",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Set up products and price books",
+    "type": "single",
+    "stem": "What must exist before a product can be added to a custom price book?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An entry in the standard price book"
+      },
+      {
+        "id": "b",
+        "text": "A quote"
+      },
+      {
+        "id": "c",
+        "text": "A campaign"
+      },
+      {
+        "id": "d",
+        "text": "An opportunity"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Every product must have a standard price book entry before it can be added to a custom price book.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lao-13",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Set up products and price books",
+    "type": "single",
+    "stem": "Can the standard price book be deleted?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No"
+      },
+      {
+        "id": "b",
+        "text": "Yes, by any admin"
+      },
+      {
+        "id": "c",
+        "text": "Yes, after 15 days"
+      },
+      {
+        "id": "d",
+        "text": "Yes, if it is empty"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The standard price book cannot be deleted.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lao-14",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Set up products and price books",
+    "type": "single",
+    "stem": "What is a price book entry?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The price of one product in one price book"
+      },
+      {
+        "id": "b",
+        "text": "A record of a sale"
+      },
+      {
+        "id": "c",
+        "text": "A contract"
+      },
+      {
+        "id": "d",
+        "text": "A quote template"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A price book entry links a product to a price book with a price.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lao-15",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Set up products and price books",
+    "type": "single",
+    "stem": "What is the purpose of a quote?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To give a customer a formal price offer, often as a PDF"
+      },
+      {
+        "id": "b",
+        "text": "To track marketing spend"
+      },
+      {
+        "id": "c",
+        "text": "To assign cases"
+      },
+      {
+        "id": "d",
+        "text": "To forecast revenue"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A quote is a formal offer built from opportunity products that can be output as a PDF from a template.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lao-16",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Explain accounts and contacts",
+    "type": "single",
+    "stem": "Which feature lets one person be related to several accounts?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contacts to Multiple Accounts"
+      },
+      {
+        "id": "b",
+        "text": "Account teams"
+      },
+      {
+        "id": "c",
+        "text": "Person accounts"
+      },
+      {
+        "id": "d",
+        "text": "Lead conversion"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Contacts to Multiple Accounts lets a contact be linked to more than one account.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lao-17",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Explain accounts and contacts",
+    "type": "single",
+    "stem": "What is true of person accounts once they are enabled?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They cannot be turned off"
+      },
+      {
+        "id": "b",
+        "text": "They can be turned off at any time"
+      },
+      {
+        "id": "c",
+        "text": "They only work for opportunities"
+      },
+      {
+        "id": "d",
+        "text": "They replace leads"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Person accounts are permanent once enabled and represent individuals as accounts for B2C business.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lao-18",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Use Path, teams and forecasts",
+    "type": "single",
+    "stem": "Which feature lets several reps share credit for one opportunity?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Opportunity splits"
+      },
+      {
+        "id": "b",
+        "text": "Account hierarchy"
+      },
+      {
+        "id": "c",
+        "text": "Lead queues"
+      },
+      {
+        "id": "d",
+        "text": "Campaign influence"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Opportunity splits divide credit and revenue between team members.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lao-19",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Use Path, teams and forecasts",
+    "type": "single",
+    "stem": "Which tool provides rolled-up forecasts by forecast category for managers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Collaborative Forecasts"
+      },
+      {
+        "id": "b",
+        "text": "Reporting snapshots"
+      },
+      {
+        "id": "c",
+        "text": "Lead scoring"
+      },
+      {
+        "id": "d",
+        "text": "Assignment rules"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Collaborative Forecasts roll up opportunity data so managers and reps can review and adjust numbers.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lao-20",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Use Path, teams and forecasts",
+    "type": "single",
+    "stem": "Which feature gives access and reporting by region or industry independent of the role hierarchy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Territory management"
+      },
+      {
+        "id": "b",
+        "text": "Role hierarchy"
+      },
+      {
+        "id": "c",
+        "text": "Queues"
+      },
+      {
+        "id": "d",
+        "text": "Public groups"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Enterprise Territory Management organises accounts and users into territories.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "lao-21",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Explain the sales journey",
+    "type": "single",
+    "stem": "A rep records that a call has already happened. Which action fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Log a Call"
+      },
+      {
+        "id": "b",
+        "text": "New Event"
+      },
+      {
+        "id": "c",
+        "text": "Convert"
+      },
+      {
+        "id": "d",
+        "text": "Recall"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Log a Call records a completed call on the timeline.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lao-22",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Explain the sales journey",
+    "type": "single",
+    "stem": "Which describes a lead?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An unqualified prospect not yet linked to an account or contact"
+      },
+      {
+        "id": "b",
+        "text": "A closed deal"
+      },
+      {
+        "id": "c",
+        "text": "A customer company"
+      },
+      {
+        "id": "d",
+        "text": "A support request"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A lead is a person who might become a customer, before qualification and conversion.",
+    "difficulty": 1,
+    "tags": []
+  }
+]

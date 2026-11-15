@@ -1,0 +1,642 @@
+[
+  {
+    "id": "aec-01",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Tell tasks from events",
+    "type": "single",
+    "stem": "What is the main difference between a task and an event?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An event has a start and end time on a calendar, a task has a due date"
+      },
+      {
+        "id": "b",
+        "text": "A task has a time, an event does not"
+      },
+      {
+        "id": "c",
+        "text": "There is no difference"
+      },
+      {
+        "id": "d",
+        "text": "Only events can recur"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Events are time blocks on a calendar. Tasks are to-dos with due dates and statuses.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "aec-02",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Tell tasks from events",
+    "type": "single",
+    "stem": "A site visit is booked for Thursday at 10:00. Which activity type should be used?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Event"
+      },
+      {
+        "id": "b",
+        "text": "Task"
+      },
+      {
+        "id": "c",
+        "text": "Case"
+      },
+      {
+        "id": "d",
+        "text": "Campaign"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Anything with a fixed time slot is an event.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "aec-03",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Tell tasks from events",
+    "type": "single",
+    "stem": "A rep wants a reminder to send a quote by Friday. Which activity type fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Task"
+      },
+      {
+        "id": "b",
+        "text": "Event"
+      },
+      {
+        "id": "c",
+        "text": "Lead"
+      },
+      {
+        "id": "d",
+        "text": "Case"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Tasks track to-dos with due dates and a status.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "aec-04",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Tell tasks from events",
+    "type": "single",
+    "stem": "Which activity type can span several days, such as a conference?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Event"
+      },
+      {
+        "id": "b",
+        "text": "Task"
+      },
+      {
+        "id": "c",
+        "text": "Both equally"
+      },
+      {
+        "id": "d",
+        "text": "Neither"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Multi-day events span several days. Tasks cannot be multi-day.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "aec-05",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Explain Name and Related To",
+    "type": "single",
+    "stem": "What does the Name (Who) field on an activity relate to?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A lead or contact"
+      },
+      {
+        "id": "b",
+        "text": "An opportunity"
+      },
+      {
+        "id": "c",
+        "text": "An account"
+      },
+      {
+        "id": "d",
+        "text": "A case"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Name (Who) points to a lead or contact. Related To (What) points to records such as an account or opportunity.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "aec-06",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Explain Name and Related To",
+    "type": "single",
+    "stem": "What can the Related To (What) field relate to?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An account, opportunity, case, campaign or custom object"
+      },
+      {
+        "id": "b",
+        "text": "Only a lead"
+      },
+      {
+        "id": "c",
+        "text": "Only a contact"
+      },
+      {
+        "id": "d",
+        "text": "Only a user"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Related To links the activity to the business record it concerns.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "aec-07",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Use shared and recurring activities",
+    "type": "single",
+    "stem": "Which feature lets an event include several contacts?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shared activities"
+      },
+      {
+        "id": "b",
+        "text": "Recurring events"
+      },
+      {
+        "id": "c",
+        "text": "Public calendars"
+      },
+      {
+        "id": "d",
+        "text": "Macros"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Shared Activities lets multiple contacts be related to one activity so it appears on each timeline.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "aec-08",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Use shared and recurring activities",
+    "type": "single",
+    "stem": "A weekly Monday meeting should repeat. Which feature fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Recurring events"
+      },
+      {
+        "id": "b",
+        "text": "Shared activities"
+      },
+      {
+        "id": "c",
+        "text": "Multi-day events"
+      },
+      {
+        "id": "d",
+        "text": "Public calendars"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Recurring events repeat on a pattern, and you can edit one occurrence or the series.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "aec-09",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Use the Activity Timeline",
+    "type": "single",
+    "stem": "Which record page component shows past and upcoming activities?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Activity Timeline"
+      },
+      {
+        "id": "b",
+        "text": "Highlights panel"
+      },
+      {
+        "id": "c",
+        "text": "Path"
+      },
+      {
+        "id": "d",
+        "text": "Related list of campaigns"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Activity Timeline shows upcoming and overdue items and past activity such as logged calls and emails.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "aec-10",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Use the Activity Timeline",
+    "type": "single",
+    "stem": "What does Log a Call do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Records a call that has already happened"
+      },
+      {
+        "id": "b",
+        "text": "Schedules a future call"
+      },
+      {
+        "id": "c",
+        "text": "Starts a phone call"
+      },
+      {
+        "id": "d",
+        "text": "Creates an event on the calendar"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Log a Call creates a completed task to record the conversation.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "aec-11",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Set up calendars",
+    "type": "single",
+    "stem": "Which feature lets a team share one calendar, such as site visits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Public calendar"
+      },
+      {
+        "id": "b",
+        "text": "Private calendar"
+      },
+      {
+        "id": "c",
+        "text": "Activity Timeline"
+      },
+      {
+        "id": "d",
+        "text": "Task list"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Public calendars are shared with users or groups so the team sees the same events.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "aec-12",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Connect email and calendar",
+    "type": "single",
+    "stem": "Which feature automatically syncs emails and events between a user's email and Salesforce?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Einstein Activity Capture"
+      },
+      {
+        "id": "b",
+        "text": "Data Loader"
+      },
+      {
+        "id": "c",
+        "text": "Web-to-Lead"
+      },
+      {
+        "id": "d",
+        "text": "Campaign influence"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Einstein Activity Capture syncs emails and events so reps do not have to log them manually.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "aec-13",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Connect email and calendar",
+    "type": "single",
+    "stem": "What do the Outlook and Gmail integrations provide?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A side panel in the email client showing Salesforce records and logging tools"
+      },
+      {
+        "id": "b",
+        "text": "A new Salesforce licence"
+      },
+      {
+        "id": "c",
+        "text": "A new profile"
+      },
+      {
+        "id": "d",
+        "text": "A report type"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The integrations show Salesforce data next to the email and help log emails and create records.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "aec-14",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Create email templates",
+    "type": "single",
+    "stem": "What does a merge field in an email template do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inserts data from a record, such as the contact's name"
+      },
+      {
+        "id": "b",
+        "text": "Merges two accounts"
+      },
+      {
+        "id": "c",
+        "text": "Combines two templates"
+      },
+      {
+        "id": "d",
+        "text": "Deletes the email"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Merge fields pull values from records into the email.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "aec-15",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Create email templates",
+    "type": "single",
+    "stem": "A template shows a blank name when sent. What is the most likely cause?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The field on the record is empty or not accessible"
+      },
+      {
+        "id": "b",
+        "text": "The template is corrupted"
+      },
+      {
+        "id": "c",
+        "text": "The template needs a new letterhead"
+      },
+      {
+        "id": "d",
+        "text": "The user lacks a licence"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Merge fields are filled from record data, so blank fields give blank output.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "aec-16",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Create email templates",
+    "type": "single",
+    "stem": "How should email templates be made available to a team?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Store them in a folder and share the folder"
+      },
+      {
+        "id": "b",
+        "text": "Email them to everyone"
+      },
+      {
+        "id": "c",
+        "text": "Create a profile"
+      },
+      {
+        "id": "d",
+        "text": "Make them private"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Templates are stored in folders, and folder sharing controls who can use them.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "aec-17",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Create email templates",
+    "type": "single",
+    "stem": "What does a letterhead add to an email template?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Branding such as a logo and colours"
+      },
+      {
+        "id": "b",
+        "text": "A merge field"
+      },
+      {
+        "id": "c",
+        "text": "A validation rule"
+      },
+      {
+        "id": "d",
+        "text": "An attachment limit"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A letterhead stores header and footer design for consistent branding.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "aec-18",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Keep activities healthy",
+    "type": "single",
+    "stem": "Managers cannot see what the team has done with a customer. What is the best way to make logging easy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use email integration, Einstein Activity Capture and quick actions"
+      },
+      {
+        "id": "b",
+        "text": "Ask reps to log everything by hand"
+      },
+      {
+        "id": "c",
+        "text": "Hide the timeline"
+      },
+      {
+        "id": "d",
+        "text": "Stop recording calls"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Automating capture beats relying on reps remembering to log, and increases the quality of the history.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "aec-19",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Use shared and recurring activities",
+    "type": "single",
+    "stem": "An event can include up to how many related contacts when shared activities is on?",
+    "options": [
+      {
+        "id": "a",
+        "text": "50"
+      },
+      {
+        "id": "b",
+        "text": "5"
+      },
+      {
+        "id": "c",
+        "text": "500"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Shared activities allows an event to relate to up to 50 contacts.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "aec-20",
+    "moduleId": "activities-email-and-calendars",
+    "examSection": "productivity-collab",
+    "objective": "Tell tasks from events",
+    "type": "single",
+    "stem": "Which statement about tasks is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tasks have a status such as Not Started or Completed"
+      },
+      {
+        "id": "b",
+        "text": "Tasks have a start and end time on a calendar"
+      },
+      {
+        "id": "c",
+        "text": "Tasks cannot be recurring"
+      },
+      {
+        "id": "d",
+        "text": "Tasks cannot be linked to contacts"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Tasks have a status and a due date. They can recur and relate to records.",
+    "difficulty": 1,
+    "tags": []
+  }
+]

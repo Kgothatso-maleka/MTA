@@ -1,0 +1,738 @@
+[
+  {
+    "id": "pbt-01",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Use Prompt Builder",
+    "type": "single",
+    "stem": "What is Prompt Builder?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Setup tool for creating and managing prompt templates"
+      },
+      {
+        "id": "b",
+        "text": "A report tool"
+      },
+      {
+        "id": "c",
+        "text": "A Data Loader feature"
+      },
+      {
+        "id": "d",
+        "text": "A kind of profile"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Prompt Builder lets admins write, ground, test and activate prompt templates.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "pbt-02",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Use Prompt Builder",
+    "type": "single",
+    "stem": "Which template type fills a field with generated text, such as a summary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Field generation"
+      },
+      {
+        "id": "b",
+        "text": "Sales email"
+      },
+      {
+        "id": "c",
+        "text": "Flex"
+      },
+      {
+        "id": "d",
+        "text": "Record summary only for chat"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Field generation templates write text into a field on a record.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "pbt-03",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Use Prompt Builder",
+    "type": "single",
+    "stem": "Which template type drafts an email to a contact or lead?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sales email"
+      },
+      {
+        "id": "b",
+        "text": "Field generation"
+      },
+      {
+        "id": "c",
+        "text": "Record summary"
+      },
+      {
+        "id": "d",
+        "text": "Flex"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Sales email templates generate email drafts from record data.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "pbt-04",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Use Prompt Builder",
+    "type": "single",
+    "stem": "Which template type is general-purpose with inputs you define?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Flex"
+      },
+      {
+        "id": "b",
+        "text": "Sales email"
+      },
+      {
+        "id": "c",
+        "text": "Field generation"
+      },
+      {
+        "id": "d",
+        "text": "Record summary"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Flex templates take custom inputs and are the most general type.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "pbt-05",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Explain grounding",
+    "type": "single",
+    "stem": "What does a merge field do in a prompt template?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inserts data from a record into the prompt"
+      },
+      {
+        "id": "b",
+        "text": "Merges two templates"
+      },
+      {
+        "id": "c",
+        "text": "Merges two accounts"
+      },
+      {
+        "id": "d",
+        "text": "Deletes the prompt"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Merge fields ground the prompt with real data from the record and related records.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "pbt-06",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Explain grounding",
+    "type": "single",
+    "stem": "What is grounding?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adding real company data to the prompt so the answer is based on facts"
+      },
+      {
+        "id": "b",
+        "text": "Training a new model"
+      },
+      {
+        "id": "c",
+        "text": "Hiding sensitive data"
+      },
+      {
+        "id": "d",
+        "text": "Auditing the model"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Grounding supplies data in the prompt. It does not retrain the model.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "pbt-07",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Explain grounding",
+    "type": "single",
+    "stem": "An AI summary is wrong because the account's address is out of date. What should the admin do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fix the data"
+      },
+      {
+        "id": "b",
+        "text": "Retrain the language model"
+      },
+      {
+        "id": "c",
+        "text": "Turn on masking"
+      },
+      {
+        "id": "d",
+        "text": "Rewrite the Trust Layer"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "If the data is wrong, fix the data. Grounding passes along whatever is in the record.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "pbt-08",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Use Prompt Builder",
+    "type": "single",
+    "stem": "Where can an admin check what data was inserted into a prompt before it goes to the model?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The resolved prompt in the preview"
+      },
+      {
+        "id": "b",
+        "text": "The Setup Audit Trail"
+      },
+      {
+        "id": "c",
+        "text": "The report folder"
+      },
+      {
+        "id": "d",
+        "text": "The login history"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Previewing a template shows the resolved prompt with merge fields filled in.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "pbt-09",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Use Prompt Builder",
+    "type": "single",
+    "stem": "What must an admin do for users to use a new prompt template in the app?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Activate a version of the template"
+      },
+      {
+        "id": "b",
+        "text": "Delete the old template"
+      },
+      {
+        "id": "c",
+        "text": "Convert it to a report"
+      },
+      {
+        "id": "d",
+        "text": "Recreate it as a flow"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Templates must be activated before they can be used.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "pbt-10",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Describe the Einstein Trust Layer",
+    "type": "single",
+    "stem": "When a user runs a prompt template, whose data access applies to the merge fields?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The running user's access"
+      },
+      {
+        "id": "b",
+        "text": "Always the admin's access"
+      },
+      {
+        "id": "c",
+        "text": "No access checks apply"
+      },
+      {
+        "id": "d",
+        "text": "The CEO's access"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Trust Layer's secure retrieval respects the user's permissions.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "pbt-11",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Describe the Einstein Trust Layer",
+    "type": "single",
+    "stem": "What is the Einstein Trust Layer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Security and privacy controls around calls to language models"
+      },
+      {
+        "id": "b",
+        "text": "A kind of profile"
+      },
+      {
+        "id": "c",
+        "text": "A report type"
+      },
+      {
+        "id": "d",
+        "text": "A data backup"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "It protects data used with generative AI through retrieval controls, masking, zero data retention, toxicity detection and audit.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "pbt-12",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Describe the Einstein Trust Layer",
+    "type": "single",
+    "stem": "Which Trust Layer feature replaces sensitive values with placeholders before they leave Salesforce?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data masking"
+      },
+      {
+        "id": "b",
+        "text": "Toxicity detection"
+      },
+      {
+        "id": "c",
+        "text": "Audit trail"
+      },
+      {
+        "id": "d",
+        "text": "Prompt activation"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Data masking hides sensitive values from the model and unmasks them in the response.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "pbt-13",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Describe the Einstein Trust Layer",
+    "type": "single",
+    "stem": "What does zero data retention mean?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The model provider does not store your prompts and responses or use them for training"
+      },
+      {
+        "id": "b",
+        "text": "Salesforce deletes your data"
+      },
+      {
+        "id": "c",
+        "text": "No data is ever sent to a model"
+      },
+      {
+        "id": "d",
+        "text": "The audit trail is empty"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Zero data retention is an agreement with the model provider that data is not kept or used to train models.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "pbt-14",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Describe the Einstein Trust Layer",
+    "type": "single",
+    "stem": "Which Trust Layer feature scans responses for harmful content?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Toxicity detection"
+      },
+      {
+        "id": "b",
+        "text": "Data masking"
+      },
+      {
+        "id": "c",
+        "text": "Grounding"
+      },
+      {
+        "id": "d",
+        "text": "Prompt activation"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Toxicity detection checks responses for harmful or inappropriate content.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "pbt-15",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Describe the Einstein Trust Layer",
+    "type": "single",
+    "stem": "Which Trust Layer feature records the prompt, response and feedback for review?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Audit trail"
+      },
+      {
+        "id": "b",
+        "text": "Masking"
+      },
+      {
+        "id": "c",
+        "text": "Grounding"
+      },
+      {
+        "id": "d",
+        "text": "Zero retention"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The audit trail stores what was sent and returned so you can review it.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "pbt-16",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Describe the Einstein Trust Layer",
+    "type": "single",
+    "stem": "A legal team asks if the Trust Layer must be bought separately before go-live. What is the best answer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is built into Agentforce on the Salesforce Platform"
+      },
+      {
+        "id": "b",
+        "text": "It is a separate subscription for each agent"
+      },
+      {
+        "id": "c",
+        "text": "It is a third-party product"
+      },
+      {
+        "id": "d",
+        "text": "It only applies to Slack"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Trust Layer is part of the Agentforce platform architecture rather than a separate add-on.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "pbt-17",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Control AI features and models",
+    "type": "single",
+    "stem": "How can an admin limit who may build or run prompt templates?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Through permission sets for prompt template access"
+      },
+      {
+        "id": "b",
+        "text": "Through page layouts"
+      },
+      {
+        "id": "c",
+        "text": "Through report folders"
+      },
+      {
+        "id": "d",
+        "text": "Through fiscal year"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Access is granted with permissions such as the Prompt Template Manager permission set.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "pbt-18",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Explain why data quality decides AI results",
+    "type": "single",
+    "stem": "Which of these most directly affects the quality of AI summaries of accounts?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Clean, de-duplicated and complete data"
+      },
+      {
+        "id": "b",
+        "text": "The org's logo"
+      },
+      {
+        "id": "c",
+        "text": "The number of dashboards"
+      },
+      {
+        "id": "d",
+        "text": "The fiscal year"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "AI relies on the quality of the data it can see, so duplicates and gaps lead to wrong outputs.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "pbt-19",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Explain why data quality decides AI results",
+    "type": "single",
+    "stem": "Why does the exam give Data and Analytics Management the largest weight, in connection with AI?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Because clean, governed data is the foundation for AI and automation"
+      },
+      {
+        "id": "b",
+        "text": "Because reports are AI"
+      },
+      {
+        "id": "c",
+        "text": "Because dashboards train the model"
+      },
+      {
+        "id": "d",
+        "text": "Because AI replaces data"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Salesforce emphasises that high-quality data underpins automation and AI results.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "pbt-20",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Use AI responsibly",
+    "type": "single",
+    "stem": "Which practice keeps AI responsible for customer-affecting decisions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep a human in the loop and test for bias"
+      },
+      {
+        "id": "b",
+        "text": "Let the AI decide alone"
+      },
+      {
+        "id": "c",
+        "text": "Skip testing to launch faster"
+      },
+      {
+        "id": "d",
+        "text": "Turn off the audit trail"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Human review, transparency and testing help prevent harm.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "pbt-21",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Use AI responsibly",
+    "type": "single",
+    "stem": "Before launching a new AI feature, what is a sensible first step?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Test with real past examples and have the business mark them"
+      },
+      {
+        "id": "b",
+        "text": "Launch to all customers"
+      },
+      {
+        "id": "c",
+        "text": "Delete old data"
+      },
+      {
+        "id": "d",
+        "text": "Turn off permissions"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A dry run with realistic cases catches problems before customers see them.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "pbt-22",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Use AI responsibly",
+    "type": "single",
+    "stem": "Which South African law affects how personal information may be used with AI?",
+    "options": [
+      {
+        "id": "a",
+        "text": "POPIA"
+      },
+      {
+        "id": "b",
+        "text": "GDPR only"
+      },
+      {
+        "id": "c",
+        "text": "No law applies"
+      },
+      {
+        "id": "d",
+        "text": "The fiscal year rules"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "POPIA regulates processing of personal information in South Africa, so check purpose and consent.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "pbt-23",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Use Prompt Builder",
+    "type": "single",
+    "stem": "Which statement about prompts is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Specific prompts with examples and clear refusals give better results"
+      },
+      {
+        "id": "b",
+        "text": "Short vague prompts are best"
+      },
+      {
+        "id": "c",
+        "text": "Prompts never need testing"
+      },
+      {
+        "id": "d",
+        "text": "Prompts cannot use record data"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Clear instructions, examples and boundaries improve outputs.",
+    "difficulty": 1,
+    "tags": []
+  }
+]

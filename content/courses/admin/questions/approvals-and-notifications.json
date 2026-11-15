@@ -1,0 +1,708 @@
+[
+  {
+    "id": "apn-01",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Design an approval process",
+    "type": "single",
+    "stem": "Discounts above 10% must be signed off by the sales manager and recorded. Which tool is designed for this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Approval process"
+      },
+      {
+        "id": "b",
+        "text": "Validation rule"
+      },
+      {
+        "id": "c",
+        "text": "Page layout"
+      },
+      {
+        "id": "d",
+        "text": "Report"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Approval processes route records to approvers in steps and keep a record of each decision.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apn-02",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Design an approval process",
+    "type": "single",
+    "stem": "What do the entry criteria of an approval process do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Decide which records can enter the process"
+      },
+      {
+        "id": "b",
+        "text": "Decide who the approvers are"
+      },
+      {
+        "id": "c",
+        "text": "Lock the record"
+      },
+      {
+        "id": "d",
+        "text": "Send the final email"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Entry criteria define the records that qualify for the process, such as Discount > 10%.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apn-03",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Design an approval process",
+    "type": "multi",
+    "stem": "Which TWO can be approvers in an approval process step? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "The submitter's manager"
+      },
+      {
+        "id": "b",
+        "text": "A queue"
+      },
+      {
+        "id": "c",
+        "text": "A page layout"
+      },
+      {
+        "id": "d",
+        "text": "A report folder"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Approvers can be specific users, the manager, a queue or a related user named in a record field.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "apn-04",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Design an approval process",
+    "type": "single",
+    "stem": "A step has three approvers. The business wants all three to approve. Which setting fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unanimous approval"
+      },
+      {
+        "id": "b",
+        "text": "First response"
+      },
+      {
+        "id": "c",
+        "text": "Delegated approver"
+      },
+      {
+        "id": "d",
+        "text": "Recall"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Unanimous approval requires every approver to approve. First response lets the first reply decide.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "apn-05",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Design an approval process",
+    "type": "single",
+    "stem": "Which setting lets the first approver to respond decide the outcome?",
+    "options": [
+      {
+        "id": "a",
+        "text": "First response"
+      },
+      {
+        "id": "b",
+        "text": "Unanimous"
+      },
+      {
+        "id": "c",
+        "text": "Related user"
+      },
+      {
+        "id": "d",
+        "text": "Queue"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "First response is used when any one of the approvers may decide.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apn-06",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Explain record locking and recall",
+    "type": "single",
+    "stem": "What happens to a record while it awaits approval by default?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is locked"
+      },
+      {
+        "id": "b",
+        "text": "It is deleted"
+      },
+      {
+        "id": "c",
+        "text": "It is shared with everyone"
+      },
+      {
+        "id": "d",
+        "text": "It is archived"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Records are locked so that they cannot be changed during approval. Admins and approvers can still edit.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apn-07",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Explain record locking and recall",
+    "type": "single",
+    "stem": "A submitter realises they entered the wrong amount after submitting. What should they do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Recall the approval request"
+      },
+      {
+        "id": "b",
+        "text": "Delete the approver"
+      },
+      {
+        "id": "c",
+        "text": "Ask the CEO to approve"
+      },
+      {
+        "id": "d",
+        "text": "Create a new profile"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A submitter can recall a request, which unlocks the record for changes.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apn-08",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Explain record locking and recall",
+    "type": "single",
+    "stem": "What is a delegated approver?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Someone who can approve on behalf of an approver"
+      },
+      {
+        "id": "b",
+        "text": "The person who submitted the request"
+      },
+      {
+        "id": "c",
+        "text": "A queue member"
+      },
+      {
+        "id": "d",
+        "text": "An admin who edits the process"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A delegated approver acts for an approver who is away.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "apn-09",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Design an approval process",
+    "type": "multi",
+    "stem": "Which TWO are valid approval actions? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Field update"
+      },
+      {
+        "id": "b",
+        "text": "Email alert"
+      },
+      {
+        "id": "c",
+        "text": "Validation rule"
+      },
+      {
+        "id": "d",
+        "text": "Page layout change"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Approval actions include field updates, email alerts, tasks and outbound messages, at submission, approval, rejection and recall.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "apn-10",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Use assignment, auto-response and escalation rules",
+    "type": "single",
+    "stem": "Which rule decides who OWNS a new case?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assignment rule"
+      },
+      {
+        "id": "b",
+        "text": "Escalation rule"
+      },
+      {
+        "id": "c",
+        "text": "Auto-response rule"
+      },
+      {
+        "id": "d",
+        "text": "Validation rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Assignment rules route new leads and cases to a user or queue.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apn-11",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Use assignment, auto-response and escalation rules",
+    "type": "single",
+    "stem": "A customer submits a case through the website and must receive an immediate acknowledgement. Which rule fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Auto-response rule"
+      },
+      {
+        "id": "b",
+        "text": "Assignment rule"
+      },
+      {
+        "id": "c",
+        "text": "Escalation rule"
+      },
+      {
+        "id": "d",
+        "text": "Approval process"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Auto-response rules send an automatic email to the person who created the case or lead.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apn-12",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Use assignment, auto-response and escalation rules",
+    "type": "single",
+    "stem": "Cases not handled within four hours must be reassigned to a manager. Which rule fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Escalation rule"
+      },
+      {
+        "id": "b",
+        "text": "Assignment rule"
+      },
+      {
+        "id": "c",
+        "text": "Auto-response rule"
+      },
+      {
+        "id": "d",
+        "text": "Validation rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Escalation rules act on cases that are not resolved in time and use business hours to measure it.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apn-13",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Use assignment, auto-response and escalation rules",
+    "type": "single",
+    "stem": "How many case assignment rules can be active at one time?",
+    "options": [
+      {
+        "id": "a",
+        "text": "One"
+      },
+      {
+        "id": "b",
+        "text": "Two"
+      },
+      {
+        "id": "c",
+        "text": "Five"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Only one assignment rule per object can be active at a time, and it can contain many entries.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "apn-14",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Use assignment, auto-response and escalation rules",
+    "type": "single",
+    "stem": "How does an assignment rule choose between its entries?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Entries are checked in order and the first match is used"
+      },
+      {
+        "id": "b",
+        "text": "All entries run together"
+      },
+      {
+        "id": "c",
+        "text": "A random entry is chosen"
+      },
+      {
+        "id": "d",
+        "text": "The newest entry wins"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Rule entries are evaluated in order, and the first matching entry decides the owner.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "apn-15",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Use assignment, auto-response and escalation rules",
+    "type": "single",
+    "stem": "What do escalation rules use to measure how long a case has been open?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Business hours"
+      },
+      {
+        "id": "b",
+        "text": "Fiscal year"
+      },
+      {
+        "id": "c",
+        "text": "Login hours"
+      },
+      {
+        "id": "d",
+        "text": "User time zone only"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Escalation rules calculate time using business hours, so nights and holidays do not count.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "apn-16",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Use email alerts and templates",
+    "type": "single",
+    "stem": "What is an email alert?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A pre-defined email that automation such as a flow or approval process can send"
+      },
+      {
+        "id": "b",
+        "text": "A notification on the home page"
+      },
+      {
+        "id": "c",
+        "text": "A kind of report"
+      },
+      {
+        "id": "d",
+        "text": "A user permission"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "An email alert is configured in Setup with a recipient list and template and used by automation.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apn-17",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Use email alerts and templates",
+    "type": "single",
+    "stem": "What lets an email template insert the customer's name automatically?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Merge fields"
+      },
+      {
+        "id": "b",
+        "text": "A validation rule"
+      },
+      {
+        "id": "c",
+        "text": "A page layout"
+      },
+      {
+        "id": "d",
+        "text": "A role"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Merge fields pull values from records into emails and templates.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apn-18",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Avoid common mistakes",
+    "type": "single",
+    "stem": "Two automations (an old process and a new flow) both email the customer, so they receive two emails. What is the best fix?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Remove or consolidate the duplicate automation"
+      },
+      {
+        "id": "b",
+        "text": "Add another email alert"
+      },
+      {
+        "id": "c",
+        "text": "Change the customer's email"
+      },
+      {
+        "id": "d",
+        "text": "Turn on multi-currency"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Two tools doing the same job is a common problem. Keep a register of automation to find overlaps.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "apn-19",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Choose the right tool",
+    "type": "single",
+    "stem": "Which scenario is BEST handled with an approval process rather than a flow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A purchase request that needs manager sign-off"
+      },
+      {
+        "id": "b",
+        "text": "Setting a default value on save"
+      },
+      {
+        "id": "c",
+        "text": "Creating a task for a new lead"
+      },
+      {
+        "id": "d",
+        "text": "Updating a related account field"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Approval processes are designed for sign-off chains. A flow can submit the record, but the approval process does the routing.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apn-20",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Avoid common mistakes",
+    "type": "single",
+    "stem": "Which is a good way to avoid silent failure in automation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use fault paths and error notifications"
+      },
+      {
+        "id": "b",
+        "text": "Turn off error emails"
+      },
+      {
+        "id": "c",
+        "text": "Test only with one record"
+      },
+      {
+        "id": "d",
+        "text": "Skip documentation"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Plan the failure path so someone is told when automation breaks.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apn-21",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Choose the right tool",
+    "type": "single",
+    "stem": "A flow could submit a record for approval. Which statement is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A flow can use the Submit for Approval action to start an approval process"
+      },
+      {
+        "id": "b",
+        "text": "Flows replace approval processes entirely"
+      },
+      {
+        "id": "c",
+        "text": "Approval processes can only be started manually"
+      },
+      {
+        "id": "d",
+        "text": "Flows cannot interact with approvals"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A record-triggered flow can submit a record automatically, and the approval process then handles the routing.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "apn-22",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Use assignment, auto-response and escalation rules",
+    "type": "single",
+    "stem": "Which object types can have case-style escalation rules? ",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cases"
+      },
+      {
+        "id": "b",
+        "text": "Opportunities"
+      },
+      {
+        "id": "c",
+        "text": "Accounts"
+      },
+      {
+        "id": "d",
+        "text": "Reports"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Escalation rules apply to cases.",
+    "difficulty": 1,
+    "tags": []
+  }
+]

@@ -1,0 +1,642 @@
+[
+  {
+    "id": "kos-01",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Explain Salesforce Knowledge",
+    "type": "single",
+    "stem": "What is a Knowledge article?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A trusted piece of information such as a how-to or fix"
+      },
+      {
+        "id": "b",
+        "text": "A support case"
+      },
+      {
+        "id": "c",
+        "text": "A report"
+      },
+      {
+        "id": "d",
+        "text": "A permission set"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Knowledge articles are approved answers that agents and customers can search.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "kos-02",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Explain Salesforce Knowledge",
+    "type": "single",
+    "stem": "How does Lightning Knowledge store different kinds of articles, such as FAQ and How-to?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As record types on a single Knowledge object"
+      },
+      {
+        "id": "b",
+        "text": "As separate objects for each type"
+      },
+      {
+        "id": "c",
+        "text": "As page layouts"
+      },
+      {
+        "id": "d",
+        "text": "As profiles"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Lightning Knowledge uses one Knowledge object, and you create different article types with record types.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "kos-03",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Explain Salesforce Knowledge",
+    "type": "single",
+    "stem": "Which feature license do users need to create and manage Knowledge articles?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Knowledge User"
+      },
+      {
+        "id": "b",
+        "text": "Marketing User"
+      },
+      {
+        "id": "c",
+        "text": "Chatter Free"
+      },
+      {
+        "id": "d",
+        "text": "Flow User"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Knowledge User feature license is needed to author and manage articles.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "kos-04",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Explain the article lifecycle",
+    "type": "single",
+    "stem": "What is the usual lifecycle of a Knowledge article?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Draft, published, archived"
+      },
+      {
+        "id": "b",
+        "text": "Open, closed, deleted"
+      },
+      {
+        "id": "c",
+        "text": "Lead, opportunity, closed"
+      },
+      {
+        "id": "d",
+        "text": "New, working, escalated"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Articles start as drafts, are published for users, and are archived when they are out of date.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "kos-05",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Explain the article lifecycle",
+    "type": "single",
+    "stem": "A published article needs a correction. What should the author do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Edit it to create a new version, then publish"
+      },
+      {
+        "id": "b",
+        "text": "Delete the org"
+      },
+      {
+        "id": "c",
+        "text": "Recreate the whole Knowledge object"
+      },
+      {
+        "id": "d",
+        "text": "Change the user's profile"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Editing a published article creates a new version that is published after review.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "kos-06",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Control who can see articles",
+    "type": "single",
+    "stem": "Which feature controls which users can see which articles, using a folder-like hierarchy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data categories"
+      },
+      {
+        "id": "b",
+        "text": "Record types"
+      },
+      {
+        "id": "c",
+        "text": "Channels"
+      },
+      {
+        "id": "d",
+        "text": "Page layouts"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Data categories organise articles and control visibility by user or role.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "kos-07",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Control who can see articles",
+    "type": "single",
+    "stem": "Which feature controls where an article is published, such as internal app or customer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Channels"
+      },
+      {
+        "id": "b",
+        "text": "Data categories"
+      },
+      {
+        "id": "c",
+        "text": "Record types"
+      },
+      {
+        "id": "d",
+        "text": "Roles"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Channels decide whether an article is available internally, to partners, customers or the public.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "kos-08",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Control who can see articles",
+    "type": "single",
+    "stem": "Which feature decides the type and layout of an article, such as FAQ or Troubleshooting?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Record types"
+      },
+      {
+        "id": "b",
+        "text": "Channels"
+      },
+      {
+        "id": "c",
+        "text": "Data categories"
+      },
+      {
+        "id": "d",
+        "text": "Queues"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Record types on the Knowledge object define article types and layouts.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "kos-09",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Use Knowledge on cases",
+    "type": "single",
+    "stem": "An agent wants to send the customer an approved answer while working a case. What should they do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Search and attach a Knowledge article to the case"
+      },
+      {
+        "id": "b",
+        "text": "Write a new answer each time"
+      },
+      {
+        "id": "c",
+        "text": "Create a new queue"
+      },
+      {
+        "id": "d",
+        "text": "Merge the case"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Agents can search for articles in the case page and attach or send them.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "kos-10",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Describe Omni-Channel",
+    "type": "single",
+    "stem": "What does Omni-Channel do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Routes work such as cases and chats to available agents"
+      },
+      {
+        "id": "b",
+        "text": "Creates reports"
+      },
+      {
+        "id": "c",
+        "text": "Imports data"
+      },
+      {
+        "id": "d",
+        "text": "Controls login"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Omni-Channel pushes work to agents based on capacity, presence and routing rules.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "kos-11",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Describe Omni-Channel",
+    "type": "single",
+    "stem": "What does an agent's presence status tell Omni-Channel?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Whether the agent is available to receive work"
+      },
+      {
+        "id": "b",
+        "text": "The agent's profile"
+      },
+      {
+        "id": "c",
+        "text": "The agent's role"
+      },
+      {
+        "id": "d",
+        "text": "The agent's licence"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Presence statuses such as Available or On Break control when work can be routed to the agent.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "kos-12",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Describe Omni-Channel",
+    "type": "single",
+    "stem": "What does capacity control in Omni-Channel?",
+    "options": [
+      {
+        "id": "a",
+        "text": "How much work an agent can handle at once"
+      },
+      {
+        "id": "b",
+        "text": "Who can see the queue"
+      },
+      {
+        "id": "c",
+        "text": "How many cases a customer can open"
+      },
+      {
+        "id": "d",
+        "text": "How many articles exist"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Capacity defines the number of work items an agent can carry at the same time.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "kos-13",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Describe Omni-Channel",
+    "type": "single",
+    "stem": "Which Omni-Channel feature matches work to agents who have specific expertise?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Skills-based routing"
+      },
+      {
+        "id": "b",
+        "text": "Queue-based routing only"
+      },
+      {
+        "id": "c",
+        "text": "Assignment rules"
+      },
+      {
+        "id": "d",
+        "text": "Escalation rules"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Skills-based routing routes work to agents with the required skills.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "kos-14",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Describe Omni-Channel",
+    "type": "single",
+    "stem": "Agents are not receiving routed cases. What should you check first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Queue, routing configuration, service channel and agent presence"
+      },
+      {
+        "id": "b",
+        "text": "Page layouts"
+      },
+      {
+        "id": "c",
+        "text": "Report folders"
+      },
+      {
+        "id": "d",
+        "text": "Fiscal year"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Omni-Channel needs a queue, routing configuration, service channel and a presence status that allows work.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "kos-15",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Describe digital channels",
+    "type": "single",
+    "stem": "Which channel lets customers chat with an agent in a web or in-app window?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Messaging"
+      },
+      {
+        "id": "b",
+        "text": "Web-to-Lead"
+      },
+      {
+        "id": "c",
+        "text": "Reports"
+      },
+      {
+        "id": "d",
+        "text": "Campaigns"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Messaging connects chat on web, in-app and messaging apps to Salesforce.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "kos-16",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Describe digital channels",
+    "type": "single",
+    "stem": "Which Salesforce site offers customers a branded self-service portal with knowledge and cases?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Experience Cloud"
+      },
+      {
+        "id": "b",
+        "text": "Marketing Cloud"
+      },
+      {
+        "id": "c",
+        "text": "Flow Orchestrator"
+      },
+      {
+        "id": "d",
+        "text": "Sandbox"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Experience Cloud sites let customers and partners log in and help themselves.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "kos-17",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Choose the right service tool",
+    "type": "single",
+    "stem": "Customers keep asking the same question. What is the best long-term fix?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Write a Knowledge article and publish it on a help site"
+      },
+      {
+        "id": "b",
+        "text": "Add more agents"
+      },
+      {
+        "id": "c",
+        "text": "Build a new object"
+      },
+      {
+        "id": "d",
+        "text": "Escalate every case"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Knowledge reduces repeat contacts and helps customers solve problems themselves.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "kos-18",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Measure service success",
+    "type": "single",
+    "stem": "What is self-service deflection?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Customers solving problems themselves without creating a case"
+      },
+      {
+        "id": "b",
+        "text": "Escalating a case"
+      },
+      {
+        "id": "c",
+        "text": "Merging cases"
+      },
+      {
+        "id": "d",
+        "text": "Routing cases to a queue"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Deflection is when customers find the answer on their own, reducing case volume.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "kos-19",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Measure service success",
+    "type": "single",
+    "stem": "Which metric measures customer happiness after a service interaction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "CSAT"
+      },
+      {
+        "id": "b",
+        "text": "Capacity"
+      },
+      {
+        "id": "c",
+        "text": "Case number"
+      },
+      {
+        "id": "d",
+        "text": "Presence"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Customer satisfaction scores come from surveys after service.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "kos-20",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Choose the right service tool",
+    "type": "single",
+    "stem": "A known fault affects hundreds of customers. Which pair helps the team handle it efficiently?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A parent case with linked child cases, and a knowledge article"
+      },
+      {
+        "id": "b",
+        "text": "A new profile and a role"
+      },
+      {
+        "id": "c",
+        "text": "A new price book and a quote"
+      },
+      {
+        "id": "d",
+        "text": "A sandbox and a change set"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Link the reports to one parent case and give agents and customers one article to use.",
+    "difficulty": 2,
+    "tags": []
+  }
+]
