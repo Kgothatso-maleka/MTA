@@ -1,0 +1,804 @@
+[
+  {
+    "id": "rpt-01",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Choose between report formats",
+    "type": "single",
+    "stem": "Which report format displays records in a plain list with no grouping or subtotals?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tabular"
+      },
+      {
+        "id": "b",
+        "text": "Summary"
+      },
+      {
+        "id": "c",
+        "text": "Matrix"
+      },
+      {
+        "id": "d",
+        "text": "Joined"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Tabular reports are simple lists, like a spreadsheet. Summary reports add grouping and subtotals.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "rpt-02",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Choose between report formats",
+    "type": "single",
+    "stem": "A manager wants opportunities grouped by stage with subtotals for each stage. Which format fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Summary"
+      },
+      {
+        "id": "b",
+        "text": "Tabular"
+      },
+      {
+        "id": "c",
+        "text": "Joined"
+      },
+      {
+        "id": "d",
+        "text": "None, a dashboard is needed"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Summary reports group rows by a field and show subtotals.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "rpt-03",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Choose between report formats",
+    "type": "single",
+    "stem": "A manager wants Amount by owner in rows and by quarter in columns. Which format fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Matrix"
+      },
+      {
+        "id": "b",
+        "text": "Tabular"
+      },
+      {
+        "id": "c",
+        "text": "Summary"
+      },
+      {
+        "id": "d",
+        "text": "Joined"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A matrix groups by both rows and columns, like a pivot table.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "rpt-04",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Choose between report formats",
+    "type": "single",
+    "stem": "Which report format lets you show opportunities and cases side by side in separate blocks?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Joined"
+      },
+      {
+        "id": "b",
+        "text": "Matrix"
+      },
+      {
+        "id": "c",
+        "text": "Summary"
+      },
+      {
+        "id": "d",
+        "text": "Tabular"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Joined reports combine up to five blocks, each from a report type, matched on shared fields.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "rpt-05",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Choose between report formats",
+    "type": "single",
+    "stem": "Which of these cannot be used as the source report for a dashboard component?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A joined report"
+      },
+      {
+        "id": "b",
+        "text": "A summary report"
+      },
+      {
+        "id": "c",
+        "text": "A matrix report"
+      },
+      {
+        "id": "d",
+        "text": "A tabular report with a row limit"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Joined reports cannot feed dashboard components. Use summary or matrix reports for charts.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "rpt-06",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Explain how a report type works",
+    "type": "single",
+    "stem": "What does the report type determine?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Which objects and fields the report can use"
+      },
+      {
+        "id": "b",
+        "text": "Who can see the report"
+      },
+      {
+        "id": "c",
+        "text": "How often the report refreshes"
+      },
+      {
+        "id": "d",
+        "text": "Which dashboard it appears on"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The report type is the template that defines the available objects, relationships and fields.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "rpt-07",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Build a custom report type",
+    "type": "single",
+    "stem": "The sales director wants a report listing all accounts, including those with no opportunities. How should the custom report type relate Accounts to Opportunities?",
+    "options": [
+      {
+        "id": "a",
+        "text": "\"A\" records with or without \"B\" records"
+      },
+      {
+        "id": "b",
+        "text": "\"A\" records with \"B\" records"
+      },
+      {
+        "id": "c",
+        "text": "\"B\" records only"
+      },
+      {
+        "id": "d",
+        "text": "Use a joined report"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "\"With or without\" returns every primary record. \"With\" returns only primary records that have related ones.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "rpt-08",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Build a custom report type",
+    "type": "single",
+    "stem": "What does the \"Accounts with Opportunities\" relationship return?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only accounts that have at least one opportunity"
+      },
+      {
+        "id": "b",
+        "text": "All accounts"
+      },
+      {
+        "id": "c",
+        "text": "Only opportunities with no account"
+      },
+      {
+        "id": "d",
+        "text": "Accounts without opportunities"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "\"With\" is an inner join: records with no related records are left out.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "rpt-09",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Build a custom report type",
+    "type": "single",
+    "stem": "How many objects can be linked in a single custom report type?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Four"
+      },
+      {
+        "id": "b",
+        "text": "Two"
+      },
+      {
+        "id": "c",
+        "text": "Six"
+      },
+      {
+        "id": "d",
+        "text": "Ten"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A custom report type can include a primary object and up to three more, so four in total.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "rpt-10",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Build a custom report type",
+    "type": "single",
+    "stem": "A custom report type is set to In Development. Who can use it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only users who can manage it (admins) until it is deployed"
+      },
+      {
+        "id": "b",
+        "text": "All users"
+      },
+      {
+        "id": "c",
+        "text": "No one"
+      },
+      {
+        "id": "d",
+        "text": "Only external users"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "In Development hides the report type from regular users. Set it to Deployed to make it available.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "rpt-11",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Use filters, bucket fields and formulas",
+    "type": "single",
+    "stem": "Which feature finds accounts that have no activities in the last 30 days?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cross filter with \"without\" activities"
+      },
+      {
+        "id": "b",
+        "text": "A bucket field"
+      },
+      {
+        "id": "c",
+        "text": "A summary formula"
+      },
+      {
+        "id": "d",
+        "text": "A dashboard filter"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A cross filter includes or excludes records based on related records, such as accounts without activities.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "rpt-12",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Use filters, bucket fields and formulas",
+    "type": "single",
+    "stem": "What does a bucket field let you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Group values into categories without writing a formula"
+      },
+      {
+        "id": "b",
+        "text": "Combine two reports"
+      },
+      {
+        "id": "c",
+        "text": "Store data in a custom object"
+      },
+      {
+        "id": "d",
+        "text": "Schedule a report"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A bucket field groups values, such as amounts into Small, Medium and Large, directly in the report.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "rpt-13",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Use filters, bucket fields and formulas",
+    "type": "single",
+    "stem": "Which formula type calculates a value for each individual record in a report?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Row-level formula"
+      },
+      {
+        "id": "b",
+        "text": "Summary formula"
+      },
+      {
+        "id": "c",
+        "text": "Roll-up summary"
+      },
+      {
+        "id": "d",
+        "text": "Validation formula"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A row-level formula works per record. A summary formula works on grouped totals.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "rpt-14",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Use filters, bucket fields and formulas",
+    "type": "single",
+    "stem": "The PREVGROUPVAL function is used in which kind of report formula?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Summary formula"
+      },
+      {
+        "id": "b",
+        "text": "Row-level formula"
+      },
+      {
+        "id": "c",
+        "text": "Validation rule"
+      },
+      {
+        "id": "d",
+        "text": "Flow formula"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "PREVGROUPVAL compares a grouped value with the previous group, so it belongs in summary formulas.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "rpt-15",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Explain how sharing and folders affect reports",
+    "type": "single",
+    "stem": "A regional manager and the CEO open the same report. The manager sees fewer rows. Why?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reports run as the viewer, so the sharing model limits the rows each person sees"
+      },
+      {
+        "id": "b",
+        "text": "The report is broken"
+      },
+      {
+        "id": "c",
+        "text": "The manager's folder has fewer records"
+      },
+      {
+        "id": "d",
+        "text": "Reports only show 50 rows to managers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Reports show only the records the viewer can access through sharing and field-level security.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "rpt-16",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Explain how sharing and folders affect reports",
+    "type": "single",
+    "stem": "Which statement about report folders is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Folder access controls who can open, edit or manage the report, not which records they can see"
+      },
+      {
+        "id": "b",
+        "text": "Folder access overrides the sharing model"
+      },
+      {
+        "id": "c",
+        "text": "Folders give access to all records in the report"
+      },
+      {
+        "id": "d",
+        "text": "Folders can only be shared with one user"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A folder decides access to the report itself. The data is still limited by the user's record access.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "rpt-17",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Explain how sharing and folders affect reports",
+    "type": "multi",
+    "stem": "Which TWO can a report folder be shared with? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Roles"
+      },
+      {
+        "id": "b",
+        "text": "Public groups"
+      },
+      {
+        "id": "c",
+        "text": "Page layouts"
+      },
+      {
+        "id": "d",
+        "text": "Record types"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Folders can be shared with individual users, roles and public groups, each with Viewer, Editor or Manager access.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "rpt-18",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Explain how sharing and folders affect reports",
+    "type": "single",
+    "stem": "Which folder access level lets a user edit and share the folder's contents?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Manager"
+      },
+      {
+        "id": "b",
+        "text": "Viewer"
+      },
+      {
+        "id": "c",
+        "text": "Reader"
+      },
+      {
+        "id": "d",
+        "text": "Subscriber"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Folder access levels are Viewer, Editor and Manager. Managers can also change who the folder is shared with.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "rpt-19",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Track change over time",
+    "type": "single",
+    "stem": "What does a reporting snapshot do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Runs a report on a schedule and saves the results to a custom object"
+      },
+      {
+        "id": "b",
+        "text": "Takes a screenshot of a dashboard"
+      },
+      {
+        "id": "c",
+        "text": "Backs up the whole org"
+      },
+      {
+        "id": "d",
+        "text": "Emails the report as a PDF"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A reporting snapshot stores results from a tabular or summary report in a custom object, so you can report on trends over time.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "rpt-20",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Track change over time",
+    "type": "multi",
+    "stem": "Historical trend reporting is available for which TWO objects? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Opportunities"
+      },
+      {
+        "id": "b",
+        "text": "Cases"
+      },
+      {
+        "id": "c",
+        "text": "Accounts"
+      },
+      {
+        "id": "d",
+        "text": "Contacts"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Historical trend reporting covers opportunities, cases and forecasts.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "rpt-21",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Track change over time",
+    "type": "single",
+    "stem": "The director wants to see how total pipeline changed week by week over the last quarter. Which tool is designed for this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A reporting snapshot or historical trend reporting"
+      },
+      {
+        "id": "b",
+        "text": "A bucket field"
+      },
+      {
+        "id": "c",
+        "text": "A joined report"
+      },
+      {
+        "id": "d",
+        "text": "A cross filter"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Standard reports show data as of now. Snapshots and historical trend reporting store or track past values.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "rpt-22",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Use subscriptions",
+    "type": "single",
+    "stem": "A user wants an email each Monday only if open pipeline falls below a target. Which feature fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A report subscription with a condition"
+      },
+      {
+        "id": "b",
+        "text": "A dashboard filter"
+      },
+      {
+        "id": "c",
+        "text": "A reporting snapshot"
+      },
+      {
+        "id": "d",
+        "text": "A matrix report"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Report subscriptions can email results on a schedule and can include conditions that must be met before the email is sent.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "rpt-23",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Use filters, bucket fields and formulas",
+    "type": "single",
+    "stem": "Which filter lets viewers narrow results to the current quarter using a date field?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The standard date range filter"
+      },
+      {
+        "id": "b",
+        "text": "A bucket field"
+      },
+      {
+        "id": "c",
+        "text": "A summary formula"
+      },
+      {
+        "id": "d",
+        "text": "A report type"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Standard filters include a date field and range, such as Current FQ.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "rpt-24",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Use filters, bucket fields and formulas",
+    "type": "single",
+    "stem": "Filter logic such as 1 AND (2 OR 3) lets you:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Combine field filters in a custom way"
+      },
+      {
+        "id": "b",
+        "text": "Group rows in a matrix"
+      },
+      {
+        "id": "c",
+        "text": "Control folder access"
+      },
+      {
+        "id": "d",
+        "text": "Schedule a report"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Filter logic uses the numbered filters to control how they combine.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "rpt-25",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Explain how sharing and folders affect reports",
+    "type": "single",
+    "stem": "Which statement about the report type and a user's field access is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A field appears in the report only if the report type includes it and the user has access to it"
+      },
+      {
+        "id": "b",
+        "text": "Every field on the object always appears"
+      },
+      {
+        "id": "c",
+        "text": "Field-level security is ignored in reports"
+      },
+      {
+        "id": "d",
+        "text": "Users can see any field in a report they open"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A report shows fields that the report type offers and that the viewer's field-level security allows.",
+    "difficulty": 3,
+    "tags": []
+  }
+]

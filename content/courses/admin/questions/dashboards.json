@@ -1,0 +1,707 @@
+[
+  {
+    "id": "dsh-01",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Describe what a dashboard is",
+    "type": "single",
+    "stem": "Where does a dashboard component get its data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "From a source report"
+      },
+      {
+        "id": "b",
+        "text": "Directly from an object"
+      },
+      {
+        "id": "c",
+        "text": "From a page layout"
+      },
+      {
+        "id": "d",
+        "text": "From a permission set"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Every component is built from a report. You must create the report before the component.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsh-02",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Describe what a dashboard is",
+    "type": "single",
+    "stem": "How many source reports can one dashboard component use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "One"
+      },
+      {
+        "id": "b",
+        "text": "Two"
+      },
+      {
+        "id": "c",
+        "text": "Up to five"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Each component is based on exactly one source report. Use several components for several reports.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsh-03",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Describe what a dashboard is",
+    "type": "single",
+    "stem": "What is the maximum number of components on one dashboard?",
+    "options": [
+      {
+        "id": "a",
+        "text": "20"
+      },
+      {
+        "id": "b",
+        "text": "10"
+      },
+      {
+        "id": "c",
+        "text": "50"
+      },
+      {
+        "id": "d",
+        "text": "5"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A dashboard can have up to 20 components.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsh-04",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Choose the right component",
+    "type": "single",
+    "stem": "Which component shows one number measured against a target with coloured ranges?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gauge"
+      },
+      {
+        "id": "b",
+        "text": "Metric"
+      },
+      {
+        "id": "c",
+        "text": "Table"
+      },
+      {
+        "id": "d",
+        "text": "Funnel chart"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A gauge shows a value against a target and uses colour bands such as red, yellow and green.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsh-05",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Choose the right component",
+    "type": "single",
+    "stem": "Which component shows a single large number, such as total open pipeline?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Metric"
+      },
+      {
+        "id": "b",
+        "text": "Gauge"
+      },
+      {
+        "id": "c",
+        "text": "Chart"
+      },
+      {
+        "id": "d",
+        "text": "Table"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A metric displays one number without a scale or target.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsh-06",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Choose the right component",
+    "type": "single",
+    "stem": "Which component is best for showing the top five open deals as a ranked list?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Table"
+      },
+      {
+        "id": "b",
+        "text": "Gauge"
+      },
+      {
+        "id": "c",
+        "text": "Metric"
+      },
+      {
+        "id": "d",
+        "text": "Donut chart"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A table lists records in rows, which suits a short ranked list.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsh-07",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Choose the right component",
+    "type": "single",
+    "stem": "Which component is best for comparing pipeline across stages?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chart"
+      },
+      {
+        "id": "b",
+        "text": "Metric"
+      },
+      {
+        "id": "c",
+        "text": "Gauge"
+      },
+      {
+        "id": "d",
+        "text": "Table of notes"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Charts such as bar and column compare groups. Metrics and gauges show one number.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsh-08",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Explain the running user",
+    "type": "single",
+    "stem": "What does the running user of a dashboard decide?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Whose data access determines what everyone sees on the dashboard"
+      },
+      {
+        "id": "b",
+        "text": "Who can edit the dashboard"
+      },
+      {
+        "id": "c",
+        "text": "Which folder it is stored in"
+      },
+      {
+        "id": "d",
+        "text": "The refresh time"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The dashboard runs its reports as the running user, so viewers see that person's view of the data.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsh-09",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Explain the running user",
+    "type": "single",
+    "stem": "The running user of a dashboard is the CEO, who can see all records. What do regional managers who open it see?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The CEO's view of the data, including records they cannot normally see"
+      },
+      {
+        "id": "b",
+        "text": "Only their own region's data"
+      },
+      {
+        "id": "c",
+        "text": "Nothing, they need CEO permissions"
+      },
+      {
+        "id": "d",
+        "text": "An error"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Viewers see what the running user can see. To restrict by viewer, use a dynamic dashboard.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsh-10",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Explain the running user",
+    "type": "single",
+    "stem": "Each regional manager must see only the data they are allowed to see on one shared dashboard. What should the admin use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A dynamic dashboard, run as the logged-in user"
+      },
+      {
+        "id": "b",
+        "text": "A dashboard with the CEO as running user"
+      },
+      {
+        "id": "c",
+        "text": "A joined report"
+      },
+      {
+        "id": "d",
+        "text": "A reporting snapshot"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A dynamic dashboard runs as the person viewing it, so everyone sees their own data.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsh-11",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Explain the running user",
+    "type": "single",
+    "stem": "Which statement about dynamic dashboards is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They cannot be scheduled to refresh"
+      },
+      {
+        "id": "b",
+        "text": "They can be scheduled to refresh daily"
+      },
+      {
+        "id": "c",
+        "text": "They cannot be viewed by managers"
+      },
+      {
+        "id": "d",
+        "text": "They always run as the CEO"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Viewers refresh dynamic dashboards manually. Dashboards with a specific running user can be scheduled.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsh-12",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Use filters, refresh and subscriptions",
+    "type": "single",
+    "stem": "The sales director wants the same figures emailed to the team every Monday morning, refreshed automatically. Which setup fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A dashboard with a specific running user, scheduled and subscribed"
+      },
+      {
+        "id": "b",
+        "text": "A dynamic dashboard"
+      },
+      {
+        "id": "c",
+        "text": "A joined report"
+      },
+      {
+        "id": "d",
+        "text": "A matrix report with no dashboard"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Only dashboards with a specific running user can be scheduled to refresh and then sent through subscriptions.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "dsh-13",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Use filters, refresh and subscriptions",
+    "type": "single",
+    "stem": "How many filters can a dashboard have?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Three"
+      },
+      {
+        "id": "b",
+        "text": "One"
+      },
+      {
+        "id": "c",
+        "text": "Five"
+      },
+      {
+        "id": "d",
+        "text": "Ten"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A dashboard supports up to three filters, which update all components.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsh-14",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Describe what a dashboard is",
+    "type": "single",
+    "stem": "A dashboard is used to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "View data from reports visually, without editing it"
+      },
+      {
+        "id": "b",
+        "text": "Enter and edit records"
+      },
+      {
+        "id": "c",
+        "text": "Define validation rules"
+      },
+      {
+        "id": "d",
+        "text": "Import data"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Dashboards are read-only views of report data.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsh-15",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Explain who can see a dashboard",
+    "type": "single",
+    "stem": "A user can open the dashboard folder but not the folder holding its source report. What can they do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "View the dashboard but not open the underlying report"
+      },
+      {
+        "id": "b",
+        "text": "Nothing"
+      },
+      {
+        "id": "c",
+        "text": "Edit the source report"
+      },
+      {
+        "id": "d",
+        "text": "View the report but not the dashboard"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Dashboard folder access lets them see the dashboard. Opening the source report needs access to its folder.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "dsh-16",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Design a dashboard people use",
+    "type": "single",
+    "stem": "A manager says the dashboard numbers look wrong. In what order should the admin check?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Running user, source report filters, last refresh time"
+      },
+      {
+        "id": "b",
+        "text": "Page layout, record types, profile"
+      },
+      {
+        "id": "c",
+        "text": "Validation rules, flows, apps"
+      },
+      {
+        "id": "d",
+        "text": "Recycle Bin, merge, mass delete"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "These three explain most complaints: who the dashboard runs as, what the report is filtered to, and how old the data is.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsh-17",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Explain the running user",
+    "type": "multi",
+    "stem": "Which TWO statements about dynamic dashboards are true? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Each viewer sees data based on their own access"
+      },
+      {
+        "id": "b",
+        "text": "They cannot be scheduled to refresh"
+      },
+      {
+        "id": "c",
+        "text": "Everyone sees the same figures"
+      },
+      {
+        "id": "d",
+        "text": "They can use joined reports as sources"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Dynamic dashboards run as the viewer and must be refreshed manually. They do not give everyone identical figures, and joined reports are never valid sources.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsh-18",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Describe what a dashboard is",
+    "type": "single",
+    "stem": "Which of these can be used directly as the data source of a dashboard component?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A report"
+      },
+      {
+        "id": "b",
+        "text": "An object"
+      },
+      {
+        "id": "c",
+        "text": "A permission set"
+      },
+      {
+        "id": "d",
+        "text": "A page layout"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Components use reports. Build the report first, then add the component.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsh-19",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Design a dashboard people use",
+    "type": "single",
+    "stem": "What is a good first step when designing a new dashboard?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Decide what question and decision the audience needs it for"
+      },
+      {
+        "id": "b",
+        "text": "Add all 20 components"
+      },
+      {
+        "id": "c",
+        "text": "Choose the brightest colours"
+      },
+      {
+        "id": "d",
+        "text": "Pick the running user last without testing"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Start from the audience and the decision. A focused dashboard of five to eight components is more useful than a crowded one.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsh-20",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Use filters, refresh and subscriptions",
+    "type": "single",
+    "stem": "Which of the following best describes a dashboard filter?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A control that lets viewers narrow all components, for example by owner"
+      },
+      {
+        "id": "b",
+        "text": "A filter inside one report only"
+      },
+      {
+        "id": "c",
+        "text": "A security setting"
+      },
+      {
+        "id": "d",
+        "text": "A way to hide the dashboard"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Dashboard filters change all components at once, within the limit of three filters.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsh-21",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Explain who can see a dashboard",
+    "type": "single",
+    "stem": "Who decides which folders a dashboard can be viewed from?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The folder's sharing settings (Viewer, Editor, Manager)"
+      },
+      {
+        "id": "b",
+        "text": "The page layout"
+      },
+      {
+        "id": "c",
+        "text": "The record type"
+      },
+      {
+        "id": "d",
+        "text": "The validation rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Dashboards live in folders, and folder sharing controls who can open or edit them.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsh-22",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Choose the right component",
+    "type": "single",
+    "stem": "A dashboard component needs a chart of opportunities grouped by stage. Which source report format is most suitable?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Summary"
+      },
+      {
+        "id": "b",
+        "text": "Joined"
+      },
+      {
+        "id": "c",
+        "text": "A report with no grouping and no row limit"
+      },
+      {
+        "id": "d",
+        "text": "A report with no records"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Charts need grouped data, so a summary or matrix report is the right source. Joined reports cannot be sources.",
+    "difficulty": 2,
+    "tags": []
+  }
+]

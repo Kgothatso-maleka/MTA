@@ -5,18 +5,57 @@
     "guideVersion": "Admin, effective 2025-12-15",
     "questionCount": 60,
     "timeLimitMinutes": 105,
-    "passPercent": 65,
+    "passPercent": 68,
     "readyMarginPoints": 10,
     "sections": [
-      { "id": "config-setup", "name": "Configuration and Setup", "weight": 15 },
-      { "id": "object-manager", "name": "Object Manager and Lightning App Builder", "weight": 15 },
-      { "id": "automation", "name": "Automation", "weight": 15 },
-      { "id": "data-analytics", "name": "Data and Analytics Management", "weight": 17 },
-      { "id": "sales-marketing", "name": "Sales and Marketing Applications", "weight": 10 },
-      { "id": "service-support", "name": "Service and Support Applications", "weight": 10 },
-      { "id": "productivity-collab", "name": "Productivity and Collaboration", "weight": 10 },
-      { "id": "agentforce-ai", "name": "Agentforce AI", "weight": 8 }
+      {
+        "id": "config-setup",
+        "name": "Configuration and Setup",
+        "weight": 15
+      },
+      {
+        "id": "object-manager",
+        "name": "Object Manager and Lightning App Builder",
+        "weight": 15
+      },
+      {
+        "id": "automation",
+        "name": "Automation",
+        "weight": 15
+      },
+      {
+        "id": "data-analytics",
+        "name": "Data and Analytics Management",
+        "weight": 17
+      },
+      {
+        "id": "sales-marketing",
+        "name": "Sales and Marketing Applications",
+        "weight": 10
+      },
+      {
+        "id": "service-support",
+        "name": "Service and Support Applications",
+        "weight": 10
+      },
+      {
+        "id": "productivity-collab",
+        "name": "Productivity and Collaboration",
+        "weight": 10
+      },
+      {
+        "id": "agentforce-ai",
+        "name": "Agentforce AI",
+        "weight": 8
+      }
     ]
   },
-  "moduleIds": ["objects-and-fields", "profiles-and-permission-sets"]
+  "moduleIds": [
+    "objects-and-fields",
+    "profiles-and-permission-sets",
+    "data-import-export",
+    "duplicates-and-data-quality",
+    "reports",
+    "dashboards"
+  ]
 }

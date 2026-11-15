@@ -1,0 +1,739 @@
+[
+  {
+    "id": "ddq-01",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Tell matching rules and duplicate rules apart",
+    "type": "single",
+    "stem": "What does a matching rule do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Defines how Salesforce decides two records are alike"
+      },
+      {
+        "id": "b",
+        "text": "Blocks users from saving duplicates"
+      },
+      {
+        "id": "c",
+        "text": "Merges duplicate records automatically"
+      },
+      {
+        "id": "d",
+        "text": "Deletes the older record"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A matching rule compares fields (exact or fuzzy) to identify possible duplicates. It does not take any action by itself.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "ddq-02",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Tell matching rules and duplicate rules apart",
+    "type": "single",
+    "stem": "What does a duplicate rule do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Defines what happens when a duplicate is found"
+      },
+      {
+        "id": "b",
+        "text": "Defines which fields are compared"
+      },
+      {
+        "id": "c",
+        "text": "Imports records from a CSV"
+      },
+      {
+        "id": "d",
+        "text": "Calculates a field's value"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A duplicate rule sets the action (alert, report or block) when a matching rule finds a match.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "ddq-03",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Configure duplicate rules",
+    "type": "single",
+    "stem": "The sales director wants to stop reps creating a second account with the same name and city. What should the admin configure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A duplicate rule set to Block that uses a matching rule"
+      },
+      {
+        "id": "b",
+        "text": "A matching rule only"
+      },
+      {
+        "id": "c",
+        "text": "A page layout change"
+      },
+      {
+        "id": "d",
+        "text": "A formula field"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A matching rule alone only finds matches. A duplicate rule that points to it and is set to Block prevents the save.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "ddq-04",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Tell matching rules and duplicate rules apart",
+    "type": "single",
+    "stem": "A duplicate rule needs something to compare records with. What must it reference?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A matching rule"
+      },
+      {
+        "id": "b",
+        "text": "A validation rule"
+      },
+      {
+        "id": "c",
+        "text": "A report type"
+      },
+      {
+        "id": "d",
+        "text": "A permission set"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Every duplicate rule is linked to one or more matching rules.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "ddq-05",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Configure duplicate rules",
+    "type": "multi",
+    "stem": "Which TWO actions can a duplicate rule take when it finds a match? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allow the save and show an alert"
+      },
+      {
+        "id": "b",
+        "text": "Block the save"
+      },
+      {
+        "id": "c",
+        "text": "Automatically merge the records"
+      },
+      {
+        "id": "d",
+        "text": "Delete the older record"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "A duplicate rule can allow (with an alert and/or a report entry) or block. It never merges or deletes records for you.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ddq-06",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Configure duplicate rules",
+    "type": "single",
+    "stem": "An admin wants Salesforce to record possible duplicates so she can review them in a report later, without interrupting users. Which setting fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allow, with the Report option turned on"
+      },
+      {
+        "id": "b",
+        "text": "Block"
+      },
+      {
+        "id": "c",
+        "text": "A validation rule"
+      },
+      {
+        "id": "d",
+        "text": "A lookup filter"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Allow with Report logs the duplicate record items so an admin can report on them later.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ddq-07",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Tell matching rules and duplicate rules apart",
+    "type": "single",
+    "stem": "What is fuzzy matching?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Finding near matches such as Jon and John"
+      },
+      {
+        "id": "b",
+        "text": "Matching only exact text"
+      },
+      {
+        "id": "c",
+        "text": "Matching on record ID"
+      },
+      {
+        "id": "d",
+        "text": "Matching only on picklists"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Fuzzy matching finds similar values such as spelling variations and abbreviations. Exact matching needs identical values.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "ddq-08",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Configure duplicate rules",
+    "type": "single",
+    "stem": "When does a duplicate rule run?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When a record is created or edited"
+      },
+      {
+        "id": "b",
+        "text": "Only when a record is deleted"
+      },
+      {
+        "id": "c",
+        "text": "Only during the nightly batch"
+      },
+      {
+        "id": "d",
+        "text": "Only when a user clicks Check Duplicates"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Duplicate rules run on create and edit, and you choose the action for each.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ddq-09",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Configure duplicate rules",
+    "type": "single",
+    "stem": "A rule compares a new Lead against existing Contacts. Is this possible?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes, a duplicate rule can compare records across objects"
+      },
+      {
+        "id": "b",
+        "text": "No, rules only work within one object"
+      },
+      {
+        "id": "c",
+        "text": "Only for Accounts"
+      },
+      {
+        "id": "d",
+        "text": "Only with Apex"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Duplicate rules can compare a record against records in another object, for example Leads against Contacts.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ddq-10",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Find and merge duplicate records",
+    "type": "single",
+    "stem": "How many records can be merged in one merge action?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Up to three"
+      },
+      {
+        "id": "b",
+        "text": "Up to two"
+      },
+      {
+        "id": "c",
+        "text": "Up to five"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "You can merge up to three duplicate accounts, contacts or leads, and you choose the master record.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "ddq-11",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Find and merge duplicate records",
+    "type": "single",
+    "stem": "After a merge, what happens to the records that were not chosen as the master?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They move to the Recycle Bin and their related records move to the master"
+      },
+      {
+        "id": "b",
+        "text": "They stay active and unchanged"
+      },
+      {
+        "id": "c",
+        "text": "They are permanently deleted instantly"
+      },
+      {
+        "id": "d",
+        "text": "They become the master's child records"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The master record keeps its place, related records are re-parented to it, and the other records are deleted into the Recycle Bin.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ddq-12",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Find and merge duplicate records",
+    "type": "single",
+    "stem": "Khanyisa Solar has 5,000 duplicate accounts that existed before any duplicate rule was created. Will activating a duplicate rule fix them?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, the rule applies to new and edited records, so old duplicates must be cleaned up separately"
+      },
+      {
+        "id": "b",
+        "text": "Yes, it merges them overnight"
+      },
+      {
+        "id": "c",
+        "text": "Yes, it deletes them"
+      },
+      {
+        "id": "d",
+        "text": "Yes, but only for Leads"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Duplicate rules prevent or flag new duplicates on save. Existing duplicates need merging, or a data clean-up with Data Loader.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ddq-13",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Plan an ongoing data quality routine",
+    "type": "single",
+    "stem": "Reps keep creating duplicates by adding an \"x\" to the account name once the admin sets a Block rule on day one. What is a better rollout approach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Start with Allow plus alert, review results, then tighten to Block where matches are strong"
+      },
+      {
+        "id": "b",
+        "text": "Remove the duplicate rule"
+      },
+      {
+        "id": "c",
+        "text": "Make every field required"
+      },
+      {
+        "id": "d",
+        "text": "Switch off fuzzy matching and block everything"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Users find workarounds when a rule blocks work they think is valid. Start with alerts, tune the matching, then block the clear cases.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ddq-14",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Layer validation rules, required fields and picklists",
+    "type": "single",
+    "stem": "Which setting forces a field to be filled in no matter where the record is created (UI, import or API)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Marking the field required at the field level"
+      },
+      {
+        "id": "b",
+        "text": "Marking it required on one page layout"
+      },
+      {
+        "id": "c",
+        "text": "Adding help text"
+      },
+      {
+        "id": "d",
+        "text": "Placing it first on the page layout"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A field-level required setting applies everywhere. Required on a layout only applies on that layout in the UI.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ddq-15",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Layer validation rules, required fields and picklists",
+    "type": "single",
+    "stem": "An admin makes Industry required on the Account page layout only. Which of these will still be able to save an account with no industry?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A data import or an API integration"
+      },
+      {
+        "id": "b",
+        "text": "A user on that page layout"
+      },
+      {
+        "id": "c",
+        "text": "A user using the same layout in Lightning"
+      },
+      {
+        "id": "d",
+        "text": "None, the layout rule applies everywhere"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Layout-required is a user-interface setting. Imports and the API ignore it. Use a field-level required setting or a validation rule for a real guarantee.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ddq-16",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Layer validation rules, required fields and picklists",
+    "type": "single",
+    "stem": "What does a restricted picklist do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rejects any value not on the list, including values from imports and the API"
+      },
+      {
+        "id": "b",
+        "text": "Hides the picklist from some profiles"
+      },
+      {
+        "id": "c",
+        "text": "Allows only one value per user"
+      },
+      {
+        "id": "d",
+        "text": "Makes the picklist read-only"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A restricted picklist enforces that only listed values are saved, even through imports and integrations.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ddq-17",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Layer validation rules, required fields and picklists",
+    "type": "single",
+    "stem": "What is the purpose of a lookup filter?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To limit which records can be selected in a lookup field"
+      },
+      {
+        "id": "b",
+        "text": "To search records faster"
+      },
+      {
+        "id": "c",
+        "text": "To block duplicate records"
+      },
+      {
+        "id": "d",
+        "text": "To format phone numbers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A lookup filter restricts lookup choices, for example only active accounts, which keeps relationships clean.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ddq-18",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Layer validation rules, required fields and picklists",
+    "type": "single",
+    "stem": "The business wants Completion Date to be mandatory only when Status is Completed. Which tool fits best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A validation rule"
+      },
+      {
+        "id": "b",
+        "text": "A duplicate rule"
+      },
+      {
+        "id": "c",
+        "text": "A matching rule"
+      },
+      {
+        "id": "d",
+        "text": "A report filter"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A validation rule can check a condition across fields and block the save with a message. A plain required setting would apply to every record.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "ddq-19",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Plan an ongoing data quality routine",
+    "type": "single",
+    "stem": "How can an admin quickly find accounts that are missing an Industry value?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Build a report that filters for a blank Industry"
+      },
+      {
+        "id": "b",
+        "text": "Run a duplicate job"
+      },
+      {
+        "id": "c",
+        "text": "Create a matching rule"
+      },
+      {
+        "id": "d",
+        "text": "Use the Recycle Bin"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A report with a filter for blank values makes missing data visible so you can fix it.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "ddq-20",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Plan an ongoing data quality routine",
+    "type": "single",
+    "stem": "What is a data steward?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A named person responsible for the quality of a set of data"
+      },
+      {
+        "id": "b",
+        "text": "A Salesforce automation tool"
+      },
+      {
+        "id": "c",
+        "text": "A type of permission set"
+      },
+      {
+        "id": "d",
+        "text": "A kind of duplicate rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Good data quality needs ownership. A data steward is the accountable person for an object or data set.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "ddq-21",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Find and merge duplicate records",
+    "type": "single",
+    "stem": "What is a duplicate record set?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A group of records Salesforce has identified as duplicates of each other"
+      },
+      {
+        "id": "b",
+        "text": "A set of records marked for deletion"
+      },
+      {
+        "id": "c",
+        "text": "A saved report folder"
+      },
+      {
+        "id": "d",
+        "text": "A backup file"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "When a duplicate rule logs matches, the related records are grouped in a duplicate record set that admins can review.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ddq-22",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Explain why bad data hurts reports, automation and AI",
+    "type": "single",
+    "stem": "Poor data quality affects which of the following?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reports, automation and AI features that rely on the data"
+      },
+      {
+        "id": "b",
+        "text": "Only the page layout"
+      },
+      {
+        "id": "c",
+        "text": "Only the Recycle Bin"
+      },
+      {
+        "id": "d",
+        "text": "Nothing, because Salesforce corrects data automatically"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Duplicates and missing values make reports unreliable and cause automation and AI features to act on bad information.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "ddq-23",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Layer validation rules, required fields and picklists",
+    "type": "single",
+    "stem": "What does a dependent picklist do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Limits the values of one picklist based on the value chosen in another"
+      },
+      {
+        "id": "b",
+        "text": "Makes a picklist required"
+      },
+      {
+        "id": "c",
+        "text": "Copies a picklist to another object"
+      },
+      {
+        "id": "d",
+        "text": "Prevents duplicates"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A dependent picklist filters its values by a controlling field, which keeps combinations consistent.",
+    "difficulty": 1,
+    "tags": []
+  }
+]

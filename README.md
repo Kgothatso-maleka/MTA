@@ -52,5 +52,5 @@ Progress is saved in the browser only (`LocalStorageStore`). Learners can export
 
 ## Known gaps (Slice 1)
 - Only two sample Admin modules are written. The mock exam is flagged as a "preview mock" until every exam section has enough questions.
-- Admin exam facts in `course.json` (60 questions, 105 minutes, 65% pass mark) are unverified against the current official guide.
+- Admin exam facts in `course.json` are unverified against the official guide text (it could not be fetched). Section weights are confirmed by the Salesforce Admin blog. 60 questions and 105 minutes come from several third-party sources. The pass mark is set to 68% (English), as most 2026 sources state; older sources say 65%.
 - The mock results page does not yet show a per-question review.

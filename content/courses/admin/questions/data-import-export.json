@@ -1,0 +1,868 @@
+[
+  {
+    "id": "die-01",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Choose between the Import Wizard and Data Loader",
+    "type": "single",
+    "stem": "What is the maximum number of records the Data Import Wizard can import at one time?",
+    "options": [
+      {
+        "id": "a",
+        "text": "50,000"
+      },
+      {
+        "id": "b",
+        "text": "5,000"
+      },
+      {
+        "id": "c",
+        "text": "500,000"
+      },
+      {
+        "id": "d",
+        "text": "5 million"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Data Import Wizard handles up to 50,000 records at a time. Data Loader is the tool for much larger loads, up to 5 million records.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "die-02",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Choose between the Import Wizard and Data Loader",
+    "type": "single",
+    "stem": "Khanyisa Solar needs to load 2 million records into Salesforce. Which tool should the admin use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data Loader"
+      },
+      {
+        "id": "b",
+        "text": "Data Import Wizard"
+      },
+      {
+        "id": "c",
+        "text": "A report export"
+      },
+      {
+        "id": "d",
+        "text": "Mass Transfer Records"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Data Loader supports up to 5 million records. The Data Import Wizard stops at 50,000 records.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "die-03",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Choose between the Import Wizard and Data Loader",
+    "type": "single",
+    "stem": "A sales assistant who is not technical needs to import 300 leads from a spreadsheet and avoid creating duplicates by matching on email. Which tool fits best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data Import Wizard"
+      },
+      {
+        "id": "b",
+        "text": "Data Loader"
+      },
+      {
+        "id": "c",
+        "text": "Mass Transfer Records"
+      },
+      {
+        "id": "d",
+        "text": "Data Export Service"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Data Import Wizard is browser-based, simple to use, and can match on fields such as email to avoid duplicates. It suits small one-off loads.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "die-04",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Choose between the Import Wizard and Data Loader",
+    "type": "single",
+    "stem": "Which object CANNOT be imported with the Data Import Wizard?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Opportunities"
+      },
+      {
+        "id": "b",
+        "text": "Leads"
+      },
+      {
+        "id": "c",
+        "text": "Accounts"
+      },
+      {
+        "id": "d",
+        "text": "Contacts"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The wizard supports accounts, contacts, leads, campaign members, solutions, person accounts and custom objects. Opportunities and cases need Data Loader.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "die-05",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Describe Data Loader operations",
+    "type": "single",
+    "stem": "An admin must delete 30,000 old records in bulk using a tool with a file of record IDs. Which tool should she use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data Loader"
+      },
+      {
+        "id": "b",
+        "text": "Data Import Wizard"
+      },
+      {
+        "id": "c",
+        "text": "Data Export Service"
+      },
+      {
+        "id": "d",
+        "text": "Merge"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Data Import Wizard cannot delete. Data Loader supports delete and hard delete.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "die-06",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Describe Data Loader operations",
+    "type": "multi",
+    "stem": "Which TWO operations does Data Loader support that the Data Import Wizard does not? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Export"
+      },
+      {
+        "id": "b",
+        "text": "Hard delete"
+      },
+      {
+        "id": "c",
+        "text": "Insert"
+      },
+      {
+        "id": "d",
+        "text": "Update"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Both tools can insert and update. Only Data Loader can export, delete and hard delete.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "die-07",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Describe Data Loader operations",
+    "type": "single",
+    "stem": "What does an upsert operation do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Updates a record if a match is found and inserts a new one if not"
+      },
+      {
+        "id": "b",
+        "text": "Deletes a record and recreates it"
+      },
+      {
+        "id": "c",
+        "text": "Inserts every row even if it already exists"
+      },
+      {
+        "id": "d",
+        "text": "Moves records to the Recycle Bin"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Upsert is a combination of update and insert. It uses a record ID or an external ID to decide which one to do for each row.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "die-08",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Explain record IDs and external IDs",
+    "type": "single",
+    "stem": "An admin wants to update 500 existing accounts using Data Loader. Which column must the CSV file contain?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The Salesforce record ID"
+      },
+      {
+        "id": "b",
+        "text": "The account owner's email"
+      },
+      {
+        "id": "c",
+        "text": "The account's phone number"
+      },
+      {
+        "id": "d",
+        "text": "The account's created date"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Updates match existing records by record ID. Without it, Data Loader does not know which records to change.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "die-09",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Explain record IDs and external IDs",
+    "type": "single",
+    "stem": "What is the main benefit of marking a custom field as an External ID?",
+    "options": [
+      {
+        "id": "a",
+        "text": "You can match and upsert records using a key from another system without knowing Salesforce IDs"
+      },
+      {
+        "id": "b",
+        "text": "The field becomes visible to external users"
+      },
+      {
+        "id": "c",
+        "text": "The field is automatically encrypted"
+      },
+      {
+        "id": "d",
+        "text": "The field cannot be edited"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "An external ID holds a unique key from another system (such as a customer number). It lets you match records for upsert and link children to parents without looking up Salesforce record IDs.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "die-10",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Describe Data Loader operations",
+    "type": "single",
+    "stem": "What does a hard delete in Data Loader do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Permanently removes records without sending them to the Recycle Bin"
+      },
+      {
+        "id": "b",
+        "text": "Moves records to the Recycle Bin for 15 days"
+      },
+      {
+        "id": "c",
+        "text": "Deletes only the field values"
+      },
+      {
+        "id": "d",
+        "text": "Archives the records"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Hard delete bypasses the Recycle Bin, so the records cannot be restored. It needs the Bulk API Hard Delete permission.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "die-11",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Describe Data Loader operations",
+    "type": "single",
+    "stem": "Which user permission is required before a hard delete can be performed with Data Loader?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bulk API Hard Delete"
+      },
+      {
+        "id": "b",
+        "text": "Modify Metadata"
+      },
+      {
+        "id": "c",
+        "text": "Author Apex"
+      },
+      {
+        "id": "d",
+        "text": "Manage Users"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "No user has the Bulk API Hard Delete permission by default. An admin must grant it, usually through a permission set.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "die-12",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Describe Data Loader operations",
+    "type": "single",
+    "stem": "What is the difference between Export and Export All in Data Loader?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Export All also includes records in the Recycle Bin"
+      },
+      {
+        "id": "b",
+        "text": "Export All exports every object at once"
+      },
+      {
+        "id": "c",
+        "text": "Export All skips validation rules"
+      },
+      {
+        "id": "d",
+        "text": "There is no difference"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Export returns existing records. Export All also returns soft-deleted records still in the Recycle Bin.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "die-13",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Describe Data Loader operations",
+    "type": "single",
+    "stem": "A user needs to use Data Loader. Which setting must be enabled on their profile or permission set?",
+    "options": [
+      {
+        "id": "a",
+        "text": "API Enabled"
+      },
+      {
+        "id": "b",
+        "text": "Manage Data Integrations"
+      },
+      {
+        "id": "c",
+        "text": "View Setup"
+      },
+      {
+        "id": "d",
+        "text": "Weekly Data Export"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Data Loader connects through the API, so the user needs the API Enabled permission as well as access to the objects.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "die-14",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Choose between the Import Wizard and Data Loader",
+    "type": "single",
+    "stem": "Which statement about how Data Loader matches records is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It matches by record ID or external ID only"
+      },
+      {
+        "id": "b",
+        "text": "It matches by name or email like the Import Wizard"
+      },
+      {
+        "id": "c",
+        "text": "It matches automatically on every text field"
+      },
+      {
+        "id": "d",
+        "text": "It never matches and only inserts"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Data Loader uses IDs or external IDs. It does not look for similar names or emails, so duplicates are a risk unless duplicate rules or a clean file prevent them.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "die-15",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Run a safe import",
+    "type": "single",
+    "stem": "Contact rows fail to import because the related accounts do not exist yet. What is the best fix?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Load the accounts first, then load the contacts linked by ID or external ID"
+      },
+      {
+        "id": "b",
+        "text": "Turn off all validation rules"
+      },
+      {
+        "id": "c",
+        "text": "Use the Data Export Service"
+      },
+      {
+        "id": "d",
+        "text": "Merge the contacts"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Child records point at parents, so parents must exist first. Load accounts, then contacts, then opportunities.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "die-16",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Prepare a clean import file",
+    "type": "single",
+    "stem": "A record is imported without an owner column. Who owns the new record?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The user who ran the import"
+      },
+      {
+        "id": "b",
+        "text": "The org's system administrator"
+      },
+      {
+        "id": "c",
+        "text": "The account's owner automatically"
+      },
+      {
+        "id": "d",
+        "text": "Nobody, the record is unowned"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "If you do not provide an owner, the records are owned by the user running the import.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "die-17",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Prepare a clean import file",
+    "type": "single",
+    "stem": "Some rows in an import fail with validation rule error messages. What is the likely reason?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Validation rules run on imported records just as they do for manual saves"
+      },
+      {
+        "id": "b",
+        "text": "Data Loader is broken"
+      },
+      {
+        "id": "c",
+        "text": "The CSV file was too large"
+      },
+      {
+        "id": "d",
+        "text": "Validation rules are only for the user interface"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Validation rules fire wherever a record is saved: the UI, imports, flows and the API. Fix the data or plan the load around the rules.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "die-18",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Run a safe import",
+    "type": "single",
+    "stem": "What should an admin do first before running a bulk update on 10,000 existing records?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Export the records to keep a copy of the current values"
+      },
+      {
+        "id": "b",
+        "text": "Disable the Recycle Bin"
+      },
+      {
+        "id": "c",
+        "text": "Run the update straight away and fix problems afterwards"
+      },
+      {
+        "id": "d",
+        "text": "Delete the records and re-import them"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Exporting first gives you a rollback copy. There is no undo for a bulk update.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "die-19",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Run a safe import",
+    "type": "single",
+    "stem": "Where should a new, untested import process be tried first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In a sandbox or developer org with a small sample"
+      },
+      {
+        "id": "b",
+        "text": "In production with all records"
+      },
+      {
+        "id": "c",
+        "text": "In production overnight"
+      },
+      {
+        "id": "d",
+        "text": "Only in a spreadsheet"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Test with a few rows in a sandbox, then check the results, validation behaviour and automation side effects before loading production.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "die-20",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Use mass transfer, mass delete and merge",
+    "type": "single",
+    "stem": "A sales rep leaves the company. The admin must reassign her 400 accounts to another rep in one step. Which tool is designed for this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mass Transfer Records"
+      },
+      {
+        "id": "b",
+        "text": "Data Import Wizard"
+      },
+      {
+        "id": "c",
+        "text": "Merge"
+      },
+      {
+        "id": "d",
+        "text": "Recycle Bin"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Mass Transfer Records moves many records between owners. It supports accounts, leads, campaigns, service contracts and custom objects.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "die-21",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Use mass transfer, mass delete and merge",
+    "type": "multi",
+    "stem": "Which TWO object types can be moved in bulk with Mass Transfer Records? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Accounts"
+      },
+      {
+        "id": "b",
+        "text": "Leads"
+      },
+      {
+        "id": "c",
+        "text": "Opportunities"
+      },
+      {
+        "id": "d",
+        "text": "Cases"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Mass Transfer Records covers accounts, leads, campaigns, service contracts and custom objects. For opportunities and cases use a list view or Data Loader.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "die-22",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Use mass transfer, mass delete and merge",
+    "type": "single",
+    "stem": "How many duplicate records can be merged into one in a single merge?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Up to three"
+      },
+      {
+        "id": "b",
+        "text": "Up to two"
+      },
+      {
+        "id": "c",
+        "text": "Up to ten"
+      },
+      {
+        "id": "d",
+        "text": "Up to fifty"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "You can merge up to three accounts, contacts or leads at a time. You choose the master record.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "die-23",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Use mass transfer, mass delete and merge",
+    "type": "single",
+    "stem": "How long are deleted records kept in the Recycle Bin before being permanently removed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "15 days"
+      },
+      {
+        "id": "b",
+        "text": "30 days"
+      },
+      {
+        "id": "c",
+        "text": "48 hours"
+      },
+      {
+        "id": "d",
+        "text": "7 days"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Deleted records stay in the Recycle Bin for 15 days and can be restored in that time.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "die-24",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Explain the ways to back up data",
+    "type": "single",
+    "stem": "Which built-in tool packages your org's data into CSV files on a weekly or monthly schedule for backup?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data Export Service"
+      },
+      {
+        "id": "b",
+        "text": "Mass Delete Records"
+      },
+      {
+        "id": "c",
+        "text": "Import Wizard"
+      },
+      {
+        "id": "d",
+        "text": "Weekly digest"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Data Export Service (Setup > Data Export) creates CSV files of your data and emails a download link.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "die-25",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Explain the ways to back up data",
+    "type": "single",
+    "stem": "After a Data Export Service run, how long do the files stay available for download?",
+    "options": [
+      {
+        "id": "a",
+        "text": "48 hours"
+      },
+      {
+        "id": "b",
+        "text": "7 days"
+      },
+      {
+        "id": "c",
+        "text": "15 days"
+      },
+      {
+        "id": "d",
+        "text": "Forever"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The download link in the email is valid for 48 hours, then the files are deleted. Download them promptly.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "die-26",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Explain the ways to back up data",
+    "type": "single",
+    "stem": "An admin says, \"We have weekly Data Export files, so we can restore the org in one click.\" What is wrong with this statement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data Export provides CSV backup files, not an automatic restore"
+      },
+      {
+        "id": "b",
+        "text": "Data Export cannot be scheduled"
+      },
+      {
+        "id": "c",
+        "text": "Data Export only includes setup data"
+      },
+      {
+        "id": "d",
+        "text": "Data Export files expire after 24 hours"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The export is a backup. Restoring means re-importing the files. Dedicated backup products such as Salesforce Backup and Restore offer restore.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "die-27",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Choose between the Import Wizard and Data Loader",
+    "type": "single",
+    "stem": "Which option lets an admin schedule a regular, automated export of one object from the command line?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data Loader"
+      },
+      {
+        "id": "b",
+        "text": "Data Import Wizard"
+      },
+      {
+        "id": "c",
+        "text": "Mass Transfer Records"
+      },
+      {
+        "id": "d",
+        "text": "Report subscription"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Data Loader can run from the command line, which lets you schedule jobs such as a nightly export.",
+    "difficulty": 2,
+    "tags": []
+  }
+]
