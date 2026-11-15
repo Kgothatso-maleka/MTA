@@ -79,6 +79,48 @@ Set a **Lead Source** on every lead (Web, Roadshow, Referral). Combine with camp
 Agree with marketing **before** the event on the member statuses ("Registered, Attended, Bought a quote"), because changing them afterwards breaks the reports. And always load the sign-up list within 24 hours, while the leads are warm.
 :::
 
+## Worked example: was the roadshow worth it?
+
+Khanyisa Solar spent **R18,000** on the Midrand roadshow (actual cost). The numbers a month later:
+
+| Measure | Value |
+|---|---|
+| People who signed up (campaign members) | 60 |
+| Members with a **Responded** status (Attended or Registered) | 42 |
+| Leads converted | 6 |
+| Won opportunities from the campaign | R240,000 |
+
+A simple way to judge it: **ROI = (revenue - cost) / cost**. Here (240,000 - 18,000) / 18,000 is about **12.3, or 1,233%**.
+
+What you learn from the other numbers:
+
+- **42 of 60 responded** (70%) tells you the event worked at getting attention.
+- **6 of 60 converted** (10%) tells you what to improve in follow-up.
+- If the 6 leads took 90 days to convert, set a **follow-up task** for the first week next time.
+
+:::exam-trap
+Campaign ROI uses **actual cost** and revenue from **won opportunities** linked to the campaign. A campaign with high responses and no won opportunities can still have a poor ROI.
+:::
+
+## Which tool for which marketing problem?
+
+| Problem | Best fit |
+|---|---|
+| Record who attended an event and report on it | **Campaign** with member statuses |
+| Capture website enquiries automatically | **Web-to-Lead** |
+| Group many events under one season | **Campaign hierarchy** |
+| Show which campaigns helped win an opportunity | **Campaign influence** |
+| Rank leads so reps call the hottest first | **Lead scoring** |
+| Run automated B2B nurture emails | **Account Engagement** |
+| Send mass consumer email and SMS | **Marketing Cloud** |
+
+## Common mistakes
+
+- Using **Lead Source** only and no campaign. Lead Source records the **first** origin. A campaign records **each** touch.
+- Forgetting to mark the **Responded** flag on a new status, so responses show as zero.
+- Loading the attendee list weeks later, after leads have gone cold.
+- Putting a **converted** lead's history only on the lead. The campaign history carries over to the contact.
+
 ## Recap
 
 - A campaign tracks a marketing effort, its cost and its results. It can have a parent for roll-ups.

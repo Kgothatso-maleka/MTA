@@ -82,6 +82,45 @@ Good dashboards answer one audience's questions:
 When the business says "the dashboard is wrong", check three things in order: **the running user** (do they see everything?), **the source report's filters** (date range, "My opportunities"), and **the last refresh time**. These three explain most dashboard complaints.
 :::
 
+## Worked example: a weekly pipeline dashboard
+
+The Khanyisa Solar sales manager wants a single page for Monday's meeting. Start from **questions**, then pick the component:
+
+| Question | Report behind it | Component |
+|---|---|---|
+| Are we on target this quarter? | Opportunities closed won this quarter | **Gauge** with target ranges |
+| Where is the pipeline sitting? | Open opportunities by stage | **Funnel** or **bar** chart |
+| How is it trending? | Closed won by month | **Line** chart |
+| What is the total pipeline value? | Open opportunities | **Metric** |
+| Which deals need attention today? | Open opportunities closing this week | **Table** |
+
+Build order:
+
+1. Create or check the **reports** first. A dashboard shows report data, so a wrong report gives a wrong dashboard.
+2. Create the dashboard, add components, and choose a **running user**.
+3. Add a **dashboard filter** such as Region or Product, instead of building four dashboards.
+4. Set a **refresh** schedule or add a **subscription** for the people who need it on Monday morning.
+5. Put it in a **folder** shared only with the sales team.
+
+:::exam-trap
+Each dashboard component is based on **one report**. To show two different measures from different object combinations, you need two reports. A dashboard filter works only on reports that contain the filtered field.
+:::
+
+## Static or dynamic?
+
+| Type | Whose data does the viewer see? |
+|---|---|
+| **Run as a specified user** | The data of that fixed user, for everybody who can see the dashboard |
+| **Run as logged-in user (dynamic)** | The viewer's own data, based on their access |
+
+Use a fixed running user for a company-wide scoreboard. Use dynamic when each rep should see only their own numbers. Dynamic dashboards are limited in number and subscriptions work differently, so check current limits for your edition.
+
+## Common mistakes
+
+- Putting 15 components on one page. If the first screen does not answer the question, the dashboard will not be used.
+- Choosing a running user with **too much access**, which shows everyone numbers they should not see.
+- Forgetting that **filters** apply to every component that has the field.
+
 ## Recap
 
 - A dashboard is read-only. Each component comes from one source report. Up to 20 components.

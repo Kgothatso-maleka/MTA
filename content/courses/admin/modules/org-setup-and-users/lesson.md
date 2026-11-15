@@ -99,6 +99,10 @@ You can let someone who is not a full admin do part of the job, such as unlock u
 Keep an **admin runbook**: a short document listing "when someone leaves, do these 8 steps". Typical steps: freeze, reassign records and approvals, remove from queues, public groups and assignment rules, deactivate, log it. Most offboarding problems come from forgetting what a user owned.
 :::
 
+## Translation Workbench in a nutshell
+
+The **Translation Workbench** lets you translate **custom labels, field labels, picklist values and other metadata** so users see their own language. Steps: enable it in Setup, add the **languages** you support, assign **translators**, and translate each item. Users pick their language in their personal settings. Standard Salesforce text is translated by Salesforce, not by you.
+
 ## Recap
 
 - Company Information sets default language, locale, time zone and currency. Users can override their own.

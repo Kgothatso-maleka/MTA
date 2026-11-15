@@ -126,6 +126,18 @@ When a record is saved, many things happen in a fixed order. A simplified versio
 Before you build, **write the rule in one sentence**: "When X happens and Y is true, do Z." If you cannot, you are not ready. Then check what already runs on that object: other flows, validation rules, assignment rules and code. Most flow bugs are two automations fighting each other.
 :::
 
+## Screen flows in more detail
+
+- A screen flow is **started by a person**: from a button, a quick action, a Lightning page, a utility bar or a link.
+- The **Screen** element shows **components** such as text fields, picklists, file upload, a data table and **Lightning web components**.
+- **Variables** carry what the user typed to later elements. Use **Get Records** to pre-fill and **Create/Update Records** to save.
+- The **Navigation** buttons are Next, Previous, Pause and Finish. A paused flow can be resumed from the user's paused list.
+- **Validate** a screen field with a formula so the user cannot continue with bad input.
+
+:::exam-trap
+A screen flow **needs a person to run it**. It cannot be started by a record change or a schedule. If a requirement says "when" something changes, it is not a screen flow.
+:::
+
 ## Recap
 
 - Flow is the main automation tool. Workflow Rules and Process Builder reached end of support on 31 December 2025.

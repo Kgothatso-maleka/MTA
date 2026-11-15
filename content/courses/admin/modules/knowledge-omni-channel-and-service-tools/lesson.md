@@ -95,6 +95,43 @@ Omni-Channel needs **a queue, a routing configuration, a service channel and a p
 Treat knowledge like a product: give each article an **owner**, a **review date** and a rule: if an agent finds a wrong answer, they flag it and fix it the same day. A library of outdated articles is worse than none, because agents trust it.
 :::
 
+## Worked example: a fault article from draft to customer
+
+Khanyisa Solar sees many "inverter shows error E12" cases. A senior agent writes one article:
+
+1. Create the article as a **draft**, using the **Troubleshooting** record type, with a title, summary and steps.
+2. Tag it with **data categories**: Products > Inverters, so only users who may see that category find it.
+3. Send for review. After approval, **publish** it to the **channels** that apply: the internal app for agents and the customer help site.
+4. An agent attaches the article to a new E12 case and sends it to the customer.
+5. A year later a firmware update changes the steps. The author **edits** the published article, which creates a **new draft version**, and publishes it again.
+6. When the product is discontinued, the article is **archived**.
+
+:::exam-trap
+Data categories decide **who can see** an article. Channels decide **where** it is published. Record types decide **which kind of article** it is. Do not mix these three up.
+:::
+
+## Setting up Omni-Channel in order
+
+1. **Turn on** Omni-Channel in Setup.
+2. Create a **queue** for the work (for example "Installation Cases") and add its members.
+3. Create a **routing configuration** that sets how work is routed and how much capacity each item uses.
+4. Link the routing configuration to the **queue**.
+5. Create **presence statuses** (Available, On Break) and a **presence configuration**, and assign them to the agents' profiles or permission sets.
+6. Add the **Omni-Channel utility** to the agents' console app so they can set their status.
+
+If an agent does not receive work, check: is the agent **Available**, do they have **capacity**, is the queue linked to a **routing configuration**, and are they a **member of the queue**?
+
+## Choosing the right tool
+
+| Situation | Tool |
+|---|---|
+| Same question asked again and again | **Knowledge article** |
+| Work should be pushed to the right agent | **Omni-Channel** |
+| Customer wants to chat on the website or WhatsApp | **Messaging** |
+| Customers want to log cases and find answers themselves | **Experience Cloud** site |
+| Agent repeats the same five clicks | **Macro** |
+| Agent types the same reply often | **Quick Text** |
+
 ## Recap
 
 - Knowledge articles: draft, published, archived. Lightning Knowledge uses one Knowledge object with record types.

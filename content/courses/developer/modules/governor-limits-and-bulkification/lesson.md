@@ -99,6 +99,30 @@ The `Limits` class shows what you have used and what is allowed. The debug log s
 Always test a trigger with 200 records. If it passes, it is almost certainly bulk-safe. A trigger that works for one record in the UI and fails in a data load is the most common production bug.
 :::
 
+## Caching to save queries
+
+- **Static variables** hold values for one transaction only. Use them to avoid repeating the same query inside one request.
+- **Platform Cache** stores data **across transactions and users**, so you can reuse expensive lookups. There is an **org cache** (shared) and a **session cache** (per user session). Cached data can disappear, so code must handle a **cache miss** by reading the source again.
+- **Custom metadata** records can be read with `getInstance()` and `getAll()` methods, which avoids writing a query for configuration values.
+
+```apex
+public class RateCache {
+  private static Map<String, Decimal> rates;
+  public static Map<String, Decimal> get() {
+    if (rates == null) { rates = loadRates(); }
+    return rates;
+  }
+}
+```
+
+## A quick checklist before you ship
+
+1. No SOQL or DML in a loop.
+2. Queries filter on indexed fields and select only what is needed.
+3. Tested with **200** records.
+4. Heavy work moved to **async** where it can be.
+5. No hardcoded Ids or limits assumptions.
+
 ## Recap
 
 - Limits are per transaction and uncatchable: 100 SOQL, 150 DML, 50,000 query rows, 10,000 DML rows, 10 s CPU, 6 MB heap.

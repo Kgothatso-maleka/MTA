@@ -98,6 +98,66 @@ Tests do not need 100% coverage, but **75% across the org** is the deployment ru
 Write the test for the **business rule** ("a completed installation creates exactly one invoice") rather than for the method name. Good tests catch the bug that a later change introduces.
 :::
 
+## A worked example: testing the invoice rule
+
+The rule: "When an Installation becomes Completed, create exactly one Invoice."
+
+```apex
+@isTest
+private class InstallationInvoiceTest {
+  @isTest static void createsOneInvoiceOnCompletion() {
+    Installation__c i = new Installation__c(Name = 'Test', Status__c = 'Scheduled');
+    insert i;
+
+    Test.startTest();
+    i.Status__c = 'Completed';
+    update i;
+    Test.stopTest();
+
+    System.assertEquals(1, [SELECT COUNT() FROM Invoice__c WHERE Installation__c = :i.Id]);
+  }
+
+  @isTest static void doesNotCreateInvoiceWhenStatusUnchanged() {
+    Installation__c i = new Installation__c(Name = 'Test', Status__c = 'Scheduled');
+    insert i;
+    update i;
+    System.assertEquals(0, [SELECT COUNT() FROM Invoice__c]);
+  }
+}
+```
+
+Why this is a good pair of tests:
+
+- The **first** proves the rule. The **second** proves it does not fire when it should not.
+- Each test creates its **own data**.
+- Each asserts on the **result** (the count), not on how the code works.
+
+## Mocking a callout
+
+```apex
+public class BillingMock implements HttpCalloutMock {
+  public HTTPResponse respond(HTTPRequest req) {
+    HttpResponse res = new HttpResponse();
+    res.setStatusCode(200);
+    res.setBody('{"status":"ok"}');
+    return res;
+  }
+}
+// in the test
+Test.setMock(HttpCalloutMock.class, new BillingMock());
+```
+
+Write a second mock that returns **500** to prove the code handles failure.
+
+## Common testing mistakes
+
+- Asserting nothing, or asserting something that is always true.
+- Using `SeeAllData=true` to avoid building data.
+- Testing only one record, so the bulk bug appears in production.
+- Hardcoding Ids or names from one org that do not exist in another.
+- Forgetting that flows and other triggers also run on the test DML.
+- Writing tests only to reach 75%, instead of to prove behaviour.
+
 ## Recap
 
 - 75% org-wide coverage, all tests pass, triggers need some coverage.

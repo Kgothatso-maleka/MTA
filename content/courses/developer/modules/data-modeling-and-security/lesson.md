@@ -51,7 +51,7 @@ In a master-detail relationship, the child has **no owner field**. It inherits s
 | **Custom label** | Translatable text for UI and messages | Yes |
 | **Hardcoded value** | Never | n/a |
 
-Custom metadata is the usual best answer for "configuration that must be deployed and read in code without using a query limit."
+Custom metadata is the usual best answer for "configuration that must be deployed and read easily in code", using `getInstance()` or `getAll()`.
 
 ## Sharing in Apex
 
@@ -91,6 +91,31 @@ List<Account> accs = [SELECT Id, Name FROM Account WITH USER_MODE];
 :::on-the-job
 Default to `with sharing` and user mode. Use `without sharing` only for a narrow, documented reason, and keep that class small so reviewers can audit it.
 :::
+
+## Describing objects in code: the Schema class
+
+Sometimes code must work for any object or field. The **Schema** class gives you the **describe** information.
+
+```apex
+Schema.DescribeSObjectResult d = Account.sObjectType.getDescribe();
+Boolean canCreate = d.isCreateable();
+Schema.DescribeFieldResult f = Account.Industry.getDescribe();
+Boolean canEdit = f.isUpdateable();
+List<Schema.PicklistEntry> values = f.getPicklistValues();
+```
+
+- `Schema.getGlobalDescribe()` returns a map of every object, but it is **expensive**. Use `Account.sObjectType` when you know the object.
+- Describe results tell you **labels, types, picklist values and the user's access**.
+
+## Custom permissions
+
+A **custom permission** is a yes or no switch you create in Setup and assign through permission sets or profiles. Code and formulas can ask "does this user have it?":
+
+```apex
+Boolean allowed = FeatureManagement.checkPermission('Approve_Discounts');
+```
+
+Use a custom permission to turn **features** on or off for specific people without hardcoding profile names. It is also available in validation rules and flows through the `$Permission` global variable.
 
 ## Recap
 
