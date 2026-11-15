@@ -18,10 +18,17 @@ export function listCourses(): Course[] {
     .map((id) => loadCourse(id));
 }
 
+// Content is static at runtime, so results are cached: stable identities keep React effects from looping.
+const courseCache = new Map<string, Course>();
+
 export function loadCourse(courseId: string): Course {
+  const cached = courseCache.get(courseId);
+  if (cached) return cached;
   const raw = files[`/content/courses/${courseId}/course.json`];
   if (!raw) throw new Error(`Unknown course: ${courseId}`);
-  return courseSchema.parse(JSON.parse(raw));
+  const course = courseSchema.parse(JSON.parse(raw)) as Course;
+  courseCache.set(courseId, course);
+  return course;
 }
 
 export interface LoadedModule {
@@ -47,7 +54,18 @@ export function loadModule(courseId: string, moduleId: string): LoadedModule {
   return { meta, lesson: lesson.body, exercise: ex.body, exerciseVideo: video };
 }
 
+const questionCache = new Map<string, Question[]>();
+
 export function loadQuestions(courseId: string, moduleId?: string): Question[] {
+  const key = `${courseId}/${moduleId ?? ''}`;
+  const hit = questionCache.get(key);
+  if (hit) return hit;
+  const result = readQuestions(courseId, moduleId);
+  questionCache.set(key, result);
+  return result;
+}
+
+function readQuestions(courseId: string, moduleId?: string): Question[] {
   const prefix = `/content/courses/${courseId}/questions/`;
   const all = Object.entries(files)
     .filter(([p]) => p.startsWith(prefix) && p.endsWith('.json'))

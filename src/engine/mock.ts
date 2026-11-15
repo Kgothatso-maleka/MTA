@@ -8,7 +8,7 @@ export interface Mock {
 }
 
 /** Largest-remainder allocation of `total` across weighted sections. */
-function quotas(exam: ExamConfig): Record<string, number> {
+export function sectionQuotas(exam: ExamConfig): Record<string, number> {
   const weightSum = exam.sections.reduce((n, s) => n + s.weight, 0) || 1;
   const exact = exam.sections.map((s) => ({ id: s.id, v: (s.weight / weightSum) * exam.questionCount }));
   const out: Record<string, number> = {};
@@ -30,9 +30,14 @@ function preferUnseen(qs: Question[], seen: Set<string>, seed: number): Question
   return [...shuffle(fresh, seed), ...shuffle(old, seed + 1)];
 }
 
+/** Option order for the question at position i is seeded by (seed, i), so a resumed exam rebuilds identically. */
+export function applyOptionOrder(questions: Question[], seed: number): Question[] {
+  return questions.map((q, i) => ({ ...q, options: shuffle(q.options, seed + (i + 1) * 7919) }));
+}
+
 export function buildMock(bank: Question[], exam: ExamConfig, seed: number, recentlySeen: string[]): Mock {
   const seen = new Set(recentlySeen);
-  const quota = quotas(exam);
+  const quota = sectionQuotas(exam);
   const chosen: Question[] = [];
   const shortfalls: Record<string, number> = {};
 
@@ -59,9 +64,6 @@ export function buildMock(bank: Question[], exam: ExamConfig, seed: number, rece
     chosen.push(...leftovers.slice(0, missing));
   }
 
-  const questions = shuffle(chosen, seed).map((q, i) => ({
-    ...q,
-    options: shuffle(q.options, seed + (i + 1) * 7919),
-  }));
+  const questions = applyOptionOrder(shuffle(chosen, seed), seed);
   return { seed, questions, shortfalls };
 }
