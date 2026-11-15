@@ -1,0 +1,675 @@
+[
+  {
+    "id": "itg-01",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Make callouts",
+    "type": "single",
+    "stem": "Where should an external service's URL and credentials be stored for a callout?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Named Credential"
+      },
+      {
+        "id": "b",
+        "text": "A custom label"
+      },
+      {
+        "id": "c",
+        "text": "A static variable"
+      },
+      {
+        "id": "d",
+        "text": "A page layout"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Named Credentials hold the endpoint and authentication outside code.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "itg-02",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Make callouts",
+    "type": "single",
+    "stem": "What prefix is used to reference a Named Credential in an endpoint?",
+    "options": [
+      {
+        "id": "a",
+        "text": "callout:"
+      },
+      {
+        "id": "b",
+        "text": "named:"
+      },
+      {
+        "id": "c",
+        "text": "cred:"
+      },
+      {
+        "id": "d",
+        "text": "https:"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The endpoint is written as callout:Name/path.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "itg-03",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Make callouts",
+    "type": "single",
+    "stem": "Which classes does Apex use to send an HTTP request?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Http, HttpRequest and HttpResponse"
+      },
+      {
+        "id": "b",
+        "text": "Callout and Response"
+      },
+      {
+        "id": "c",
+        "text": "WebService and Soap"
+      },
+      {
+        "id": "d",
+        "text": "RestClient"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Apex callouts use Http, HttpRequest and HttpResponse.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "itg-04",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Make callouts",
+    "type": "single",
+    "stem": "What error happens when a callout follows DML in the same transaction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uncommitted work pending"
+      },
+      {
+        "id": "b",
+        "text": "Mixed DML"
+      },
+      {
+        "id": "c",
+        "text": "Too many SOQL queries"
+      },
+      {
+        "id": "d",
+        "text": "Null pointer"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "You cannot callout after uncommitted DML. Do the callout first or use async Apex.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "itg-05",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Make callouts",
+    "type": "single",
+    "stem": "How many callouts are allowed in one transaction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "100"
+      },
+      {
+        "id": "b",
+        "text": "10"
+      },
+      {
+        "id": "c",
+        "text": "20"
+      },
+      {
+        "id": "d",
+        "text": "200"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The callout limit is 100.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "itg-06",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Test integrations",
+    "type": "single",
+    "stem": "How should Apex tests handle callouts?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Test.setMock with an HttpCalloutMock"
+      },
+      {
+        "id": "b",
+        "text": "Make real callouts"
+      },
+      {
+        "id": "c",
+        "text": "Skip the code"
+      },
+      {
+        "id": "d",
+        "text": "Use SeeAllData=true"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Tests cannot make callouts, so mock the response.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "itg-07",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Expose Apex",
+    "type": "single",
+    "stem": "Which annotation exposes a class as a REST web service?",
+    "options": [
+      {
+        "id": "a",
+        "text": "@RestResource"
+      },
+      {
+        "id": "b",
+        "text": "@AuraEnabled"
+      },
+      {
+        "id": "c",
+        "text": "@InvocableMethod"
+      },
+      {
+        "id": "d",
+        "text": "@future"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "@RestResource with urlMapping exposes Apex through REST.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "itg-08",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Expose Apex",
+    "type": "single",
+    "stem": "Which annotation makes a method handle HTTP GET in a REST resource?",
+    "options": [
+      {
+        "id": "a",
+        "text": "@HttpGet"
+      },
+      {
+        "id": "b",
+        "text": "@Get"
+      },
+      {
+        "id": "c",
+        "text": "@RestGet"
+      },
+      {
+        "id": "d",
+        "text": "@AuraEnabled"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Use @HttpGet, @HttpPost, @HttpPut, @HttpPatch or @HttpDelete.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "itg-09",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Expose Apex",
+    "type": "single",
+    "stem": "How do external callers authenticate to a REST Apex service?",
+    "options": [
+      {
+        "id": "a",
+        "text": "OAuth through a Connected App"
+      },
+      {
+        "id": "b",
+        "text": "A hardcoded password in the URL"
+      },
+      {
+        "id": "c",
+        "text": "They cannot"
+      },
+      {
+        "id": "d",
+        "text": "With the Developer Console"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Connected Apps provide OAuth for API access.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "itg-10",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Use Flow with Apex",
+    "type": "single",
+    "stem": "Which annotation makes an Apex method available as an action in Flow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "@InvocableMethod"
+      },
+      {
+        "id": "b",
+        "text": "@AuraEnabled"
+      },
+      {
+        "id": "c",
+        "text": "@RemoteAction"
+      },
+      {
+        "id": "d",
+        "text": "@future"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Invocable methods appear as Apex actions in Flow Builder.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "itg-11",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Use Flow with Apex",
+    "type": "single",
+    "stem": "What kind of parameter does an invocable method take?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A List"
+      },
+      {
+        "id": "b",
+        "text": "A single sObject only"
+      },
+      {
+        "id": "c",
+        "text": "A Map only"
+      },
+      {
+        "id": "d",
+        "text": "No parameters"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Invocable methods take a list so they work in bulk.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "itg-12",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Use Flow with Apex",
+    "type": "single",
+    "stem": "When should a flow call Apex?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When the logic is beyond what flow can do, such as callouts or complex calculations"
+      },
+      {
+        "id": "b",
+        "text": "Always"
+      },
+      {
+        "id": "c",
+        "text": "Never"
+      },
+      {
+        "id": "d",
+        "text": "Only for page layouts"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Use declarative tools first and Apex when needed.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "itg-13",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Use events",
+    "type": "single",
+    "stem": "Which feature delivers decoupled, near real-time messages to subscribers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Platform events"
+      },
+      {
+        "id": "b",
+        "text": "Validation rules"
+      },
+      {
+        "id": "c",
+        "text": "Roll-up summaries"
+      },
+      {
+        "id": "d",
+        "text": "Page layouts"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Platform events publish messages that triggers, flows and external systems can subscribe to.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "itg-14",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Use events",
+    "type": "single",
+    "stem": "How does a trigger subscribe to a platform event?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A trigger on the event object, after insert"
+      },
+      {
+        "id": "b",
+        "text": "A before update trigger"
+      },
+      {
+        "id": "c",
+        "text": "A Visualforce page"
+      },
+      {
+        "id": "d",
+        "text": "A page layout"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Event triggers run after insert on the event object.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "itg-15",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Make callouts",
+    "type": "single",
+    "stem": "What should code do with an HTTP response?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Check the status code and handle failures"
+      },
+      {
+        "id": "b",
+        "text": "Assume success"
+      },
+      {
+        "id": "c",
+        "text": "Ignore the body"
+      },
+      {
+        "id": "d",
+        "text": "Retry forever"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Always check the status code and handle errors.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "itg-16",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Make callouts",
+    "type": "single",
+    "stem": "Which serialisation method converts an Apex object to JSON?",
+    "options": [
+      {
+        "id": "a",
+        "text": "JSON.serialize"
+      },
+      {
+        "id": "b",
+        "text": "JSON.write"
+      },
+      {
+        "id": "c",
+        "text": "System.toJson"
+      },
+      {
+        "id": "d",
+        "text": "Object.toString"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "JSON.serialize creates JSON text.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "itg-17",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Make callouts",
+    "type": "single",
+    "stem": "Where should integration endpoints for sandbox and production differ without code changes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In a Named Credential or custom metadata"
+      },
+      {
+        "id": "b",
+        "text": "In the class body"
+      },
+      {
+        "id": "c",
+        "text": "In a trigger"
+      },
+      {
+        "id": "d",
+        "text": "In a validation rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Environment-specific values belong in configuration.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "itg-18",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Make callouts",
+    "type": "single",
+    "stem": "What is the best option for a callout that must happen after DML?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A queueable or future callout"
+      },
+      {
+        "id": "b",
+        "text": "An immediate callout"
+      },
+      {
+        "id": "c",
+        "text": "A formula field"
+      },
+      {
+        "id": "d",
+        "text": "A validation rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Move it to asynchronous Apex.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "itg-19",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Expose Apex",
+    "type": "multi",
+    "stem": "Which TWO are true of REST Apex classes? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "The class is global"
+      },
+      {
+        "id": "b",
+        "text": "Methods are static"
+      },
+      {
+        "id": "c",
+        "text": "Methods are private"
+      },
+      {
+        "id": "d",
+        "text": "Classes must be abstract"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Resource classes and handler methods are global, and methods are static.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "itg-20",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Make callouts",
+    "type": "single",
+    "stem": "What is the total callout timeout for a transaction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "120 seconds"
+      },
+      {
+        "id": "b",
+        "text": "10 seconds"
+      },
+      {
+        "id": "c",
+        "text": "30 seconds"
+      },
+      {
+        "id": "d",
+        "text": "10 minutes"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The cumulative callout time is 120 seconds, with each callout up to 120 seconds.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "itg-21",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Make callouts",
+    "type": "single",
+    "stem": "Which of these should NEVER be done with credentials in Apex?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hardcode them in the class"
+      },
+      {
+        "id": "b",
+        "text": "Use a Named Credential"
+      },
+      {
+        "id": "c",
+        "text": "Use an External Credential"
+      },
+      {
+        "id": "d",
+        "text": "Use OAuth"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Never hardcode secrets in source code.",
+    "difficulty": 1,
+    "tags": []
+  }
+]

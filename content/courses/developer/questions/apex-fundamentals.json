@@ -1,0 +1,708 @@
+[
+  {
+    "id": "apf-01",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Explain Apex",
+    "type": "single",
+    "stem": "Which statement about Apex is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is strongly typed, object-oriented and runs on Salesforce servers"
+      },
+      {
+        "id": "b",
+        "text": "It runs in the user's browser"
+      },
+      {
+        "id": "c",
+        "text": "It is a weakly typed scripting language"
+      },
+      {
+        "id": "d",
+        "text": "It only runs inside flows"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Apex is strongly typed and object-oriented, similar to Java, and runs on the platform.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apf-02",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Use collections",
+    "type": "single",
+    "stem": "Which collection does NOT allow duplicate values?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Set"
+      },
+      {
+        "id": "b",
+        "text": "List"
+      },
+      {
+        "id": "c",
+        "text": "Map values"
+      },
+      {
+        "id": "d",
+        "text": "Array of sObjects"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A Set stores unique values. Lists allow duplicates, and map values can repeat while keys cannot.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apf-03",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Use collections",
+    "type": "single",
+    "stem": "What is the index of the first element in an Apex List?",
+    "options": [
+      {
+        "id": "a",
+        "text": "0"
+      },
+      {
+        "id": "b",
+        "text": "1"
+      },
+      {
+        "id": "c",
+        "text": "-1"
+      },
+      {
+        "id": "d",
+        "text": "It depends on the type"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Lists are zero-based.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apf-04",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Use collections",
+    "type": "single",
+    "stem": "A Map is created from a SOQL query: new Map<Id, Account>([SELECT Id FROM Account]). What are the keys?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The record Ids"
+      },
+      {
+        "id": "b",
+        "text": "The record names"
+      },
+      {
+        "id": "c",
+        "text": "Row numbers"
+      },
+      {
+        "id": "d",
+        "text": "Owner Ids"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Maps built directly from a query use the record Id as the key.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "apf-05",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Write classes",
+    "type": "single",
+    "stem": "Which access modifier makes a member visible only within its own class?",
+    "options": [
+      {
+        "id": "a",
+        "text": "private"
+      },
+      {
+        "id": "b",
+        "text": "protected"
+      },
+      {
+        "id": "c",
+        "text": "public"
+      },
+      {
+        "id": "d",
+        "text": "global"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Private limits visibility to the defining class.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apf-06",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Write classes",
+    "type": "single",
+    "stem": "What does a global access modifier allow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Access from any Apex code, including other namespaces"
+      },
+      {
+        "id": "b",
+        "text": "Access only within the class"
+      },
+      {
+        "id": "c",
+        "text": "Access only in subclasses"
+      },
+      {
+        "id": "d",
+        "text": "Access only in tests"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Global is used in managed packages and web services.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "apf-07",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Use inheritance and interfaces",
+    "type": "single",
+    "stem": "What must a parent method be to allow a child class to override it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "virtual or abstract"
+      },
+      {
+        "id": "b",
+        "text": "static"
+      },
+      {
+        "id": "c",
+        "text": "private"
+      },
+      {
+        "id": "d",
+        "text": "final"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Methods must be marked virtual (or be abstract) to be overridden with the override keyword.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "apf-08",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Use inheritance and interfaces",
+    "type": "single",
+    "stem": "Which keyword does a class use to adopt an interface?",
+    "options": [
+      {
+        "id": "a",
+        "text": "implements"
+      },
+      {
+        "id": "b",
+        "text": "extends"
+      },
+      {
+        "id": "c",
+        "text": "inherits"
+      },
+      {
+        "id": "d",
+        "text": "uses"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A class implements an interface and extends another class.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apf-09",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Use inheritance and interfaces",
+    "type": "single",
+    "stem": "What is true of an abstract class?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It cannot be instantiated directly"
+      },
+      {
+        "id": "b",
+        "text": "It cannot have methods"
+      },
+      {
+        "id": "c",
+        "text": "It must be final"
+      },
+      {
+        "id": "d",
+        "text": "It can only contain static methods"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Abstract classes are designed to be extended and cannot be created directly.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "apf-10",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Handle errors",
+    "type": "single",
+    "stem": "What happens when you call a method on a variable that is null?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A NullPointerException is thrown"
+      },
+      {
+        "id": "b",
+        "text": "An empty string is returned"
+      },
+      {
+        "id": "c",
+        "text": "The variable is created"
+      },
+      {
+        "id": "d",
+        "text": "Nothing happens"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Calling a method on null throws a NullPointerException.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apf-11",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Handle errors",
+    "type": "single",
+    "stem": "How do you create a custom exception class?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Extend Exception and end the class name with Exception"
+      },
+      {
+        "id": "b",
+        "text": "Implement the Exception interface"
+      },
+      {
+        "id": "c",
+        "text": "Name it Error"
+      },
+      {
+        "id": "d",
+        "text": "Use the throw keyword in the class header"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Custom exceptions extend Exception and their names must end in Exception.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "apf-12",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Handle errors",
+    "type": "single",
+    "stem": "Which kind of exception cannot be caught with try/catch?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A governor limit exception"
+      },
+      {
+        "id": "b",
+        "text": "DmlException"
+      },
+      {
+        "id": "c",
+        "text": "QueryException"
+      },
+      {
+        "id": "d",
+        "text": "A custom exception"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Limit exceptions cannot be caught and abort the transaction.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apf-13",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Handle errors",
+    "type": "single",
+    "stem": "What does a finally block do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Runs whether or not an exception occurred"
+      },
+      {
+        "id": "b",
+        "text": "Runs only when there is an error"
+      },
+      {
+        "id": "c",
+        "text": "Runs only on success"
+      },
+      {
+        "id": "d",
+        "text": "Skips the catch block"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Finally always runs after try and catch.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apf-14",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Declare variables",
+    "type": "single",
+    "stem": "Which is the correct way to declare a constant in Apex?",
+    "options": [
+      {
+        "id": "a",
+        "text": "private static final Decimal VAT = 0.15;"
+      },
+      {
+        "id": "b",
+        "text": "const Decimal VAT = 0.15;"
+      },
+      {
+        "id": "c",
+        "text": "readonly Decimal VAT = 0.15;"
+      },
+      {
+        "id": "d",
+        "text": "private Decimal VAT = 0.15;"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Constants use static final.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apf-15",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Declare variables",
+    "type": "single",
+    "stem": "How do you write a string literal in Apex?",
+    "options": [
+      {
+        "id": "a",
+        "text": "With single quotes"
+      },
+      {
+        "id": "b",
+        "text": "With double quotes"
+      },
+      {
+        "id": "c",
+        "text": "With backticks"
+      },
+      {
+        "id": "d",
+        "text": "With square brackets"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Apex strings use single quotes.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apf-16",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Declare variables",
+    "type": "single",
+    "stem": "Which statement is true about Apex case sensitivity?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apex is case-insensitive"
+      },
+      {
+        "id": "b",
+        "text": "Apex is case-sensitive for class names"
+      },
+      {
+        "id": "c",
+        "text": "Apex is case-sensitive for variable names"
+      },
+      {
+        "id": "d",
+        "text": "Apex is case-sensitive for keywords only"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Apex is not case-sensitive for names and keywords. The == operator on strings is also case-insensitive.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "apf-17",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Declare variables",
+    "type": "single",
+    "stem": "Which statement compares two Strings and is case-sensitive?",
+    "options": [
+      {
+        "id": "a",
+        "text": "a.equals(b)"
+      },
+      {
+        "id": "b",
+        "text": "a == b"
+      },
+      {
+        "id": "c",
+        "text": "a.equalsIgnoreCase(b)"
+      },
+      {
+        "id": "d",
+        "text": "a.contains(b)"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "equals() is case-sensitive. == and equalsIgnoreCase() ignore case.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "apf-18",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Use collections",
+    "type": "multi",
+    "stem": "Which TWO are valid Apex collection types? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "List"
+      },
+      {
+        "id": "b",
+        "text": "Map"
+      },
+      {
+        "id": "c",
+        "text": "Array list of Tuples"
+      },
+      {
+        "id": "d",
+        "text": "Stack"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Apex has List, Set and Map.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apf-19",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Explain Apex",
+    "type": "single",
+    "stem": "When should a developer choose Apex over declarative tools?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When requirements exceed what flows, formulas and validation rules can do"
+      },
+      {
+        "id": "b",
+        "text": "Always, because code is faster to build"
+      },
+      {
+        "id": "c",
+        "text": "Only for reports"
+      },
+      {
+        "id": "d",
+        "text": "Never in production"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Salesforce recommends clicks first and code when declarative tools are not enough.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apf-20",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Write classes",
+    "type": "single",
+    "stem": "What does a static method belong to?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The class itself, called without creating an instance"
+      },
+      {
+        "id": "b",
+        "text": "One object instance only"
+      },
+      {
+        "id": "c",
+        "text": "The trigger"
+      },
+      {
+        "id": "d",
+        "text": "The test class only"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Static members belong to the class.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "apf-21",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Write classes",
+    "type": "multi",
+    "stem": "Which TWO are true of a constructor? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "It has the same name as the class"
+      },
+      {
+        "id": "b",
+        "text": "It has no return type"
+      },
+      {
+        "id": "c",
+        "text": "It must be static"
+      },
+      {
+        "id": "d",
+        "text": "It must return Void"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Constructors share the class name and declare no return type.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "apf-22",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Write control flow",
+    "type": "single",
+    "stem": "Which control statement chooses between several literal values and supports 'when else'?",
+    "options": [
+      {
+        "id": "a",
+        "text": "switch"
+      },
+      {
+        "id": "b",
+        "text": "for"
+      },
+      {
+        "id": "c",
+        "text": "do-while"
+      },
+      {
+        "id": "d",
+        "text": "try"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Apex has switch on with when and when else clauses.",
+    "difficulty": 2,
+    "tags": []
+  }
+]

@@ -1,0 +1,643 @@
+[
+  {
+    "id": "tst-01",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Know coverage rules",
+    "type": "single",
+    "stem": "How much org-wide Apex code coverage is required to deploy to production?",
+    "options": [
+      {
+        "id": "a",
+        "text": "75%"
+      },
+      {
+        "id": "b",
+        "text": "50%"
+      },
+      {
+        "id": "c",
+        "text": "100%"
+      },
+      {
+        "id": "d",
+        "text": "90%"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The org needs at least 75% coverage with all tests passing.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "tst-02",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Know coverage rules",
+    "type": "single",
+    "stem": "Which statement about triggers and coverage is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Every trigger needs some coverage"
+      },
+      {
+        "id": "b",
+        "text": "Triggers need no tests"
+      },
+      {
+        "id": "c",
+        "text": "Triggers need 100% coverage"
+      },
+      {
+        "id": "d",
+        "text": "Only classes need coverage"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Each trigger must have coverage above 0%.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "tst-03",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Write tests",
+    "type": "single",
+    "stem": "Which annotation marks a class or method as a test?",
+    "options": [
+      {
+        "id": "a",
+        "text": "@isTest"
+      },
+      {
+        "id": "b",
+        "text": "@Test"
+      },
+      {
+        "id": "c",
+        "text": "@testing"
+      },
+      {
+        "id": "d",
+        "text": "@unit"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Use @isTest on classes and methods.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "tst-04",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Write tests",
+    "type": "single",
+    "stem": "Is test data saved to the database after tests run?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, it is rolled back"
+      },
+      {
+        "id": "b",
+        "text": "Yes, always"
+      },
+      {
+        "id": "c",
+        "text": "Only in sandboxes"
+      },
+      {
+        "id": "d",
+        "text": "Only for custom objects"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Records created in tests are rolled back.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "tst-05",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Write tests",
+    "type": "single",
+    "stem": "By default, can test methods see existing org data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, SeeAllData is false"
+      },
+      {
+        "id": "b",
+        "text": "Yes"
+      },
+      {
+        "id": "c",
+        "text": "Only Accounts"
+      },
+      {
+        "id": "d",
+        "text": "Only in production"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Tests should create their own data.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "tst-06",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Write tests",
+    "type": "single",
+    "stem": "What does Test.startTest() do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Starts a fresh set of governor limits for the code under test"
+      },
+      {
+        "id": "b",
+        "text": "Starts the transaction"
+      },
+      {
+        "id": "c",
+        "text": "Deletes data"
+      },
+      {
+        "id": "d",
+        "text": "Turns on debug logs"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "startTest and stopTest give the code in between its own limits.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "tst-07",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Write tests",
+    "type": "single",
+    "stem": "What does Test.stopTest() do with asynchronous jobs?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Forces them to complete synchronously"
+      },
+      {
+        "id": "b",
+        "text": "Cancels them"
+      },
+      {
+        "id": "c",
+        "text": "Ignores them"
+      },
+      {
+        "id": "d",
+        "text": "Queues them for tomorrow"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Async work finishes at stopTest so assertions can run.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "tst-08",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Write tests",
+    "type": "single",
+    "stem": "Why is a test with no assertions weak?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It may cover lines but does not prove behaviour"
+      },
+      {
+        "id": "b",
+        "text": "It fails deployment"
+      },
+      {
+        "id": "c",
+        "text": "It takes longer"
+      },
+      {
+        "id": "d",
+        "text": "It deletes data"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Coverage is not the same as correctness.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "tst-09",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Write tests",
+    "type": "single",
+    "stem": "Which assertion method checks that two values match?",
+    "options": [
+      {
+        "id": "a",
+        "text": "System.assertEquals"
+      },
+      {
+        "id": "b",
+        "text": "System.checkEquals"
+      },
+      {
+        "id": "c",
+        "text": "Assert.same"
+      },
+      {
+        "id": "d",
+        "text": "System.match"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "System.assertEquals and Assert.areEqual compare expected and actual.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "tst-10",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Write tests",
+    "type": "single",
+    "stem": "Which annotation creates shared test data once for all methods in the class?",
+    "options": [
+      {
+        "id": "a",
+        "text": "@testSetup"
+      },
+      {
+        "id": "b",
+        "text": "@isTest(setup)"
+      },
+      {
+        "id": "c",
+        "text": "@beforeAll"
+      },
+      {
+        "id": "d",
+        "text": "@shared"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "@testSetup runs once before test methods.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "tst-11",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Test users and sharing",
+    "type": "single",
+    "stem": "Which method tests code as a different user?",
+    "options": [
+      {
+        "id": "a",
+        "text": "System.runAs"
+      },
+      {
+        "id": "b",
+        "text": "System.asUser"
+      },
+      {
+        "id": "c",
+        "text": "Test.setUser"
+      },
+      {
+        "id": "d",
+        "text": "Database.runAs"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "runAs applies that user's permissions and sharing.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "tst-12",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Mock callouts",
+    "type": "single",
+    "stem": "How do you test code that makes an HTTP callout?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Test.setMock with an HttpCalloutMock"
+      },
+      {
+        "id": "b",
+        "text": "Call the real endpoint"
+      },
+      {
+        "id": "c",
+        "text": "Skip it"
+      },
+      {
+        "id": "d",
+        "text": "Use SeeAllData"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Real callouts are not allowed in tests.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "tst-13",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Test triggers",
+    "type": "single",
+    "stem": "What is the best number of records to use in a bulk trigger test?",
+    "options": [
+      {
+        "id": "a",
+        "text": "200"
+      },
+      {
+        "id": "b",
+        "text": "1"
+      },
+      {
+        "id": "c",
+        "text": "5"
+      },
+      {
+        "id": "d",
+        "text": "10,000"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "200 is a standard batch of records.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "tst-14",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Write tests",
+    "type": "single",
+    "stem": "What is a test data factory?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A utility class that creates test records"
+      },
+      {
+        "id": "b",
+        "text": "A flow"
+      },
+      {
+        "id": "c",
+        "text": "A trigger"
+      },
+      {
+        "id": "d",
+        "text": "A permission set"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A factory centralises test record creation.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "tst-15",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Know coverage rules",
+    "type": "single",
+    "stem": "Can test classes count towards the org's Apex code size limit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No"
+      },
+      {
+        "id": "b",
+        "text": "Yes"
+      },
+      {
+        "id": "c",
+        "text": "Only triggers"
+      },
+      {
+        "id": "d",
+        "text": "Only in production"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Test classes marked @isTest are excluded.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "tst-16",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Write tests",
+    "type": "single",
+    "stem": "A developer needs the test to load records from a CSV static resource. Which method?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Test.loadData"
+      },
+      {
+        "id": "b",
+        "text": "Database.loadCsv"
+      },
+      {
+        "id": "c",
+        "text": "System.importData"
+      },
+      {
+        "id": "d",
+        "text": "Test.insertCsv"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Test.loadData loads records from a static resource.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "tst-17",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Know coverage rules",
+    "type": "single",
+    "stem": "What must happen during deployment to production for tests?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apex tests run and must all pass"
+      },
+      {
+        "id": "b",
+        "text": "Only new tests run"
+      },
+      {
+        "id": "c",
+        "text": "No tests run"
+      },
+      {
+        "id": "d",
+        "text": "Tests run only for triggers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Production deployments with Apex run local tests by default and all must pass.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "tst-18",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Write tests",
+    "type": "single",
+    "stem": "Why do tests need their own data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Org data may differ between sandbox and production"
+      },
+      {
+        "id": "b",
+        "text": "Org data is hidden by the platform in all cases"
+      },
+      {
+        "id": "c",
+        "text": "Test data is free"
+      },
+      {
+        "id": "d",
+        "text": "Salesforce forbids queries"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Dependence on org data makes tests fragile.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "tst-19",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Test triggers",
+    "type": "multi",
+    "stem": "Which TWO are good test cases for a trigger? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A bulk insert of 200 records"
+      },
+      {
+        "id": "b",
+        "text": "A negative case that expects an error"
+      },
+      {
+        "id": "c",
+        "text": "A test with no assertions"
+      },
+      {
+        "id": "d",
+        "text": "A test using real customer records"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Cover bulk and negative scenarios.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "tst-20",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Test triggers",
+    "type": "single",
+    "stem": "A test for a flow-triggered process fails because a flow also updates the field. What should the developer remember?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Record-triggered flows also run during tests"
+      },
+      {
+        "id": "b",
+        "text": "Flows never run in tests"
+      },
+      {
+        "id": "c",
+        "text": "Flows run only in production"
+      },
+      {
+        "id": "d",
+        "text": "Flows run after the test ends"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Declarative automation runs on test DML, so expectations must include it.",
+    "difficulty": 2,
+    "tags": []
+  }
+]

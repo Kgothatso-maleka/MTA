@@ -1,0 +1,675 @@
+[
+  {
+    "id": "lde-01",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Use Lightning Data Service",
+    "type": "single",
+    "stem": "Which component gives a quick form to view or edit one record with minimal code?",
+    "options": [
+      {
+        "id": "a",
+        "text": "lightning-record-form"
+      },
+      {
+        "id": "b",
+        "text": "lightning-datatable"
+      },
+      {
+        "id": "c",
+        "text": "lightning-card"
+      },
+      {
+        "id": "d",
+        "text": "lightning-input only"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "record-form is the quickest and record-view-form and record-edit-form add control.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lde-02",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Use Lightning Data Service",
+    "type": "single",
+    "stem": "What does Lightning Data Service respect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Field-level security and sharing"
+      },
+      {
+        "id": "b",
+        "text": "Nothing, it runs in system mode"
+      },
+      {
+        "id": "c",
+        "text": "Only profiles"
+      },
+      {
+        "id": "d",
+        "text": "Only roles"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "LDS enforces user permissions and shares a cache.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lde-03",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Use Lightning Data Service",
+    "type": "single",
+    "stem": "What does '$recordId' in a wire configuration do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Makes the wire reactive to changes of recordId"
+      },
+      {
+        "id": "b",
+        "text": "Hardcodes the Id"
+      },
+      {
+        "id": "c",
+        "text": "Converts it to a string"
+      },
+      {
+        "id": "d",
+        "text": "Declares a constant"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A dollar-prefixed value is reactive and re-runs the wire when it changes.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lde-04",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Use Lightning Data Service",
+    "type": "single",
+    "stem": "Which adapter gets a record's field values?",
+    "options": [
+      {
+        "id": "a",
+        "text": "getRecord"
+      },
+      {
+        "id": "b",
+        "text": "getObjectInfo only"
+      },
+      {
+        "id": "c",
+        "text": "queryRecord"
+      },
+      {
+        "id": "d",
+        "text": "getFields"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "getRecord from lightning/uiRecordApi returns record data.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lde-05",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Call Apex",
+    "type": "single",
+    "stem": "Which annotation must an Apex method have to be called from LWC?",
+    "options": [
+      {
+        "id": "a",
+        "text": "@AuraEnabled"
+      },
+      {
+        "id": "b",
+        "text": "@InvocableMethod"
+      },
+      {
+        "id": "c",
+        "text": "@RestResource"
+      },
+      {
+        "id": "d",
+        "text": "@future"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Methods must be @AuraEnabled and static.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lde-06",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Call Apex",
+    "type": "single",
+    "stem": "What does a @wire call to an Apex method require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "cacheable=true"
+      },
+      {
+        "id": "b",
+        "text": "A trigger"
+      },
+      {
+        "id": "c",
+        "text": "global access"
+      },
+      {
+        "id": "d",
+        "text": "readOnly=false"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Wired Apex methods must be @AuraEnabled(cacheable=true).",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lde-07",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Call Apex",
+    "type": "single",
+    "stem": "A method inserts records. How must LWC call it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Imperatively"
+      },
+      {
+        "id": "b",
+        "text": "With @wire"
+      },
+      {
+        "id": "c",
+        "text": "With a getter"
+      },
+      {
+        "id": "d",
+        "text": "With a trigger"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Cacheable methods cannot do DML, so a DML method is called imperatively.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lde-08",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Call Apex",
+    "type": "single",
+    "stem": "Which function refreshes wired Apex data after a change?",
+    "options": [
+      {
+        "id": "a",
+        "text": "refreshApex"
+      },
+      {
+        "id": "b",
+        "text": "reloadWire"
+      },
+      {
+        "id": "c",
+        "text": "updateApex"
+      },
+      {
+        "id": "d",
+        "text": "resetWire"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "refreshApex re-queries a wired result.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lde-09",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Use events",
+    "type": "single",
+    "stem": "What is the correct way for a child to notify its parent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dispatch a CustomEvent"
+      },
+      {
+        "id": "b",
+        "text": "Call the parent's method directly"
+      },
+      {
+        "id": "c",
+        "text": "Change a parent property"
+      },
+      {
+        "id": "d",
+        "text": "Use a trigger"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Events flow up from child to parent.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lde-10",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Use events",
+    "type": "single",
+    "stem": "Where does an event put the data it carries?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In the detail property"
+      },
+      {
+        "id": "b",
+        "text": "In the target"
+      },
+      {
+        "id": "c",
+        "text": "In the name"
+      },
+      {
+        "id": "d",
+        "text": "In bubbles"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "CustomEvent data goes in detail.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lde-11",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Use events",
+    "type": "single",
+    "stem": "Which is a valid custom event name for LWC?",
+    "options": [
+      {
+        "id": "a",
+        "text": "select"
+      },
+      {
+        "id": "b",
+        "text": "Select-Item"
+      },
+      {
+        "id": "c",
+        "text": "select item"
+      },
+      {
+        "id": "d",
+        "text": "SELECT_ITEM"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Names should be lowercase with no spaces or hyphens.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lde-12",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Use events",
+    "type": "single",
+    "stem": "How does a parent send data to a child component?",
+    "options": [
+      {
+        "id": "a",
+        "text": "By setting the child's public @api property"
+      },
+      {
+        "id": "b",
+        "text": "By dispatching an event"
+      },
+      {
+        "id": "c",
+        "text": "By changing the child's CSS"
+      },
+      {
+        "id": "d",
+        "text": "With a trigger"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Parent sets public properties or calls @api methods.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lde-13",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Use events",
+    "type": "single",
+    "stem": "How does the parent listen to a 'select' event in the template?",
+    "options": [
+      {
+        "id": "a",
+        "text": "onselect={handleSelect}"
+      },
+      {
+        "id": "b",
+        "text": "@select={handleSelect}"
+      },
+      {
+        "id": "c",
+        "text": "on:select={handleSelect}"
+      },
+      {
+        "id": "d",
+        "text": "listen-select"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Handlers use the 'on' prefix and the event name.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lde-14",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Use events",
+    "type": "single",
+    "stem": "Which feature lets unrelated components on a page exchange messages?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lightning Message Service"
+      },
+      {
+        "id": "b",
+        "text": "Parent properties"
+      },
+      {
+        "id": "c",
+        "text": "Custom labels"
+      },
+      {
+        "id": "d",
+        "text": "Platform cache"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "LMS uses message channels and works across LWC, Aura and Visualforce.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lde-15",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Navigate and notify",
+    "type": "single",
+    "stem": "Which feature navigates to records or pages from an LWC?",
+    "options": [
+      {
+        "id": "a",
+        "text": "NavigationMixin"
+      },
+      {
+        "id": "b",
+        "text": "ShowToastEvent"
+      },
+      {
+        "id": "c",
+        "text": "LightningElement"
+      },
+      {
+        "id": "d",
+        "text": "refreshApex"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "NavigationMixin navigates to pages.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lde-16",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Navigate and notify",
+    "type": "single",
+    "stem": "Which event shows a toast message?",
+    "options": [
+      {
+        "id": "a",
+        "text": "ShowToastEvent"
+      },
+      {
+        "id": "b",
+        "text": "ToastEvent"
+      },
+      {
+        "id": "c",
+        "text": "ShowMessage"
+      },
+      {
+        "id": "d",
+        "text": "NotifyEvent"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "ShowToastEvent from lightning/platformShowToastEvent shows toasts.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lde-17",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Test components",
+    "type": "single",
+    "stem": "Which tool is used to unit test LWC?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jest"
+      },
+      {
+        "id": "b",
+        "text": "JUnit"
+      },
+      {
+        "id": "c",
+        "text": "Apex test class"
+      },
+      {
+        "id": "d",
+        "text": "Selenium only"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "LWC tests use Jest with sfdx-lwc-jest.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lde-18",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Use Lightning Data Service",
+    "type": "single",
+    "stem": "When is LDS preferred over Apex?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Working with a single record with built-in security and caching"
+      },
+      {
+        "id": "b",
+        "text": "Complex multi-object logic"
+      },
+      {
+        "id": "c",
+        "text": "Callouts"
+      },
+      {
+        "id": "d",
+        "text": "Large aggregate queries"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "LDS reduces code and respects security for single-record work.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lde-19",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Use events",
+    "type": "single",
+    "stem": "What do bubbles and composed control on a CustomEvent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Whether the event propagates up and crosses shadow boundaries"
+      },
+      {
+        "id": "b",
+        "text": "Which data it carries"
+      },
+      {
+        "id": "c",
+        "text": "Its name"
+      },
+      {
+        "id": "d",
+        "text": "Its handler"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Bubbles lets it pass up the DOM and composed lets it cross shadow DOM boundaries.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "lde-20",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Use events",
+    "type": "multi",
+    "stem": "Which TWO are ways to send data from parent to child? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Set a public @api property"
+      },
+      {
+        "id": "b",
+        "text": "Call a public @api method"
+      },
+      {
+        "id": "c",
+        "text": "Dispatch a CustomEvent from the child"
+      },
+      {
+        "id": "d",
+        "text": "Use a wire adapter in the child"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Parent to child uses public properties or methods.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lde-21",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Call Apex",
+    "type": "single",
+    "stem": "Wired Apex result is stale after a button saved data. What do you call?",
+    "options": [
+      {
+        "id": "a",
+        "text": "refreshApex on the wired result"
+      },
+      {
+        "id": "b",
+        "text": "dispatchEvent"
+      },
+      {
+        "id": "c",
+        "text": "connectedCallback"
+      },
+      {
+        "id": "d",
+        "text": "Navigate"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "refreshApex refreshes cached wire results.",
+    "difficulty": 2,
+    "tags": []
+  }
+]

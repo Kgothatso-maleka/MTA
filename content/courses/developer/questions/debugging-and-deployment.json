@@ -1,0 +1,643 @@
+[
+  {
+    "id": "dbg-01",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Use debug logs",
+    "type": "single",
+    "stem": "What do you need to set up before a debug log records a user's activity?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A trace flag"
+      },
+      {
+        "id": "b",
+        "text": "A permission set"
+      },
+      {
+        "id": "c",
+        "text": "A sharing rule"
+      },
+      {
+        "id": "d",
+        "text": "A Named Credential"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Trace flags define who is logged, for how long and at what level.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dbg-02",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Use debug logs",
+    "type": "single",
+    "stem": "Which log level setting records the most detail?",
+    "options": [
+      {
+        "id": "a",
+        "text": "FINEST"
+      },
+      {
+        "id": "b",
+        "text": "INFO"
+      },
+      {
+        "id": "c",
+        "text": "ERROR"
+      },
+      {
+        "id": "d",
+        "text": "NONE"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "FINEST records the most, but logs are larger.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dbg-03",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Use debug logs",
+    "type": "single",
+    "stem": "What is the maximum size of a debug log?",
+    "options": [
+      {
+        "id": "a",
+        "text": "20 MB"
+      },
+      {
+        "id": "b",
+        "text": "2 MB"
+      },
+      {
+        "id": "c",
+        "text": "200 MB"
+      },
+      {
+        "id": "d",
+        "text": "1 GB"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A debug log is truncated at 20 MB.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "dbg-04",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Use debug logs",
+    "type": "single",
+    "stem": "Which filter finds your System.debug lines in the log?",
+    "options": [
+      {
+        "id": "a",
+        "text": "USER_DEBUG"
+      },
+      {
+        "id": "b",
+        "text": "DML_BEGIN"
+      },
+      {
+        "id": "c",
+        "text": "LIMIT_USAGE"
+      },
+      {
+        "id": "d",
+        "text": "HEAP"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Debug statements are tagged USER_DEBUG.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dbg-05",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Use debugging tools",
+    "type": "single",
+    "stem": "Which tool lets you step through a recorded log in VS Code with variable values?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apex Replay Debugger"
+      },
+      {
+        "id": "b",
+        "text": "Query Plan"
+      },
+      {
+        "id": "c",
+        "text": "Schema Builder"
+      },
+      {
+        "id": "d",
+        "text": "Workbench"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Replay Debugger replays a log without a live session.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dbg-06",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Use debugging tools",
+    "type": "single",
+    "stem": "Which tool shows how a SOQL query will use indexes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Query Plan tool"
+      },
+      {
+        "id": "b",
+        "text": "Replay Debugger"
+      },
+      {
+        "id": "c",
+        "text": "Event Log"
+      },
+      {
+        "id": "d",
+        "text": "Setup Audit Trail"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Query Plan tool in the Developer Console shows cost and index use.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dbg-07",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Use debugging tools",
+    "type": "single",
+    "stem": "Which tool runs a snippet of Apex without saving a class?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Execute Anonymous Window"
+      },
+      {
+        "id": "b",
+        "text": "Data Loader"
+      },
+      {
+        "id": "c",
+        "text": "Schema Builder"
+      },
+      {
+        "id": "d",
+        "text": "Change set"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Execute Anonymous runs ad hoc Apex in the Developer Console or CLI.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dbg-08",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Choose sandboxes",
+    "type": "single",
+    "stem": "Which sandbox type copies only metadata and has the smallest storage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Developer"
+      },
+      {
+        "id": "b",
+        "text": "Partial Copy"
+      },
+      {
+        "id": "c",
+        "text": "Full"
+      },
+      {
+        "id": "d",
+        "text": "Production"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Developer sandboxes copy configuration, not data.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dbg-09",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Choose sandboxes",
+    "type": "single",
+    "stem": "Which sandbox contains a sample of production data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Partial Copy"
+      },
+      {
+        "id": "b",
+        "text": "Developer"
+      },
+      {
+        "id": "c",
+        "text": "Developer Pro"
+      },
+      {
+        "id": "d",
+        "text": "Scratch org"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Partial Copy includes metadata and a defined sample of data.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dbg-10",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Choose sandboxes",
+    "type": "single",
+    "stem": "Which sandbox is an exact copy including all data, suited to performance testing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Full"
+      },
+      {
+        "id": "b",
+        "text": "Developer Pro"
+      },
+      {
+        "id": "c",
+        "text": "Partial"
+      },
+      {
+        "id": "d",
+        "text": "Developer"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Full sandboxes copy all metadata and data.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dbg-11",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Choose sandboxes",
+    "type": "single",
+    "stem": "What is the refresh interval for a Full sandbox?",
+    "options": [
+      {
+        "id": "a",
+        "text": "29 days"
+      },
+      {
+        "id": "b",
+        "text": "1 day"
+      },
+      {
+        "id": "c",
+        "text": "5 days"
+      },
+      {
+        "id": "d",
+        "text": "7 days"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Full sandbox refresh interval is 29 days.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "dbg-12",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Choose sandboxes",
+    "type": "single",
+    "stem": "What is a scratch org?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A temporary org created from source files for development"
+      },
+      {
+        "id": "b",
+        "text": "A copy of production"
+      },
+      {
+        "id": "c",
+        "text": "A production backup"
+      },
+      {
+        "id": "d",
+        "text": "A user licence"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Scratch orgs are short-lived and configured by a definition file.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dbg-13",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Deploy changes",
+    "type": "single",
+    "stem": "Which deployment option works only between orgs with a deployment connection?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Change sets"
+      },
+      {
+        "id": "b",
+        "text": "Salesforce CLI"
+      },
+      {
+        "id": "c",
+        "text": "Metadata API"
+      },
+      {
+        "id": "d",
+        "text": "Unlocked packages"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Change sets require connected orgs, such as production and its sandboxes.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dbg-14",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Deploy changes",
+    "type": "single",
+    "stem": "Which statement about change sets is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They cannot delete components"
+      },
+      {
+        "id": "b",
+        "text": "They can delete components"
+      },
+      {
+        "id": "c",
+        "text": "They use Git"
+      },
+      {
+        "id": "d",
+        "text": "They deploy data"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Change sets cannot remove components from the target.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dbg-15",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Deploy changes",
+    "type": "single",
+    "stem": "Which tool supports source-driven, scriptable deployments?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salesforce CLI"
+      },
+      {
+        "id": "b",
+        "text": "Change sets"
+      },
+      {
+        "id": "c",
+        "text": "Setup menu"
+      },
+      {
+        "id": "d",
+        "text": "Data Loader"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The CLI works with source control and CI.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dbg-16",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Deploy changes",
+    "type": "single",
+    "stem": "What is a quick deploy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deploying a previously validated package without rerunning tests"
+      },
+      {
+        "id": "b",
+        "text": "A deployment without tests"
+      },
+      {
+        "id": "c",
+        "text": "A change set shortcut"
+      },
+      {
+        "id": "d",
+        "text": "Deploying to a scratch org"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Validate first, then quick deploy the validated package.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dbg-17",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Deploy changes",
+    "type": "single",
+    "stem": "Which records deploy as metadata?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Custom metadata type records"
+      },
+      {
+        "id": "b",
+        "text": "Account records"
+      },
+      {
+        "id": "c",
+        "text": "Contact records"
+      },
+      {
+        "id": "d",
+        "text": "Case records"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Custom metadata records are metadata, while ordinary records are data.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "dbg-18",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Plan releases",
+    "type": "single",
+    "stem": "What is a good first step in a safe release path?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Develop and commit in a sandbox or scratch org with source control"
+      },
+      {
+        "id": "b",
+        "text": "Edit in production"
+      },
+      {
+        "id": "c",
+        "text": "Skip testing"
+      },
+      {
+        "id": "d",
+        "text": "Deploy on Friday evening"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Source control and isolated development support safe releases.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dbg-19",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Plan releases",
+    "type": "single",
+    "stem": "Why list manual steps in a deployment checklist?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Some changes, such as flow activation, are not deployed automatically"
+      },
+      {
+        "id": "b",
+        "text": "Salesforce requires it"
+      },
+      {
+        "id": "c",
+        "text": "They are optional"
+      },
+      {
+        "id": "d",
+        "text": "They speed up tests"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Manual steps that are not written down cause failed releases.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dbg-20",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Deploy changes",
+    "type": "multi",
+    "stem": "Which TWO are ways to deploy metadata? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Change sets"
+      },
+      {
+        "id": "b",
+        "text": "Salesforce CLI"
+      },
+      {
+        "id": "c",
+        "text": "Data Import Wizard"
+      },
+      {
+        "id": "d",
+        "text": "Report folders"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Change sets and the CLI deploy metadata. The Import Wizard loads data.",
+    "difficulty": 1,
+    "tags": []
+  }
+]

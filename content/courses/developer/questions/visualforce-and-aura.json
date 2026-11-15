@@ -1,0 +1,643 @@
+[
+  {
+    "id": "vfa-01",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Write Visualforce",
+    "type": "single",
+    "stem": "Which syntax does Visualforce use for expressions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "{! }"
+      },
+      {
+        "id": "b",
+        "text": "{{ }}"
+      },
+      {
+        "id": "c",
+        "text": "<% %>"
+      },
+      {
+        "id": "d",
+        "text": "${ }"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Visualforce merge fields use {! }.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "vfa-02",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Write Visualforce",
+    "type": "single",
+    "stem": "Which controller gives built-in save, edit and delete for one object?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Standard controller"
+      },
+      {
+        "id": "b",
+        "text": "Custom controller"
+      },
+      {
+        "id": "c",
+        "text": "Standard list controller"
+      },
+      {
+        "id": "d",
+        "text": "Aura controller"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The standard controller supplies actions for the record.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "vfa-03",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Write Visualforce",
+    "type": "single",
+    "stem": "What does a controller extension do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adds custom logic to a standard controller"
+      },
+      {
+        "id": "b",
+        "text": "Replaces all controllers"
+      },
+      {
+        "id": "c",
+        "text": "Runs only in tests"
+      },
+      {
+        "id": "d",
+        "text": "Creates PDFs"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Extensions extend the standard controller with Apex.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "vfa-04",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Write Visualforce",
+    "type": "single",
+    "stem": "What does the constructor of a controller extension take?",
+    "options": [
+      {
+        "id": "a",
+        "text": "ApexPages.StandardController"
+      },
+      {
+        "id": "b",
+        "text": "SObject"
+      },
+      {
+        "id": "c",
+        "text": "Id"
+      },
+      {
+        "id": "d",
+        "text": "Trigger.new"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The extension receives the StandardController.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "vfa-05",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Write Visualforce",
+    "type": "single",
+    "stem": "Which attribute creates a PDF from a Visualforce page?",
+    "options": [
+      {
+        "id": "a",
+        "text": "renderAs=\"pdf\""
+      },
+      {
+        "id": "b",
+        "text": "format=\"pdf\""
+      },
+      {
+        "id": "c",
+        "text": "output=\"pdf\""
+      },
+      {
+        "id": "d",
+        "text": "type=\"pdf\""
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "renderAs=pdf on apex:page renders a PDF.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "vfa-06",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Write Visualforce",
+    "type": "single",
+    "stem": "Which controller is used for pages that show a list of records?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Standard list controller"
+      },
+      {
+        "id": "b",
+        "text": "Standard controller"
+      },
+      {
+        "id": "c",
+        "text": "Extension only"
+      },
+      {
+        "id": "d",
+        "text": "Aura controller"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The list controller uses recordSetVar.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "vfa-07",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Reduce view state",
+    "type": "single",
+    "stem": "What is the Visualforce view state limit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "170 KB"
+      },
+      {
+        "id": "b",
+        "text": "10 MB"
+      },
+      {
+        "id": "c",
+        "text": "1 MB"
+      },
+      {
+        "id": "d",
+        "text": "50 KB"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The view state limit is 170 KB.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "vfa-08",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Reduce view state",
+    "type": "single",
+    "stem": "How can you reduce view state?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mark variables transient and reduce form data"
+      },
+      {
+        "id": "b",
+        "text": "Add more fields"
+      },
+      {
+        "id": "c",
+        "text": "Use more forms"
+      },
+      {
+        "id": "d",
+        "text": "Increase heap"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Transient variables are not saved to view state.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "vfa-09",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Secure pages",
+    "type": "single",
+    "stem": "Which risk comes from setting escape=\"false\" on user data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cross-site scripting"
+      },
+      {
+        "id": "b",
+        "text": "SOQL injection"
+      },
+      {
+        "id": "c",
+        "text": "Mixed DML"
+      },
+      {
+        "id": "d",
+        "text": "Governor limit errors"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Unescaped user input can run script in a page.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "vfa-10",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Secure pages",
+    "type": "single",
+    "stem": "Does a custom controller enforce sharing automatically?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, add with sharing and check access yourself"
+      },
+      {
+        "id": "b",
+        "text": "Yes always"
+      },
+      {
+        "id": "c",
+        "text": "Yes for profiles"
+      },
+      {
+        "id": "d",
+        "text": "Yes only in sandboxes"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Custom controllers run in system mode unless you add sharing and security checks.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "vfa-11",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Describe Aura",
+    "type": "single",
+    "stem": "Which files are part of an Aura component bundle?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Markup (.cmp), controller, helper"
+      },
+      {
+        "id": "b",
+        "text": "html, js, xml"
+      },
+      {
+        "id": "c",
+        "text": "page, class, trigger"
+      },
+      {
+        "id": "d",
+        "text": "json and yaml"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Aura bundles include .cmp, Controller.js, Helper.js and more.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "vfa-12",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Describe Aura",
+    "type": "single",
+    "stem": "Which Aura event type is used to communicate from child to parent in the hierarchy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Component event"
+      },
+      {
+        "id": "b",
+        "text": "Application event"
+      },
+      {
+        "id": "c",
+        "text": "Platform event"
+      },
+      {
+        "id": "d",
+        "text": "Custom label"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Component events bubble through the component hierarchy. Application events broadcast.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "vfa-13",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Choose technology",
+    "type": "single",
+    "stem": "Which technology should be used for new components in Lightning Experience?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lightning Web Components"
+      },
+      {
+        "id": "b",
+        "text": "Visualforce"
+      },
+      {
+        "id": "c",
+        "text": "Aura"
+      },
+      {
+        "id": "d",
+        "text": "Classic S-controls"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "LWC is Salesforce's recommended model.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "vfa-14",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Choose technology",
+    "type": "single",
+    "stem": "Which technology runs on the server and renders the page there?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Visualforce"
+      },
+      {
+        "id": "b",
+        "text": "LWC"
+      },
+      {
+        "id": "c",
+        "text": "Aura"
+      },
+      {
+        "id": "d",
+        "text": "Web components"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Visualforce pages are server-rendered while LWC and Aura run in the browser.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "vfa-15",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Choose technology",
+    "type": "single",
+    "stem": "A team needs a printable PDF invoice from a record. Which technology fits best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Visualforce with renderAs pdf"
+      },
+      {
+        "id": "b",
+        "text": "LWC alone"
+      },
+      {
+        "id": "c",
+        "text": "Aura alone"
+      },
+      {
+        "id": "d",
+        "text": "A validation rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Visualforce can render PDFs directly.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "vfa-16",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Choose technology",
+    "type": "single",
+    "stem": "Can Visualforce pages be used in Lightning Experience?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes, through tabs, buttons and Lightning pages"
+      },
+      {
+        "id": "b",
+        "text": "No"
+      },
+      {
+        "id": "c",
+        "text": "Only in Classic"
+      },
+      {
+        "id": "d",
+        "text": "Only in communities"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Visualforce is supported in Lightning Experience.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "vfa-17",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Choose technology",
+    "type": "single",
+    "stem": "What should you do with an old, working Visualforce page?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rebuild only when it needs change or has a real problem"
+      },
+      {
+        "id": "b",
+        "text": "Delete it"
+      },
+      {
+        "id": "c",
+        "text": "Always rebuild immediately"
+      },
+      {
+        "id": "d",
+        "text": "Convert to Aura"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Rewrite for a reason, not just because the technology is older.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "vfa-18",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Write Visualforce",
+    "type": "single",
+    "stem": "Which tag displays a field input bound to a record field in Visualforce?",
+    "options": [
+      {
+        "id": "a",
+        "text": "apex:inputField"
+      },
+      {
+        "id": "b",
+        "text": "apex:outputPanel only"
+      },
+      {
+        "id": "c",
+        "text": "apex:pageBlock"
+      },
+      {
+        "id": "d",
+        "text": "apex:component"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "apex:inputField renders a field matching its type and respects field security.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "vfa-19",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Write Visualforce",
+    "type": "multi",
+    "stem": "Which TWO are Visualforce controller types? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Standard controller"
+      },
+      {
+        "id": "b",
+        "text": "Custom controller"
+      },
+      {
+        "id": "c",
+        "text": "Jest controller"
+      },
+      {
+        "id": "d",
+        "text": "Flow controller"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Visualforce uses standard, custom and list controllers and extensions.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "vfa-20",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Describe Aura",
+    "type": "single",
+    "stem": "Which statement is true about Aura and Visualforce relative to LWC?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aura can host LWC components"
+      },
+      {
+        "id": "b",
+        "text": "LWC can host Aura components"
+      },
+      {
+        "id": "c",
+        "text": "Visualforce can host Aura only"
+      },
+      {
+        "id": "d",
+        "text": "None can be combined"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "LWC can sit inside Aura but not the other way.",
+    "difficulty": 2,
+    "tags": []
+  }
+]

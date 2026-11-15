@@ -1,0 +1,675 @@
+[
+  {
+    "id": "gov-01",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Explain limits",
+    "type": "single",
+    "stem": "Why does Salesforce enforce governor limits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Because multiple customers share resources"
+      },
+      {
+        "id": "b",
+        "text": "To reduce the price of licences"
+      },
+      {
+        "id": "c",
+        "text": "To make Apex slower"
+      },
+      {
+        "id": "d",
+        "text": "To prevent flows from running"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Limits stop one tenant from using too many shared resources.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "gov-02",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Recall limits",
+    "type": "single",
+    "stem": "How many SOQL queries are allowed in one synchronous transaction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "100"
+      },
+      {
+        "id": "b",
+        "text": "20"
+      },
+      {
+        "id": "c",
+        "text": "200"
+      },
+      {
+        "id": "d",
+        "text": "50"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The synchronous limit is 100 SOQL queries.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "gov-03",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Recall limits",
+    "type": "single",
+    "stem": "How many DML statements are allowed in one synchronous transaction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "150"
+      },
+      {
+        "id": "b",
+        "text": "100"
+      },
+      {
+        "id": "c",
+        "text": "200"
+      },
+      {
+        "id": "d",
+        "text": "50"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The limit is 150 DML statements.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "gov-04",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Recall limits",
+    "type": "single",
+    "stem": "What is the maximum number of records SOQL can return in one transaction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "50,000"
+      },
+      {
+        "id": "b",
+        "text": "10,000"
+      },
+      {
+        "id": "c",
+        "text": "100,000"
+      },
+      {
+        "id": "d",
+        "text": "1,000"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "SOQL can retrieve a total of 50,000 rows per transaction.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "gov-05",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Recall limits",
+    "type": "single",
+    "stem": "What is the total number of records DML can process in one transaction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10,000"
+      },
+      {
+        "id": "b",
+        "text": "50,000"
+      },
+      {
+        "id": "c",
+        "text": "150"
+      },
+      {
+        "id": "d",
+        "text": "1,000"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The DML row limit is 10,000.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "gov-06",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Recall limits",
+    "type": "single",
+    "stem": "How much heap memory is allowed in a synchronous transaction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "6 MB"
+      },
+      {
+        "id": "b",
+        "text": "12 MB"
+      },
+      {
+        "id": "c",
+        "text": "3 MB"
+      },
+      {
+        "id": "d",
+        "text": "50 MB"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Synchronous heap is 6 MB, and asynchronous is 12 MB.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "gov-07",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Recall limits",
+    "type": "single",
+    "stem": "What is the CPU time limit for a synchronous transaction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10 seconds"
+      },
+      {
+        "id": "b",
+        "text": "60 seconds"
+      },
+      {
+        "id": "c",
+        "text": "1 second"
+      },
+      {
+        "id": "d",
+        "text": "3 minutes"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Synchronous CPU time is 10,000 ms. Async is 60,000 ms.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "gov-08",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Recall limits",
+    "type": "single",
+    "stem": "How many callouts can one transaction make?",
+    "options": [
+      {
+        "id": "a",
+        "text": "100"
+      },
+      {
+        "id": "b",
+        "text": "10"
+      },
+      {
+        "id": "c",
+        "text": "50"
+      },
+      {
+        "id": "d",
+        "text": "200"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The callout limit is 100 per transaction.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "gov-09",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Explain limits",
+    "type": "single",
+    "stem": "Governor limits apply to what scope?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The whole transaction, shared by all code in it"
+      },
+      {
+        "id": "b",
+        "text": "Each class separately"
+      },
+      {
+        "id": "c",
+        "text": "Each trigger separately"
+      },
+      {
+        "id": "d",
+        "text": "Each user session"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Triggers, flows and classes in the same transaction share one budget.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "gov-10",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Explain limits",
+    "type": "single",
+    "stem": "Can a governor limit exception be caught with try/catch?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No"
+      },
+      {
+        "id": "b",
+        "text": "Yes, with Exception"
+      },
+      {
+        "id": "c",
+        "text": "Yes, with LimitException"
+      },
+      {
+        "id": "d",
+        "text": "Only in tests"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Limit exceptions cannot be caught.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "gov-11",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Bulkify code",
+    "type": "single",
+    "stem": "Which code is bulk-safe?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Collect Ids in a Set, query once with IN, then update a list after the loop"
+      },
+      {
+        "id": "b",
+        "text": "Query inside a for loop"
+      },
+      {
+        "id": "c",
+        "text": "Update inside a for loop"
+      },
+      {
+        "id": "d",
+        "text": "Insert inside a while loop"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Querying and doing DML outside loops keeps usage low.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "gov-12",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Bulkify code",
+    "type": "single",
+    "stem": "Which collection is best for fast lookup of records by Id after one query?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Map<Id, SObject>"
+      },
+      {
+        "id": "b",
+        "text": "List"
+      },
+      {
+        "id": "c",
+        "text": "Set<Id>"
+      },
+      {
+        "id": "d",
+        "text": "String"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A Map allows direct access by key without looping.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "gov-13",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Monitor limits",
+    "type": "single",
+    "stem": "How can you check how many SOQL queries have been used so far?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Limits.getQueries()"
+      },
+      {
+        "id": "b",
+        "text": "System.queries()"
+      },
+      {
+        "id": "c",
+        "text": "Database.getCount()"
+      },
+      {
+        "id": "d",
+        "text": "Trigger.size"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Limits class reports usage and allowed amounts.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "gov-14",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Recall limits",
+    "type": "single",
+    "stem": "What is true of asynchronous Apex limits compared with synchronous limits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Some limits are higher, such as SOQL queries and heap"
+      },
+      {
+        "id": "b",
+        "text": "They are always lower"
+      },
+      {
+        "id": "c",
+        "text": "They are the same"
+      },
+      {
+        "id": "d",
+        "text": "There are no limits"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Async transactions get higher limits for several resources.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "gov-15",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Bulkify code",
+    "type": "single",
+    "stem": "A trigger runs 1 query per record. A data load sends 200 records. What happens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "200 queries, so the transaction fails after the limit of 100"
+      },
+      {
+        "id": "b",
+        "text": "It succeeds"
+      },
+      {
+        "id": "c",
+        "text": "Salesforce splits the records automatically into queries"
+      },
+      {
+        "id": "d",
+        "text": "Only 1 query is used"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The query limit is reached and a limit exception aborts the transaction.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "gov-16",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Bulkify code",
+    "type": "single",
+    "stem": "Which technique helps with a query returning tens of thousands of rows?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A SOQL for loop"
+      },
+      {
+        "id": "b",
+        "text": "A larger heap"
+      },
+      {
+        "id": "c",
+        "text": "Using SOSL"
+      },
+      {
+        "id": "d",
+        "text": "Using static variables"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "SOQL for loops process rows in chunks to reduce heap use.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "gov-17",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Bulkify code",
+    "type": "multi",
+    "stem": "Which TWO practices reduce governor limit use? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Do DML on a list once after the loop"
+      },
+      {
+        "id": "b",
+        "text": "Select only the fields you need"
+      },
+      {
+        "id": "c",
+        "text": "Query inside loops"
+      },
+      {
+        "id": "d",
+        "text": "Use a callout per record"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Fewer statements and smaller result sets save resources.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "gov-18",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Recall limits",
+    "type": "single",
+    "stem": "How many SOSL queries are allowed per transaction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "20"
+      },
+      {
+        "id": "b",
+        "text": "100"
+      },
+      {
+        "id": "c",
+        "text": "2"
+      },
+      {
+        "id": "d",
+        "text": "50"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The SOSL limit is 20.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "gov-19",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Recall limits",
+    "type": "single",
+    "stem": "How many future method calls can one transaction make?",
+    "options": [
+      {
+        "id": "a",
+        "text": "50"
+      },
+      {
+        "id": "b",
+        "text": "10"
+      },
+      {
+        "id": "c",
+        "text": "100"
+      },
+      {
+        "id": "d",
+        "text": "5"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The limit is 50 future calls.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "gov-20",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Monitor limits",
+    "type": "single",
+    "stem": "Where can you see a summary of limits used by a transaction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The debug log"
+      },
+      {
+        "id": "b",
+        "text": "The Setup Audit Trail"
+      },
+      {
+        "id": "c",
+        "text": "The Apex Jobs page"
+      },
+      {
+        "id": "d",
+        "text": "The Login History"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Debug logs include cumulative resource usage.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "gov-21",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Bulkify code",
+    "type": "single",
+    "stem": "Which approach is best for a test of bulk handling?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Insert 200 records in one DML and check results"
+      },
+      {
+        "id": "b",
+        "text": "Insert 1 record"
+      },
+      {
+        "id": "c",
+        "text": "Use only System.debug"
+      },
+      {
+        "id": "d",
+        "text": "Skip testing"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "200 is the standard batch size and exposes non-bulk code.",
+    "difficulty": 1,
+    "tags": []
+  }
+]

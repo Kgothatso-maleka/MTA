@@ -1,0 +1,675 @@
+[
+  {
+    "id": "lwc-01",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Describe files",
+    "type": "single",
+    "stem": "Which file decides where a Lightning web component can be used?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The .js-meta.xml file"
+      },
+      {
+        "id": "b",
+        "text": "The .html file"
+      },
+      {
+        "id": "c",
+        "text": "The .css file"
+      },
+      {
+        "id": "d",
+        "text": "The .js file"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The meta file sets isExposed and the targets.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lwc-02",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Describe files",
+    "type": "single",
+    "stem": "A component folder is named installationCard. How is it referenced in a parent's markup?",
+    "options": [
+      {
+        "id": "a",
+        "text": "<c-installation-card>"
+      },
+      {
+        "id": "b",
+        "text": "<installationCard>"
+      },
+      {
+        "id": "c",
+        "text": "<c:installationCard>"
+      },
+      {
+        "id": "d",
+        "text": "<c_installation_card>"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Camel case becomes kebab case with the c- namespace prefix.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lwc-03",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Describe files",
+    "type": "single",
+    "stem": "Which class does an LWC JavaScript class extend?",
+    "options": [
+      {
+        "id": "a",
+        "text": "LightningElement"
+      },
+      {
+        "id": "b",
+        "text": "Component"
+      },
+      {
+        "id": "c",
+        "text": "BaseElement"
+      },
+      {
+        "id": "d",
+        "text": "HTMLElement only"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Components extend LightningElement from the lwc module.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lwc-04",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Use properties",
+    "type": "single",
+    "stem": "Which decorator makes a property public so a parent can set it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "@api"
+      },
+      {
+        "id": "b",
+        "text": "@track"
+      },
+      {
+        "id": "c",
+        "text": "@wire"
+      },
+      {
+        "id": "d",
+        "text": "@public"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "@api exposes properties and methods publicly.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lwc-05",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Use properties",
+    "type": "single",
+    "stem": "Can a child component change a public property it received from its parent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It should not. Data flows down and events flow up"
+      },
+      {
+        "id": "b",
+        "text": "Yes, freely"
+      },
+      {
+        "id": "c",
+        "text": "Only in connectedCallback"
+      },
+      {
+        "id": "d",
+        "text": "Only with @track"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Public properties are read-only for the child by convention and enforcement.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lwc-06",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Write templates",
+    "type": "single",
+    "stem": "Which is valid in an LWC template?",
+    "options": [
+      {
+        "id": "a",
+        "text": "{isLate}"
+      },
+      {
+        "id": "b",
+        "text": "{count + 1}"
+      },
+      {
+        "id": "c",
+        "text": "{if(isLate)}"
+      },
+      {
+        "id": "d",
+        "text": "{this.count++}"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Only properties and getters may be bound, not expressions.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lwc-07",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Write templates",
+    "type": "single",
+    "stem": "What does for:each require on the first element in the loop?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A unique key"
+      },
+      {
+        "id": "b",
+        "text": "An id attribute"
+      },
+      {
+        "id": "c",
+        "text": "A class"
+      },
+      {
+        "id": "d",
+        "text": "A data attribute"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Every iterated element needs a unique key.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lwc-08",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Write templates",
+    "type": "single",
+    "stem": "Which directive shows content only when a condition is true in modern LWC?",
+    "options": [
+      {
+        "id": "a",
+        "text": "lwc:if"
+      },
+      {
+        "id": "b",
+        "text": "if:true only"
+      },
+      {
+        "id": "c",
+        "text": "render"
+      },
+      {
+        "id": "d",
+        "text": "v-if"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "lwc:if, lwc:elseif and lwc:else are the newer directives.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lwc-09",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Use lifecycle hooks",
+    "type": "single",
+    "stem": "Which lifecycle hook runs when the component is inserted into the DOM?",
+    "options": [
+      {
+        "id": "a",
+        "text": "connectedCallback"
+      },
+      {
+        "id": "b",
+        "text": "constructor"
+      },
+      {
+        "id": "c",
+        "text": "renderedCallback"
+      },
+      {
+        "id": "d",
+        "text": "errorCallback"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "connectedCallback runs when the element is connected.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lwc-10",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Use lifecycle hooks",
+    "type": "single",
+    "stem": "Which hook runs after every render?",
+    "options": [
+      {
+        "id": "a",
+        "text": "renderedCallback"
+      },
+      {
+        "id": "b",
+        "text": "connectedCallback"
+      },
+      {
+        "id": "c",
+        "text": "disconnectedCallback"
+      },
+      {
+        "id": "d",
+        "text": "constructor"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "renderedCallback can run many times, so avoid unconditional state changes.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lwc-11",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Use lifecycle hooks",
+    "type": "single",
+    "stem": "Which hook should clean up listeners when a component is removed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "disconnectedCallback"
+      },
+      {
+        "id": "b",
+        "text": "connectedCallback"
+      },
+      {
+        "id": "c",
+        "text": "renderedCallback"
+      },
+      {
+        "id": "d",
+        "text": "constructor"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "disconnectedCallback runs on removal.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lwc-12",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Use lifecycle hooks",
+    "type": "single",
+    "stem": "What must be called first in an LWC constructor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "super()"
+      },
+      {
+        "id": "b",
+        "text": "this.init()"
+      },
+      {
+        "id": "c",
+        "text": "connectedCallback()"
+      },
+      {
+        "id": "d",
+        "text": "render()"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The constructor must call super() first.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lwc-13",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Use lifecycle hooks",
+    "type": "single",
+    "stem": "Which hook catches errors thrown by child components?",
+    "options": [
+      {
+        "id": "a",
+        "text": "errorCallback"
+      },
+      {
+        "id": "b",
+        "text": "catchCallback"
+      },
+      {
+        "id": "c",
+        "text": "handleError"
+      },
+      {
+        "id": "d",
+        "text": "onerror"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "errorCallback(error, stack) captures errors from descendants.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "lwc-14",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Expose components",
+    "type": "single",
+    "stem": "Which meta file setting makes a component available in Lightning App Builder?",
+    "options": [
+      {
+        "id": "a",
+        "text": "isExposed set to true with targets"
+      },
+      {
+        "id": "b",
+        "text": "isPublic"
+      },
+      {
+        "id": "c",
+        "text": "appBuilder true"
+      },
+      {
+        "id": "d",
+        "text": "exposed false"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "isExposed and a target such as lightning__RecordPage enable App Builder.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lwc-15",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Expose components",
+    "type": "single",
+    "stem": "Which target places a component on a record page?",
+    "options": [
+      {
+        "id": "a",
+        "text": "lightning__RecordPage"
+      },
+      {
+        "id": "b",
+        "text": "lightning__Tab"
+      },
+      {
+        "id": "c",
+        "text": "lightning__Flow"
+      },
+      {
+        "id": "d",
+        "text": "lightning__Record"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "lightning__RecordPage is the record page target.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lwc-16",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Expose components",
+    "type": "single",
+    "stem": "Which element lets an admin set a property in App Builder?",
+    "options": [
+      {
+        "id": "a",
+        "text": "targetConfigs with property elements"
+      },
+      {
+        "id": "b",
+        "text": "@wire"
+      },
+      {
+        "id": "c",
+        "text": "@api only"
+      },
+      {
+        "id": "d",
+        "text": "lwc:if"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "targetConfigs define properties editable in App Builder.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "lwc-17",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Use properties",
+    "type": "single",
+    "stem": "Which statement about reactivity is true in modern LWC?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Class fields are reactive and re-render when reassigned"
+      },
+      {
+        "id": "b",
+        "text": "Only @track fields are reactive"
+      },
+      {
+        "id": "c",
+        "text": "Fields never re-render"
+      },
+      {
+        "id": "d",
+        "text": "Only getters re-render"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Since Spring '20 all fields are reactive.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lwc-18",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Compare LWC and Aura",
+    "type": "single",
+    "stem": "Which statement about Aura and LWC is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An Aura component can contain an LWC but an LWC cannot contain Aura"
+      },
+      {
+        "id": "b",
+        "text": "LWC can contain Aura"
+      },
+      {
+        "id": "c",
+        "text": "Neither can contain the other"
+      },
+      {
+        "id": "d",
+        "text": "Aura is required for new work"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "LWC can be used inside Aura, not the reverse.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lwc-19",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Write templates",
+    "type": "single",
+    "stem": "What should you prefer before building a custom component for a button or table?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Base components such as lightning-button and lightning-datatable"
+      },
+      {
+        "id": "b",
+        "text": "Plain HTML only"
+      },
+      {
+        "id": "c",
+        "text": "Aura"
+      },
+      {
+        "id": "d",
+        "text": "Visualforce"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Base components follow SLDS and handle accessibility.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "lwc-20",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Describe files",
+    "type": "single",
+    "stem": "What keeps one component's HTML and CSS separate from another's?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shadow DOM"
+      },
+      {
+        "id": "b",
+        "text": "Apex"
+      },
+      {
+        "id": "c",
+        "text": "Sharing rules"
+      },
+      {
+        "id": "d",
+        "text": "Named Credentials"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Shadow DOM encapsulates markup and styles.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "lwc-21",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Describe files",
+    "type": "multi",
+    "stem": "Which TWO are files in an LWC bundle? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A .js file"
+      },
+      {
+        "id": "b",
+        "text": "A .html template"
+      },
+      {
+        "id": "c",
+        "text": "A .cmp file"
+      },
+      {
+        "id": "d",
+        "text": "A .page file"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "LWC bundles contain html, js, css and meta xml. Cmp is Aura and page is Visualforce.",
+    "difficulty": 1,
+    "tags": []
+  }
+]

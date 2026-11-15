@@ -1,0 +1,675 @@
+[
+  {
+    "id": "sdl-01",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Write SOQL",
+    "type": "single",
+    "stem": "Which SOQL clause limits the rows returned?",
+    "options": [
+      {
+        "id": "a",
+        "text": "LIMIT"
+      },
+      {
+        "id": "b",
+        "text": "TOP"
+      },
+      {
+        "id": "c",
+        "text": "ROWNUM"
+      },
+      {
+        "id": "d",
+        "text": "FIRST"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "LIMIT caps the number of rows.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "sdl-02",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Write SOQL",
+    "type": "single",
+    "stem": "What does a colon before a variable in SOQL, such as :minRevenue, do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Binds the Apex variable into the query"
+      },
+      {
+        "id": "b",
+        "text": "Creates a field"
+      },
+      {
+        "id": "c",
+        "text": "Escapes a string"
+      },
+      {
+        "id": "d",
+        "text": "Starts a subquery"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Bind variables insert Apex values safely.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "sdl-03",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Query relationships",
+    "type": "single",
+    "stem": "How do you read a parent field from a child query on Contact?",
+    "options": [
+      {
+        "id": "a",
+        "text": "SELECT Account.Name FROM Contact"
+      },
+      {
+        "id": "b",
+        "text": "SELECT Account:Name FROM Contact"
+      },
+      {
+        "id": "c",
+        "text": "SELECT (Account) FROM Contact"
+      },
+      {
+        "id": "d",
+        "text": "SELECT Parent.Name FROM Contact"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Child to parent uses dot notation with the relationship name.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "sdl-04",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Query relationships",
+    "type": "single",
+    "stem": "How do you get child Contacts with their parent Account in one query?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A subquery in the SELECT using the child relationship name Contacts"
+      },
+      {
+        "id": "b",
+        "text": "A JOIN clause"
+      },
+      {
+        "id": "c",
+        "text": "A UNION query"
+      },
+      {
+        "id": "d",
+        "text": "Contacts.Account in WHERE"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Parent to child uses a subquery with the plural child relationship name.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "sdl-05",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Query relationships",
+    "type": "single",
+    "stem": "For a lookup field Installation__c, what is the relationship name used in queries?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Installation__r"
+      },
+      {
+        "id": "b",
+        "text": "Installation__c"
+      },
+      {
+        "id": "c",
+        "text": "Installation__rel"
+      },
+      {
+        "id": "d",
+        "text": "Installations"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Custom relationship names end in __r.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "sdl-06",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Query relationships",
+    "type": "single",
+    "stem": "How many levels of parent relationships can a child-to-parent query traverse?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Up to 5"
+      },
+      {
+        "id": "b",
+        "text": "Only 1"
+      },
+      {
+        "id": "c",
+        "text": "Up to 2"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "You can traverse up to five levels of parents.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "sdl-07",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Use SOSL",
+    "type": "single",
+    "stem": "Which statement returns a list of lists across several objects?",
+    "options": [
+      {
+        "id": "a",
+        "text": "SOSL"
+      },
+      {
+        "id": "b",
+        "text": "SOQL"
+      },
+      {
+        "id": "c",
+        "text": "Aggregate SOQL"
+      },
+      {
+        "id": "d",
+        "text": "A subquery"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "SOSL returns List<List<SObject>>.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "sdl-08",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Use SOSL",
+    "type": "single",
+    "stem": "When is SOSL the right choice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Searching text across several objects at once"
+      },
+      {
+        "id": "b",
+        "text": "Reading all fields of one object"
+      },
+      {
+        "id": "c",
+        "text": "Doing arithmetic"
+      },
+      {
+        "id": "d",
+        "text": "Counting rows with GROUP BY"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "SOSL searches text across objects. SOQL queries one object.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "sdl-09",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Write SOQL",
+    "type": "single",
+    "stem": "Which function counts rows in an aggregate SOQL query?",
+    "options": [
+      {
+        "id": "a",
+        "text": "COUNT()"
+      },
+      {
+        "id": "b",
+        "text": "TOTAL()"
+      },
+      {
+        "id": "c",
+        "text": "SIZE()"
+      },
+      {
+        "id": "d",
+        "text": "LENGTH()"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "COUNT and COUNT(field) are aggregate functions.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "sdl-10",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Write SOQL",
+    "type": "single",
+    "stem": "Which clause filters groups created by GROUP BY?",
+    "options": [
+      {
+        "id": "a",
+        "text": "HAVING"
+      },
+      {
+        "id": "b",
+        "text": "WHERE"
+      },
+      {
+        "id": "c",
+        "text": "FILTER"
+      },
+      {
+        "id": "d",
+        "text": "LIMIT"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "HAVING filters aggregate results. WHERE filters rows before grouping.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "sdl-11",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Write SOQL",
+    "type": "single",
+    "stem": "What is a benefit of a SOQL for loop such as for (Account a : [SELECT Id FROM Account])?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Records are retrieved in chunks of 200, reducing heap use"
+      },
+      {
+        "id": "b",
+        "text": "It avoids all limits"
+      },
+      {
+        "id": "c",
+        "text": "It runs as a batch"
+      },
+      {
+        "id": "d",
+        "text": "It skips sharing"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "SOQL for loops process records in chunks.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "sdl-12",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Use DML",
+    "type": "single",
+    "stem": "Which DML statement inserts a record if missing and updates it if found, using an external ID?",
+    "options": [
+      {
+        "id": "a",
+        "text": "upsert"
+      },
+      {
+        "id": "b",
+        "text": "merge"
+      },
+      {
+        "id": "c",
+        "text": "insert"
+      },
+      {
+        "id": "d",
+        "text": "undelete"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Upsert matches on Id or an external ID field.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "sdl-13",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Use DML",
+    "type": "single",
+    "stem": "How many records of the same type can merge combine?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Up to 3"
+      },
+      {
+        "id": "b",
+        "text": "Up to 2"
+      },
+      {
+        "id": "c",
+        "text": "Up to 10"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Merge combines up to three records into one master record.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "sdl-14",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Use DML",
+    "type": "single",
+    "stem": "What is the difference between insert and Database.insert(list, false)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The Database method allows partial success and returns results"
+      },
+      {
+        "id": "b",
+        "text": "Insert is asynchronous"
+      },
+      {
+        "id": "c",
+        "text": "Database.insert ignores validation"
+      },
+      {
+        "id": "d",
+        "text": "They are identical"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "With allOrNone false, valid records are saved and errors are returned per record.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "sdl-15",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Use DML",
+    "type": "single",
+    "stem": "Which object do you inspect to see why a record failed with Database.insert?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Database.SaveResult"
+      },
+      {
+        "id": "b",
+        "text": "Database.Error only"
+      },
+      {
+        "id": "c",
+        "text": "Limits"
+      },
+      {
+        "id": "d",
+        "text": "ApexPages"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "SaveResult holds success status and errors for each record.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "sdl-16",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Use DML",
+    "type": "single",
+    "stem": "What is mixed DML in Apex?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Changing setup and non-setup objects in one transaction"
+      },
+      {
+        "id": "b",
+        "text": "Mixing insert and update on one list"
+      },
+      {
+        "id": "c",
+        "text": "Using DML and SOQL together"
+      },
+      {
+        "id": "d",
+        "text": "Using two triggers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Mixed DML errors occur when setup objects (such as User) and non-setup objects are changed together.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "sdl-17",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Write SOQL",
+    "type": "single",
+    "stem": "How do you prevent SOQL injection in dynamic queries?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use bind variables or String.escapeSingleQuotes"
+      },
+      {
+        "id": "b",
+        "text": "Remove spaces from input"
+      },
+      {
+        "id": "c",
+        "text": "Use only uppercase"
+      },
+      {
+        "id": "d",
+        "text": "Use SOSL instead"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Bind variables or escaping stop user input from changing the query.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "sdl-18",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Use DML",
+    "type": "single",
+    "stem": "Which is best practice for DML?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Collect records in a list and run one DML after the loop"
+      },
+      {
+        "id": "b",
+        "text": "Run DML inside the loop"
+      },
+      {
+        "id": "c",
+        "text": "Run DML in a constructor"
+      },
+      {
+        "id": "d",
+        "text": "Use SOQL to insert"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "One DML on a list uses fewer statements.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "sdl-19",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Write SOQL",
+    "type": "single",
+    "stem": "What does the ALL ROWS keyword allow in SOQL?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Querying deleted and archived records"
+      },
+      {
+        "id": "b",
+        "text": "Ignoring sharing"
+      },
+      {
+        "id": "c",
+        "text": "Returning more than 50,000 rows"
+      },
+      {
+        "id": "d",
+        "text": "Skipping field security"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "ALL ROWS includes records in the recycle bin.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "sdl-20",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Use DML",
+    "type": "multi",
+    "stem": "Which TWO are DML statements? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "upsert"
+      },
+      {
+        "id": "b",
+        "text": "undelete"
+      },
+      {
+        "id": "c",
+        "text": "select"
+      },
+      {
+        "id": "d",
+        "text": "find"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Upsert and undelete are DML. Select is SOQL and find is SOSL.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "sdl-21",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Write SOQL",
+    "type": "single",
+    "stem": "A query selects Id and Name only, then the code reads the Industry field from a result. What happens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A runtime error occurs"
+      },
+      {
+        "id": "b",
+        "text": "Industry is null silently"
+      },
+      {
+        "id": "c",
+        "text": "Industry is loaded automatically"
+      },
+      {
+        "id": "d",
+        "text": "The query is rewritten"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Fields not selected cannot be read and cause an error.",
+    "difficulty": 2,
+    "tags": []
+  }
+]

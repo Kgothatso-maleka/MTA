@@ -1,0 +1,31 @@
+{
+  "id": "developer",
+  "name": "Salesforce Platform Developer I",
+  "exam": {
+    "guideVersion": "Platform Developer I, third-party outline (unverified against official guide)",
+    "questionCount": 60,
+    "timeLimitMinutes": 105,
+    "passPercent": 68,
+    "readyMarginPoints": 10,
+    "sections": [
+      { "id": "dev-fundamentals", "name": "Developer Fundamentals", "weight": 27 },
+      { "id": "process-logic", "name": "Process Automation and Logic", "weight": 28 },
+      { "id": "user-interface", "name": "User Interface", "weight": 25 },
+      { "id": "testing-deploy", "name": "Testing, Debugging and Deployment", "weight": 20 }
+    ]
+  },
+  "moduleIds": [
+    "apex-fundamentals",
+    "data-modeling-and-security",
+    "soql-sosl-and-dml",
+    "apex-triggers-and-order-of-execution",
+    "governor-limits-and-bulkification",
+    "asynchronous-apex",
+    "apex-integration-and-flow",
+    "lightning-web-components",
+    "lwc-data-and-events",
+    "visualforce-and-aura",
+    "apex-testing",
+    "debugging-and-deployment"
+  ]
+}

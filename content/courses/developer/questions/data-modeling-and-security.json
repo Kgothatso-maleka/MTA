@@ -1,0 +1,643 @@
+[
+  {
+    "id": "dms-01",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Explain the platform",
+    "type": "single",
+    "stem": "Which describes Salesforce multitenancy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Many customers share the same infrastructure with their data kept separate"
+      },
+      {
+        "id": "b",
+        "text": "Each customer has its own servers"
+      },
+      {
+        "id": "c",
+        "text": "Customers share all data"
+      },
+      {
+        "id": "d",
+        "text": "Salesforce runs code in the browser"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Multitenant architecture shares resources, which is why governor limits exist.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dms-02",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Explain the platform",
+    "type": "single",
+    "stem": "In MVC on the Salesforce platform, which is the Controller?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apex and flows"
+      },
+      {
+        "id": "b",
+        "text": "Custom objects and fields"
+      },
+      {
+        "id": "c",
+        "text": "Lightning pages"
+      },
+      {
+        "id": "d",
+        "text": "Page layouts"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The model is objects and fields, the view is UI such as LWC or Visualforce, the controller is Apex and flows.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dms-03",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Choose relationships",
+    "type": "single",
+    "stem": "A Job record must not exist without its Installation and should be deleted with it. Which relationship?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Master-detail"
+      },
+      {
+        "id": "b",
+        "text": "Lookup"
+      },
+      {
+        "id": "c",
+        "text": "Hierarchical"
+      },
+      {
+        "id": "d",
+        "text": "External lookup"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Master-detail requires the parent and cascade deletes children.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dms-04",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Choose relationships",
+    "type": "single",
+    "stem": "Which statement about a master-detail child is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It inherits owner and sharing from the parent"
+      },
+      {
+        "id": "b",
+        "text": "It has its own owner field"
+      },
+      {
+        "id": "c",
+        "text": "It can exist without a parent"
+      },
+      {
+        "id": "d",
+        "text": "It cannot have a roll-up parent"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The detail record has no owner of its own and inherits sharing from the master.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dms-05",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Choose relationships",
+    "type": "single",
+    "stem": "What is the maximum number of master-detail relationships on one custom object?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2"
+      },
+      {
+        "id": "b",
+        "text": "1"
+      },
+      {
+        "id": "c",
+        "text": "5"
+      },
+      {
+        "id": "d",
+        "text": "25"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "An object can have up to two master-detail fields.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dms-06",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Choose relationships",
+    "type": "single",
+    "stem": "How do you model a many-to-many relationship between Job and Technician?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A junction object with two master-detail fields"
+      },
+      {
+        "id": "b",
+        "text": "Two lookup fields on Job"
+      },
+      {
+        "id": "c",
+        "text": "A formula field"
+      },
+      {
+        "id": "d",
+        "text": "A hierarchy relationship"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A junction object with two master-detail relationships models many-to-many.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dms-07",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Choose relationships",
+    "type": "single",
+    "stem": "Which relationship type supports roll-up summary fields directly?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Master-detail"
+      },
+      {
+        "id": "b",
+        "text": "Lookup"
+      },
+      {
+        "id": "c",
+        "text": "External lookup"
+      },
+      {
+        "id": "d",
+        "text": "Indirect lookup"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Roll-up summary fields require master-detail.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dms-08",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Store configuration",
+    "type": "single",
+    "stem": "Where should deployable configuration, such as thresholds read from Apex, be stored?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Custom metadata types"
+      },
+      {
+        "id": "b",
+        "text": "Hardcoded constants"
+      },
+      {
+        "id": "c",
+        "text": "Custom reports"
+      },
+      {
+        "id": "d",
+        "text": "Page layouts"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Custom metadata records deploy as metadata and can be read in code.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dms-09",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Store configuration",
+    "type": "single",
+    "stem": "Which feature stores translatable text for messages shown to users?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Custom labels"
+      },
+      {
+        "id": "b",
+        "text": "Custom settings"
+      },
+      {
+        "id": "c",
+        "text": "Validation rules"
+      },
+      {
+        "id": "d",
+        "text": "Record types"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Custom labels are designed for text that can be translated.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dms-10",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Enforce security",
+    "type": "single",
+    "stem": "What does 'with sharing' enforce in an Apex class?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Record-level sharing rules for the running user"
+      },
+      {
+        "id": "b",
+        "text": "Field-level security"
+      },
+      {
+        "id": "c",
+        "text": "Object permissions"
+      },
+      {
+        "id": "d",
+        "text": "Validation rules"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "With sharing enforces sharing only. It does not enforce CRUD or FLS.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dms-11",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Enforce security",
+    "type": "single",
+    "stem": "Which keyword makes a class use the sharing mode of the code that calls it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "inherited sharing"
+      },
+      {
+        "id": "b",
+        "text": "with sharing"
+      },
+      {
+        "id": "c",
+        "text": "without sharing"
+      },
+      {
+        "id": "d",
+        "text": "global sharing"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Inherited sharing takes on the sharing of the caller.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dms-12",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Enforce security",
+    "type": "single",
+    "stem": "Which SOQL clause runs a query with the user's object, field and record permissions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "WITH USER_MODE"
+      },
+      {
+        "id": "b",
+        "text": "WITH SYSTEM_MODE"
+      },
+      {
+        "id": "c",
+        "text": "FOR VIEW"
+      },
+      {
+        "id": "d",
+        "text": "USING SCOPE"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "WITH USER_MODE enforces the user's permissions. System mode ignores them.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dms-13",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Enforce security",
+    "type": "single",
+    "stem": "Which method removes fields the user cannot access from records?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Security.stripInaccessible"
+      },
+      {
+        "id": "b",
+        "text": "Schema.describeSObjects"
+      },
+      {
+        "id": "c",
+        "text": "String.escapeSingleQuotes"
+      },
+      {
+        "id": "d",
+        "text": "Database.query"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Security.stripInaccessible strips inaccessible fields based on the access type you pass.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "dms-14",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Enforce security",
+    "type": "multi",
+    "stem": "Which TWO checks help enforce field security in Apex? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Schema describe isAccessible or isUpdateable checks"
+      },
+      {
+        "id": "b",
+        "text": "WITH SECURITY_ENFORCED or WITH USER_MODE in SOQL"
+      },
+      {
+        "id": "c",
+        "text": "Marking the class global"
+      },
+      {
+        "id": "d",
+        "text": "Adding without sharing"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Use describe checks and user mode or security enforced clauses.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dms-15",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Enforce security",
+    "type": "single",
+    "stem": "Apex runs in which mode by default?",
+    "options": [
+      {
+        "id": "a",
+        "text": "System mode, with access to all data"
+      },
+      {
+        "id": "b",
+        "text": "User mode"
+      },
+      {
+        "id": "c",
+        "text": "Read-only mode"
+      },
+      {
+        "id": "d",
+        "text": "Guest mode"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Apex runs in system mode unless you ask it to respect user permissions.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dms-16",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Explain the platform",
+    "type": "single",
+    "stem": "Which tool shows objects and relationships visually and lets you add fields?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Schema Builder"
+      },
+      {
+        "id": "b",
+        "text": "Developer Console"
+      },
+      {
+        "id": "c",
+        "text": "Workbench"
+      },
+      {
+        "id": "d",
+        "text": "Debug Log"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Schema Builder displays and edits the data model graphically.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dms-17",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Choose relationships",
+    "type": "single",
+    "stem": "A child needs its own owner and sharing and can exist without a parent. Which relationship fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lookup"
+      },
+      {
+        "id": "b",
+        "text": "Master-detail"
+      },
+      {
+        "id": "c",
+        "text": "Roll-up"
+      },
+      {
+        "id": "d",
+        "text": "Junction"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Lookups are optional links and the child keeps its own owner.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dms-18",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Store configuration",
+    "type": "single",
+    "stem": "Which statement about custom settings is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "List and hierarchy types exist, and values are usually not deployed with metadata"
+      },
+      {
+        "id": "b",
+        "text": "They deploy their values with change sets"
+      },
+      {
+        "id": "c",
+        "text": "They cannot be read in Apex"
+      },
+      {
+        "id": "d",
+        "text": "They cannot hold text"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Custom setting data is not normally deployed, unlike custom metadata records.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "dms-19",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Choose relationships",
+    "type": "single",
+    "stem": "What happens to a child record in a master-detail relationship when the parent is deleted?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is deleted too"
+      },
+      {
+        "id": "b",
+        "text": "It becomes orphaned"
+      },
+      {
+        "id": "c",
+        "text": "It is reassigned to the owner"
+      },
+      {
+        "id": "d",
+        "text": "Nothing happens"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Master-detail relationships cascade delete.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dms-20",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Enforce security",
+    "type": "single",
+    "stem": "A technician must see only records shared with them when code runs. What should the class use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "with sharing"
+      },
+      {
+        "id": "b",
+        "text": "without sharing"
+      },
+      {
+        "id": "c",
+        "text": "global"
+      },
+      {
+        "id": "d",
+        "text": "static"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "With sharing respects the running user's record access.",
+    "difficulty": 1,
+    "tags": []
+  }
+]

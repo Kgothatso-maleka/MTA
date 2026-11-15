@@ -1,0 +1,643 @@
+[
+  {
+    "id": "trg-01",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Write triggers",
+    "type": "single",
+    "stem": "A trigger must change a field on the record being saved without extra DML. Which event?",
+    "options": [
+      {
+        "id": "a",
+        "text": "before insert or before update"
+      },
+      {
+        "id": "b",
+        "text": "after insert"
+      },
+      {
+        "id": "c",
+        "text": "after update"
+      },
+      {
+        "id": "d",
+        "text": "after undelete"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Before triggers can change Trigger.new directly and the values are saved without DML.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "trg-02",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Write triggers",
+    "type": "single",
+    "stem": "Which trigger type is needed to read the Id of a newly inserted record?",
+    "options": [
+      {
+        "id": "a",
+        "text": "after insert"
+      },
+      {
+        "id": "b",
+        "text": "before insert"
+      },
+      {
+        "id": "c",
+        "text": "before update"
+      },
+      {
+        "id": "d",
+        "text": "before delete"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Ids are assigned when the record is saved, so they exist in after triggers.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "trg-03",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Use context variables",
+    "type": "single",
+    "stem": "Which context variable is NOT available in a before insert trigger?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Trigger.newMap"
+      },
+      {
+        "id": "b",
+        "text": "Trigger.new"
+      },
+      {
+        "id": "c",
+        "text": "Trigger.isInsert"
+      },
+      {
+        "id": "d",
+        "text": "Trigger.size"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "newMap needs Ids, which do not exist before insert.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "trg-04",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Use context variables",
+    "type": "single",
+    "stem": "Which context variable is available in a delete trigger?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Trigger.old"
+      },
+      {
+        "id": "b",
+        "text": "Trigger.new"
+      },
+      {
+        "id": "c",
+        "text": "Trigger.newMap"
+      },
+      {
+        "id": "d",
+        "text": "None of these"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "On delete only the old records exist.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "trg-05",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Write triggers",
+    "type": "single",
+    "stem": "Which events exist for undelete?",
+    "options": [
+      {
+        "id": "a",
+        "text": "after undelete only"
+      },
+      {
+        "id": "b",
+        "text": "before undelete and after undelete"
+      },
+      {
+        "id": "c",
+        "text": "before undelete only"
+      },
+      {
+        "id": "d",
+        "text": "none"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Only after undelete exists.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "trg-06",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Use context variables",
+    "type": "single",
+    "stem": "What can a developer do with Trigger.new in an after trigger?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Read it only"
+      },
+      {
+        "id": "b",
+        "text": "Change field values and have them saved"
+      },
+      {
+        "id": "c",
+        "text": "Delete it"
+      },
+      {
+        "id": "d",
+        "text": "Add records to it"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Records in after triggers are read-only.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "trg-07",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Write triggers",
+    "type": "single",
+    "stem": "Which method blocks a save from a trigger and shows a message?",
+    "options": [
+      {
+        "id": "a",
+        "text": "addError"
+      },
+      {
+        "id": "b",
+        "text": "throw"
+      },
+      {
+        "id": "c",
+        "text": "fail"
+      },
+      {
+        "id": "d",
+        "text": "stop"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "addError on a record or field prevents saving and displays the message.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "trg-08",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Write triggers",
+    "type": "single",
+    "stem": "How many records can a trigger receive in one invocation, at most, in a normal save?",
+    "options": [
+      {
+        "id": "a",
+        "text": "200"
+      },
+      {
+        "id": "b",
+        "text": "10"
+      },
+      {
+        "id": "c",
+        "text": "1"
+      },
+      {
+        "id": "d",
+        "text": "1000"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Triggers process batches of up to 200 records.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "trg-09",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Apply trigger patterns",
+    "type": "single",
+    "stem": "Which is the best practice for triggers per object?",
+    "options": [
+      {
+        "id": "a",
+        "text": "One trigger per object with logic in a handler class"
+      },
+      {
+        "id": "b",
+        "text": "One trigger per event"
+      },
+      {
+        "id": "c",
+        "text": "As many triggers as needed with logic inline"
+      },
+      {
+        "id": "d",
+        "text": "No triggers, only flows"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "One trigger per object gives predictable order and keeps logic testable.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "trg-10",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Describe order of execution",
+    "type": "single",
+    "stem": "Which comes first in the order of execution?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Before-save record-triggered flows"
+      },
+      {
+        "id": "b",
+        "text": "After triggers"
+      },
+      {
+        "id": "c",
+        "text": "Commit"
+      },
+      {
+        "id": "d",
+        "text": "Roll-up summary calculation"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Before-save flows run first, then before triggers.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "trg-11",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Describe order of execution",
+    "type": "single",
+    "stem": "Which sequence is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Before trigger, validation rules, after trigger, commit"
+      },
+      {
+        "id": "b",
+        "text": "Validation rules, before trigger, after trigger, commit"
+      },
+      {
+        "id": "c",
+        "text": "After trigger, before trigger, validation rules, commit"
+      },
+      {
+        "id": "d",
+        "text": "Commit, before trigger, after trigger"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Before triggers run, then system and custom validation, then the save, then after triggers, then commit.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "trg-12",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Describe order of execution",
+    "type": "single",
+    "stem": "An error occurs in an after trigger. What happens to the transaction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Everything is rolled back"
+      },
+      {
+        "id": "b",
+        "text": "Only the trigger's changes are rolled back"
+      },
+      {
+        "id": "c",
+        "text": "The record is saved anyway"
+      },
+      {
+        "id": "d",
+        "text": "The record is saved and a task is created"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Uncaught errors roll back the whole transaction.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "trg-13",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Describe order of execution",
+    "type": "single",
+    "stem": "Where do after-save record-triggered flows run relative to after triggers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "After the after triggers"
+      },
+      {
+        "id": "b",
+        "text": "Before the before triggers"
+      },
+      {
+        "id": "c",
+        "text": "Instead of validation"
+      },
+      {
+        "id": "d",
+        "text": "After the commit"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "After-save flows run after after triggers and before the commit.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "trg-14",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Prevent recursion",
+    "type": "single",
+    "stem": "How can a trigger avoid infinite recursion?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use a static Boolean or only act when a field really changed"
+      },
+      {
+        "id": "b",
+        "text": "Use global classes"
+      },
+      {
+        "id": "c",
+        "text": "Use without sharing"
+      },
+      {
+        "id": "d",
+        "text": "Use SOSL"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Static variables persist for the transaction and can guard against repeated runs.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "trg-15",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Prevent recursion",
+    "type": "single",
+    "stem": "How can a trigger tell that Status__c changed on update?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compare Trigger.oldMap.get(Id).Status__c with the new value"
+      },
+      {
+        "id": "b",
+        "text": "Check Trigger.isChanged"
+      },
+      {
+        "id": "c",
+        "text": "Use Trigger.changed"
+      },
+      {
+        "id": "d",
+        "text": "Check Trigger.size"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Compare new and old values through oldMap.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "trg-16",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Apply trigger patterns",
+    "type": "single",
+    "stem": "A trigger works for one record in the UI but fails during a data load of 200 records. What is the most likely cause?",
+    "options": [
+      {
+        "id": "a",
+        "text": "SOQL or DML inside a loop"
+      },
+      {
+        "id": "b",
+        "text": "A missing profile"
+      },
+      {
+        "id": "c",
+        "text": "A missing page layout"
+      },
+      {
+        "id": "d",
+        "text": "A browser issue"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Non-bulk-safe code hits governor limits at scale.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "trg-17",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Describe order of execution",
+    "type": "single",
+    "stem": "Which statement is correct about validation rules and before triggers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A before trigger runs before custom validation rules"
+      },
+      {
+        "id": "b",
+        "text": "Validation rules run before before triggers"
+      },
+      {
+        "id": "c",
+        "text": "They run at the same time"
+      },
+      {
+        "id": "d",
+        "text": "Validation never runs after triggers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Before triggers run before custom validation rules, so they can fix data first.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "trg-18",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Choose trigger or flow",
+    "type": "single",
+    "stem": "When is a flow usually a better choice than a trigger?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Admin-maintained rules and simple updates"
+      },
+      {
+        "id": "b",
+        "text": "Complex logic across many objects"
+      },
+      {
+        "id": "c",
+        "text": "Millions of records"
+      },
+      {
+        "id": "d",
+        "text": "Custom callout logic"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Prefer declarative tools for simple automation.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "trg-19",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Apply trigger patterns",
+    "type": "multi",
+    "stem": "Which TWO belong in a trigger handler pattern? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "The trigger only calls the handler"
+      },
+      {
+        "id": "b",
+        "text": "Business logic is in a handler class that is easier to test"
+      },
+      {
+        "id": "c",
+        "text": "SOQL queries are placed inside the trigger loop"
+      },
+      {
+        "id": "d",
+        "text": "Every event has a separate trigger"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Keep the trigger thin and put testable logic in a handler.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "trg-20",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Use context variables",
+    "type": "single",
+    "stem": "Which context variable tells you the type of operation as an enum in a trigger?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Trigger.operationType"
+      },
+      {
+        "id": "b",
+        "text": "Trigger.eventName"
+      },
+      {
+        "id": "c",
+        "text": "Trigger.mode"
+      },
+      {
+        "id": "d",
+        "text": "Trigger.action"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Trigger.operationType returns a System.TriggerOperation value.",
+    "difficulty": 3,
+    "tags": []
+  }
+]

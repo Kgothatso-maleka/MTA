@@ -1,0 +1,675 @@
+[
+  {
+    "id": "asy-01",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Choose async type",
+    "type": "single",
+    "stem": "Which asynchronous option accepts sObjects as parameters and returns a job Id?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Queueable Apex"
+      },
+      {
+        "id": "b",
+        "text": "Future method"
+      },
+      {
+        "id": "c",
+        "text": "Trigger"
+      },
+      {
+        "id": "d",
+        "text": "Visualforce"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Queueable jobs can hold sObjects and System.enqueueJob returns an Id.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "asy-02",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write future methods",
+    "type": "single",
+    "stem": "What can a future method accept as parameters?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Primitives and collections of primitives"
+      },
+      {
+        "id": "b",
+        "text": "sObjects"
+      },
+      {
+        "id": "c",
+        "text": "Any class instance"
+      },
+      {
+        "id": "d",
+        "text": "Anything"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Future methods accept only primitives and collections of primitives.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "asy-03",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write future methods",
+    "type": "single",
+    "stem": "Which signature is required for a future method?",
+    "options": [
+      {
+        "id": "a",
+        "text": "static void"
+      },
+      {
+        "id": "b",
+        "text": "public Integer"
+      },
+      {
+        "id": "c",
+        "text": "static Id"
+      },
+      {
+        "id": "d",
+        "text": "global String"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Future methods must be static and return void.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asy-04",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write future methods",
+    "type": "single",
+    "stem": "What is required for a future method to make a callout?",
+    "options": [
+      {
+        "id": "a",
+        "text": "@future(callout=true)"
+      },
+      {
+        "id": "b",
+        "text": "@AuraEnabled"
+      },
+      {
+        "id": "c",
+        "text": "@InvocableMethod"
+      },
+      {
+        "id": "d",
+        "text": "@isTest"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The callout=true attribute allows callouts.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "asy-05",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write queueable jobs",
+    "type": "single",
+    "stem": "Which interface does a queueable class implement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Queueable"
+      },
+      {
+        "id": "b",
+        "text": "Schedulable"
+      },
+      {
+        "id": "c",
+        "text": "Database.Batchable"
+      },
+      {
+        "id": "d",
+        "text": "Runnable"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Classes implement Queueable and define execute(QueueableContext).",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "asy-06",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write queueable jobs",
+    "type": "single",
+    "stem": "How many queueable jobs can be added in one transaction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "50"
+      },
+      {
+        "id": "b",
+        "text": "1"
+      },
+      {
+        "id": "c",
+        "text": "10"
+      },
+      {
+        "id": "d",
+        "text": "100"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Up to 50 jobs can be enqueued in a transaction.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "asy-07",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write queueable jobs",
+    "type": "single",
+    "stem": "How many child jobs can a queueable job start in its execute method?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1"
+      },
+      {
+        "id": "b",
+        "text": "5"
+      },
+      {
+        "id": "c",
+        "text": "50"
+      },
+      {
+        "id": "d",
+        "text": "None"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A running queueable can chain one child job.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "asy-08",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write batch Apex",
+    "type": "single",
+    "stem": "Which three methods does a batch class implement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "start, execute, finish"
+      },
+      {
+        "id": "b",
+        "text": "init, run, end"
+      },
+      {
+        "id": "c",
+        "text": "begin, process, complete"
+      },
+      {
+        "id": "d",
+        "text": "open, handle, close"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Database.Batchable defines start, execute and finish.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "asy-09",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write batch Apex",
+    "type": "single",
+    "stem": "What is the default number of records per batch execute call?",
+    "options": [
+      {
+        "id": "a",
+        "text": "200"
+      },
+      {
+        "id": "b",
+        "text": "2000"
+      },
+      {
+        "id": "c",
+        "text": "1"
+      },
+      {
+        "id": "d",
+        "text": "50"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The default scope size is 200.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "asy-10",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write batch Apex",
+    "type": "single",
+    "stem": "What can a Database.QueryLocator handle?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Up to 50 million records"
+      },
+      {
+        "id": "b",
+        "text": "Up to 50,000 records"
+      },
+      {
+        "id": "c",
+        "text": "Up to 10,000 records"
+      },
+      {
+        "id": "d",
+        "text": "Up to 200 records"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A QueryLocator bypasses the usual row limit up to 50 million.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asy-11",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write batch Apex",
+    "type": "single",
+    "stem": "What is required for a batch class to keep member variables across execute calls?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Database.Stateful"
+      },
+      {
+        "id": "b",
+        "text": "Database.AllowsCallouts"
+      },
+      {
+        "id": "c",
+        "text": "@future"
+      },
+      {
+        "id": "d",
+        "text": "static final"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Stateful keeps instance variables between execute calls.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asy-12",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write batch Apex",
+    "type": "single",
+    "stem": "Which statement starts a batch job?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Database.executeBatch(new MyBatch(), 200)"
+      },
+      {
+        "id": "b",
+        "text": "System.enqueueJob(new MyBatch())"
+      },
+      {
+        "id": "c",
+        "text": "System.runBatch()"
+      },
+      {
+        "id": "d",
+        "text": "new MyBatch().start()"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Database.executeBatch queues the job and sets the scope size.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "asy-13",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write batch Apex",
+    "type": "single",
+    "stem": "How many batch jobs can run at the same time?",
+    "options": [
+      {
+        "id": "a",
+        "text": "5"
+      },
+      {
+        "id": "b",
+        "text": "1"
+      },
+      {
+        "id": "c",
+        "text": "25"
+      },
+      {
+        "id": "d",
+        "text": "100"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Up to five batch jobs run concurrently. Others wait in the flex queue.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "asy-14",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write scheduled Apex",
+    "type": "single",
+    "stem": "Which interface lets Apex run at a scheduled time?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Schedulable"
+      },
+      {
+        "id": "b",
+        "text": "Queueable"
+      },
+      {
+        "id": "c",
+        "text": "Runnable"
+      },
+      {
+        "id": "d",
+        "text": "Timer"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Schedulable classes are scheduled with System.schedule or from Setup.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "asy-15",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write scheduled Apex",
+    "type": "single",
+    "stem": "What does System.schedule take?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A job name, a cron expression and a Schedulable instance"
+      },
+      {
+        "id": "b",
+        "text": "A date only"
+      },
+      {
+        "id": "c",
+        "text": "A class name only"
+      },
+      {
+        "id": "d",
+        "text": "A flow name"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The cron string defines when the job runs.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asy-16",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Monitor jobs",
+    "type": "single",
+    "stem": "Where can you monitor future, queueable and batch jobs?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Setup > Apex Jobs"
+      },
+      {
+        "id": "b",
+        "text": "Setup > Profiles"
+      },
+      {
+        "id": "c",
+        "text": "The Developer Console tests tab"
+      },
+      {
+        "id": "d",
+        "text": "Reports"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Apex Jobs lists the status of asynchronous jobs.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "asy-17",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Choose async type",
+    "type": "single",
+    "stem": "A nightly clean-up of millions of records is needed. Which is the best fit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A scheduled class starting a batch job"
+      },
+      {
+        "id": "b",
+        "text": "A future method"
+      },
+      {
+        "id": "c",
+        "text": "A trigger"
+      },
+      {
+        "id": "d",
+        "text": "A Visualforce page"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Batch handles volume and a schedule starts it nightly.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "asy-18",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write future methods",
+    "type": "single",
+    "stem": "Why are future methods limited to primitive parameters?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The record could change before the method runs"
+      },
+      {
+        "id": "b",
+        "text": "Primitives are faster"
+      },
+      {
+        "id": "c",
+        "text": "sObjects are not serialisable in Apex"
+      },
+      {
+        "id": "d",
+        "text": "It is a Visualforce rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Salesforce wants the method to re-read current data, so it takes Ids.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asy-19",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Use platform events",
+    "type": "single",
+    "stem": "How are platform events published from Apex?",
+    "options": [
+      {
+        "id": "a",
+        "text": "EventBus.publish"
+      },
+      {
+        "id": "b",
+        "text": "System.fireEvent"
+      },
+      {
+        "id": "c",
+        "text": "Database.insert only on a custom setting"
+      },
+      {
+        "id": "d",
+        "text": "Trigger.publish"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "EventBus.publish sends an event message.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asy-20",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Choose async type",
+    "type": "multi",
+    "stem": "Which TWO are true of Queueable compared with future methods? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "It can be chained"
+      },
+      {
+        "id": "b",
+        "text": "It returns a job Id"
+      },
+      {
+        "id": "c",
+        "text": "It must be static"
+      },
+      {
+        "id": "d",
+        "text": "It can only take primitives"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Queueable jobs return an Id and can chain another job.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asy-21",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Choose async type",
+    "type": "single",
+    "stem": "Which Apex limit is higher in asynchronous transactions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "SOQL queries (200)"
+      },
+      {
+        "id": "b",
+        "text": "Callout count"
+      },
+      {
+        "id": "c",
+        "text": "Future call count"
+      },
+      {
+        "id": "d",
+        "text": "SOSL query count"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Async transactions allow 200 SOQL queries, with higher heap and CPU limits too.",
+    "difficulty": 3,
+    "tags": []
+  }
+]
