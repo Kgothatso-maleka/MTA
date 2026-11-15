@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Markdown from '../components/Markdown';
 import VideoEmbed from '../components/VideoEmbed';
-import { loadModule, type LoadedModule } from '../content/loader';
+import QuizSession from '../components/QuizSession';
+import { loadModule, loadQuestions, type LoadedModule } from '../content/loader';
 import { useStore } from '../storage/StoreContext';
 import { useProgress } from '../storage/useProgress';
 import NotFound from './NotFound';
@@ -23,6 +24,7 @@ export default function LessonPage() {
   const mod = tryLoad(courseId, moduleId);
   if (!mod || !courseId || !moduleId) return <NotFound what="Lesson" />;
 
+  const questions = loadQuestions(courseId, moduleId);
   const done = (progress.completedModules[courseId] ?? []).includes(moduleId);
   const complete = async () => {
     setBusy(true);
@@ -58,6 +60,12 @@ export default function LessonPage() {
             startSeconds={mod.exerciseVideo.startSeconds}
           />
           <Markdown source={mod.exercise} />
+        </section>
+      )}
+      {questions.length > 0 && (
+        <section>
+          <h2>Check your understanding</h2>
+          <QuizSession courseId={courseId} moduleId={moduleId} questions={questions} mode="check" limit={8} />
         </section>
       )}
       {done ? <p>✓ Completed</p> : <button onClick={complete} disabled={busy}>Mark complete</button>}
