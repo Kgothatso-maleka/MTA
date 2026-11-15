@@ -78,8 +78,6 @@ A **permission set group** bundles permission sets so you can assign one thing p
 
 **Least privilege** means giving people only the access they need. The recommended pattern is a very small base profile (such as **Minimum Access – Salesforce**) and then permission sets or groups for everything else. It is easier to audit, because you can see exactly why a person has access, and you avoid dozens of near-identical profiles.
 
-<!-- verify: Salesforce has announced a long-term move away from permissions on profiles toward permission sets; check the current Release Notes and exam guide for timing. -->
-
 :::on-the-job
 In a mature org you will often find 40 profiles that all differ by one checkbox. Resist adding a 41st. Ask: "Could this be a permission set instead?" Build permission sets around **tasks** ("Approve discounts", "Edit installations") rather than people, and then combine them into groups by job role. Name them clearly and write a description of who should have each one.
 :::
@@ -132,7 +130,7 @@ Roles form a management tree. With "**Grant Access Using Hierarchies**" turned o
 
 ### 3. Sharing rules
 
-A sharing rule automatically opens records to more people. There are two kinds: **owner-based** (records owned by certain people) and **criteria-based** (records that match a field condition). You can share with **roles, roles and subordinates, public groups and queues**. You **cannot** share with a profile. Sharing rules can only **add** access.
+A sharing rule automatically opens records to more people. There are two kinds: **owner-based** (records owned by certain people) and **criteria-based** (records that match a field condition). You can share with **roles, roles and subordinates, and public groups** (and territories, if your org uses them). Queues can be used to pick *which records* an owner-based rule covers, but not as the "share with" target. You **cannot** share with a profile. Sharing rules can only **add** access.
 
 ### 4. Manual sharing
 

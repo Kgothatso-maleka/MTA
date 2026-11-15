@@ -326,7 +326,7 @@
     "examSection": "object-manager",
     "objective": "Create many-to-many relationships",
     "type": "single",
-    "stem": "What is the maximum number of master-detail relationships a custom object can have?",
+    "stem": "A custom object is the detail (child) object in master-detail relationships. What is the maximum number of master-detail relationships it can have?",
     "options": [
       {
         "id": "a",
@@ -348,7 +348,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "A custom object can be the detail in at most two master-detail relationships, which is what makes junction objects possible.",
+    "explanation": "A custom object can be the detail in at most two master-detail relationships, which is what makes junction objects possible. (An object can be the master in many.)",
     "difficulty": 2,
     "tags": []
   },
@@ -995,7 +995,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Master-detail cascade deletes detail records with their master. A lookup would clear the value or block the delete.",
+    "explanation": "Master-detail cascade deletes detail records with their master. A custom lookup would normally clear the value or block the delete, depending on how it is configured.",
     "difficulty": 2,
     "tags": []
   },

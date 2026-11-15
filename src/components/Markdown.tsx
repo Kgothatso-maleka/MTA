@@ -47,6 +47,6 @@ const remarkCallouts: Plugin = () => (tree) => {
 
 export default function Markdown({ source }: { source: string }) {
   return (
-    <ReactMarkdown remarkPlugins={[remarkGfm, remarkDirective, remarkCallouts]}>{source}</ReactMarkdown>
+    <ReactMarkdown skipHtml remarkPlugins={[remarkGfm, remarkDirective, remarkCallouts]}>{source}</ReactMarkdown>
   );
 }

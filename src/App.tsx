@@ -3,11 +3,13 @@ import CoursePage from './pages/CoursePage';
 import Home from './pages/Home';
 import LessonPage from './pages/LessonPage';
 import MockExam from './pages/MockExam';
+import { usePersistent } from './storage/StoreContext';
 import PracticeHub from './pages/PracticeHub';
 import ProgressPage from './pages/ProgressPage';
 import Results from './pages/Results';
 
 export default function App() {
+  const persistent = usePersistent();
   return (
     <div className="container">
       <header>
@@ -17,6 +19,11 @@ export default function App() {
           </Link>
         </h1>
       </header>
+      {!persistent && (
+        <p className="banner" role="status">
+          Your browser is blocking storage, so progress will not be saved when you close this page. Export it from My progress before leaving.
+        </p>
+      )}
       <main>
         <Routes>
           <Route path="/" element={<Home />} />

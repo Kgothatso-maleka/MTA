@@ -3,6 +3,7 @@ import { MemoryRouter } from 'react-router-dom';
 import type { ReactElement } from 'react';
 import App from './App';
 import { LocalStorageStore } from './storage/LocalStorageStore';
+import type { ProgressStore } from './storage/ProgressStore';
 import { StoreProvider } from './storage/StoreContext';
 
 export class FakeStorage implements Storage {
@@ -18,10 +19,10 @@ export class FakeStorage implements Storage {
 export const newStore = () => new LocalStorageStore(new FakeStorage());
 
 /** Renders the whole app at `route` with an isolated progress store. */
-export function renderApp(route: string, store = newStore()) {
+export function renderApp(route: string, store: ProgressStore = newStore()) {
   return { store, ...render(<StoreProvider store={store}><MemoryRouter initialEntries={[route]}><App /></MemoryRouter></StoreProvider>) };
 }
 
-export function renderWith(ui: ReactElement, store = newStore()) {
+export function renderWith(ui: ReactElement, store: ProgressStore = newStore()) {
   return { store, ...render(<StoreProvider store={store}><MemoryRouter>{ui}</MemoryRouter></StoreProvider>) };
 }

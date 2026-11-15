@@ -22,3 +22,9 @@ test('renders GFM tables and headings', () => {
   expect(screen.getByRole('heading', { name: 'Title' })).toBeInTheDocument();
   expect(screen.getByRole('table')).toBeInTheDocument();
 });
+
+test('raw HTML comments in lesson source are never shown to learners', () => {
+  const { container } = render(<Markdown source={'Before\n\n<!-- verify: builder note -->\n\nAfter'} />);
+  expect(container.textContent).not.toMatch(/verify|<!--|&lt;/);
+  expect(container.textContent).toContain('After');
+});

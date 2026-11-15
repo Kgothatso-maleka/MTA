@@ -21,6 +21,14 @@ describe.each(courses.map((c) => [c.id, c] as const))('course %s', (_id, course)
     }
   });
 
+  test('lessons and exercises contain no HTML comments or builder notes', () => {
+    for (const id of course.moduleIds) {
+      const m = loadModule(course.id, id);
+      expect(m.lesson, id).not.toMatch(/<!--/);
+      expect(m.exercise ?? '', id).not.toMatch(/<!--/);
+    }
+  });
+
   test('youtube ids, when set, are 11 characters', () => {
     for (const id of course.moduleIds) {
       const { meta, exerciseVideo } = loadModule(course.id, id);

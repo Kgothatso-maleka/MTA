@@ -229,29 +229,29 @@
     "examSection": "config-setup",
     "objective": "Set object permissions",
     "type": "single",
-    "stem": "A permission set grants a user Delete on an object but no Read. What is true?",
+    "stem": "In Setup you tick Delete on an object inside a permission set. What does Salesforce enable automatically?",
     "options": [
       {
         "id": "a",
-        "text": "Delete cannot work without Read and Edit"
+        "text": "Read and Edit, because Delete depends on both"
       },
       {
         "id": "b",
-        "text": "The user can delete records but not see them"
+        "text": "Create only"
       },
       {
         "id": "c",
-        "text": "Delete automatically adds Read"
+        "text": "View All"
       },
       {
         "id": "d",
-        "text": "The permission set cannot be saved"
+        "text": "Nothing, the admin must tick the other permissions by hand"
       }
     ],
     "correct": [
       "a"
     ],
-    "explanation": "Delete requires Read and Edit. Permissions have dependencies, so a lower-level permission is needed first.",
+    "explanation": "Delete depends on Read and Edit, so Salesforce turns those on for you. View All and Create are not required for Delete.",
     "difficulty": 3,
     "tags": []
   },
@@ -573,7 +573,7 @@
       "a",
       "b"
     ],
-    "explanation": "Sharing rules target roles, roles and subordinates, public groups and queues. Profiles and permission sets are not valid targets.",
+    "explanation": "Sharing rules target roles, roles and subordinates, and public groups. Profiles and permission sets are not valid targets.",
     "difficulty": 3,
     "tags": []
   },
@@ -893,7 +893,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Same profile means the same object permissions, so the difference is at the record level: owner, role hierarchy or sharing.",
+    "explanation": "If a peer with the same profile and the same permission sets can open the record, object permissions are the same, so the difference is at the record level: ownership, role hierarchy or sharing. (Permission sets can also differ between users, so confirm they match first.)",
     "difficulty": 2,
     "tags": []
   },

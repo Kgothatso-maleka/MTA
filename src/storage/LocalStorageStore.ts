@@ -14,6 +14,14 @@ const KEY = 'mta-progress-v1';
 export class LocalStorageStore implements ProgressStore {
   private memory: Progress | null = null;
   persistent = true;
+  private listeners = new Set<() => void>();
+
+  subscribe(listener: () => void): () => void {
+    this.listeners.add(listener);
+    return () => {
+      this.listeners.delete(listener);
+    };
+  }
 
   constructor(private readonly storage: Storage | undefined = safeLocalStorage()) {
     if (!storage) this.persistent = false;
@@ -40,6 +48,7 @@ export class LocalStorageStore implements ProgressStore {
       this.storage.setItem(KEY, JSON.stringify(p));
     } catch {
       this.persistent = false;
+      this.listeners.forEach((l) => l());
     }
   }
 

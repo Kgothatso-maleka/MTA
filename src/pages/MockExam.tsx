@@ -37,23 +37,28 @@ export default function MockExam() {
   const [index, setIndex] = useState(0);
   const sessionRef = useRef<Session | null>(null);
   const submitting = useRef(false);
+  const writes = useRef<Promise<unknown>>(Promise.resolve());
+  const attemptSaved = useRef(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const preview = useMemo(
     () => (course ? buildMock(bank, course.exam, 1, []) : null),
     [bank, course],
   );
 
+  /** Store writes run strictly in order, so a slow save can never land after the submit that clears it. */
   const persist = useCallback(
-    async (s: Session) => {
-      if (!course) return;
-      await store.saveInProgressMock({
+    (s: Session) => {
+      if (!course || submitting.current) return;
+      const snapshot = {
         courseId: course.id,
         seed: s.seed,
         questionIds: s.questions.map((q) => q.id),
         answers: s.answers,
         flagged: s.flagged,
         deadlineMs: s.deadlineMs,
-      });
+      };
+      writes.current = writes.current.then(() => store.saveInProgressMock(snapshot)).catch(() => undefined);
     },
     [store, course],
   );
@@ -61,34 +66,44 @@ export default function MockExam() {
   const update = (next: Session) => {
     sessionRef.current = next;
     setSession(next);
-    void persist(next);
+    persist(next);
   };
 
   const submit = useCallback(async () => {
     const s = sessionRef.current;
     if (!s || !course || submitting.current) return;
     submitting.current = true;
-    const result = scoreAttempt(s.questions, s.answers, course.exam);
-    const quotas = sectionQuotas(course.exam);
-    const counts: Record<string, number> = {};
-    for (const q of s.questions) counts[q.examSection] = (counts[q.examSection] ?? 0) + 1;
-    const partial =
-      s.questions.length < course.exam.questionCount ||
-      course.exam.sections.some((sec) => (counts[sec.id] ?? 0) < quotas[sec.id]);
-    await store.saveMockAttempt({
-      courseId: course.id,
-      seed: s.seed,
-      questionIds: s.questions.map((q) => q.id),
-      answers: s.answers,
-      percent: result.percent,
-      passed: result.passed,
-      partial,
-      bySection: result.bySection,
-      takenAt: Date.now(),
-    });
-    await store.saveInProgressMock(null);
-    const p = await store.getProgress();
-    navigate(`/c/${course.id}/results/${p.mockAttempts.length - 1}`);
+    setSubmitError(null);
+    try {
+      await writes.current; // queued answer saves finish before the attempt is written
+      if (!attemptSaved.current) {
+        const result = scoreAttempt(s.questions, s.answers, course.exam);
+        const quotas = sectionQuotas(course.exam);
+        const counts: Record<string, number> = {};
+        for (const q of s.questions) counts[q.examSection] = (counts[q.examSection] ?? 0) + 1;
+        const partial =
+          s.questions.length < course.exam.questionCount ||
+          course.exam.sections.some((sec) => (counts[sec.id] ?? 0) < quotas[sec.id]);
+        await store.saveMockAttempt({
+          courseId: course.id,
+          seed: s.seed,
+          questionIds: s.questions.map((q) => q.id),
+          answers: s.answers,
+          percent: result.percent,
+          passed: result.passed,
+          partial,
+          bySection: result.bySection,
+          takenAt: Date.now(),
+        });
+        attemptSaved.current = true; // a retry after a later failure must not record a second attempt
+      }
+      await store.saveInProgressMock(null);
+      const p = await store.getProgress();
+      navigate(`/c/${course.id}/results/${p.mockAttempts.length - 1}`);
+    } catch {
+      submitting.current = false;
+      setSubmitError('Could not submit your exam. Check your connection and try again. Your answers are kept.');
+    }
   }, [course, navigate, store]);
 
   useEffect(() => {
@@ -136,6 +151,7 @@ export default function MockExam() {
     if (mock.questions.length === 0) return;
     setIndex(0);
     submitting.current = false;
+    attemptSaved.current = false;
     update({
       seed,
       questions: mock.questions,
@@ -203,6 +219,7 @@ export default function MockExam() {
             </button>
           ))}
         </div>
+        {submitError && <p role="alert">{submitError}</p>}
         <p>
           <button className="secondary" onClick={() => setPhase('exam')}>Back to exam</button>{' '}
           <button onClick={() => void submit()}>Submit exam</button>
@@ -214,6 +231,7 @@ export default function MockExam() {
   return (
     <section>
       <p>Time left: <Timer deadlineMs={session.deadlineMs} onExpire={() => void submit()} /></p>
+      {submitError && <p role="alert">{submitError}</p>}
       <p>Question {index + 1} of {session.questions.length}</p>
       <fieldset style={{ border: 0, padding: 0 }}>
         <legend>{q.stem}</legend>

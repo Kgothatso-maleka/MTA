@@ -95,7 +95,7 @@ A relationship is a field on the **child** record that points to a **parent** re
 
 ### Lookup relationship
 
-A lookup is a **loose** link. The child can exist without a parent (unless you make the lookup field required). The child has its own **owner** and its own sharing. If you delete the parent, you choose what happens to the child: clear the lookup value, or block the delete. Contact to Account is a lookup, and a contact can exist without an account.
+A lookup is a **loose** link. The child can exist without a parent (unless you make the lookup field required). The child has its own **owner** and its own sharing. If you delete the parent, what happens to the child depends on how the lookup is set up. For lookups you create, you can usually choose to clear the lookup value or block the delete. Some standard relationships have fixed behaviour. Contact to Account is a lookup, and a contact can exist without an account.
 
 ### Master-detail relationship
 
@@ -105,7 +105,7 @@ A master-detail is a **tight** link. The **master** is the parent and the **deta
 - The detail record **inherits** its sharing and security from the master and does not have its own owner field.
 - Deleting the master **also deletes** all its detail records (cascade delete).
 - You can create **roll-up summary fields** on the master. A roll-up summary can be a COUNT, SUM, MIN or MAX of the detail records. There is no AVERAGE.
-- A custom object can have **at most two** master-detail relationships.
+- A custom object can be the **detail** in **at most two** master-detail relationships.
 
 At Khanyisa Solar, if `Installation__c` is the detail of Account, you can add a roll-up on Account called "Total kW installed" that sums the system size of all installations for that customer, with no code.
 
@@ -130,7 +130,7 @@ A hierarchical relationship is a special lookup that is available only on the **
 | Roll-up summary on parent | No | Yes |
 
 :::exam-trap
-Remember the limits that questions love: a custom object has **at most two** master-detail relationships; **roll-up summaries need master-detail**; **hierarchical relationships exist only on User**; and a many-to-many needs **two master-detail** fields on a junction object.
+Remember the limits that questions love: a custom object can be the **detail** in **at most two** master-detail relationships; **roll-up summaries need master-detail**; **hierarchical relationships exist only on User**; and a many-to-many needs **two master-detail** fields on a junction object.
 :::
 
 :::on-the-job

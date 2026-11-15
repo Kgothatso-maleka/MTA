@@ -50,11 +50,6 @@ export default function ProgressPage() {
       <p><Link to="/">← Back to courses</Link></p>
       <h2>My progress</h2>
       <p className="banner">Your progress is stored only in this browser. Export it to keep a backup or move to another device.</p>
-      {!store.persistent && (
-        <p className="banner" role="status">
-          Your browser is blocking storage, so progress will not be saved when you close this page. Export it before leaving.
-        </p>
-      )}
       <p>Completed lessons: {lessons}</p>
       <h3>Mock exams</h3>
       {attempts.length === 0 ? (

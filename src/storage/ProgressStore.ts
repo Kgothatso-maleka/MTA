@@ -66,4 +66,6 @@ export interface ProgressStore {
   importAll(json: string): Promise<void>;
   /** false when running from memory because storage is unavailable */
   readonly persistent: boolean;
+  /** Optional: notified when `persistent` changes. Returns an unsubscribe function. */
+  subscribe?(listener: () => void): () => void;
 }
