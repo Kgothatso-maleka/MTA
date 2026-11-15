@@ -43,7 +43,7 @@ test('Mark complete calls store.markLessonComplete', async () => {
   renderApp(`/c/admin/m/${first}`, store);
   await userEvent.click(await screen.findByRole('button', { name: /mark complete/i }));
   expect(spy).toHaveBeenCalledWith('admin', first);
-  await waitFor(() => expect(screen.getByText(/completed/i)).toBeInTheDocument());
+  await waitFor(() => expect(screen.getByText('✓ Completed')).toBeInTheDocument());
 });
 
 test('unknown course or module id shows a not-found message', async () => {

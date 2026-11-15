@@ -69,15 +69,17 @@ test('no correctness feedback is visible before submit', async () => {
 });
 
 test('review list shows answered, flagged and unanswered counts', async () => {
-  renderApp('/c/admin/mock');
+  const store = newStore();
+  renderApp('/c/admin/mock', store);
   await start();
+  const n = (await store.getProgress()).inProgressMock!.questionIds.length;
   await pick();
   await userEvent.click(screen.getByRole('button', { name: /^next$/i }));
   await userEvent.click(screen.getByRole('button', { name: /flag for review/i }));
   await userEvent.click(screen.getByRole('button', { name: /review & submit/i }));
   expect(screen.getByText(/^answered: 1$/i)).toBeInTheDocument();
   expect(screen.getByText(/^flagged: 1$/i)).toBeInTheDocument();
-  expect(screen.getByText(/^unanswered: 1$/i)).toBeInTheDocument();
+  expect(screen.getByText(new RegExp(`^unanswered: ${n - 1}$`, 'i'))).toBeInTheDocument();
 });
 
 test('submit with unanswered questions succeeds and results report unanswered', async () => {

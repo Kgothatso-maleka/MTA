@@ -1,1 +1,1034 @@
-[{"id":"objects-and-fields-ph1","moduleId":"objects-and-fields","examSection":"object-manager","objective":"placeholder","type":"single","stem":"Placeholder?","options":[{"id":"a","text":"Yes"},{"id":"b","text":"No"},{"id":"c","text":"Maybe"}],"correct":["a"],"explanation":"Placeholder.","difficulty":1,"tags":[]}]
+[
+  {
+    "id": "oaf-01",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Explain objects, records and fields",
+    "type": "single",
+    "stem": "In Salesforce, what is the closest equivalent of a table in a database?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Object"
+      },
+      {
+        "id": "b",
+        "text": "Field"
+      },
+      {
+        "id": "c",
+        "text": "Record"
+      },
+      {
+        "id": "d",
+        "text": "Page layout"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "An object is a table that stores one kind of thing. Records are its rows and fields are its columns. A page layout only arranges how a record is displayed.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "oaf-02",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Explain objects, records and fields",
+    "type": "single",
+    "stem": "An admin creates a custom object labelled Installation. What will the API name end with?",
+    "options": [
+      {
+        "id": "a",
+        "text": "__c"
+      },
+      {
+        "id": "b",
+        "text": "__obj"
+      },
+      {
+        "id": "c",
+        "text": "__custom"
+      },
+      {
+        "id": "d",
+        "text": "__x"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Custom objects and custom fields get the __c suffix. (__x is used for external objects.)",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "oaf-03",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Choose the right field type",
+    "type": "single",
+    "stem": "Which field type should store a customer's choice of exactly one option from a fixed list?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Picklist"
+      },
+      {
+        "id": "b",
+        "text": "Text"
+      },
+      {
+        "id": "c",
+        "text": "Checkbox"
+      },
+      {
+        "id": "d",
+        "text": "Text Area"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A picklist offers a fixed list and enforces consistent values. Text would let people type anything, which makes reporting messy.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "oaf-04",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Choose the right field type",
+    "type": "single",
+    "stem": "Which statement about a formula field is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is calculated automatically and users cannot type into it"
+      },
+      {
+        "id": "b",
+        "text": "Users can edit it on the record page"
+      },
+      {
+        "id": "c",
+        "text": "It stores a value that only changes when a user saves the record"
+      },
+      {
+        "id": "d",
+        "text": "It can only be created on custom objects"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A formula field is read-only and calculated from other fields. It can be created on standard and custom objects.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "oaf-05",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Use roll-up summary fields",
+    "type": "single",
+    "stem": "On which side of a master-detail relationship can you create a roll-up summary field?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The master (parent) object"
+      },
+      {
+        "id": "b",
+        "text": "The detail (child) object"
+      },
+      {
+        "id": "c",
+        "text": "Either side"
+      },
+      {
+        "id": "d",
+        "text": "Only on the User object"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Roll-up summaries summarise child records, so they live on the master object.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "oaf-06",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Use roll-up summary fields",
+    "type": "single",
+    "stem": "Which of these is NOT an available roll-up summary type?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Average"
+      },
+      {
+        "id": "b",
+        "text": "Count"
+      },
+      {
+        "id": "c",
+        "text": "Sum"
+      },
+      {
+        "id": "d",
+        "text": "Maximum"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Roll-up summary fields support COUNT, SUM, MIN and MAX. There is no AVERAGE roll-up.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-07",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Choose between lookup and master-detail",
+    "type": "single",
+    "stem": "A parent record in a master-detail relationship is deleted. What happens to its detail records?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are deleted too"
+      },
+      {
+        "id": "b",
+        "text": "They stay and the lookup is cleared"
+      },
+      {
+        "id": "c",
+        "text": "They move to the recycle bin owner"
+      },
+      {
+        "id": "d",
+        "text": "Salesforce blocks the delete"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Master-detail relationships cascade delete: deleting the master deletes its detail records.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "oaf-08",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Choose between lookup and master-detail",
+    "type": "single",
+    "stem": "Which relationship type lets a child record exist without a parent by default?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lookup"
+      },
+      {
+        "id": "b",
+        "text": "Master-detail"
+      },
+      {
+        "id": "c",
+        "text": "Junction"
+      },
+      {
+        "id": "d",
+        "text": "Hierarchical on the Account object"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A lookup relationship is optional unless you make the field required. A master-detail always requires a parent.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "oaf-09",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Create many-to-many relationships",
+    "type": "single",
+    "stem": "How do you model a many-to-many relationship between Installations and Installers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A junction object with two master-detail relationships"
+      },
+      {
+        "id": "b",
+        "text": "A lookup field on each object"
+      },
+      {
+        "id": "c",
+        "text": "A formula field on Installation"
+      },
+      {
+        "id": "d",
+        "text": "A roll-up summary field on Installer"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A junction object with two master-detail relationships represents each pairing, giving you many-to-many.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-10",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Choose between lookup and master-detail",
+    "type": "multi",
+    "stem": "Which TWO statements are true of a master-detail relationship? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "The detail record inherits sharing and security from the master"
+      },
+      {
+        "id": "b",
+        "text": "Deleting the master deletes its detail records"
+      },
+      {
+        "id": "c",
+        "text": "The detail record keeps its own independent owner"
+      },
+      {
+        "id": "d",
+        "text": "The master field is optional"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Detail records inherit sharing from the master and are cascade deleted with it. They have no independent owner and the master is always required.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-11",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Create many-to-many relationships",
+    "type": "single",
+    "stem": "What is the maximum number of master-detail relationships a custom object can have?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2"
+      },
+      {
+        "id": "b",
+        "text": "1"
+      },
+      {
+        "id": "c",
+        "text": "3"
+      },
+      {
+        "id": "d",
+        "text": "5"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A custom object can be the detail in at most two master-detail relationships, which is what makes junction objects possible.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-12",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Write a validation rule",
+    "type": "single",
+    "stem": "A validation rule's formula evaluates to TRUE. What happens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The save is blocked and the error message is shown"
+      },
+      {
+        "id": "b",
+        "text": "The record is saved normally"
+      },
+      {
+        "id": "c",
+        "text": "The record is saved and flagged for review"
+      },
+      {
+        "id": "d",
+        "text": "The field is cleared"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Validation rule formulas return TRUE when the data is invalid, which blocks the save.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "oaf-13",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Write a validation rule",
+    "type": "single",
+    "stem": "Which function checks the selected value of a picklist field inside a validation rule?",
+    "options": [
+      {
+        "id": "a",
+        "text": "ISPICKVAL"
+      },
+      {
+        "id": "b",
+        "text": "TEXTEQUALS"
+      },
+      {
+        "id": "c",
+        "text": "CONTAINS only"
+      },
+      {
+        "id": "d",
+        "text": "PICKCHECK"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Picklist values cannot be compared with = in formulas. Use ISPICKVAL(field, \"value\").",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-14",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Write a validation rule",
+    "type": "single",
+    "stem": "A validation rule prevents a Completed installation without a completion date. Where does it also apply?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data imports, flows and Apex that save the record, not only the UI"
+      },
+      {
+        "id": "b",
+        "text": "Only when a user edits from the Lightning page"
+      },
+      {
+        "id": "c",
+        "text": "Only when saved through the mobile app"
+      },
+      {
+        "id": "d",
+        "text": "Only for System Administrators"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Validation rules fire whenever a record is saved, including imports, automation and API calls.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-15",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Use record types and page layouts",
+    "type": "single",
+    "stem": "What can record types control for different users of the same object?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Available picklist values and the page layout"
+      },
+      {
+        "id": "b",
+        "text": "Only the object's API name"
+      },
+      {
+        "id": "c",
+        "text": "Sharing rule evaluation order"
+      },
+      {
+        "id": "d",
+        "text": "Which fields are encrypted"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Record types let different users see different picklist values and page layouts, and on some objects different business processes.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "oaf-16",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Use record types and page layouts",
+    "type": "single",
+    "stem": "Which setting lets two Opportunity record types use different sets of stages?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A sales process"
+      },
+      {
+        "id": "b",
+        "text": "A lead process"
+      },
+      {
+        "id": "c",
+        "text": "A page layout"
+      },
+      {
+        "id": "d",
+        "text": "A compact layout"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A sales process defines the Opportunity stages. Each Opportunity record type is linked to one.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-17",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Use record types and page layouts",
+    "type": "single",
+    "stem": "A field is required only on the page layout. In which situation can a record still be saved with the field empty?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When data is loaded through an import"
+      },
+      {
+        "id": "b",
+        "text": "When a user edits from the web page"
+      },
+      {
+        "id": "c",
+        "text": "When a user clicks Save on the layout"
+      },
+      {
+        "id": "d",
+        "text": "It can never be empty"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Layout requirements are enforced only on that screen. To enforce it everywhere, make the field itself required or use a validation rule.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-18",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Use record types and page layouts",
+    "type": "single",
+    "stem": "A field appears on the page layout, but field-level security hides it from a user's profile. What does the user see?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The field is not visible"
+      },
+      {
+        "id": "b",
+        "text": "The field is read-only"
+      },
+      {
+        "id": "c",
+        "text": "The field is visible but empty"
+      },
+      {
+        "id": "d",
+        "text": "The field is visible only to the owner"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Field-level security takes precedence. If FLS hides the field, the user does not see it, even if it is on the layout.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-19",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Use record types and page layouts",
+    "type": "multi",
+    "stem": "Which TWO can make a record type available to a user? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Profiles"
+      },
+      {
+        "id": "b",
+        "text": "Permission sets"
+      },
+      {
+        "id": "c",
+        "text": "Roles"
+      },
+      {
+        "id": "d",
+        "text": "Public groups"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Record type availability is granted through profiles and permission sets. Roles and public groups control record access, not record types.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "oaf-20",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Choose between lookup and master-detail",
+    "type": "single",
+    "stem": "On which object is a hierarchical relationship field available?",
+    "options": [
+      {
+        "id": "a",
+        "text": "User"
+      },
+      {
+        "id": "b",
+        "text": "Account"
+      },
+      {
+        "id": "c",
+        "text": "Contact"
+      },
+      {
+        "id": "d",
+        "text": "Any custom object"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A hierarchical relationship is a special lookup that is available only on the User object, for example Manager.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-21",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Choose between lookup and master-detail",
+    "type": "single",
+    "stem": "Before you can convert a lookup relationship to a master-detail, what must be true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Every existing record must have a value in the lookup field"
+      },
+      {
+        "id": "b",
+        "text": "The object must have no page layouts"
+      },
+      {
+        "id": "c",
+        "text": "The parent must be a standard object"
+      },
+      {
+        "id": "d",
+        "text": "All users must be logged out"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A master-detail field is always required, so existing records must already have a parent value before converting.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "oaf-22",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Change and delete fields safely",
+    "type": "single",
+    "stem": "Which of these can an admin never delete?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A standard field"
+      },
+      {
+        "id": "b",
+        "text": "A custom field with no references"
+      },
+      {
+        "id": "c",
+        "text": "A custom picklist value"
+      },
+      {
+        "id": "d",
+        "text": "A custom object with no data"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Standard fields cannot be deleted. Custom fields and objects can, subject to references.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-23",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Change and delete fields safely",
+    "type": "single",
+    "stem": "For roughly how long can a deleted custom field be restored?",
+    "options": [
+      {
+        "id": "a",
+        "text": "About 15 days"
+      },
+      {
+        "id": "b",
+        "text": "Forever"
+      },
+      {
+        "id": "c",
+        "text": "24 hours"
+      },
+      {
+        "id": "d",
+        "text": "About 90 days"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Deleted custom fields stay in the Deleted Fields list for about 15 days, then are permanently erased.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-24",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Change and delete fields safely",
+    "type": "single",
+    "stem": "An admin tries to delete a custom field that is used in a validation rule. What happens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The delete is blocked until the reference is removed"
+      },
+      {
+        "id": "b",
+        "text": "The rule is deleted automatically"
+      },
+      {
+        "id": "c",
+        "text": "The rule is disabled and the field is deleted"
+      },
+      {
+        "id": "d",
+        "text": "The field is hidden instead"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A field referenced by a formula, validation rule, flow or similar cannot be deleted until the references are removed.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-25",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Change and delete fields safely",
+    "type": "single",
+    "stem": "Which change to a field is safest for existing integrations?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Changing its label"
+      },
+      {
+        "id": "b",
+        "text": "Changing its API name"
+      },
+      {
+        "id": "c",
+        "text": "Deleting it and recreating it with a new name"
+      },
+      {
+        "id": "d",
+        "text": "Changing its type"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A label is only what users see. Changing the API name or deleting a field can break integrations, reports and code that reference it.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-26",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Choose the right field type",
+    "type": "multi",
+    "stem": "Which THREE are valid Salesforce field types? (Choose 3)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Currency"
+      },
+      {
+        "id": "b",
+        "text": "Checkbox"
+      },
+      {
+        "id": "c",
+        "text": "Geolocation"
+      },
+      {
+        "id": "d",
+        "text": "Toggle Switch"
+      },
+      {
+        "id": "e",
+        "text": "Decimal Text"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Currency, Checkbox and Geolocation are standard field types. Toggle Switch and Decimal Text do not exist.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-27",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Choose the right field type",
+    "type": "single",
+    "stem": "In a dependent picklist, which field types can act as the controlling field?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Picklist or checkbox"
+      },
+      {
+        "id": "b",
+        "text": "Text or number"
+      },
+      {
+        "id": "c",
+        "text": "Date or currency"
+      },
+      {
+        "id": "d",
+        "text": "Formula only"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A controlling field must be a picklist or a checkbox. The dependent field must be a picklist.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "oaf-28",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Choose the right field type",
+    "type": "single",
+    "stem": "What is the main benefit of a global value set?",
+    "options": [
+      {
+        "id": "a",
+        "text": "One list of values can be reused across many picklist fields"
+      },
+      {
+        "id": "b",
+        "text": "It encrypts picklist values"
+      },
+      {
+        "id": "c",
+        "text": "It limits a picklist to 10 values"
+      },
+      {
+        "id": "d",
+        "text": "It makes a picklist dependent"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A global value set is defined once and shared by multiple picklists, so changes happen in one place.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-29",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Choose between lookup and master-detail",
+    "type": "single",
+    "stem": "What does a lookup filter do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Limits which records users can choose in a lookup field"
+      },
+      {
+        "id": "b",
+        "text": "Hides the lookup field from reports"
+      },
+      {
+        "id": "c",
+        "text": "Converts a lookup into a master-detail"
+      },
+      {
+        "id": "d",
+        "text": "Filters list views by owner"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A lookup filter restricts the records available to select in a lookup, for example only active installers.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-30",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Use roll-up summary fields",
+    "type": "single",
+    "stem": "Khanyisa Solar wants the total kW of all installations to appear automatically on each Account, without code. What should the admin build?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A master-detail from Installation to Account with a roll-up summary on Account"
+      },
+      {
+        "id": "b",
+        "text": "A lookup from Installation to Account with a formula on Account"
+      },
+      {
+        "id": "c",
+        "text": "A text field filled in by users"
+      },
+      {
+        "id": "d",
+        "text": "A validation rule on Account"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Roll-up summary fields work only when the child is related to the parent by master-detail. A formula cannot summarise many child records.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "oaf-31",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Choose between lookup and master-detail",
+    "type": "single",
+    "stem": "A user deletes an Account and all of its Installation records disappear too. The most likely cause is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A master-detail relationship between Installation and Account"
+      },
+      {
+        "id": "b",
+        "text": "A lookup with the clear-value option"
+      },
+      {
+        "id": "c",
+        "text": "A validation rule"
+      },
+      {
+        "id": "d",
+        "text": "A record type setting"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Master-detail cascade deletes detail records with their master. A lookup would clear the value or block the delete.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "oaf-32",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Use record types and page layouts",
+    "type": "single",
+    "stem": "You must guarantee a field is populated for records created by the UI, imports and integrations. What is the most reliable approach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mark the field as required in its field definition"
+      },
+      {
+        "id": "b",
+        "text": "Make it required on the page layout"
+      },
+      {
+        "id": "c",
+        "text": "Add it to the compact layout"
+      },
+      {
+        "id": "d",
+        "text": "Add an instruction in the field help text"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Field-level Required is enforced everywhere. Layout and help text apply only to the UI or give no enforcement.",
+    "difficulty": 2,
+    "tags": []
+  }
+]
