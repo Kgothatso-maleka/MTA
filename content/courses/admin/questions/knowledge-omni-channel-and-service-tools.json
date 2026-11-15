@@ -13,15 +13,15 @@
       },
       {
         "id": "b",
-        "text": "A support case"
+        "text": "A support case that records a customer's problem"
       },
       {
         "id": "c",
-        "text": "A report"
+        "text": "A report that lists the most common case reasons"
       },
       {
         "id": "d",
-        "text": "A permission set"
+        "text": "A permission set that lets agents edit cases"
       }
     ],
     "correct": [
@@ -269,15 +269,15 @@
       },
       {
         "id": "b",
-        "text": "Write a new answer each time"
+        "text": "Write a new answer each time from scratch"
       },
       {
         "id": "c",
-        "text": "Create a new queue"
+        "text": "Create a new queue for the approved answers"
       },
       {
         "id": "d",
-        "text": "Merge the case"
+        "text": "Merge the case with the customer's last case"
       }
     ],
     "correct": [
@@ -301,15 +301,15 @@
       },
       {
         "id": "b",
-        "text": "Creates reports"
+        "text": "Creates and schedules reports for service managers"
       },
       {
         "id": "c",
-        "text": "Imports data"
+        "text": "Imports case data from spreadsheets into Salesforce"
       },
       {
         "id": "d",
-        "text": "Controls login"
+        "text": "Controls which users can log in to the service console"
       }
     ],
     "correct": [
@@ -333,15 +333,15 @@
       },
       {
         "id": "b",
-        "text": "The agent's profile"
+        "text": "The agent's profile, which sets their object permissions"
       },
       {
         "id": "c",
-        "text": "The agent's role"
+        "text": "The agent's role in the hierarchy, which sets their reports"
       },
       {
         "id": "d",
-        "text": "The agent's licence"
+        "text": "The agent's licence type, which sets their feature access"
       }
     ],
     "correct": [
@@ -429,15 +429,15 @@
       },
       {
         "id": "b",
-        "text": "Page layouts"
+        "text": "The case page layout and which fields appear on it"
       },
       {
         "id": "c",
-        "text": "Report folders"
+        "text": "The sharing rule that lets agents see all closed cases"
       },
       {
         "id": "d",
-        "text": "Fiscal year"
+        "text": "The email template used in the auto-response rule"
       }
     ],
     "correct": [
@@ -525,15 +525,15 @@
       },
       {
         "id": "b",
-        "text": "Add more agents"
+        "text": "Hire more agents so every customer gets a fast reply"
       },
       {
         "id": "c",
-        "text": "Build a new object"
+        "text": "Build a new object that stores every repeated question"
       },
       {
         "id": "d",
-        "text": "Escalate every case"
+        "text": "Escalate every repeated case so a manager handles it"
       }
     ],
     "correct": [
@@ -557,15 +557,15 @@
       },
       {
         "id": "b",
-        "text": "Escalating a case"
+        "text": "Escalating a case to a manager when an agent cannot solve it quickly"
       },
       {
         "id": "c",
-        "text": "Merging cases"
+        "text": "Merging two cases that came from the same customer into one"
       },
       {
         "id": "d",
-        "text": "Routing cases to a queue"
+        "text": "Routing cases to a queue so a skilled agent can take them"
       }
     ],
     "correct": [
@@ -621,15 +621,15 @@
       },
       {
         "id": "b",
-        "text": "A new profile and a role"
+        "text": "A new profile and a role for the support team"
       },
       {
         "id": "c",
-        "text": "A new price book and a quote"
+        "text": "A new price book and a quote for the customers"
       },
       {
         "id": "d",
-        "text": "A sandbox and a change set"
+        "text": "A sandbox and a change set for the fix"
       }
     ],
     "correct": [

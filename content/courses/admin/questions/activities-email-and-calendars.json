@@ -13,15 +13,15 @@
       },
       {
         "id": "b",
-        "text": "A task has a time, an event does not"
+        "text": "A task has a start and end time, and an event only has a due date"
       },
       {
         "id": "c",
-        "text": "There is no difference"
+        "text": "There is no difference, because both appear in the same list"
       },
       {
         "id": "d",
-        "text": "Only events can recur"
+        "text": "Only events can recur, and tasks always happen once"
       }
     ],
     "correct": [
@@ -173,15 +173,15 @@
       },
       {
         "id": "b",
-        "text": "Only a lead"
+        "text": "Only a lead, because activities cannot relate to business records"
       },
       {
         "id": "c",
-        "text": "Only a contact"
+        "text": "Only a contact, which is the same as the Name field"
       },
       {
         "id": "d",
-        "text": "Only a user"
+        "text": "Only a user, who owns the activity"
       }
     ],
     "correct": [
@@ -365,15 +365,15 @@
       },
       {
         "id": "b",
-        "text": "Data Loader"
+        "text": "Data Loader, which imports and exports records in bulk"
       },
       {
         "id": "c",
-        "text": "Web-to-Lead"
+        "text": "Web-to-Lead, which captures website form entries as leads"
       },
       {
         "id": "d",
-        "text": "Campaign influence"
+        "text": "Campaign influence, which links campaigns to opportunities"
       }
     ],
     "correct": [
@@ -397,15 +397,15 @@
       },
       {
         "id": "b",
-        "text": "A new Salesforce licence"
+        "text": "A new Salesforce licence for each person who emails customers"
       },
       {
         "id": "c",
-        "text": "A new profile"
+        "text": "A new profile that lets users send email from Salesforce only"
       },
       {
         "id": "d",
-        "text": "A report type"
+        "text": "A report type that shows email activity by month"
       }
     ],
     "correct": [
@@ -429,15 +429,15 @@
       },
       {
         "id": "b",
-        "text": "Merges two accounts"
+        "text": "Merges two accounts that have the same name into one record"
       },
       {
         "id": "c",
-        "text": "Combines two templates"
+        "text": "Combines two email templates into a single longer template"
       },
       {
         "id": "d",
-        "text": "Deletes the email"
+        "text": "Deletes the email from the sent items once it has been delivered"
       }
     ],
     "correct": [
@@ -461,15 +461,15 @@
       },
       {
         "id": "b",
-        "text": "The template is corrupted"
+        "text": "The template is corrupted and needs to be rebuilt"
       },
       {
         "id": "c",
-        "text": "The template needs a new letterhead"
+        "text": "The template needs a new letterhead before it can be sent"
       },
       {
         "id": "d",
-        "text": "The user lacks a licence"
+        "text": "The user lacks a licence to send email from Salesforce"
       }
     ],
     "correct": [
@@ -493,15 +493,15 @@
       },
       {
         "id": "b",
-        "text": "Email them to everyone"
+        "text": "Email them to everyone on the team as attachments"
       },
       {
         "id": "c",
-        "text": "Create a profile"
+        "text": "Create a profile that contains all of the templates"
       },
       {
         "id": "d",
-        "text": "Make them private"
+        "text": "Make them private so each person keeps their own copy"
       }
     ],
     "correct": [
@@ -525,15 +525,15 @@
       },
       {
         "id": "b",
-        "text": "A merge field"
+        "text": "A merge field that inserts the contact's name"
       },
       {
         "id": "c",
-        "text": "A validation rule"
+        "text": "A validation rule that checks the template text"
       },
       {
         "id": "d",
-        "text": "An attachment limit"
+        "text": "An attachment limit for each email that is sent"
       }
     ],
     "correct": [
@@ -557,15 +557,15 @@
       },
       {
         "id": "b",
-        "text": "Ask reps to log everything by hand"
+        "text": "Ask reps to log every call and email by hand in a custom object"
       },
       {
         "id": "c",
-        "text": "Hide the timeline"
+        "text": "Hide the activity timeline so managers use reports only"
       },
       {
         "id": "d",
-        "text": "Stop recording calls"
+        "text": "Stop recording calls so there is nothing to track"
       }
     ],
     "correct": [

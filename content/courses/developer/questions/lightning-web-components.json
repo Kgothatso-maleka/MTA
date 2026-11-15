@@ -13,15 +13,15 @@
       },
       {
         "id": "b",
-        "text": "The .html file"
+        "text": "The .html file, which holds the template markup"
       },
       {
         "id": "c",
-        "text": "The .css file"
+        "text": "The .css file, which holds the component styles"
       },
       {
         "id": "d",
-        "text": "The .js file"
+        "text": "The .js file, which holds the component class"
       }
     ],
     "correct": [
@@ -141,15 +141,15 @@
       },
       {
         "id": "b",
-        "text": "Yes, freely"
+        "text": "Yes, freely, as the property belongs to the child"
       },
       {
         "id": "c",
-        "text": "Only in connectedCallback"
+        "text": "Only in connectedCallback, before the first render"
       },
       {
         "id": "d",
-        "text": "Only with @track"
+        "text": "Only when the property has the @track decorator"
       }
     ],
     "correct": [
@@ -429,15 +429,15 @@
       },
       {
         "id": "b",
-        "text": "isPublic"
+        "text": "isPublic set to true in the meta file"
       },
       {
         "id": "c",
-        "text": "appBuilder true"
+        "text": "appBuilder set to true in the component class"
       },
       {
         "id": "d",
-        "text": "exposed false"
+        "text": "exposed set to false so that the component is listed"
       }
     ],
     "correct": [
@@ -493,15 +493,15 @@
       },
       {
         "id": "b",
-        "text": "@wire"
+        "text": "A @wire adapter configured in the JavaScript file"
       },
       {
         "id": "c",
-        "text": "@api only"
+        "text": "The @api decorator placed on every field in the class"
       },
       {
         "id": "d",
-        "text": "lwc:if"
+        "text": "An lwc:if directive added to the HTML template"
       }
     ],
     "correct": [
@@ -525,15 +525,15 @@
       },
       {
         "id": "b",
-        "text": "Only @track fields are reactive"
+        "text": "Only @track fields are reactive, and class fields never re-render"
       },
       {
         "id": "c",
-        "text": "Fields never re-render"
+        "text": "Fields never re-render, and only the template does"
       },
       {
         "id": "d",
-        "text": "Only getters re-render"
+        "text": "Only getters re-render when a field value changes"
       }
     ],
     "correct": [
@@ -557,15 +557,15 @@
       },
       {
         "id": "b",
-        "text": "LWC can contain Aura"
+        "text": "An LWC can contain an Aura component but not the other way round"
       },
       {
         "id": "c",
-        "text": "Neither can contain the other"
+        "text": "Neither can contain the other, so they cannot be mixed on a page"
       },
       {
         "id": "d",
-        "text": "Aura is required for new work"
+        "text": "Aura is required for all new component work on the platform"
       }
     ],
     "correct": [
@@ -589,15 +589,15 @@
       },
       {
         "id": "b",
-        "text": "Plain HTML only"
+        "text": "Plain HTML elements that you style yourself for every button and table"
       },
       {
         "id": "c",
-        "text": "Aura"
+        "text": "Aura components, because they are the newer framework"
       },
       {
         "id": "d",
-        "text": "Visualforce"
+        "text": "Visualforce tags embedded in the component template"
       }
     ],
     "correct": [
@@ -718,15 +718,15 @@
       },
       {
         "id": "b",
-        "text": "An id on the template"
+        "text": "An id attribute on the template element that loops over the items"
       },
       {
         "id": "c",
-        "text": "A class on the li"
+        "text": "A class attribute on the li element so each row is styled"
       },
       {
         "id": "d",
-        "text": "The @api decorator"
+        "text": "The @api decorator on the items property in the class"
       }
     ],
     "correct": [

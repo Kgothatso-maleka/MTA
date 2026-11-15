@@ -173,15 +173,15 @@
       },
       {
         "id": "b",
-        "text": "Who can see the report"
+        "text": "Who can see the report once it has been saved"
       },
       {
         "id": "c",
-        "text": "How often the report refreshes"
+        "text": "How often the report refreshes its data"
       },
       {
         "id": "d",
-        "text": "Which dashboard it appears on"
+        "text": "Which dashboard the report appears on"
       }
     ],
     "correct": [
@@ -205,15 +205,15 @@
       },
       {
         "id": "b",
-        "text": "\"A\" records with \"B\" records"
+        "text": "\"A\" records with \"B\" records, which leaves out the ones with no \"B\""
       },
       {
         "id": "c",
-        "text": "\"B\" records only"
+        "text": "\"B\" records only, with the \"A\" records that they belong to"
       },
       {
         "id": "d",
-        "text": "Use a joined report"
+        "text": "Use a joined report, because standard types cannot list both"
       }
     ],
     "correct": [
@@ -237,15 +237,15 @@
       },
       {
         "id": "b",
-        "text": "All accounts"
+        "text": "All accounts, whether or not they have an opportunity"
       },
       {
         "id": "c",
-        "text": "Only opportunities with no account"
+        "text": "Only opportunities that have no account linked"
       },
       {
         "id": "d",
-        "text": "Accounts without opportunities"
+        "text": "Accounts that have no opportunities at all"
       }
     ],
     "correct": [
@@ -301,15 +301,15 @@
       },
       {
         "id": "b",
-        "text": "All users"
+        "text": "All users who have access to the reports tab"
       },
       {
         "id": "c",
-        "text": "No one"
+        "text": "No one, until the report type is deleted and rebuilt"
       },
       {
         "id": "d",
-        "text": "Only external users"
+        "text": "Only external users logged in through an Experience Cloud site"
       }
     ],
     "correct": [
@@ -333,15 +333,15 @@
       },
       {
         "id": "b",
-        "text": "A bucket field"
+        "text": "A bucket field that groups accounts by activity count"
       },
       {
         "id": "c",
-        "text": "A summary formula"
+        "text": "A summary formula that adds up the activities"
       },
       {
         "id": "d",
-        "text": "A dashboard filter"
+        "text": "A dashboard filter on the activity date field"
       }
     ],
     "correct": [
@@ -365,15 +365,15 @@
       },
       {
         "id": "b",
-        "text": "Combine two reports"
+        "text": "Combine two reports into a single joined report"
       },
       {
         "id": "c",
-        "text": "Store data in a custom object"
+        "text": "Store data from a report in a custom object"
       },
       {
         "id": "d",
-        "text": "Schedule a report"
+        "text": "Schedule a report to run at a set time"
       }
     ],
     "correct": [
@@ -461,15 +461,15 @@
       },
       {
         "id": "b",
-        "text": "The report is broken"
+        "text": "The report is broken for managers and needs to be rebuilt by an admin"
       },
       {
         "id": "c",
-        "text": "The manager's folder has fewer records"
+        "text": "The manager's folder has fewer records in it than the CEO's folder"
       },
       {
         "id": "d",
-        "text": "Reports only show 50 rows to managers"
+        "text": "Reports only ever show the first 50 rows to users who are managers"
       }
     ],
     "correct": [
@@ -493,15 +493,15 @@
       },
       {
         "id": "b",
-        "text": "Folder access overrides the sharing model"
+        "text": "Folder access overrides the sharing model for every record in the report"
       },
       {
         "id": "c",
-        "text": "Folders give access to all records in the report"
+        "text": "Folders give access to all the records that appear in the report"
       },
       {
         "id": "d",
-        "text": "Folders can only be shared with one user"
+        "text": "Folders can only be shared with one user at a time, never with groups"
       }
     ],
     "correct": [
@@ -590,15 +590,15 @@
       },
       {
         "id": "b",
-        "text": "Takes a screenshot of a dashboard"
+        "text": "Takes a screenshot of a dashboard each week and files it in a folder"
       },
       {
         "id": "c",
-        "text": "Backs up the whole org"
+        "text": "Backs up the whole org on a schedule and stores the files"
       },
       {
         "id": "d",
-        "text": "Emails the report as a PDF"
+        "text": "Emails the report as a PDF to each user every Monday"
       }
     ],
     "correct": [
@@ -655,15 +655,15 @@
       },
       {
         "id": "b",
-        "text": "A bucket field"
+        "text": "A bucket field that groups opportunities by size"
       },
       {
         "id": "c",
-        "text": "A joined report"
+        "text": "A joined report that shows the current pipeline"
       },
       {
         "id": "d",
-        "text": "A cross filter"
+        "text": "A cross filter that excludes closed opportunities"
       }
     ],
     "correct": [
@@ -687,15 +687,15 @@
       },
       {
         "id": "b",
-        "text": "A dashboard filter"
+        "text": "A dashboard filter set to the pipeline target"
       },
       {
         "id": "c",
-        "text": "A reporting snapshot"
+        "text": "A reporting snapshot that saves the pipeline each week"
       },
       {
         "id": "d",
-        "text": "A matrix report"
+        "text": "A matrix report that shows pipeline by month"
       }
     ],
     "correct": [
@@ -719,15 +719,15 @@
       },
       {
         "id": "b",
-        "text": "A bucket field"
+        "text": "A bucket field that groups the records by quarter"
       },
       {
         "id": "c",
-        "text": "A summary formula"
+        "text": "A summary formula that finds the current quarter"
       },
       {
         "id": "d",
-        "text": "A report type"
+        "text": "A report type that is limited to one quarter"
       }
     ],
     "correct": [
@@ -751,15 +751,15 @@
       },
       {
         "id": "b",
-        "text": "Group rows in a matrix"
+        "text": "Group rows in a matrix report by the fields chosen"
       },
       {
         "id": "c",
-        "text": "Control folder access"
+        "text": "Control which folders a user can open"
       },
       {
         "id": "d",
-        "text": "Schedule a report"
+        "text": "Schedule the report to run at a set time"
       }
     ],
     "correct": [
@@ -783,15 +783,15 @@
       },
       {
         "id": "b",
-        "text": "Every field on the object always appears"
+        "text": "Every field on the object always appears in any report, whatever the type"
       },
       {
         "id": "c",
-        "text": "Field-level security is ignored in reports"
+        "text": "Field-level security is ignored when users run reports they can open"
       },
       {
         "id": "d",
-        "text": "Users can see any field in a report they open"
+        "text": "Users can see any field in a report they open, even without field access"
       }
     ],
     "correct": [
@@ -815,15 +815,15 @@
       },
       {
         "id": "b",
-        "text": "A summary report on Opportunities"
+        "text": "A summary report on Opportunities grouped by account"
       },
       {
         "id": "c",
-        "text": "A dashboard filter"
+        "text": "A dashboard filter that hides accounts with opportunities"
       },
       {
         "id": "d",
-        "text": "A formula field"
+        "text": "A formula field on Account that counts its opportunities"
       }
     ],
     "correct": [

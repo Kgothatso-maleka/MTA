@@ -77,15 +77,15 @@
       },
       {
         "id": "b",
-        "text": "Hardcodes the Id"
+        "text": "Hardcodes the Id so that the wire never changes"
       },
       {
         "id": "c",
-        "text": "Converts it to a string"
+        "text": "Converts the Id into a string before the wire runs"
       },
       {
         "id": "d",
-        "text": "Declares a constant"
+        "text": "Declares a constant that the wire cannot change"
       }
     ],
     "correct": [
@@ -301,15 +301,15 @@
       },
       {
         "id": "b",
-        "text": "In the target"
+        "text": "In the target property of the event object"
       },
       {
         "id": "c",
-        "text": "In the name"
+        "text": "In the name of the event as a string"
       },
       {
         "id": "d",
-        "text": "In bubbles"
+        "text": "In the bubbles property of the event object"
       }
     ],
     "correct": [
@@ -365,15 +365,15 @@
       },
       {
         "id": "b",
-        "text": "By dispatching an event"
+        "text": "By dispatching an event that the child listens for"
       },
       {
         "id": "c",
-        "text": "By changing the child's CSS"
+        "text": "By changing the child's CSS so that it reads the data"
       },
       {
         "id": "d",
-        "text": "With a trigger"
+        "text": "With a trigger on the child's object"
       }
     ],
     "correct": [
@@ -429,15 +429,15 @@
       },
       {
         "id": "b",
-        "text": "Parent properties"
+        "text": "Parent properties passed down from the top component"
       },
       {
         "id": "c",
-        "text": "Custom labels"
+        "text": "Custom labels shared between the components"
       },
       {
         "id": "d",
-        "text": "Platform cache"
+        "text": "Platform cache that stores the message for them"
       }
     ],
     "correct": [
@@ -557,15 +557,15 @@
       },
       {
         "id": "b",
-        "text": "Complex multi-object logic"
+        "text": "Complex logic that joins several objects and many records at once"
       },
       {
         "id": "c",
-        "text": "Callouts"
+        "text": "Callouts to external systems that need a stored credential"
       },
       {
         "id": "d",
-        "text": "Large aggregate queries"
+        "text": "Large aggregate queries that group thousands of rows by field"
       }
     ],
     "correct": [
@@ -589,15 +589,15 @@
       },
       {
         "id": "b",
-        "text": "Which data it carries"
+        "text": "Which data the event carries, by default in its detail property"
       },
       {
         "id": "c",
-        "text": "Its name"
+        "text": "The name of the event that the parent component listens for"
       },
       {
         "id": "d",
-        "text": "Its handler"
+        "text": "Which handler function runs first when several components listen to it"
       }
     ],
     "correct": [
@@ -654,15 +654,15 @@
       },
       {
         "id": "b",
-        "text": "dispatchEvent"
+        "text": "dispatchEvent on the component that saved the data"
       },
       {
         "id": "c",
-        "text": "connectedCallback"
+        "text": "connectedCallback again, so the component reloads"
       },
       {
         "id": "d",
-        "text": "Navigate"
+        "text": "Navigate to the same page so that the data reloads"
       }
     ],
     "correct": [

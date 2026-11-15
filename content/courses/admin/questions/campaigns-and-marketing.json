@@ -13,15 +13,15 @@
       },
       {
         "id": "b",
-        "text": "A type of sales process"
+        "text": "A type of sales process for the opportunity object"
       },
       {
         "id": "c",
-        "text": "A case status"
+        "text": "A case status used by the support team"
       },
       {
         "id": "d",
-        "text": "A page layout"
+        "text": "A page layout used for lead records"
       }
     ],
     "correct": [
@@ -77,15 +77,15 @@
       },
       {
         "id": "b",
-        "text": "Deletes the member"
+        "text": "Deletes the member so the list stays clean"
       },
       {
         "id": "c",
-        "text": "Converts the lead"
+        "text": "Converts the lead into a contact automatically"
       },
       {
         "id": "d",
-        "text": "Closes the campaign"
+        "text": "Closes the campaign and marks it Completed"
       }
     ],
     "correct": [
@@ -141,15 +141,15 @@
       },
       {
         "id": "b",
-        "text": "A sales process"
+        "text": "A sales process with its own stage values"
       },
       {
         "id": "c",
-        "text": "Territory rules"
+        "text": "Territory rules that share records by region"
       },
       {
         "id": "d",
-        "text": "Duplicate detection"
+        "text": "Duplicate detection across all member records"
       }
     ],
     "correct": [
@@ -237,15 +237,15 @@
       },
       {
         "id": "b",
-        "text": "Which leads are duplicates"
+        "text": "Which leads in the campaign are duplicates of each other"
       },
       {
         "id": "c",
-        "text": "Which cases are escalated"
+        "text": "Which cases linked to the campaign are escalated"
       },
       {
         "id": "d",
-        "text": "Which products are sold"
+        "text": "Which products have been sold through the campaign"
       }
     ],
     "correct": [
@@ -269,15 +269,15 @@
       },
       {
         "id": "b",
-        "text": "Probability and stage"
+        "text": "Probability and stage of each opportunity"
       },
       {
         "id": "c",
-        "text": "Case number and priority"
+        "text": "Case number and priority of each case"
       },
       {
         "id": "d",
-        "text": "Product code"
+        "text": "Product code and list price of each product"
       }
     ],
     "correct": [
@@ -301,15 +301,15 @@
       },
       {
         "id": "b",
-        "text": "Service Cloud"
+        "text": "Service Cloud, the support product with case tools"
       },
       {
         "id": "c",
-        "text": "Flow Orchestrator"
+        "text": "Flow Orchestrator, the tool for multi-step flows"
       },
       {
         "id": "d",
-        "text": "Experience Cloud"
+        "text": "Experience Cloud, the product for customer sites"
       }
     ],
     "correct": [
@@ -365,15 +365,15 @@
       },
       {
         "id": "b",
-        "text": "Assigns leads to queues"
+        "text": "Assigns new leads to the right queue by region"
       },
       {
         "id": "c",
-        "text": "Merges duplicate leads"
+        "text": "Merges leads that look like duplicates into a single record"
       },
       {
         "id": "d",
-        "text": "Sends emails to leads"
+        "text": "Sends emails to leads when they reach a certain score"
       }
     ],
     "correct": [
@@ -429,15 +429,15 @@
       },
       {
         "id": "b",
-        "text": "The campaign is deleted"
+        "text": "The campaign is deleted when a status changes"
       },
       {
         "id": "c",
-        "text": "Leads are converted"
+        "text": "Leads in the campaign are converted automatically"
       },
       {
         "id": "d",
-        "text": "Nothing, statuses are not used in reports"
+        "text": "Nothing, because statuses are not used in reports"
       }
     ],
     "correct": [
@@ -461,15 +461,15 @@
       },
       {
         "id": "b",
-        "text": "A page layout"
+        "text": "A page layout that lists the opportunities of each campaign"
       },
       {
         "id": "c",
-        "text": "A queue"
+        "text": "A queue that collects the leads created by each campaign"
       },
       {
         "id": "d",
-        "text": "A validation rule"
+        "text": "A validation rule that totals the pipeline for each campaign"
       }
     ],
     "correct": [
@@ -493,15 +493,15 @@
       },
       {
         "id": "b",
-        "text": "Number of profiles"
+        "text": "The number of profiles used by the event staff"
       },
       {
         "id": "c",
-        "text": "Number of reports"
+        "text": "The number of reports that mention the campaign"
       },
       {
         "id": "d",
-        "text": "Number of sandboxes"
+        "text": "The number of sandboxes created for the event"
       }
     ],
     "correct": [
@@ -558,15 +558,15 @@
       },
       {
         "id": "b",
-        "text": "Importing contacts from Excel"
+        "text": "Importing contacts from Excel into Salesforce"
       },
       {
         "id": "c",
-        "text": "Routing cases"
+        "text": "Routing cases to the right queue"
       },
       {
         "id": "d",
-        "text": "Merging accounts"
+        "text": "Merging accounts that have the same name"
       }
     ],
     "correct": [

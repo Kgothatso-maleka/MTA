@@ -13,15 +13,15 @@
       },
       {
         "id": "b",
-        "text": "Security questions"
+        "text": "Security questions that users answer when they log in"
       },
       {
         "id": "c",
-        "text": "SMS code only"
+        "text": "An SMS code only, which is sent to the user's phone"
       },
       {
         "id": "d",
-        "text": "Email link only"
+        "text": "An email link only, which is sent to the user's inbox"
       }
     ],
     "correct": [
@@ -77,15 +77,15 @@
       },
       {
         "id": "b",
-        "text": "Trusted IP ranges"
+        "text": "Trusted IP ranges set on the whole org"
       },
       {
         "id": "c",
-        "text": "Field history tracking"
+        "text": "Field history tracking on the Finance profile"
       },
       {
         "id": "d",
-        "text": "A sharing rule"
+        "text": "A sharing rule that limits records to the head office"
       }
     ],
     "correct": [
@@ -109,15 +109,15 @@
       },
       {
         "id": "b",
-        "text": "It blocks logins from other IPs"
+        "text": "It blocks every login that comes from other IP addresses"
       },
       {
         "id": "c",
-        "text": "It grants admin rights"
+        "text": "It grants admin rights to users in that range"
       },
       {
         "id": "d",
-        "text": "It encrypts the connection"
+        "text": "It encrypts the connection for users in that range"
       }
     ],
     "correct": [
@@ -205,15 +205,15 @@
       },
       {
         "id": "b",
-        "text": "Password history"
+        "text": "Password history, which stops users reusing old passwords"
       },
       {
         "id": "c",
-        "text": "Minimum length"
+        "text": "Minimum length, which sets the shortest allowed password"
       },
       {
         "id": "d",
-        "text": "Complexity requirement"
+        "text": "Complexity requirement, which sets the mix of characters"
       }
     ],
     "correct": [
@@ -237,15 +237,15 @@
       },
       {
         "id": "b",
-        "text": "Using one profile for all users"
+        "text": "Using a single profile for all users so that nobody needs separate permissions"
       },
       {
         "id": "c",
-        "text": "Using one password for all orgs"
+        "text": "Using one password for every Salesforce org that a company owns"
       },
       {
         "id": "d",
-        "text": "A type of sharing rule"
+        "text": "A type of sharing rule that gives one user access to every record"
       }
     ],
     "correct": [
@@ -269,15 +269,15 @@
       },
       {
         "id": "b",
-        "text": "A custom object"
+        "text": "A custom object that stores integration credentials"
       },
       {
         "id": "c",
-        "text": "A permission set"
+        "text": "A permission set that gives an app access to all objects"
       },
       {
         "id": "d",
-        "text": "A page layout"
+        "text": "A page layout used for the mobile app"
       }
     ],
     "correct": [
@@ -493,15 +493,15 @@
       },
       {
         "id": "b",
-        "text": "True"
+        "text": "True, because a field that is not on the layout is hidden everywhere"
       },
       {
         "id": "c",
-        "text": "True, but only in reports"
+        "text": "True, but only in reports where layouts are applied"
       },
       {
         "id": "d",
-        "text": "True, but only on mobile"
+        "text": "True, but only on mobile where layouts are applied"
       }
     ],
     "correct": [
@@ -525,15 +525,15 @@
       },
       {
         "id": "b",
-        "text": "Delete the user"
+        "text": "Delete the user straight away so the account cannot be used"
       },
       {
         "id": "c",
-        "text": "Wait and watch for a week"
+        "text": "Wait and watch the login history for a week before acting"
       },
       {
         "id": "d",
-        "text": "Change the org's currency"
+        "text": "Change the org's currency so the user loses access to data"
       }
     ],
     "correct": [
@@ -590,15 +590,15 @@
       },
       {
         "id": "b",
-        "text": "Login IP ranges"
+        "text": "Login IP ranges, which limit where users can log in"
       },
       {
         "id": "c",
-        "text": "Password policy"
+        "text": "Password policy, which sets how often passwords change"
       },
       {
         "id": "d",
-        "text": "MFA"
+        "text": "MFA, which asks for a second proof of identity"
       }
     ],
     "correct": [
@@ -622,15 +622,15 @@
       },
       {
         "id": "b",
-        "text": "Seven days"
+        "text": "Seven days, after which it is removed from Setup"
       },
       {
         "id": "c",
-        "text": "Forever"
+        "text": "Forever, because Salesforce never removes login records"
       },
       {
         "id": "d",
-        "text": "Five years"
+        "text": "Five years, for audit and compliance reasons"
       }
     ],
     "correct": [
@@ -718,15 +718,15 @@
       },
       {
         "id": "b",
-        "text": "Delete the user"
+        "text": "Delete the user and create a new one"
       },
       {
         "id": "c",
-        "text": "Change the OWD"
+        "text": "Change the OWD so that the user can log in"
       },
       {
         "id": "d",
-        "text": "Clone the profile"
+        "text": "Clone the profile so that the user has a new one"
       }
     ],
     "correct": [

@@ -141,15 +141,15 @@
       },
       {
         "id": "b",
-        "text": "Replacing the role hierarchy"
+        "text": "Replacing the role hierarchy for the whole org"
       },
       {
         "id": "c",
-        "text": "Setting organization-wide defaults"
+        "text": "Setting the organization-wide defaults for each object"
       },
       {
         "id": "d",
-        "text": "Limiting login hours"
+        "text": "Limiting login hours for a group of users"
       }
     ],
     "correct": [
@@ -334,15 +334,15 @@
       },
       {
         "id": "b",
-        "text": "Allows login at any hour"
+        "text": "Allows users to log in at any hour of the day"
       },
       {
         "id": "c",
-        "text": "Allows only data exports"
+        "text": "Allows only data exports, with no changes to records"
       },
       {
         "id": "d",
-        "text": "Lets the user change the org's name"
+        "text": "Lets the user change the name of the org in Setup"
       }
     ],
     "correct": [
@@ -398,15 +398,15 @@
       },
       {
         "id": "b",
-        "text": "Freezing deletes the user; deactivating hides them"
+        "text": "Freezing deletes the user while deactivating only hides them"
       },
       {
         "id": "c",
-        "text": "Freezing frees the licence; deactivating keeps it"
+        "text": "Freezing frees the licence while deactivating keeps it in use"
       },
       {
         "id": "d",
-        "text": "There is no difference"
+        "text": "There is no difference, because both stop the user logging in"
       }
     ],
     "correct": [
@@ -494,15 +494,15 @@
       },
       {
         "id": "b",
-        "text": "The org's login hours"
+        "text": "The org's login hours for the user's profile"
       },
       {
         "id": "c",
-        "text": "The OWD of the object"
+        "text": "The organization-wide default of the Installation object"
       },
       {
         "id": "d",
-        "text": "The role hierarchy"
+        "text": "The role hierarchy position of the user's manager"
       }
     ],
     "correct": [
@@ -686,15 +686,15 @@
       },
       {
         "id": "b",
-        "text": "The org's currency settings"
+        "text": "The org's currency settings, which hide records in other currencies"
       },
       {
         "id": "c",
-        "text": "The email address on the user"
+        "text": "The email address on the user, which is matched to the owner"
       },
       {
         "id": "d",
-        "text": "The Chatter settings"
+        "text": "The Chatter settings that decide which feeds the user can see"
       }
     ],
     "correct": [
@@ -718,15 +718,15 @@
       },
       {
         "id": "b",
-        "text": "The record type is wrong"
+        "text": "The record type is wrong for that rep's profile"
       },
       {
         "id": "c",
-        "text": "The OWD is Private"
+        "text": "The OWD is Private, so the field is hidden"
       },
       {
         "id": "d",
-        "text": "The rep's role is too low"
+        "text": "The rep's role is too low in the hierarchy"
       }
     ],
     "correct": [

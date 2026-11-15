@@ -173,15 +173,15 @@
       },
       {
         "id": "b",
-        "text": "Starts the transaction"
+        "text": "Starts the database transaction that is rolled back when the test ends"
       },
       {
         "id": "c",
-        "text": "Deletes data"
+        "text": "Deletes all of the data that the test class created earlier on"
       },
       {
         "id": "d",
-        "text": "Turns on debug logs"
+        "text": "Turns on debug logs for every user while the test method runs"
       }
     ],
     "correct": [
@@ -205,15 +205,15 @@
       },
       {
         "id": "b",
-        "text": "Cancels them"
+        "text": "Cancels them so that nothing runs after the test ends"
       },
       {
         "id": "c",
-        "text": "Ignores them"
+        "text": "Ignores them so the test finishes more quickly"
       },
       {
         "id": "d",
-        "text": "Queues them for tomorrow"
+        "text": "Queues them for tomorrow so they run outside the test"
       }
     ],
     "correct": [
@@ -237,15 +237,15 @@
       },
       {
         "id": "b",
-        "text": "It fails deployment"
+        "text": "It fails deployment because Salesforce rejects empty tests"
       },
       {
         "id": "c",
-        "text": "It takes longer"
+        "text": "It takes longer to run than a test that has assertions"
       },
       {
         "id": "d",
-        "text": "It deletes data"
+        "text": "It deletes the data that the method created during setup"
       }
     ],
     "correct": [
@@ -365,15 +365,15 @@
       },
       {
         "id": "b",
-        "text": "Call the real endpoint"
+        "text": "Call the real endpoint during the test so the result is genuine"
       },
       {
         "id": "c",
-        "text": "Skip it"
+        "text": "Skip the callout code and rely on manual testing"
       },
       {
         "id": "d",
-        "text": "Use SeeAllData"
+        "text": "Use SeeAllData so the test can reach the endpoint"
       }
     ],
     "correct": [
@@ -429,15 +429,15 @@
       },
       {
         "id": "b",
-        "text": "A flow"
+        "text": "A flow that creates test records when a user saves"
       },
       {
         "id": "c",
-        "text": "A trigger"
+        "text": "A trigger that inserts sample data into production"
       },
       {
         "id": "d",
-        "text": "A permission set"
+        "text": "A permission set that lets tests see all org data"
       }
     ],
     "correct": [
@@ -622,15 +622,15 @@
       },
       {
         "id": "b",
-        "text": "Flows never run in tests"
+        "text": "Flows never run in tests, so the flow cannot be the cause"
       },
       {
         "id": "c",
-        "text": "Flows run only in production"
+        "text": "Flows run only in production, and not in a sandbox or test"
       },
       {
         "id": "d",
-        "text": "Flows run after the test ends"
+        "text": "Flows run after the test ends, so they cannot change the field"
       }
     ],
     "correct": [
@@ -654,15 +654,15 @@
       },
       {
         "id": "b",
-        "text": "It fails because 502 accounts exist"
+        "text": "It fails because 502 accounts exist in the org"
       },
       {
         "id": "c",
-        "text": "It fails because tests need SeeAllData"
+        "text": "It fails because tests need SeeAllData to run"
       },
       {
         "id": "d",
-        "text": "It passes only in a sandbox"
+        "text": "It passes only in a sandbox, not in production"
       }
     ],
     "correct": [
@@ -686,15 +686,15 @@
       },
       {
         "id": "b",
-        "text": "Add SeeAllData=true"
+        "text": "Add SeeAllData=true to the test class so the job can see org data"
       },
       {
         "id": "c",
-        "text": "Use a future method"
+        "text": "Replace the queueable job with a future method and keep the assertion"
       },
       {
         "id": "d",
-        "text": "Delete the assertion"
+        "text": "Delete the assertion because asynchronous work cannot be checked in a test"
       }
     ],
     "correct": [

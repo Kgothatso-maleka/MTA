@@ -45,15 +45,15 @@
       },
       {
         "id": "b",
-        "text": "sObjects"
+        "text": "sObjects, as long as they have been queried first"
       },
       {
         "id": "c",
-        "text": "Any class instance"
+        "text": "Any class instance, because Apex serialises it for you"
       },
       {
         "id": "d",
-        "text": "Anything"
+        "text": "Anything, including custom objects and lists of sObjects"
       }
     ],
     "correct": [
@@ -461,15 +461,15 @@
       },
       {
         "id": "b",
-        "text": "A date only"
+        "text": "A date and time only, which Salesforce converts to a cron string"
       },
       {
         "id": "c",
-        "text": "A class name only"
+        "text": "A class name only, and Salesforce chooses the schedule itself"
       },
       {
         "id": "d",
-        "text": "A flow name"
+        "text": "A flow name, a cron expression and a user name for the job"
       }
     ],
     "correct": [
@@ -525,15 +525,15 @@
       },
       {
         "id": "b",
-        "text": "A future method"
+        "text": "A future method called from a trigger"
       },
       {
         "id": "c",
-        "text": "A trigger"
+        "text": "A trigger that runs on every update"
       },
       {
         "id": "d",
-        "text": "A Visualforce page"
+        "text": "A Visualforce page that a user opens at night"
       }
     ],
     "correct": [
@@ -686,15 +686,15 @@
       },
       {
         "id": "b",
-        "text": "Future methods cannot use DML"
+        "text": "Future methods cannot use DML, only queries and callouts"
       },
       {
         "id": "c",
-        "text": "It is missing a return value"
+        "text": "It is missing a return value, because future methods must return one"
       },
       {
         "id": "d",
-        "text": "It must be global"
+        "text": "It must be declared global so that it can run asynchronously"
       }
     ],
     "correct": [

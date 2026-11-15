@@ -13,15 +13,15 @@
       },
       {
         "id": "b",
-        "text": "A report tool"
+        "text": "A reporting tool that tracks AI usage by team"
       },
       {
         "id": "c",
-        "text": "A Data Loader feature"
+        "text": "A Data Loader feature that imports prompt files"
       },
       {
         "id": "d",
-        "text": "A kind of profile"
+        "text": "A kind of profile that controls access to prompts"
       }
     ],
     "correct": [
@@ -141,15 +141,15 @@
       },
       {
         "id": "b",
-        "text": "Merges two templates"
+        "text": "Merges two templates into a single longer prompt"
       },
       {
         "id": "c",
-        "text": "Merges two accounts"
+        "text": "Merges two accounts that share the same name"
       },
       {
         "id": "d",
-        "text": "Deletes the prompt"
+        "text": "Deletes the prompt after it has been run once"
       }
     ],
     "correct": [
@@ -173,15 +173,15 @@
       },
       {
         "id": "b",
-        "text": "Training a new model"
+        "text": "Training a new language model on your company's records"
       },
       {
         "id": "c",
-        "text": "Hiding sensitive data"
+        "text": "Hiding sensitive values before the prompt reaches the model"
       },
       {
         "id": "d",
-        "text": "Auditing the model"
+        "text": "Auditing each model response after it is generated"
       }
     ],
     "correct": [
@@ -237,15 +237,15 @@
       },
       {
         "id": "b",
-        "text": "The Setup Audit Trail"
+        "text": "The Setup Audit Trail, which logs changes to settings"
       },
       {
         "id": "c",
-        "text": "The report folder"
+        "text": "The report folder where the template is stored"
       },
       {
         "id": "d",
-        "text": "The login history"
+        "text": "The login history of the user who runs the template"
       }
     ],
     "correct": [
@@ -269,15 +269,15 @@
       },
       {
         "id": "b",
-        "text": "Delete the old template"
+        "text": "Delete the old template so the new one is used"
       },
       {
         "id": "c",
-        "text": "Convert it to a report"
+        "text": "Convert it into a report that users can run"
       },
       {
         "id": "d",
-        "text": "Recreate it as a flow"
+        "text": "Recreate it as a flow and add it to the page"
       }
     ],
     "correct": [
@@ -333,15 +333,15 @@
       },
       {
         "id": "b",
-        "text": "A kind of profile"
+        "text": "A kind of profile that gives users access to AI features"
       },
       {
         "id": "c",
-        "text": "A report type"
+        "text": "A report type that shows AI usage by user"
       },
       {
         "id": "d",
-        "text": "A data backup"
+        "text": "A backup service that copies prompts to another region"
       }
     ],
     "correct": [
@@ -397,15 +397,15 @@
       },
       {
         "id": "b",
-        "text": "Salesforce deletes your data"
+        "text": "Salesforce deletes all of your data once a month"
       },
       {
         "id": "c",
-        "text": "No data is ever sent to a model"
+        "text": "No data is ever sent to a model, so nothing can be stored"
       },
       {
         "id": "d",
-        "text": "The audit trail is empty"
+        "text": "The audit trail is empty because nothing is logged by Salesforce"
       }
     ],
     "correct": [
@@ -525,15 +525,15 @@
       },
       {
         "id": "b",
-        "text": "Through page layouts"
+        "text": "Through page layouts assigned to each profile"
       },
       {
         "id": "c",
-        "text": "Through report folders"
+        "text": "Through report folders shared with each team"
       },
       {
         "id": "d",
-        "text": "Through fiscal year"
+        "text": "Through the fiscal year settings of the org"
       }
     ],
     "correct": [
@@ -557,15 +557,15 @@
       },
       {
         "id": "b",
-        "text": "The org's logo"
+        "text": "The logo shown on the org's login page and mobile app"
       },
       {
         "id": "c",
-        "text": "The number of dashboards"
+        "text": "The number of dashboards that the sales team has built"
       },
       {
         "id": "d",
-        "text": "The fiscal year"
+        "text": "The fiscal year setting that reports use for each quarter"
       }
     ],
     "correct": [
@@ -589,15 +589,15 @@
       },
       {
         "id": "b",
-        "text": "Because reports are AI"
+        "text": "Because reports are AI and need the most study time"
       },
       {
         "id": "c",
-        "text": "Because dashboards train the model"
+        "text": "Because dashboards train the AI model on their own"
       },
       {
         "id": "d",
-        "text": "Because AI replaces data"
+        "text": "Because AI replaces data and so makes it less important"
       }
     ],
     "correct": [
@@ -621,15 +621,15 @@
       },
       {
         "id": "b",
-        "text": "Let the AI decide alone"
+        "text": "Let the AI decide alone, so that results are consistent"
       },
       {
         "id": "c",
-        "text": "Skip testing to launch faster"
+        "text": "Skip testing to launch faster and fix issues later"
       },
       {
         "id": "d",
-        "text": "Turn off the audit trail"
+        "text": "Turn off the audit trail to protect customer privacy"
       }
     ],
     "correct": [
@@ -653,15 +653,15 @@
       },
       {
         "id": "b",
-        "text": "Launch to all customers"
+        "text": "Launch to all customers, then fix problems as they appear"
       },
       {
         "id": "c",
-        "text": "Delete old data"
+        "text": "Delete old data so the AI starts with a clean slate"
       },
       {
         "id": "d",
-        "text": "Turn off permissions"
+        "text": "Turn off permissions so the AI cannot make mistakes"
       }
     ],
     "correct": [
@@ -717,15 +717,15 @@
       },
       {
         "id": "b",
-        "text": "Short vague prompts are best"
+        "text": "Short vague prompts give the best results for every task"
       },
       {
         "id": "c",
-        "text": "Prompts never need testing"
+        "text": "Prompts never need testing once they are saved"
       },
       {
         "id": "d",
-        "text": "Prompts cannot use record data"
+        "text": "Prompts cannot use record data, only typed text"
       }
     ],
     "correct": [
@@ -749,15 +749,15 @@
       },
       {
         "id": "b",
-        "text": "A new profile for AI users"
+        "text": "A separate profile that blocks every AI user from reaching any object in the org"
       },
       {
         "id": "c",
-        "text": "A sharing rule for models"
+        "text": "A sharing rule that limits the models to Public Read Only access on the data"
       },
       {
         "id": "d",
-        "text": "A larger storage limit"
+        "text": "A larger storage limit for the prompts that are stored in the org each month"
       }
     ],
     "correct": [

@@ -77,15 +77,15 @@
       },
       {
         "id": "b",
-        "text": "Replaces all controllers"
+        "text": "Replaces every controller on the org with one class"
       },
       {
         "id": "c",
-        "text": "Runs only in tests"
+        "text": "Runs only in tests, to check the standard controller"
       },
       {
         "id": "d",
-        "text": "Creates PDFs"
+        "text": "Creates PDFs from the records on the page"
       }
     ],
     "correct": [
@@ -109,15 +109,15 @@
       },
       {
         "id": "b",
-        "text": "SObject"
+        "text": "SObject, the record that is being edited on the page"
       },
       {
         "id": "c",
-        "text": "Id"
+        "text": "Id, the record Id taken from the page URL"
       },
       {
         "id": "d",
-        "text": "Trigger.new"
+        "text": "Trigger.new, the list of records being saved"
       }
     ],
     "correct": [
@@ -237,15 +237,15 @@
       },
       {
         "id": "b",
-        "text": "Add more fields"
+        "text": "Add more fields to the form so the data is saved in pieces"
       },
       {
         "id": "c",
-        "text": "Use more forms"
+        "text": "Use many small forms so each one holds less on the page"
       },
       {
         "id": "d",
-        "text": "Increase heap"
+        "text": "Increase the heap size limit for the Visualforce page"
       }
     ],
     "correct": [
@@ -301,15 +301,15 @@
       },
       {
         "id": "b",
-        "text": "Yes always"
+        "text": "Yes, always, because Visualforce enforces sharing"
       },
       {
         "id": "c",
-        "text": "Yes for profiles"
+        "text": "Yes, for profiles that have the View All permission"
       },
       {
         "id": "d",
-        "text": "Yes only in sandboxes"
+        "text": "Yes, but only when the page runs in a sandbox"
       }
     ],
     "correct": [
@@ -333,15 +333,15 @@
       },
       {
         "id": "b",
-        "text": "html, js, xml"
+        "text": "html, js and xml files with the same name"
       },
       {
         "id": "c",
-        "text": "page, class, trigger"
+        "text": "page, class and trigger files in a folder"
       },
       {
         "id": "d",
-        "text": "json and yaml"
+        "text": "json and yaml files with a manifest"
       }
     ],
     "correct": [
@@ -461,15 +461,15 @@
       },
       {
         "id": "b",
-        "text": "LWC alone"
+        "text": "LWC alone, because components render PDFs by default"
       },
       {
         "id": "c",
-        "text": "Aura alone"
+        "text": "Aura alone, because it has a PDF tag"
       },
       {
         "id": "d",
-        "text": "A validation rule"
+        "text": "A validation rule that formats the invoice as a PDF"
       }
     ],
     "correct": [
@@ -493,15 +493,15 @@
       },
       {
         "id": "b",
-        "text": "No"
+        "text": "No, Visualforce works only in Salesforce Classic"
       },
       {
         "id": "c",
-        "text": "Only in Classic"
+        "text": "Only in Classic, because Lightning does not run it"
       },
       {
         "id": "d",
-        "text": "Only in communities"
+        "text": "Only in communities, never inside the main app"
       }
     ],
     "correct": [
@@ -525,15 +525,15 @@
       },
       {
         "id": "b",
-        "text": "Delete it"
+        "text": "Delete it and rebuild it as soon as possible"
       },
       {
         "id": "c",
-        "text": "Always rebuild immediately"
+        "text": "Always rebuild it immediately in a new framework"
       },
       {
         "id": "d",
-        "text": "Convert to Aura"
+        "text": "Convert it to Aura, because Visualforce is retired"
       }
     ],
     "correct": [
@@ -654,15 +654,15 @@
       },
       {
         "id": "b",
-        "text": "It cannot be used in a page"
+        "text": "It cannot be used in a page, only in a trigger"
       },
       {
         "id": "c",
-        "text": "It is always read-only"
+        "text": "It is always read-only and cannot save any changes"
       },
       {
         "id": "d",
-        "text": "It cannot run queries"
+        "text": "It cannot run queries, only call other classes"
       }
     ],
     "correct": [

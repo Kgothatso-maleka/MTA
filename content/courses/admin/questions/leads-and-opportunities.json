@@ -13,15 +13,15 @@
       },
       {
         "id": "b",
-        "text": "Only an opportunity"
+        "text": "Only an opportunity, because accounts must exist first"
       },
       {
         "id": "c",
-        "text": "Only a contact"
+        "text": "Only a contact, with no account created or linked"
       },
       {
         "id": "d",
-        "text": "A campaign"
+        "text": "A campaign and a campaign member for the converted lead"
       }
     ],
     "correct": [
@@ -173,15 +173,15 @@
       },
       {
         "id": "b",
-        "text": "A type of report"
+        "text": "A type of report that lists records by owner"
       },
       {
         "id": "c",
-        "text": "A user licence"
+        "text": "A user licence that limits how many people can log in"
       },
       {
         "id": "d",
-        "text": "A sharing rule"
+        "text": "A sharing rule that gives a department read access"
       }
     ],
     "correct": [
@@ -271,15 +271,15 @@
       },
       {
         "id": "b",
-        "text": "Two page layouts"
+        "text": "Two page layouts assigned to the same record type"
       },
       {
         "id": "c",
-        "text": "Two profiles"
+        "text": "Two profiles that each show a different list of stages"
       },
       {
         "id": "d",
-        "text": "Two queues"
+        "text": "Two queues that route opportunities by their stage name"
       }
     ],
     "correct": [
@@ -367,15 +367,15 @@
       },
       {
         "id": "b",
-        "text": "A quote"
+        "text": "A quote that was sent to the customer earlier"
       },
       {
         "id": "c",
-        "text": "A campaign"
+        "text": "A campaign linked to the opportunity being sold"
       },
       {
         "id": "d",
-        "text": "An opportunity"
+        "text": "An opportunity that has already reached Closed Won"
       }
     ],
     "correct": [
@@ -431,15 +431,15 @@
       },
       {
         "id": "b",
-        "text": "A record of a sale"
+        "text": "A record of one sale that has been closed"
       },
       {
         "id": "c",
-        "text": "A contract"
+        "text": "A contract signed by the customer and the company"
       },
       {
         "id": "d",
-        "text": "A quote template"
+        "text": "A quote template used for formal offers"
       }
     ],
     "correct": [
@@ -463,15 +463,15 @@
       },
       {
         "id": "b",
-        "text": "To track marketing spend"
+        "text": "To track marketing spend against a campaign budget"
       },
       {
         "id": "c",
-        "text": "To assign cases"
+        "text": "To assign cases to agents in the right queue"
       },
       {
         "id": "d",
-        "text": "To forecast revenue"
+        "text": "To forecast revenue for the coming quarter"
       }
     ],
     "correct": [
@@ -495,15 +495,15 @@
       },
       {
         "id": "b",
-        "text": "Account teams"
+        "text": "Account teams, which share one account with many users"
       },
       {
         "id": "c",
-        "text": "Person accounts"
+        "text": "Person accounts, which merge a contact and an account"
       },
       {
         "id": "d",
-        "text": "Lead conversion"
+        "text": "Lead conversion, which creates an account for each lead"
       }
     ],
     "correct": [
@@ -623,15 +623,15 @@
       },
       {
         "id": "b",
-        "text": "Role hierarchy"
+        "text": "Role hierarchy, which opens records upward to managers"
       },
       {
         "id": "c",
-        "text": "Queues"
+        "text": "Queues, which hold records for a group to pick up"
       },
       {
         "id": "d",
-        "text": "Public groups"
+        "text": "Public groups, which collect users for sharing rules"
       }
     ],
     "correct": [
@@ -687,15 +687,15 @@
       },
       {
         "id": "b",
-        "text": "A closed deal"
+        "text": "A closed deal that has been won by a sales rep"
       },
       {
         "id": "c",
-        "text": "A customer company"
+        "text": "A customer company already recorded as an account"
       },
       {
         "id": "d",
-        "text": "A support request"
+        "text": "A support request raised by an existing customer"
       }
     ],
     "correct": [
@@ -719,15 +719,15 @@
       },
       {
         "id": "b",
-        "text": "Convert the lead again"
+        "text": "Convert the lead again so that the field is copied over"
       },
       {
         "id": "c",
-        "text": "Make the field required"
+        "text": "Make the field required so users always fill it in"
       },
       {
         "id": "d",
-        "text": "Use a record type"
+        "text": "Use a record type so that the field is shown on conversion"
       }
     ],
     "correct": [

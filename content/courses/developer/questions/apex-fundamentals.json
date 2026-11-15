@@ -13,15 +13,15 @@
       },
       {
         "id": "b",
-        "text": "It runs in the user's browser"
+        "text": "It runs in the user's browser, like JavaScript, and so needs no server"
       },
       {
         "id": "c",
-        "text": "It is a weakly typed scripting language"
+        "text": "It is a weakly typed scripting language that is interpreted at run time"
       },
       {
         "id": "d",
-        "text": "It only runs inside flows"
+        "text": "It only runs inside flows and process automation, never in triggers"
       }
     ],
     "correct": [
@@ -173,15 +173,15 @@
       },
       {
         "id": "b",
-        "text": "Access only within the class"
+        "text": "Access only within the class where it is declared"
       },
       {
         "id": "c",
-        "text": "Access only in subclasses"
+        "text": "Access only within subclasses of that class"
       },
       {
         "id": "d",
-        "text": "Access only in tests"
+        "text": "Access only from test classes in the same org"
       }
     ],
     "correct": [
@@ -205,15 +205,15 @@
       },
       {
         "id": "b",
-        "text": "static"
+        "text": "static, because static methods belong to the class"
       },
       {
         "id": "c",
-        "text": "private"
+        "text": "private, because only the class itself should change it"
       },
       {
         "id": "d",
-        "text": "final"
+        "text": "final, because the child then receives its own copy"
       }
     ],
     "correct": [
@@ -365,15 +365,15 @@
       },
       {
         "id": "b",
-        "text": "DmlException"
+        "text": "DmlException, thrown when an insert or update fails"
       },
       {
         "id": "c",
-        "text": "QueryException"
+        "text": "QueryException, thrown when a query returns no rows"
       },
       {
         "id": "d",
-        "text": "A custom exception"
+        "text": "A custom exception class that extends Exception"
       }
     ],
     "correct": [
@@ -429,15 +429,15 @@
       },
       {
         "id": "b",
-        "text": "const Decimal VAT = 0.15;"
+        "text": "const Decimal VAT = 0.15; using the const keyword"
       },
       {
         "id": "c",
-        "text": "readonly Decimal VAT = 0.15;"
+        "text": "readonly Decimal VAT = 0.15; using the readonly keyword"
       },
       {
         "id": "d",
-        "text": "private Decimal VAT = 0.15;"
+        "text": "private Decimal VAT = 0.15; with no extra keywords"
       }
     ],
     "correct": [
@@ -590,15 +590,15 @@
       },
       {
         "id": "b",
-        "text": "Always, because code is faster to build"
+        "text": "Always, because code is faster to build than flows"
       },
       {
         "id": "c",
-        "text": "Only for reports"
+        "text": "Only for reports, which declarative tools cannot build"
       },
       {
         "id": "d",
-        "text": "Never in production"
+        "text": "Never in production, because code is risky to deploy"
       }
     ],
     "correct": [
@@ -622,15 +622,15 @@
       },
       {
         "id": "b",
-        "text": "One object instance only"
+        "text": "One object instance only, and not the class"
       },
       {
         "id": "c",
-        "text": "The trigger"
+        "text": "The trigger that calls it, and nothing else"
       },
       {
         "id": "d",
-        "text": "The test class only"
+        "text": "The test class only, and not production code"
       }
     ],
     "correct": [
@@ -783,15 +783,15 @@
       },
       {
         "id": "b",
-        "text": "n is set to an empty string"
+        "text": "n is set to an empty string and the code carries on"
       },
       {
         "id": "c",
-        "text": "The query is run again"
+        "text": "The query is run again, so the result is updated"
       },
       {
         "id": "d",
-        "text": "A DmlException"
+        "text": "A DmlException because the map is modified"
       }
     ],
     "correct": [

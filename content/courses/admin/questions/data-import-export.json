@@ -109,15 +109,15 @@
       },
       {
         "id": "b",
-        "text": "Leads"
+        "text": "Leads, which can be imported with the wizard"
       },
       {
         "id": "c",
-        "text": "Accounts"
+        "text": "Accounts, which can be imported with the wizard"
       },
       {
         "id": "d",
-        "text": "Contacts"
+        "text": "Contacts, which can be imported with the wizard"
       }
     ],
     "correct": [
@@ -206,15 +206,15 @@
       },
       {
         "id": "b",
-        "text": "Deletes a record and recreates it"
+        "text": "Deletes a record and recreates it with the new values"
       },
       {
         "id": "c",
-        "text": "Inserts every row even if it already exists"
+        "text": "Inserts every row even if a matching record already exists"
       },
       {
         "id": "d",
-        "text": "Moves records to the Recycle Bin"
+        "text": "Moves matching records to the Recycle Bin and adds new ones"
       }
     ],
     "correct": [
@@ -270,15 +270,15 @@
       },
       {
         "id": "b",
-        "text": "The field becomes visible to external users"
+        "text": "The field becomes visible to external users on the Experience Cloud site, and can be searched"
       },
       {
         "id": "c",
-        "text": "The field is automatically encrypted"
+        "text": "The field is automatically encrypted when it is saved, so it is protected from other users"
       },
       {
         "id": "d",
-        "text": "The field cannot be edited"
+        "text": "The field cannot be edited after the record is created, which keeps every key stable"
       }
     ],
     "correct": [
@@ -302,15 +302,15 @@
       },
       {
         "id": "b",
-        "text": "Moves records to the Recycle Bin for 15 days"
+        "text": "Moves records to the Recycle Bin, where they stay for 15 days"
       },
       {
         "id": "c",
-        "text": "Deletes only the field values"
+        "text": "Deletes only the field values and keeps the empty records"
       },
       {
         "id": "d",
-        "text": "Archives the records"
+        "text": "Archives the records so that they can be restored later by an admin"
       }
     ],
     "correct": [
@@ -462,15 +462,15 @@
       },
       {
         "id": "b",
-        "text": "Turn off all validation rules"
+        "text": "Turn off every validation rule and load the contacts again"
       },
       {
         "id": "c",
-        "text": "Use the Data Export Service"
+        "text": "Use the Data Export Service to move the accounts"
       },
       {
         "id": "d",
-        "text": "Merge the contacts"
+        "text": "Merge the contacts into one record before loading"
       }
     ],
     "correct": [
@@ -526,15 +526,15 @@
       },
       {
         "id": "b",
-        "text": "Data Loader is broken"
+        "text": "Data Loader is broken and needs to be reinstalled"
       },
       {
         "id": "c",
-        "text": "The CSV file was too large"
+        "text": "The CSV file was too large for the tool to process"
       },
       {
         "id": "d",
-        "text": "Validation rules are only for the user interface"
+        "text": "Validation rules are only used in the user interface and never on imports"
       }
     ],
     "correct": [
@@ -590,15 +590,15 @@
       },
       {
         "id": "b",
-        "text": "In production with all records"
+        "text": "In production with all records, so the result is real"
       },
       {
         "id": "c",
-        "text": "In production overnight"
+        "text": "In production overnight when fewer users are logged in"
       },
       {
         "id": "d",
-        "text": "Only in a spreadsheet"
+        "text": "Only in a spreadsheet, by checking the formulas"
       }
     ],
     "correct": [
@@ -815,15 +815,15 @@
       },
       {
         "id": "b",
-        "text": "Data Export cannot be scheduled"
+        "text": "Data Export cannot be scheduled, so it has to be run by hand"
       },
       {
         "id": "c",
-        "text": "Data Export only includes setup data"
+        "text": "Data Export only includes setup data and not records"
       },
       {
         "id": "d",
-        "text": "Data Export files expire after 24 hours"
+        "text": "Data Export files expire after 24 hours so cannot be restored"
       }
     ],
     "correct": [

@@ -141,15 +141,15 @@
       },
       {
         "id": "b",
-        "text": "Query Plan"
+        "text": "Query Plan, which shows how a query will be run"
       },
       {
         "id": "c",
-        "text": "Schema Builder"
+        "text": "Schema Builder, which draws the objects and fields"
       },
       {
         "id": "d",
-        "text": "Workbench"
+        "text": "Workbench, which runs queries from a browser"
       }
     ],
     "correct": [
@@ -205,15 +205,15 @@
       },
       {
         "id": "b",
-        "text": "Data Loader"
+        "text": "Data Loader, which loads records from a file"
       },
       {
         "id": "c",
-        "text": "Schema Builder"
+        "text": "Schema Builder, which draws the objects"
       },
       {
         "id": "d",
-        "text": "Change set"
+        "text": "A change set, which moves metadata between orgs"
       }
     ],
     "correct": [
@@ -365,15 +365,15 @@
       },
       {
         "id": "b",
-        "text": "A copy of production"
+        "text": "A copy of production that includes all of its data and users"
       },
       {
         "id": "c",
-        "text": "A production backup"
+        "text": "A backup of production metadata that is restored after a failed release"
       },
       {
         "id": "d",
-        "text": "A user licence"
+        "text": "A user licence for developers who create short-lived projects"
       }
     ],
     "correct": [
@@ -493,15 +493,15 @@
       },
       {
         "id": "b",
-        "text": "A deployment without tests"
+        "text": "A deployment that skips all tests because the change is judged very small"
       },
       {
         "id": "c",
-        "text": "A change set shortcut"
+        "text": "A change set shortcut that sends components without any validation"
       },
       {
         "id": "d",
-        "text": "Deploying to a scratch org"
+        "text": "Deploying straight to a scratch org instead of to production"
       }
     ],
     "correct": [
@@ -525,15 +525,15 @@
       },
       {
         "id": "b",
-        "text": "Account records"
+        "text": "Account records, which deploy with the object"
       },
       {
         "id": "c",
-        "text": "Contact records"
+        "text": "Contact records, which deploy with the object"
       },
       {
         "id": "d",
-        "text": "Case records"
+        "text": "Case records, which deploy with the object"
       }
     ],
     "correct": [
@@ -557,15 +557,15 @@
       },
       {
         "id": "b",
-        "text": "Edit in production"
+        "text": "Edit directly in production, then copy the changes back to a sandbox"
       },
       {
         "id": "c",
-        "text": "Skip testing"
+        "text": "Skip testing in the early stages and test everything at the very end"
       },
       {
         "id": "d",
-        "text": "Deploy on Friday evening"
+        "text": "Deploy on Friday evening so users are not affected by the change"
       }
     ],
     "correct": [
@@ -589,15 +589,15 @@
       },
       {
         "id": "b",
-        "text": "Salesforce requires it"
+        "text": "Salesforce rejects any deployment that does not include a manual step list"
       },
       {
         "id": "c",
-        "text": "They are optional"
+        "text": "They are optional, because every change deploys the same way as code"
       },
       {
         "id": "d",
-        "text": "They speed up tests"
+        "text": "They speed up the test run by skipping classes that were checked"
       }
     ],
     "correct": [
@@ -654,15 +654,15 @@
       },
       {
         "id": "b",
-        "text": "Skip the tests with a setting"
+        "text": "Skip the tests with a setting on the deployment"
       },
       {
         "id": "c",
-        "text": "Use a change set to bypass tests"
+        "text": "Use a change set to bypass tests for the new class"
       },
       {
         "id": "d",
-        "text": "Deploy to a scratch org"
+        "text": "Deploy to a scratch org first and then copy to production"
       }
     ],
     "correct": [
@@ -686,15 +686,15 @@
       },
       {
         "id": "b",
-        "text": "A SOQL query at line 12"
+        "text": "The result of a SOQL query that ran at line 12 of the code"
       },
       {
         "id": "c",
-        "text": "A DML statement at line 12"
+        "text": "A DML statement that was executed at line 12 of the code"
       },
       {
         "id": "d",
-        "text": "A limit warning"
+        "text": "A limit warning that was raised at line 12 of the code"
       }
     ],
     "correct": [

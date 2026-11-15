@@ -237,15 +237,15 @@
       },
       {
         "id": "b",
-        "text": "Who can edit the dashboard"
+        "text": "Who is allowed to edit the dashboard and its components"
       },
       {
         "id": "c",
-        "text": "Which folder it is stored in"
+        "text": "Which folder the dashboard is stored in and shared from"
       },
       {
         "id": "d",
-        "text": "The refresh time"
+        "text": "How often the dashboard refreshes its data each day"
       }
     ],
     "correct": [
@@ -269,15 +269,15 @@
       },
       {
         "id": "b",
-        "text": "Only their own region's data"
+        "text": "Only the data of their own region"
       },
       {
         "id": "c",
-        "text": "Nothing, they need CEO permissions"
+        "text": "Nothing, because they need CEO permissions to open it"
       },
       {
         "id": "d",
-        "text": "An error"
+        "text": "An error, because the dashboard is set to run as the CEO"
       }
     ],
     "correct": [
@@ -365,15 +365,15 @@
       },
       {
         "id": "b",
-        "text": "A dynamic dashboard"
+        "text": "A dynamic dashboard that shows each viewer their own data"
       },
       {
         "id": "c",
-        "text": "A joined report"
+        "text": "A joined report that is emailed to the team"
       },
       {
         "id": "d",
-        "text": "A matrix report with no dashboard"
+        "text": "A matrix report that is sent without a dashboard"
       }
     ],
     "correct": [
@@ -429,15 +429,15 @@
       },
       {
         "id": "b",
-        "text": "Enter and edit records"
+        "text": "Entering and editing records on the dashboard page"
       },
       {
         "id": "c",
-        "text": "Define validation rules"
+        "text": "Defining validation rules for the reports behind it"
       },
       {
         "id": "d",
-        "text": "Import data"
+        "text": "Importing data from files into Salesforce"
       }
     ],
     "correct": [
@@ -461,11 +461,11 @@
       },
       {
         "id": "b",
-        "text": "Nothing"
+        "text": "Nothing, because the folders are unrelated"
       },
       {
         "id": "c",
-        "text": "Edit the source report"
+        "text": "Edit the source report behind the dashboard"
       },
       {
         "id": "d",
@@ -493,15 +493,15 @@
       },
       {
         "id": "b",
-        "text": "Page layout, record types, profile"
+        "text": "Page layout, record types, profile of the manager"
       },
       {
         "id": "c",
-        "text": "Validation rules, flows, apps"
+        "text": "Validation rules, flows, apps used by the team"
       },
       {
         "id": "d",
-        "text": "Recycle Bin, merge, mass delete"
+        "text": "Recycle Bin, merge history, mass delete log"
       }
     ],
     "correct": [
@@ -590,15 +590,15 @@
       },
       {
         "id": "b",
-        "text": "Add all 20 components"
+        "text": "Add all 20 components first and remove the ones you do not need"
       },
       {
         "id": "c",
-        "text": "Choose the brightest colours"
+        "text": "Choose the brightest colours to make the dashboard stand out"
       },
       {
         "id": "d",
-        "text": "Pick the running user last without testing"
+        "text": "Pick the running user last, without testing what they see"
       }
     ],
     "correct": [
@@ -622,15 +622,15 @@
       },
       {
         "id": "b",
-        "text": "A filter inside one report only"
+        "text": "A filter that sits inside one report and changes only that report"
       },
       {
         "id": "c",
-        "text": "A security setting"
+        "text": "A security setting that restricts which users can open the dashboard"
       },
       {
         "id": "d",
-        "text": "A way to hide the dashboard"
+        "text": "A way to hide the dashboard from users who do not need it"
       }
     ],
     "correct": [
@@ -654,15 +654,15 @@
       },
       {
         "id": "b",
-        "text": "The page layout"
+        "text": "The page layout assigned to the dashboard tab"
       },
       {
         "id": "c",
-        "text": "The record type"
+        "text": "The record type of the report behind each component"
       },
       {
         "id": "d",
-        "text": "The validation rule"
+        "text": "The validation rule on the running user's profile"
       }
     ],
     "correct": [

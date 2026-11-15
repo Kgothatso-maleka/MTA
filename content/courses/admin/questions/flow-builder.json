@@ -237,15 +237,15 @@
       },
       {
         "id": "b",
-        "text": "To limit which users can edit the flow"
+        "text": "To limit which users are allowed to edit the flow"
       },
       {
         "id": "c",
-        "text": "To rename the flow"
+        "text": "To rename the flow when it is saved"
       },
       {
         "id": "d",
-        "text": "To give the flow a new version"
+        "text": "To give the flow a new version each time it runs"
       }
     ],
     "correct": [
@@ -365,15 +365,15 @@
       },
       {
         "id": "b",
-        "text": "Put an Update Records element inside the loop"
+        "text": "Put an Update Records element inside the loop so that each record is saved as it is handled"
       },
       {
         "id": "c",
-        "text": "Create a separate flow for each record"
+        "text": "Create a separate flow for each of the 50 records and call each one by name"
       },
       {
         "id": "d",
-        "text": "Use a screen flow"
+        "text": "Use a screen flow that a user must run 50 times, once for each record"
       }
     ],
     "correct": [
@@ -397,15 +397,15 @@
       },
       {
         "id": "b",
-        "text": "Skips validation rules"
+        "text": "Skips validation rules so that the flow can finish"
       },
       {
         "id": "c",
-        "text": "Speeds up a flow"
+        "text": "Speeds up a flow by running elements at the same time"
       },
       {
         "id": "d",
-        "text": "Controls who can run the flow"
+        "text": "Controls which users are allowed to run the flow"
       }
     ],
     "correct": [
@@ -493,15 +493,15 @@
       },
       {
         "id": "b",
-        "text": "The CEO"
+        "text": "The CEO of the company, as the top role in the hierarchy"
       },
       {
         "id": "c",
-        "text": "All admins"
+        "text": "Every system administrator in the org, at the same time"
       },
       {
         "id": "d",
-        "text": "No one"
+        "text": "No one, because flow failures are silent unless logged"
       }
     ],
     "correct": [
@@ -525,15 +525,15 @@
       },
       {
         "id": "b",
-        "text": "They are the recommended tools for new automation"
+        "text": "They are the recommended tools for building new automation"
       },
       {
         "id": "c",
-        "text": "They were never supported"
+        "text": "They were never supported by Salesforce for production use"
       },
       {
         "id": "d",
-        "text": "They are only available in Developer Edition"
+        "text": "They are only available in Developer Edition orgs"
       }
     ],
     "correct": [
@@ -621,15 +621,15 @@
       },
       {
         "id": "b",
-        "text": "A flow has a clear name"
+        "text": "A flow updates a field that triggers another flow which updates it back again"
       },
       {
         "id": "c",
-        "text": "A flow has a description"
+        "text": "A flow has a clear name that describes the purpose of the flow"
       },
       {
         "id": "d",
-        "text": "A flow has entry conditions"
+        "text": "A flow has a description that explains what it does and who owns it"
       }
     ],
     "correct": [
@@ -685,15 +685,15 @@
       },
       {
         "id": "b",
-        "text": "Exactly one record"
+        "text": "Exactly one record from the object"
       },
       {
         "id": "c",
-        "text": "A user's password"
+        "text": "A user's password, held as text"
       },
       {
         "id": "d",
-        "text": "A page layout"
+        "text": "A page layout assigned to the user"
       }
     ],
     "correct": [
@@ -717,15 +717,15 @@
       },
       {
         "id": "b",
-        "text": "Create the flow and activate it"
+        "text": "Create the flow and activate it straight away, then check what else runs on the object"
       },
       {
         "id": "c",
-        "text": "Delete other automation"
+        "text": "Delete the other automation on the object so the flow is the only one"
       },
       {
         "id": "d",
-        "text": "Ask users to test in production"
+        "text": "Ask users to test the new flow in production before it is documented"
       }
     ],
     "correct": [
@@ -749,15 +749,15 @@
       },
       {
         "id": "b",
-        "text": "Modify All Data"
+        "text": "Modify All Data in the system permissions of their profile, which is always required"
       },
       {
         "id": "c",
-        "text": "Author Apex"
+        "text": "Author Apex, so that the Apex actions in the flow can be called from it"
       },
       {
         "id": "d",
-        "text": "View Setup"
+        "text": "View Setup and Configuration, so that they can open Flow Builder and run it"
       }
     ],
     "correct": [
@@ -813,15 +813,15 @@
       },
       {
         "id": "b",
-        "text": "A before-save flow"
+        "text": "A before-save flow, because it runs before the record is saved"
       },
       {
         "id": "c",
-        "text": "A screen flow"
+        "text": "A screen flow that a user starts from the opportunity page"
       },
       {
         "id": "d",
-        "text": "A scheduled flow"
+        "text": "A scheduled flow that runs every night for closed opportunities"
       }
     ],
     "correct": [
@@ -877,15 +877,15 @@
       },
       {
         "id": "b",
-        "text": "A page layout"
+        "text": "A new page layout with the required field moved higher up"
       },
       {
         "id": "c",
-        "text": "A new profile"
+        "text": "A new profile with Modify All Data so the flow always runs"
       },
       {
         "id": "d",
-        "text": "A larger heap"
+        "text": "A larger heap size so the flow can process blank values"
       }
     ],
     "correct": [

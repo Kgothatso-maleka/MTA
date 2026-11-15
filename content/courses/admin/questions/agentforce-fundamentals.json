@@ -13,15 +13,15 @@
       },
       {
         "id": "b",
-        "text": "A fixed script with menu choices"
+        "text": "A fixed script that offers menu choices and follows the same path for every customer"
       },
       {
         "id": "c",
-        "text": "A single saved prompt"
+        "text": "A single saved prompt that sends one request to a language model"
       },
       {
         "id": "d",
-        "text": "A report"
+        "text": "A report that shows how customers talk to the service team over time"
       }
     ],
     "correct": [
@@ -45,15 +45,15 @@
       },
       {
         "id": "b",
-        "text": "A flow understands natural language, an agent does not"
+        "text": "A flow understands natural language from the customer, but an agent does not"
       },
       {
         "id": "c",
-        "text": "They are identical"
+        "text": "They are identical in how they run, because both follow fixed steps"
       },
       {
         "id": "d",
-        "text": "An agent cannot call a flow"
+        "text": "An agent cannot call a flow, and can only run a prompt template"
       }
     ],
     "correct": [
@@ -110,15 +110,15 @@
       },
       {
         "id": "b",
-        "text": "A sharing rule"
+        "text": "A sharing rule that decides which records the agent can read"
       },
       {
         "id": "c",
-        "text": "A report"
+        "text": "A report that summarises how often the agent is used"
       },
       {
         "id": "d",
-        "text": "A data category"
+        "text": "A data category that controls which articles agents see"
       }
     ],
     "correct": [
@@ -142,15 +142,15 @@
       },
       {
         "id": "b",
-        "text": "To satisfy a validation rule"
+        "text": "To satisfy a validation rule on the topic record"
       },
       {
         "id": "c",
-        "text": "To set permissions"
+        "text": "To set the permissions that the agent has for the topic"
       },
       {
         "id": "d",
-        "text": "To make the topic visible to users"
+        "text": "To make the topic visible to users in the Setup menu"
       }
     ],
     "correct": [
@@ -335,15 +335,15 @@
       },
       {
         "id": "b",
-        "text": "The agent's description"
+        "text": "The agent's description text, which sets what it can reach"
       },
       {
         "id": "c",
-        "text": "The channel"
+        "text": "The channel the customer uses to contact the agent"
       },
       {
         "id": "d",
-        "text": "The prompt length"
+        "text": "The length of the prompt that the admin wrote for the topic"
       }
     ],
     "correct": [
@@ -367,15 +367,15 @@
       },
       {
         "id": "b",
-        "text": "The wording of the greeting"
+        "text": "The wording of the greeting the agent sends to customers"
       },
       {
         "id": "c",
-        "text": "The report types"
+        "text": "The report types that the agent can reach in the org"
       },
       {
         "id": "d",
-        "text": "The fiscal year"
+        "text": "The fiscal year settings that the agent uses to read data"
       }
     ],
     "correct": [
@@ -431,15 +431,15 @@
       },
       {
         "id": "b",
-        "text": "Build, deploy, plan, test"
+        "text": "Build, deploy, plan and test, with monitoring left until later"
       },
       {
         "id": "c",
-        "text": "Test, plan, deploy, build"
+        "text": "Test, plan, deploy and build, with a review at the end"
       },
       {
         "id": "d",
-        "text": "Deploy, monitor, build"
+        "text": "Deploy, monitor, build and plan, with testing done by users"
       }
     ],
     "correct": [
@@ -495,15 +495,15 @@
       },
       {
         "id": "b",
-        "text": "Directly in production"
+        "text": "Directly in production, so customers see it at once"
       },
       {
         "id": "c",
-        "text": "On a mobile phone"
+        "text": "On a mobile phone, using the Salesforce app"
       },
       {
         "id": "d",
-        "text": "In a spreadsheet"
+        "text": "In a spreadsheet that lists the topics and actions"
       }
     ],
     "correct": [
@@ -527,15 +527,15 @@
       },
       {
         "id": "b",
-        "text": "An agent"
+        "text": "An agent, which can answer in different ways each time"
       },
       {
         "id": "c",
-        "text": "A Chatter post"
+        "text": "A Chatter post that explains the policy to staff"
       },
       {
         "id": "d",
-        "text": "A prompt template"
+        "text": "A prompt template that drafts the decision text"
       }
     ],
     "correct": [
@@ -559,15 +559,15 @@
       },
       {
         "id": "b",
-        "text": "A rule that must always block a save"
+        "text": "A rule that must always block a save when a field is blank"
       },
       {
         "id": "c",
-        "text": "A nightly data clean-up"
+        "text": "A nightly data clean-up of old records"
       },
       {
         "id": "d",
-        "text": "A fixed approval chain"
+        "text": "A fixed approval chain with the same steps every time"
       }
     ],
     "correct": [
@@ -591,15 +591,15 @@
       },
       {
         "id": "b",
-        "text": "Launch many topics at once"
+        "text": "Launch many topics at once so the agent covers everything"
       },
       {
         "id": "c",
-        "text": "Skip testing"
+        "text": "Skip testing, since the agent learns from live users"
       },
       {
         "id": "d",
-        "text": "Give the agent admin access"
+        "text": "Give the agent admin access so it can reach all data"
       }
     ],
     "correct": [
@@ -655,15 +655,15 @@
       },
       {
         "id": "b",
-        "text": "A report type"
+        "text": "A report type that tracks how often agents are used"
       },
       {
         "id": "c",
-        "text": "A queue"
+        "text": "A queue that holds conversations waiting for a person"
       },
       {
         "id": "d",
-        "text": "A data category"
+        "text": "A data category that controls which articles agents read"
       }
     ],
     "correct": [
@@ -687,15 +687,15 @@
       },
       {
         "id": "b",
-        "text": "By closing the chat"
+        "text": "By closing the chat and asking the customer to try again"
       },
       {
         "id": "c",
-        "text": "By deleting the record"
+        "text": "By deleting the record so that the case is closed"
       },
       {
         "id": "d",
-        "text": "By changing the profile"
+        "text": "By changing the profile of the customer who asked"
       }
     ],
     "correct": [
@@ -719,15 +719,15 @@
       },
       {
         "id": "b",
-        "text": "Long and vague"
+        "text": "Long and vague, so the agent can decide for itself"
       },
       {
         "id": "c",
-        "text": "Only a company slogan"
+        "text": "Only a company slogan, which sets the tone"
       },
       {
         "id": "d",
-        "text": "No instructions"
+        "text": "No instructions, because the agent works it out"
       }
     ],
     "correct": [

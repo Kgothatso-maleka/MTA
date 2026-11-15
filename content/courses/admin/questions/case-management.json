@@ -13,15 +13,15 @@
       },
       {
         "id": "b",
-        "text": "A type of lead"
+        "text": "A type of lead that is waiting for qualification"
       },
       {
         "id": "c",
-        "text": "A marketing activity"
+        "text": "A marketing activity that tracks one event"
       },
       {
         "id": "d",
-        "text": "A kind of report"
+        "text": "A kind of report that lists service requests"
       }
     ],
     "correct": [
@@ -45,15 +45,15 @@
       },
       {
         "id": "b",
-        "text": "A sales process"
+        "text": "A sales process attached to an opportunity record type"
       },
       {
         "id": "c",
-        "text": "A page layout"
+        "text": "A page layout that lists the status values"
       },
       {
         "id": "d",
-        "text": "A profile"
+        "text": "A profile setting chosen for each support agent"
       }
     ],
     "correct": [
@@ -77,15 +77,15 @@
       },
       {
         "id": "b",
-        "text": "Status"
+        "text": "Status, which shows where the case is in the process"
       },
       {
         "id": "c",
-        "text": "Priority"
+        "text": "Priority, which shows how urgent the case is"
       },
       {
         "id": "d",
-        "text": "Type"
+        "text": "Type, which shows what kind of problem it is"
       }
     ],
     "correct": [
@@ -113,11 +113,11 @@
       },
       {
         "id": "c",
-        "text": "Internal comments are only for admins"
+        "text": "Internal comments are only visible to system administrators"
       },
       {
         "id": "d",
-        "text": "They are the same"
+        "text": "They are the same, and only the label differs"
       }
     ],
     "correct": [
@@ -141,15 +141,15 @@
       },
       {
         "id": "b",
-        "text": "Web-to-Case"
+        "text": "Web-to-Case, which needs an HTML form on a website"
       },
       {
         "id": "c",
-        "text": "Case merge"
+        "text": "Case merge, which combines duplicate cases"
       },
       {
         "id": "d",
-        "text": "Macros"
+        "text": "Macros, which run steps on a case"
       }
     ],
     "correct": [
@@ -333,15 +333,15 @@
       },
       {
         "id": "b",
-        "text": "A user permission"
+        "text": "A user permission that lets an agent close cases"
       },
       {
         "id": "c",
-        "text": "A sharing rule"
+        "text": "A sharing rule that gives customers access to cases"
       },
       {
         "id": "d",
-        "text": "A kind of queue"
+        "text": "A kind of queue that holds cases about premium accounts"
       }
     ],
     "correct": [
@@ -365,15 +365,15 @@
       },
       {
         "id": "b",
-        "text": "A case status"
+        "text": "A case status that marks the case as closed"
       },
       {
         "id": "c",
-        "text": "A price book"
+        "text": "A price book that lists support products"
       },
       {
         "id": "d",
-        "text": "A report type"
+        "text": "A report type that groups cases by age"
       }
     ],
     "correct": [
@@ -429,15 +429,15 @@
       },
       {
         "id": "b",
-        "text": "To delete old cases"
+        "text": "To delete old cases so the case list stays small"
       },
       {
         "id": "c",
-        "text": "To assign cases to queues"
+        "text": "To assign several cases to a queue at once"
       },
       {
         "id": "d",
-        "text": "To close all cases"
+        "text": "To close all of the cases for one customer"
       }
     ],
     "correct": [
@@ -557,15 +557,15 @@
       },
       {
         "id": "b",
-        "text": "Cases to be routed automatically"
+        "text": "Cases to be routed automatically to the right queue"
       },
       {
         "id": "c",
-        "text": "Customers to log in"
+        "text": "Customers to log in and update their own cases"
       },
       {
         "id": "d",
-        "text": "Cases to be merged"
+        "text": "Cases to be merged into a single master case"
       }
     ],
     "correct": [
@@ -589,15 +589,15 @@
       },
       {
         "id": "b",
-        "text": "A new profile"
+        "text": "A new profile that gives agents access to old cases"
       },
       {
         "id": "c",
-        "text": "A page layout"
+        "text": "A page layout that shows every related case on one screen"
       },
       {
         "id": "d",
-        "text": "A sandbox"
+        "text": "A sandbox where the support team can practise on copies"
       }
     ],
     "correct": [
@@ -621,15 +621,15 @@
       },
       {
         "id": "b",
-        "text": "Every status counts as Closed"
+        "text": "Every status counts as Closed once an agent saves the case"
       },
       {
         "id": "c",
-        "text": "Status is set in the profile"
+        "text": "Status is set in the user's profile and not in the process"
       },
       {
         "id": "d",
-        "text": "Status cannot be changed"
+        "text": "Status cannot be changed once the case is created"
       }
     ],
     "correct": [
@@ -749,15 +749,15 @@
       },
       {
         "id": "b",
-        "text": "A validation rule"
+        "text": "A validation rule that blocks replies after one hour"
       },
       {
         "id": "c",
-        "text": "An email template"
+        "text": "An email template that reminds agents every hour"
       },
       {
         "id": "d",
-        "text": "A report"
+        "text": "A report that shows cases older than one hour"
       }
     ],
     "correct": [

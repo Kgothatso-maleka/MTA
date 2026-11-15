@@ -45,15 +45,15 @@
       },
       {
         "id": "b",
-        "text": "Decide who the approvers are"
+        "text": "Decide who the approvers are for each step of the process"
       },
       {
         "id": "c",
-        "text": "Lock the record"
+        "text": "Lock the record while it waits for approval"
       },
       {
         "id": "d",
-        "text": "Send the final email"
+        "text": "Send the final email when the request is approved"
       }
     ],
     "correct": [
@@ -431,15 +431,15 @@
       },
       {
         "id": "b",
-        "text": "All entries run together"
+        "text": "All entries run together and the record gets every matching owner"
       },
       {
         "id": "c",
-        "text": "A random entry is chosen"
+        "text": "A random entry is chosen from the entries that match the record"
       },
       {
         "id": "d",
-        "text": "The newest entry wins"
+        "text": "The newest entry wins because it was edited most recently"
       }
     ],
     "correct": [
@@ -495,15 +495,15 @@
       },
       {
         "id": "b",
-        "text": "A notification on the home page"
+        "text": "A notification on the Salesforce home page that tells users a record changed"
       },
       {
         "id": "c",
-        "text": "A kind of report"
+        "text": "A kind of report that is emailed to a manager on a schedule each week"
       },
       {
         "id": "d",
-        "text": "A user permission"
+        "text": "A user permission that lets a person send email from a record page"
       }
     ],
     "correct": [
@@ -559,15 +559,15 @@
       },
       {
         "id": "b",
-        "text": "Add another email alert"
+        "text": "Add another email alert so that the customer gets one from each"
       },
       {
         "id": "c",
-        "text": "Change the customer's email"
+        "text": "Change the customer's email address on the record"
       },
       {
         "id": "d",
-        "text": "Turn on multi-currency"
+        "text": "Turn on multi-currency so the emails are separated"
       }
     ],
     "correct": [
@@ -591,15 +591,15 @@
       },
       {
         "id": "b",
-        "text": "Setting a default value on save"
+        "text": "Setting a default value on a record when it is saved"
       },
       {
         "id": "c",
-        "text": "Creating a task for a new lead"
+        "text": "Creating a task for each new lead that is created"
       },
       {
         "id": "d",
-        "text": "Updating a related account field"
+        "text": "Updating a field on the related account when a stage changes"
       }
     ],
     "correct": [
@@ -623,15 +623,15 @@
       },
       {
         "id": "b",
-        "text": "Turn off error emails"
+        "text": "Turn off error emails so that admins are not distracted by them"
       },
       {
         "id": "c",
-        "text": "Test only with one record"
+        "text": "Test only with one record, because it is the quickest check"
       },
       {
         "id": "d",
-        "text": "Skip documentation"
+        "text": "Skip documentation, because the flow itself explains how it works"
       }
     ],
     "correct": [
@@ -655,15 +655,15 @@
       },
       {
         "id": "b",
-        "text": "Flows replace approval processes entirely"
+        "text": "Flows replace approval processes entirely, so approvals are no longer needed"
       },
       {
         "id": "c",
-        "text": "Approval processes can only be started manually"
+        "text": "Approval processes can only be started manually by the record owner"
       },
       {
         "id": "d",
-        "text": "Flows cannot interact with approvals"
+        "text": "Flows cannot interact with approvals at all, only with records"
       }
     ],
     "correct": [

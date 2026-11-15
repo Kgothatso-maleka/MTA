@@ -142,15 +142,15 @@
       },
       {
         "id": "b",
-        "text": "A list of Setup pages"
+        "text": "A list of Setup pages that admins use most often"
       },
       {
         "id": "c",
-        "text": "A type of report"
+        "text": "A type of report that shows items by owner"
       },
       {
         "id": "d",
-        "text": "A dashboard filter"
+        "text": "A dashboard filter that applies to every component"
       }
     ],
     "correct": [
@@ -206,15 +206,15 @@
       },
       {
         "id": "b",
-        "text": "Create new fields automatically"
+        "text": "Create new custom fields automatically whenever a user types a new value"
       },
       {
         "id": "c",
-        "text": "Replace profiles"
+        "text": "Replace profiles and permission sets with visibility rules on each field"
       },
       {
         "id": "d",
-        "text": "Set field-level security"
+        "text": "Set field-level security separately for each section of the Lightning page and each user"
       }
     ],
     "correct": [
@@ -238,15 +238,15 @@
       },
       {
         "id": "b",
-        "text": "A validation rule"
+        "text": "A validation rule that hides the section on save"
       },
       {
         "id": "c",
-        "text": "A duplicate rule"
+        "text": "A duplicate rule that checks the customer type"
       },
       {
         "id": "d",
-        "text": "A sharing rule"
+        "text": "A sharing rule that limits the section to a group"
       }
     ],
     "correct": [
@@ -270,15 +270,15 @@
       },
       {
         "id": "b",
-        "text": "Which records a user can see"
+        "text": "Which records a user can see in a list view"
       },
       {
         "id": "c",
-        "text": "Login times"
+        "text": "The login times that apply to a user"
       },
       {
         "id": "d",
-        "text": "Report folders"
+        "text": "Which report folders a user can open"
       }
     ],
     "correct": [
@@ -302,15 +302,15 @@
       },
       {
         "id": "b",
-        "text": "The columns in a report"
+        "text": "The columns shown in a report on the object"
       },
       {
         "id": "c",
-        "text": "The fields in a list view"
+        "text": "The fields shown in a list view on the object"
       },
       {
         "id": "d",
-        "text": "The related lists"
+        "text": "The related lists shown on the record page"
       }
     ],
     "correct": [
@@ -334,15 +334,15 @@
       },
       {
         "id": "b",
-        "text": "By role"
+        "text": "By role, so each level of the hierarchy has its own layout"
       },
       {
         "id": "c",
-        "text": "By permission set"
+        "text": "By permission set, which can hold a layout for each object"
       },
       {
         "id": "d",
-        "text": "By public group"
+        "text": "By public group, so that all members share one layout"
       }
     ],
     "correct": [
@@ -366,15 +366,15 @@
       },
       {
         "id": "b",
-        "text": "Who can search"
+        "text": "Who is allowed to search for records of the object"
       },
       {
         "id": "c",
-        "text": "Which fields are searched"
+        "text": "Which fields are searched when a user types a term"
       },
       {
         "id": "d",
-        "text": "The home page"
+        "text": "What appears on the home page after the search"
       }
     ],
     "correct": [
@@ -462,15 +462,15 @@
       },
       {
         "id": "b",
-        "text": "A sharing rule"
+        "text": "A sharing rule that opens records to a stage owner"
       },
       {
         "id": "c",
-        "text": "An email template"
+        "text": "An email template that is sent when the stage changes"
       },
       {
         "id": "d",
-        "text": "A report type"
+        "text": "A report type that shows the records in each stage"
       }
     ],
     "correct": [
@@ -494,15 +494,15 @@
       },
       {
         "id": "b",
-        "text": "A sharing rule"
+        "text": "A sharing rule that decides who can see each stage"
       },
       {
         "id": "c",
-        "text": "A validation rule only"
+        "text": "A validation rule that stops the stage from changing"
       },
       {
         "id": "d",
-        "text": "A report filter"
+        "text": "A report filter that shows records in the stage"
       }
     ],
     "correct": [
@@ -558,15 +558,15 @@
       },
       {
         "id": "b",
-        "text": "Always everyone"
+        "text": "Always everyone in the org, because list views cannot be restricted"
       },
       {
         "id": "c",
-        "text": "Only admins"
+        "text": "Only admins, because list views are a Setup feature"
       },
       {
         "id": "d",
-        "text": "Only the owner's manager"
+        "text": "Only the owner's manager and the people who report to the owner"
       }
     ],
     "correct": [
@@ -590,15 +590,15 @@
       },
       {
         "id": "b",
-        "text": "Add more tabs"
+        "text": "Add more tabs so that reps can switch between groups of fields"
       },
       {
         "id": "c",
-        "text": "Delete the fields"
+        "text": "Delete the unused fields from the object for every user"
       },
       {
         "id": "d",
-        "text": "Give them a different licence"
+        "text": "Give the reps a different licence with a smaller layout"
       }
     ],
     "correct": [
@@ -622,15 +622,15 @@
       },
       {
         "id": "b",
-        "text": "Makes it secure everywhere"
+        "text": "Makes the field secure everywhere, including reports and the API"
       },
       {
         "id": "c",
-        "text": "Deletes the field"
+        "text": "Deletes the field and all of its data from the object"
       },
       {
         "id": "d",
-        "text": "Hides it from reports"
+        "text": "Hides it from reports and the API as well as from the layout"
       }
     ],
     "correct": [
@@ -686,15 +686,15 @@
       },
       {
         "id": "b",
-        "text": "A record type on Account"
+        "text": "A record type on Account assigned to the sales profile"
       },
       {
         "id": "c",
-        "text": "A validation rule"
+        "text": "A validation rule that checks which app is open"
       },
       {
         "id": "d",
-        "text": "A report folder"
+        "text": "A report folder shared with each team"
       }
     ],
     "correct": [

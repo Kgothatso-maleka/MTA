@@ -13,15 +13,15 @@
       },
       {
         "id": "b",
-        "text": "To reduce the price of licences"
+        "text": "To reduce the price of licences for every customer"
       },
       {
         "id": "c",
-        "text": "To make Apex slower"
+        "text": "To make Apex run slower so that customers write less code"
       },
       {
         "id": "d",
-        "text": "To prevent flows from running"
+        "text": "To prevent flows from running at the same time as Apex"
       }
     ],
     "correct": [
@@ -269,15 +269,15 @@
       },
       {
         "id": "b",
-        "text": "Each class separately"
+        "text": "Each class separately, with its own set of limits"
       },
       {
         "id": "c",
-        "text": "Each trigger separately"
+        "text": "Each trigger separately, with its own set of limits"
       },
       {
         "id": "d",
-        "text": "Each user session"
+        "text": "Each user session, shared by all of that user's code"
       }
     ],
     "correct": [
@@ -333,15 +333,15 @@
       },
       {
         "id": "b",
-        "text": "Query inside a for loop"
+        "text": "Query inside a for loop, using LIMIT 1 so each query stays small"
       },
       {
         "id": "c",
-        "text": "Update inside a for loop"
+        "text": "Update each record inside the for loop so changes save at once"
       },
       {
         "id": "d",
-        "text": "Insert inside a while loop"
+        "text": "Insert one record at a time inside a while loop and stop before the limit is reached"
       }
     ],
     "correct": [
@@ -365,15 +365,15 @@
       },
       {
         "id": "b",
-        "text": "List"
+        "text": "List<SObject>, because lists are searched by index"
       },
       {
         "id": "c",
-        "text": "Set<Id>"
+        "text": "Set<Id>, because sets hold unique Ids only"
       },
       {
         "id": "d",
-        "text": "String"
+        "text": "String, built by joining the Ids with commas"
       }
     ],
     "correct": [
@@ -429,15 +429,15 @@
       },
       {
         "id": "b",
-        "text": "They are always lower"
+        "text": "They are always lower, because background work gets less memory"
       },
       {
         "id": "c",
-        "text": "They are the same"
+        "text": "They are the same as synchronous limits for every resource"
       },
       {
         "id": "d",
-        "text": "There are no limits"
+        "text": "There are no limits, because the work runs in the background"
       }
     ],
     "correct": [
@@ -654,15 +654,15 @@
       },
       {
         "id": "b",
-        "text": "Insert 1 record"
+        "text": "Insert one record and check that the code works for it"
       },
       {
         "id": "c",
-        "text": "Use only System.debug"
+        "text": "Use only System.debug to print the results to the log"
       },
       {
         "id": "d",
-        "text": "Skip testing"
+        "text": "Skip the test, because bulk handling is checked in production"
       }
     ],
     "correct": [
@@ -718,15 +718,15 @@
       },
       {
         "id": "b",
-        "text": "Query inside the for loop with a LIMIT 1"
+        "text": "Query inside the for loop but add LIMIT 1 so it stays small"
       },
       {
         "id": "c",
-        "text": "Call a future method for each record"
+        "text": "Call a future method for each record in the loop"
       },
       {
         "id": "d",
-        "text": "Use a while loop to repeat the query"
+        "text": "Use a while loop to repeat the query until it returns rows"
       }
     ],
     "correct": [

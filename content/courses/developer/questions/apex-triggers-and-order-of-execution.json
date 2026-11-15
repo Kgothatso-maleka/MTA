@@ -13,15 +13,15 @@
       },
       {
         "id": "b",
-        "text": "after insert"
+        "text": "after insert, because the record already has an Id"
       },
       {
         "id": "c",
-        "text": "after update"
+        "text": "after update, because the new values are final"
       },
       {
         "id": "d",
-        "text": "after undelete"
+        "text": "after undelete, because the record returns from the bin"
       }
     ],
     "correct": [
@@ -429,15 +429,15 @@
       },
       {
         "id": "b",
-        "text": "Use global classes"
+        "text": "Declare the trigger class global so that Salesforce cannot call it twice"
       },
       {
         "id": "c",
-        "text": "Use without sharing"
+        "text": "Run the trigger without sharing so it ignores its own updates"
       },
       {
         "id": "d",
-        "text": "Use SOSL"
+        "text": "Use a SOSL search to find records that were already processed"
       }
     ],
     "correct": [
@@ -461,15 +461,15 @@
       },
       {
         "id": "b",
-        "text": "Check Trigger.isChanged"
+        "text": "Check Trigger.isChanged, which is true when a field has a new value"
       },
       {
         "id": "c",
-        "text": "Use Trigger.changed"
+        "text": "Use Trigger.changed, which returns the list of changed field names"
       },
       {
         "id": "d",
-        "text": "Check Trigger.size"
+        "text": "Check Trigger.size, which is larger after a field changes"
       }
     ],
     "correct": [
@@ -750,15 +750,15 @@
       },
       {
         "id": "b",
-        "text": "Trigger.old == Trigger.new"
+        "text": "Trigger.old == Trigger.new, which is true when the stage changes"
       },
       {
         "id": "c",
-        "text": "o.StageName != null"
+        "text": "o.StageName != null, which checks that a stage exists"
       },
       {
         "id": "d",
-        "text": "Trigger.isChanged"
+        "text": "Trigger.isChanged, which is true when a field has changed"
       }
     ],
     "correct": [
@@ -782,15 +782,15 @@
       },
       {
         "id": "b",
-        "text": "A global Boolean in the trigger body"
+        "text": "A global Boolean in the trigger body that is reset each time"
       },
       {
         "id": "c",
-        "text": "A custom label"
+        "text": "A custom label that stores whether the trigger already ran"
       },
       {
         "id": "d",
-        "text": "A validation rule"
+        "text": "A validation rule that stops the second update"
       }
     ],
     "correct": [
@@ -814,15 +814,15 @@
       },
       {
         "id": "b",
-        "text": "The old value, because flows run last"
+        "text": "The old value, because flows always run last"
       },
       {
         "id": "c",
-        "text": "Null, because flows never change fields"
+        "text": "Null, because flows never change field values"
       },
       {
         "id": "d",
-        "text": "It depends on the user's profile"
+        "text": "It depends on the profile of the user who saves the case"
       }
     ],
     "correct": [
@@ -846,15 +846,15 @@
       },
       {
         "id": "b",
-        "text": "The save fails with the validation message"
+        "text": "The save fails with the validation message, because validation runs first"
       },
       {
         "id": "c",
-        "text": "The save succeeds only for admins"
+        "text": "The save succeeds only for admins who can skip validation"
       },
       {
         "id": "d",
-        "text": "The trigger is skipped"
+        "text": "The trigger is skipped because the validation rule fires first"
       }
     ],
     "correct": [

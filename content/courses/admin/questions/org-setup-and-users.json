@@ -141,15 +141,15 @@
       },
       {
         "id": "b",
-        "text": "A custom fiscal year"
+        "text": "A custom fiscal year with its own period names"
       },
       {
         "id": "c",
-        "text": "A business hours record"
+        "text": "A business hours record that starts in March"
       },
       {
         "id": "d",
-        "text": "A forecast category"
+        "text": "A forecast category that shows the fiscal quarters"
       }
     ],
     "correct": [
@@ -173,15 +173,15 @@
       },
       {
         "id": "b",
-        "text": "It must match the user's real mailbox"
+        "text": "It must match the user's real mailbox so they get emails"
       },
       {
         "id": "c",
-        "text": "It must be unique only within the org"
+        "text": "It must be unique only within your own org"
       },
       {
         "id": "d",
-        "text": "It must be a phone number"
+        "text": "It must be a phone number registered with the company"
       }
     ],
     "correct": [
@@ -301,15 +301,15 @@
       },
       {
         "id": "b",
-        "text": "Yes, from the Users page"
+        "text": "Yes, from the Users page by an admin with the right permission"
       },
       {
         "id": "c",
-        "text": "Yes, but only after 15 days"
+        "text": "Yes, but only after the user has been inactive for 15 days"
       },
       {
         "id": "d",
-        "text": "Yes, with a permission set"
+        "text": "Yes, with a permission set that includes Delete Users"
       }
     ],
     "correct": [
@@ -557,15 +557,15 @@
       },
       {
         "id": "b",
-        "text": "Giving someone Modify All Data"
+        "text": "Giving one trusted user Modify All Data so that they can fix every problem"
       },
       {
         "id": "c",
-        "text": "Sharing records with a manager"
+        "text": "Sharing records with a manager so that they can see their team's work"
       },
       {
         "id": "d",
-        "text": "Transferring record ownership"
+        "text": "Transferring record ownership when someone changes teams or leaves"
       }
     ],
     "correct": [
@@ -589,15 +589,15 @@
       },
       {
         "id": "b",
-        "text": "A sandbox"
+        "text": "A sandbox that copies all of your production metadata and some data"
       },
       {
         "id": "c",
-        "text": "A backup of your data"
+        "text": "A backup of your data that can be restored on demand by an admin"
       },
       {
         "id": "d",
-        "text": "A custom object"
+        "text": "A custom object that stores your company's addresses for records"
       }
     ],
     "correct": [
@@ -654,15 +654,15 @@
       },
       {
         "id": "b",
-        "text": "The admin changes the org's time zone"
+        "text": "The admin changes the org's default time zone for everyone"
       },
       {
         "id": "c",
-        "text": "A new profile is created"
+        "text": "A new profile is created with the other time zone"
       },
       {
         "id": "d",
-        "text": "A new sandbox is created"
+        "text": "A new sandbox is created with the other time zone"
       }
     ],
     "correct": [
@@ -686,15 +686,15 @@
       },
       {
         "id": "b",
-        "text": "Delete their records"
+        "text": "Delete all of their records first, so that nothing is left owned by an inactive user"
       },
       {
         "id": "c",
-        "text": "Freeze everyone in their role"
+        "text": "Freeze everyone in their role until the reassignment has been completed"
       },
       {
         "id": "d",
-        "text": "Change their username"
+        "text": "Change their username so that they cannot log in while you finish"
       }
     ],
     "correct": [
@@ -718,15 +718,15 @@
       },
       {
         "id": "b",
-        "text": "Delete the user, then reassign her records"
+        "text": "Delete the user first, and then reassign her records to a new owner"
       },
       {
         "id": "c",
-        "text": "Freeze the user permanently and leave the rule"
+        "text": "Freeze the user permanently and leave the assignment rule as it is"
       },
       {
         "id": "d",
-        "text": "Change her profile to Chatter Free"
+        "text": "Change her profile to Chatter Free so that she cannot own records"
       }
     ],
     "correct": [

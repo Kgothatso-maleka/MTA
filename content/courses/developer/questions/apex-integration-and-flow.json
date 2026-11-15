@@ -77,15 +77,15 @@
       },
       {
         "id": "b",
-        "text": "Callout and Response"
+        "text": "Callout and Response, from the System namespace"
       },
       {
         "id": "c",
-        "text": "WebService and Soap"
+        "text": "WebService and Soap, from the System namespace"
       },
       {
         "id": "d",
-        "text": "RestClient"
+        "text": "RestClient, which is built into Apex"
       }
     ],
     "correct": [
@@ -173,15 +173,15 @@
       },
       {
         "id": "b",
-        "text": "Make real callouts"
+        "text": "Make real callouts, because mocks hide problems"
       },
       {
         "id": "c",
-        "text": "Skip the code"
+        "text": "Skip the callout code, since it cannot be tested"
       },
       {
         "id": "d",
-        "text": "Use SeeAllData=true"
+        "text": "Add SeeAllData=true so the test can reach the real endpoint"
       }
     ],
     "correct": [
@@ -365,15 +365,15 @@
       },
       {
         "id": "b",
-        "text": "Always"
+        "text": "Always, because Apex is faster than any flow for every kind of update"
       },
       {
         "id": "c",
-        "text": "Never"
+        "text": "Never, because flows are not allowed to run Apex classes at all"
       },
       {
         "id": "d",
-        "text": "Only for page layouts"
+        "text": "Only when the flow must change a page layout, because layouts are controlled from Apex code"
       }
     ],
     "correct": [
@@ -429,15 +429,15 @@
       },
       {
         "id": "b",
-        "text": "A before update trigger"
+        "text": "A before update trigger on the object that fires the event"
       },
       {
         "id": "c",
-        "text": "A Visualforce page"
+        "text": "A Visualforce page that listens for the event"
       },
       {
         "id": "d",
-        "text": "A page layout"
+        "text": "A page layout that lists the event fields"
       }
     ],
     "correct": [
@@ -461,15 +461,15 @@
       },
       {
         "id": "b",
-        "text": "Assume success"
+        "text": "Assume success, because a call that returns always worked"
       },
       {
         "id": "c",
-        "text": "Ignore the body"
+        "text": "Ignore the body and only store the time the call was made"
       },
       {
         "id": "d",
-        "text": "Retry forever"
+        "text": "Retry forever until the other system finally sends a 200"
       }
     ],
     "correct": [
@@ -525,15 +525,15 @@
       },
       {
         "id": "b",
-        "text": "In the class body"
+        "text": "In the class body, as constants for each environment"
       },
       {
         "id": "c",
-        "text": "In a trigger"
+        "text": "In a trigger that runs before every callout"
       },
       {
         "id": "d",
-        "text": "In a validation rule"
+        "text": "In a validation rule on the integration object"
       }
     ],
     "correct": [
@@ -557,15 +557,15 @@
       },
       {
         "id": "b",
-        "text": "An immediate callout"
+        "text": "An immediate callout from the trigger before the DML runs"
       },
       {
         "id": "c",
-        "text": "A formula field"
+        "text": "A formula field that calls the external service"
       },
       {
         "id": "d",
-        "text": "A validation rule"
+        "text": "A validation rule that makes the callout when the save happens"
       }
     ],
     "correct": [
@@ -718,15 +718,15 @@
       },
       {
         "id": "b",
-        "text": "The URL must use http"
+        "text": "The URL must use http, because https is not supported"
       },
       {
         "id": "c",
-        "text": "It needs a Remote Site Setting only"
+        "text": "It needs a Remote Site Setting only, with no other change"
       },
       {
         "id": "d",
-        "text": "It needs a trigger"
+        "text": "It needs a trigger that adds the key before the callout"
       }
     ],
     "correct": [

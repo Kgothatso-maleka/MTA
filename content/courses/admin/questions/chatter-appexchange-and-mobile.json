@@ -13,15 +13,15 @@
       },
       {
         "id": "b",
-        "text": "A reporting tool"
+        "text": "A reporting tool that summarises team activity"
       },
       {
         "id": "c",
-        "text": "An import tool"
+        "text": "An import tool for loading contacts from a file"
       },
       {
         "id": "d",
-        "text": "A sandbox"
+        "text": "A sandbox where users practise their posts"
       }
     ],
     "correct": [
@@ -45,15 +45,15 @@
       },
       {
         "id": "b",
-        "text": "Creates a topic"
+        "text": "Creates a topic that groups related posts"
       },
       {
         "id": "c",
-        "text": "Merges records"
+        "text": "Merges two records that are named in the post"
       },
       {
         "id": "d",
-        "text": "Closes a case"
+        "text": "Closes a case that is named in the post"
       }
     ],
     "correct": [
@@ -77,15 +77,15 @@
       },
       {
         "id": "b",
-        "text": "Notify people"
+        "text": "Notify the people who are named in a post"
       },
       {
         "id": "c",
-        "text": "Restrict access"
+        "text": "Restrict who can see the posts that use the topic"
       },
       {
         "id": "d",
-        "text": "Create records"
+        "text": "Create records from the text of the post"
       }
     ],
     "correct": [
@@ -109,15 +109,15 @@
       },
       {
         "id": "b",
-        "text": "Tracking field history for 10 years"
+        "text": "Tracking field history for ten years so that it appears in a report"
       },
       {
         "id": "c",
-        "text": "Tracking logins"
+        "text": "Tracking logins by each user in the org and listing them on the record"
       },
       {
         "id": "d",
-        "text": "Tracking sandbox use"
+        "text": "Tracking sandbox use by each developer and posting it to the feed"
       }
     ],
     "correct": [
@@ -301,15 +301,15 @@
       },
       {
         "id": "b",
-        "text": "They can only be attached to cases"
+        "text": "They can only be attached to cases and nothing else in the org"
       },
       {
         "id": "c",
-        "text": "They cannot be shared"
+        "text": "They cannot be shared with anyone outside the owner of the file"
       },
       {
         "id": "d",
-        "text": "They are deleted after 30 days"
+        "text": "They are deleted automatically after 30 days, unless they are downloaded"
       }
     ],
     "correct": [
@@ -333,15 +333,15 @@
       },
       {
         "id": "b",
-        "text": "A type of sandbox"
+        "text": "A type of sandbox for testing apps before release"
       },
       {
         "id": "c",
-        "text": "A reporting tool"
+        "text": "A reporting tool that compares Salesforce orgs"
       },
       {
         "id": "d",
-        "text": "A user licence"
+        "text": "A user licence for people who install packages"
       }
     ],
     "correct": [
@@ -397,15 +397,15 @@
       },
       {
         "id": "b",
-        "text": "Its code is fully visible and editable"
+        "text": "Its code is fully visible and can be edited by subscribers"
       },
       {
         "id": "c",
-        "text": "It cannot be installed in production"
+        "text": "It cannot be installed in production orgs"
       },
       {
         "id": "d",
-        "text": "It has no licence"
+        "text": "It has no licence and is free for every subscriber"
       }
     ],
     "correct": [
@@ -429,15 +429,15 @@
       },
       {
         "id": "b",
-        "text": "It is upgraded automatically"
+        "text": "It is upgraded automatically each time the publisher releases a version"
       },
       {
         "id": "c",
-        "text": "It hides its code"
+        "text": "It hides its code so that subscribers cannot read or change it"
       },
       {
         "id": "d",
-        "text": "It cannot be edited"
+        "text": "It cannot be edited after installation, only removed from the org"
       }
     ],
     "correct": [
@@ -461,15 +461,15 @@
       },
       {
         "id": "b",
-        "text": "Only the CEO"
+        "text": "Only the CEO, who must approve every installed app"
       },
       {
         "id": "c",
-        "text": "Only external users"
+        "text": "Only external users from Experience Cloud sites"
       },
       {
         "id": "d",
-        "text": "No one"
+        "text": "No one until the app is activated by Salesforce support"
       }
     ],
     "correct": [
@@ -493,15 +493,15 @@
       },
       {
         "id": "b",
-        "text": "The report folder"
+        "text": "The report folder that the mobile user has opened"
       },
       {
         "id": "c",
-        "text": "The sandbox"
+        "text": "The sandbox that the mobile app is connected to"
       },
       {
         "id": "d",
-        "text": "The duplicate rule"
+        "text": "The duplicate rule applied to mobile records"
       }
     ],
     "correct": [
@@ -557,15 +557,15 @@
       },
       {
         "id": "b",
-        "text": "Show every field"
+        "text": "Show every field from the desktop page so nothing is missed"
       },
       {
         "id": "c",
-        "text": "Replicate the desktop screen exactly"
+        "text": "Replicate the desktop screen exactly on the small screen"
       },
       {
         "id": "d",
-        "text": "Remove all actions"
+        "text": "Remove all actions so the screen stays simple"
       }
     ],
     "correct": [
@@ -589,15 +589,15 @@
       },
       {
         "id": "b",
-        "text": "A public campaign"
+        "text": "A public campaign that every user can follow"
       },
       {
         "id": "c",
-        "text": "A queue"
+        "text": "A queue that every user can post to"
       },
       {
         "id": "d",
-        "text": "A validation rule"
+        "text": "A validation rule that blocks replies in the feed"
       }
     ],
     "correct": [
@@ -621,15 +621,15 @@
       },
       {
         "id": "b",
-        "text": "Only text"
+        "text": "Only plain text, because files must be stored elsewhere"
       },
       {
         "id": "c",
-        "text": "Only files"
+        "text": "Only files, because Chatter has no support for posts"
       },
       {
         "id": "d",
-        "text": "Only links"
+        "text": "Only links, because polls and questions are not supported"
       }
     ],
     "correct": [

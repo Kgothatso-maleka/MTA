@@ -269,15 +269,15 @@
       },
       {
         "id": "b",
-        "text": "A lookup field on each object"
+        "text": "A lookup field on each object that points to the other"
       },
       {
         "id": "c",
-        "text": "A formula field on Installation"
+        "text": "A formula field on Installation that lists the installers"
       },
       {
         "id": "d",
-        "text": "A roll-up summary field on Installer"
+        "text": "A roll-up summary field on Installer that counts installations"
       }
     ],
     "correct": [
@@ -430,15 +430,15 @@
       },
       {
         "id": "b",
-        "text": "Only when a user edits from the Lightning page"
+        "text": "Only when a user edits the record from the Lightning page"
       },
       {
         "id": "c",
-        "text": "Only when saved through the mobile app"
+        "text": "Only when the record is saved through the mobile app"
       },
       {
         "id": "d",
-        "text": "Only for System Administrators"
+        "text": "Only for System Administrators who edit records"
       }
     ],
     "correct": [
@@ -462,15 +462,15 @@
       },
       {
         "id": "b",
-        "text": "Only the object's API name"
+        "text": "Only the object's API name, which each record type changes"
       },
       {
         "id": "c",
-        "text": "Sharing rule evaluation order"
+        "text": "The order in which sharing rules are evaluated for the object"
       },
       {
         "id": "d",
-        "text": "Which fields are encrypted"
+        "text": "Which fields are encrypted when the record is saved"
       }
     ],
     "correct": [
@@ -655,15 +655,15 @@
       },
       {
         "id": "b",
-        "text": "The object must have no page layouts"
+        "text": "The object must have no page layouts that include the field"
       },
       {
         "id": "c",
-        "text": "The parent must be a standard object"
+        "text": "The parent must be a standard object, not a custom one"
       },
       {
         "id": "d",
-        "text": "All users must be logged out"
+        "text": "All users must be logged out while the change is made"
       }
     ],
     "correct": [
@@ -885,15 +885,15 @@
       },
       {
         "id": "b",
-        "text": "It encrypts picklist values"
+        "text": "It encrypts the picklist values stored on the records"
       },
       {
         "id": "c",
-        "text": "It limits a picklist to 10 values"
+        "text": "It limits a picklist field to ten values only"
       },
       {
         "id": "d",
-        "text": "It makes a picklist dependent"
+        "text": "It makes a picklist dependent on another picklist field"
       }
     ],
     "correct": [
@@ -917,15 +917,15 @@
       },
       {
         "id": "b",
-        "text": "Hides the lookup field from reports"
+        "text": "Hides the lookup field from reports for some users"
       },
       {
         "id": "c",
-        "text": "Converts a lookup into a master-detail"
+        "text": "Converts a lookup relationship into a master-detail"
       },
       {
         "id": "d",
-        "text": "Filters list views by owner"
+        "text": "Filters list views by owner for each user"
       }
     ],
     "correct": [
@@ -981,15 +981,15 @@
       },
       {
         "id": "b",
-        "text": "A lookup with the clear-value option"
+        "text": "A lookup relationship with the clear-value option"
       },
       {
         "id": "c",
-        "text": "A validation rule"
+        "text": "A validation rule on the Installation object"
       },
       {
         "id": "d",
-        "text": "A record type setting"
+        "text": "A record type setting on the Account object"
       }
     ],
     "correct": [
@@ -1045,15 +1045,15 @@
       },
       {
         "id": "b",
-        "text": "A formula field"
+        "text": "A formula field that returns the right layout name for each line"
       },
       {
         "id": "c",
-        "text": "A validation rule"
+        "text": "A validation rule that checks the stage on every save"
       },
       {
         "id": "d",
-        "text": "A list view"
+        "text": "A list view that filters opportunities by product line"
       }
     ],
     "correct": [
@@ -1109,15 +1109,15 @@
       },
       {
         "id": "b",
-        "text": "A validation rule"
+        "text": "A validation rule that hides the field until a value is entered"
       },
       {
         "id": "c",
-        "text": "A new profile"
+        "text": "A new profile for users who need to see the field"
       },
       {
         "id": "d",
-        "text": "A record type for every type"
+        "text": "A record type for every discount reason value"
       }
     ],
     "correct": [
@@ -1173,15 +1173,15 @@
       },
       {
         "id": "b",
-        "text": "A scheduled flow"
+        "text": "A scheduled flow that counts the jobs every night"
       },
       {
         "id": "c",
-        "text": "An Apex trigger"
+        "text": "An Apex trigger that counts the jobs when they change"
       },
       {
         "id": "d",
-        "text": "A report on Jobs"
+        "text": "A report on Jobs grouped by the installation"
       }
     ],
     "correct": [

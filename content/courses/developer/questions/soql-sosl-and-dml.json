@@ -45,15 +45,15 @@
       },
       {
         "id": "b",
-        "text": "Creates a field"
+        "text": "Creates a new field on the queried object"
       },
       {
         "id": "c",
-        "text": "Escapes a string"
+        "text": "Escapes a string so quotes cannot break the query"
       },
       {
         "id": "d",
-        "text": "Starts a subquery"
+        "text": "Starts a subquery against a child relationship"
       }
     ],
     "correct": [
@@ -109,15 +109,15 @@
       },
       {
         "id": "b",
-        "text": "A JOIN clause"
+        "text": "A JOIN clause between Account and Contact in the FROM clause of the query"
       },
       {
         "id": "c",
-        "text": "A UNION query"
+        "text": "A UNION query that combines two separate queries into one result"
       },
       {
         "id": "d",
-        "text": "Contacts.Account in WHERE"
+        "text": "Contacts.Account in the WHERE clause, which filters by parent"
       }
     ],
     "correct": [
@@ -237,15 +237,15 @@
       },
       {
         "id": "b",
-        "text": "Reading all fields of one object"
+        "text": "Reading all of the fields of one object by Id"
       },
       {
         "id": "c",
-        "text": "Doing arithmetic"
+        "text": "Doing arithmetic on number fields across records"
       },
       {
         "id": "d",
-        "text": "Counting rows with GROUP BY"
+        "text": "Counting rows with GROUP BY in a single query"
       }
     ],
     "correct": [
@@ -333,15 +333,15 @@
       },
       {
         "id": "b",
-        "text": "It avoids all limits"
+        "text": "It avoids every governor limit, so any number of rows can load"
       },
       {
         "id": "c",
-        "text": "It runs as a batch"
+        "text": "It runs as a batch job in the background after the transaction"
       },
       {
         "id": "d",
-        "text": "It skips sharing"
+        "text": "It skips sharing rules, so users see rows they normally cannot"
       }
     ],
     "correct": [
@@ -429,15 +429,15 @@
       },
       {
         "id": "b",
-        "text": "Insert is asynchronous"
+        "text": "Insert is asynchronous, so it runs after the transaction"
       },
       {
         "id": "c",
-        "text": "Database.insert ignores validation"
+        "text": "Database.insert ignores validation rules for all records"
       },
       {
         "id": "d",
-        "text": "They are identical"
+        "text": "They are identical, and the second argument has no effect"
       }
     ],
     "correct": [
@@ -493,15 +493,15 @@
       },
       {
         "id": "b",
-        "text": "Mixing insert and update on one list"
+        "text": "Mixing insert and update on one list in the same call"
       },
       {
         "id": "c",
-        "text": "Using DML and SOQL together"
+        "text": "Using DML and SOQL together in the same method"
       },
       {
         "id": "d",
-        "text": "Using two triggers"
+        "text": "Using two triggers on the same object in one transaction"
       }
     ],
     "correct": [
@@ -525,15 +525,15 @@
       },
       {
         "id": "b",
-        "text": "Remove spaces from input"
+        "text": "Remove spaces and special characters from every input value"
       },
       {
         "id": "c",
-        "text": "Use only uppercase"
+        "text": "Convert all user input to uppercase before building the query"
       },
       {
         "id": "d",
-        "text": "Use SOSL instead"
+        "text": "Use SOSL instead of SOQL, because SOSL cannot be injected"
       }
     ],
     "correct": [
@@ -557,15 +557,15 @@
       },
       {
         "id": "b",
-        "text": "Run DML inside the loop"
+        "text": "Run DML inside the loop so each record saves straight away"
       },
       {
         "id": "c",
-        "text": "Run DML in a constructor"
+        "text": "Run DML in a constructor when the class is created"
       },
       {
         "id": "d",
-        "text": "Use SOQL to insert"
+        "text": "Use SOQL to insert records in a single statement"
       }
     ],
     "correct": [
@@ -718,15 +718,15 @@
       },
       {
         "id": "b",
-        "text": "r[0].total"
+        "text": "r[0].total, reading it as a field"
       },
       {
         "id": "c",
-        "text": "r.size()"
+        "text": "r.size(), which returns the row count of the result"
       },
       {
         "id": "d",
-        "text": "r[0].count"
+        "text": "r[0].count, using the default alias"
       }
     ],
     "correct": [
@@ -814,15 +814,15 @@
       },
       {
         "id": "b",
-        "text": "A governor limit; use SOSL"
+        "text": "A governor limit; replace the query with a SOSL search"
       },
       {
         "id": "c",
-        "text": "Mixed DML; use a future method"
+        "text": "Mixed DML; move the update into a future method"
       },
       {
         "id": "d",
-        "text": "Heap size; use a Set"
+        "text": "Heap size; store the records in a Set instead of a List"
       }
     ],
     "correct": [

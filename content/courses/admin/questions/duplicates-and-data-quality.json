@@ -13,15 +13,15 @@
       },
       {
         "id": "b",
-        "text": "Blocks users from saving duplicates"
+        "text": "Blocks users from saving duplicates when they create records"
       },
       {
         "id": "c",
-        "text": "Merges duplicate records automatically"
+        "text": "Merges duplicate records automatically each night"
       },
       {
         "id": "d",
-        "text": "Deletes the older record"
+        "text": "Deletes the older record when a newer one is saved"
       }
     ],
     "correct": [
@@ -45,15 +45,15 @@
       },
       {
         "id": "b",
-        "text": "Defines which fields are compared"
+        "text": "Defines which fields are compared and how closely they must match"
       },
       {
         "id": "c",
-        "text": "Imports records from a CSV"
+        "text": "Imports records from a CSV file and checks them for repeats"
       },
       {
         "id": "d",
-        "text": "Calculates a field's value"
+        "text": "Calculates a field's value from the fields on the record"
       }
     ],
     "correct": [
@@ -77,15 +77,15 @@
       },
       {
         "id": "b",
-        "text": "A matching rule only"
+        "text": "A matching rule only, which finds duplicates but allows saving"
       },
       {
         "id": "c",
-        "text": "A page layout change"
+        "text": "A page layout change that makes the Name field read only"
       },
       {
         "id": "d",
-        "text": "A formula field"
+        "text": "A formula field that shows duplicate account names"
       }
     ],
     "correct": [
@@ -174,15 +174,15 @@
       },
       {
         "id": "b",
-        "text": "Block"
+        "text": "Block, which stops the save and shows an error message"
       },
       {
         "id": "c",
-        "text": "A validation rule"
+        "text": "A validation rule that checks for matching account names"
       },
       {
         "id": "d",
-        "text": "A lookup filter"
+        "text": "A lookup filter that limits the accounts people can pick"
       }
     ],
     "correct": [
@@ -206,15 +206,15 @@
       },
       {
         "id": "b",
-        "text": "Matching only exact text"
+        "text": "Matching only on text that is exactly the same, character for character"
       },
       {
         "id": "c",
-        "text": "Matching on record ID"
+        "text": "Matching on the record ID of each existing record"
       },
       {
         "id": "d",
-        "text": "Matching only on picklists"
+        "text": "Matching only on picklist values chosen by users"
       }
     ],
     "correct": [
@@ -270,15 +270,15 @@
       },
       {
         "id": "b",
-        "text": "No, rules only work within one object"
+        "text": "No, duplicate rules only work within one object at a time"
       },
       {
         "id": "c",
-        "text": "Only for Accounts"
+        "text": "Only for Accounts, which are the one object that supports it"
       },
       {
         "id": "d",
-        "text": "Only with Apex"
+        "text": "Only with Apex code that compares the two objects"
       }
     ],
     "correct": [
@@ -334,15 +334,15 @@
       },
       {
         "id": "b",
-        "text": "They stay active and unchanged"
+        "text": "They stay active and unchanged next to the master record"
       },
       {
         "id": "c",
-        "text": "They are permanently deleted instantly"
+        "text": "They are permanently deleted instantly with no way back"
       },
       {
         "id": "d",
-        "text": "They become the master's child records"
+        "text": "They become child records of the master record"
       }
     ],
     "correct": [
@@ -366,15 +366,15 @@
       },
       {
         "id": "b",
-        "text": "Yes, it merges them overnight"
+        "text": "Yes, the rule merges the existing duplicates automatically overnight after it is activated"
       },
       {
         "id": "c",
-        "text": "Yes, it deletes them"
+        "text": "Yes, the rule deletes the older duplicates when the next user logs in"
       },
       {
         "id": "d",
-        "text": "Yes, but only for Leads"
+        "text": "Yes, but only for leads, because accounts are never checked by rules"
       }
     ],
     "correct": [
@@ -398,15 +398,15 @@
       },
       {
         "id": "b",
-        "text": "Remove the duplicate rule"
+        "text": "Remove the duplicate rule, since users will always find a way round it"
       },
       {
         "id": "c",
-        "text": "Make every field required"
+        "text": "Make every field on the account required"
       },
       {
         "id": "d",
-        "text": "Switch off fuzzy matching and block everything"
+        "text": "Switch off fuzzy matching and block every match"
       }
     ],
     "correct": [
@@ -494,15 +494,15 @@
       },
       {
         "id": "b",
-        "text": "Hides the picklist from some profiles"
+        "text": "Hides the picklist from some profiles on the record page"
       },
       {
         "id": "c",
-        "text": "Allows only one value per user"
+        "text": "Allows only one value to be chosen by each user"
       },
       {
         "id": "d",
-        "text": "Makes the picklist read-only"
+        "text": "Makes the picklist read-only on the page layout"
       }
     ],
     "correct": [
@@ -526,15 +526,15 @@
       },
       {
         "id": "b",
-        "text": "To search records faster"
+        "text": "To make searching for records faster in the lookup"
       },
       {
         "id": "c",
-        "text": "To block duplicate records"
+        "text": "To block duplicate records from being created"
       },
       {
         "id": "d",
-        "text": "To format phone numbers"
+        "text": "To format phone numbers entered in the field"
       }
     ],
     "correct": [
@@ -590,15 +590,15 @@
       },
       {
         "id": "b",
-        "text": "Run a duplicate job"
+        "text": "Run a duplicate job against the account object"
       },
       {
         "id": "c",
-        "text": "Create a matching rule"
+        "text": "Create a matching rule on the Industry field"
       },
       {
         "id": "d",
-        "text": "Use the Recycle Bin"
+        "text": "Use the Recycle Bin to find accounts with no value"
       }
     ],
     "correct": [
@@ -622,15 +622,15 @@
       },
       {
         "id": "b",
-        "text": "A Salesforce automation tool"
+        "text": "A Salesforce automation tool that merges duplicates"
       },
       {
         "id": "c",
-        "text": "A type of permission set"
+        "text": "A type of permission set for data quality"
       },
       {
         "id": "d",
-        "text": "A kind of duplicate rule"
+        "text": "A kind of duplicate rule that blocks saves"
       }
     ],
     "correct": [
@@ -654,15 +654,15 @@
       },
       {
         "id": "b",
-        "text": "A set of records marked for deletion"
+        "text": "A set of records that have been marked for deletion by an admin"
       },
       {
         "id": "c",
-        "text": "A saved report folder"
+        "text": "A saved report folder that holds all of the duplicate reports"
       },
       {
         "id": "d",
-        "text": "A backup file"
+        "text": "A backup file that stores copies of records before a merge"
       }
     ],
     "correct": [
@@ -718,15 +718,15 @@
       },
       {
         "id": "b",
-        "text": "Makes a picklist required"
+        "text": "Makes a picklist required whenever a record is saved by a user"
       },
       {
         "id": "c",
-        "text": "Copies a picklist to another object"
+        "text": "Copies a picklist to another object automatically each night"
       },
       {
         "id": "d",
-        "text": "Prevents duplicates"
+        "text": "Prevents duplicate values from being added to a picklist by admins"
       }
     ],
     "correct": [
@@ -750,15 +750,15 @@
       },
       {
         "id": "b",
-        "text": "A validation rule on every field"
+        "text": "A validation rule on every field that checks for a matching lead"
       },
       {
         "id": "c",
-        "text": "A sharing rule"
+        "text": "A sharing rule that gives reps access to existing leads"
       },
       {
         "id": "d",
-        "text": "A new record type"
+        "text": "A new record type that shows a duplicate warning banner"
       }
     ],
     "correct": [

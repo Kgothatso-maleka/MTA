@@ -13,15 +13,15 @@
       },
       {
         "id": "b",
-        "text": "Everyone in the org"
+        "text": "Everyone in the org, because a Private setting shows all the records"
       },
       {
         "id": "c",
-        "text": "Only users with the same profile"
+        "text": "Only users who have the same profile as user A in the org"
       },
       {
         "id": "d",
-        "text": "Only the System Administrator profile"
+        "text": "Only users who have the System Administrator profile in the org"
       }
     ],
     "correct": [
@@ -302,15 +302,15 @@
       },
       {
         "id": "b",
-        "text": "Their page layout is wrong"
+        "text": "Their page layout for Installation is missing the list view button bar"
       },
       {
         "id": "c",
-        "text": "The OWD is too open"
+        "text": "The OWD is too open, so the list is filtered by default"
       },
       {
         "id": "d",
-        "text": "Their role is too high"
+        "text": "Their role is too high, so the hierarchy hides their own records"
       }
     ],
     "correct": [
@@ -334,15 +334,15 @@
       },
       {
         "id": "b",
-        "text": "It replaces profiles"
+        "text": "It replaces profiles, so users no longer need object permissions"
       },
       {
         "id": "c",
-        "text": "It can restrict access below the OWD"
+        "text": "It can restrict access below the OWD for managers"
       },
       {
         "id": "d",
-        "text": "It lets you share with a profile"
+        "text": "It lets you share records with a whole profile"
       }
     ],
     "correct": [
@@ -366,15 +366,15 @@
       },
       {
         "id": "b",
-        "text": "It cannot be turned off"
+        "text": "It cannot be turned off, because the hierarchy always applies"
       },
       {
         "id": "c",
-        "text": "It must be off"
+        "text": "It must be off, because custom objects ignore the hierarchy"
       },
       {
         "id": "d",
-        "text": "It only applies to standard objects"
+        "text": "It only applies to standard objects such as Account"
       }
     ],
     "correct": [
@@ -430,15 +430,15 @@
       },
       {
         "id": "b",
-        "text": "Group members lose edit access"
+        "text": "Group members lose the edit access they had before"
       },
       {
         "id": "c",
-        "text": "Only the owner can edit"
+        "text": "Only the owner of each record can edit it"
       },
       {
         "id": "d",
-        "text": "The rule overrides the OWD"
+        "text": "The rule overrides the OWD and removes access"
       }
     ],
     "correct": [
@@ -590,15 +590,15 @@
       },
       {
         "id": "b",
-        "text": "Edit access to every account"
+        "text": "Edit access to every account in the org that the user can find"
       },
       {
         "id": "c",
-        "text": "Access to all contacts"
+        "text": "Access to all contacts that sit under the same account"
       },
       {
         "id": "d",
-        "text": "Nothing"
+        "text": "Nothing, because implicit sharing only applies to cases"
       }
     ],
     "correct": [
@@ -622,15 +622,15 @@
       },
       {
         "id": "b",
-        "text": "In the profile"
+        "text": "In the profile of the user who owns the record"
       },
       {
         "id": "c",
-        "text": "In the role hierarchy"
+        "text": "In the role hierarchy, under the role of the owner"
       },
       {
         "id": "d",
-        "text": "In a report type"
+        "text": "In a report type that lists every sharing rule"
       }
     ],
     "correct": [
@@ -654,15 +654,15 @@
       },
       {
         "id": "b",
-        "text": "A data import"
+        "text": "A data import that loads the records again"
       },
       {
         "id": "c",
-        "text": "A flow"
+        "text": "A flow that updates the owner of each record"
       },
       {
         "id": "d",
-        "text": "A batch deletion"
+        "text": "A batch deletion of records that are no longer shared"
       }
     ],
     "correct": [
@@ -816,15 +816,15 @@
       },
       {
         "id": "b",
-        "text": "A broken validation rule"
+        "text": "A validation rule that is accidentally showing hidden records"
       },
       {
         "id": "c",
-        "text": "A deleted page layout"
+        "text": "A page layout that includes accounts the user does not own"
       },
       {
         "id": "d",
-        "text": "A wrong fiscal year"
+        "text": "A fiscal year setting that opens records by quarter"
       }
     ],
     "correct": [
