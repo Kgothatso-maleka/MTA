@@ -251,7 +251,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "refreshApex re-queries a wired result.",
+    "explanation": "refreshApex(wiredResult) re-runs a wired Apex call and refreshes the cache. Call it after an imperative update so the list on screen shows the new data.",
     "difficulty": 2,
     "tags": []
   },
@@ -283,7 +283,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Events flow up from child to parent.",
+    "explanation": "Data flows down through public properties and events flow up. A child dispatches a CustomEvent and the parent listens with an on-prefixed handler.",
     "difficulty": 1,
     "tags": []
   },
@@ -315,7 +315,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "CustomEvent data goes in detail.",
+    "explanation": "CustomEvent carries its payload in the detail property, for example new CustomEvent('select', { detail: { id } }). The parent reads event.detail.",
     "difficulty": 1,
     "tags": []
   },
@@ -475,7 +475,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "NavigationMixin navigates to pages.",
+    "explanation": "NavigationMixin gives components a Navigate method that opens records, list views, tabs and web pages. It keeps navigation working in Lightning Experience and the mobile app.",
     "difficulty": 2,
     "tags": []
   },
@@ -539,7 +539,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "LWC tests use Jest with sfdx-lwc-jest.",
+    "explanation": "LWC unit tests run in Jest using the @salesforce/sfdx-lwc-jest package. Wire adapters and Apex calls are mocked so tests run on your machine without an org.",
     "difficulty": 1,
     "tags": []
   },

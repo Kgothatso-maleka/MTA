@@ -27,7 +27,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Visualforce merge fields use {! }.",
+    "explanation": "Visualforce uses {! } for merge fields and expressions, for example {!Account.Name}. Aura uses {!v.name} and LWC uses {name}.",
     "difficulty": 1,
     "tags": []
   },
@@ -187,7 +187,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "The list controller uses recordSetVar.",
+    "explanation": "A standard list controller works on a set of records. Set recordSetVar on apex:page and loop over the variable with apex:pageBlockTable or apex:repeat.",
     "difficulty": 2,
     "tags": []
   },
@@ -219,7 +219,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "The view state limit is 170 KB.",
+    "explanation": "Visualforce view state, the data a form carries between requests, is limited to 170 KB. Mark variables transient or query fewer fields to stay under it.",
     "difficulty": 2,
     "tags": []
   },
@@ -411,7 +411,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "LWC is Salesforce's recommended model.",
+    "explanation": "LWC is Salesforce's recommended model for new work. It uses standard web technology, performs better than Aura and is where new features appear first.",
     "difficulty": 1,
     "tags": []
   },
@@ -475,7 +475,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Visualforce can render PDFs directly.",
+    "explanation": "Setting renderAs=\"pdf\" on apex:page makes Visualforce produce a PDF directly. LWC and Aura have no equivalent built-in feature.",
     "difficulty": 2,
     "tags": []
   },

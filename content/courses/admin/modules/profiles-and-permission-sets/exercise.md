@@ -19,19 +19,15 @@ Build least-privilege access for Installations using a permission set group and 
 
 ## What to build
 
-1. Set the **organization-wide default** for Installation to **Private**.
-2. Create roles: **Installation Manager** above **Sales Rep** in the role hierarchy, and make sure Grant Access Using Hierarchies is on for Installation.
-3. Create a permission set **Installation Editor** (Read, Create, Edit on Installation) and **Installation Viewer** (Read only).
-4. Create a permission set group **Sales Rep Access** that includes Installation Editor, and a separate permission set that grants only the Discount field.
-5. Use a **Minimum Access – Salesforce** base profile for a test user and add the right permission sets.
-6. Create a **criteria-based sharing rule** that shares Commercial installations with a public group called **Commercial Team**.
-7. Create a queue **Unassigned Installations** if your object supports it, and add two users.
+1. Set the **organization-wide default** for Installation to **Private** (the next module covers sharing in depth).
+2. Create a permission set **Installation Editor** (Read, Create, Edit on Installation) and **Installation Viewer** (Read only).
+3. Create a permission set group **Sales Rep Access** that includes Installation Editor, and a separate permission set that grants only the Discount field.
+4. Use a **Minimum Access – Salesforce** base profile for a test user and add the right permission sets.
+5. Create a queue **Unassigned Installations** if your object supports it, and add two users.
 
 ## What you should see when you are done
 
-- A Sales Rep sees only the installations they own.
-- The Installation Manager also sees the Sales Rep's installations through the role hierarchy.
-- Members of the Commercial Team can see Commercial installations they do not own.
+- A Sales Rep with Read access and a Private OWD sees only installations they own.
 - A user without the Discount permission cannot see the Discount field on the page **or in a report**.
 - **Log in as** each test user and confirm the experience matches.
 

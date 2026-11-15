@@ -295,29 +295,29 @@
     "examSection": "automation",
     "objective": "Use assignment, auto-response and escalation rules",
     "type": "single",
-    "stem": "Which rule decides who OWNS a new case?",
+    "stem": "Which item defines the wording of the message that an email alert sends?",
     "options": [
       {
         "id": "a",
-        "text": "Assignment rule"
+        "text": "An email template"
       },
       {
         "id": "b",
-        "text": "Escalation rule"
+        "text": "A page layout"
       },
       {
         "id": "c",
-        "text": "Auto-response rule"
+        "text": "A report folder"
       },
       {
         "id": "d",
-        "text": "Validation rule"
+        "text": "A record type"
       }
     ],
     "correct": [
       "a"
     ],
-    "explanation": "Assignment rules route new leads and cases to a user or queue.",
+    "explanation": "An email alert needs a recipient list and an email template. The template holds the subject and body, and merge fields fill in record data.",
     "difficulty": 1,
     "tags": []
   },
@@ -701,7 +701,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Escalation rules apply to cases.",
+    "explanation": "Escalation rules are a service feature that act on cases, using business hours and age. They do not apply to opportunities or accounts, and reports are not records.",
     "difficulty": 1,
     "tags": []
   }

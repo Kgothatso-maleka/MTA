@@ -283,7 +283,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "The default scope size is 200.",
+    "explanation": "Batch scope defaults to 200 records per execute call. You can change it from 1 to 2,000 in Database.executeBatch, and each execute call gets fresh governor limits.",
     "difficulty": 1,
     "tags": []
   },

@@ -27,7 +27,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "LIMIT caps the number of rows.",
+    "explanation": "LIMIT caps how many rows a query returns, for example LIMIT 50. Use it with ORDER BY so you know which rows you get.",
     "difficulty": 1,
     "tags": []
   },
@@ -155,7 +155,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Custom relationship names end in __r.",
+    "explanation": "For a custom lookup called Installation__c, the field holds the Id, while the relationship name is Installation__r. You write Installation__r.Name to read the parent's name.",
     "difficulty": 2,
     "tags": []
   },
@@ -219,7 +219,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "SOSL returns List<List<SObject>>.",
+    "explanation": "SOSL returns a List<List<SObject>>, with one inner list for each object type in the RETURNING clause. SOQL returns a single list.",
     "difficulty": 2,
     "tags": []
   },

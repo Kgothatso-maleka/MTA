@@ -615,29 +615,29 @@
     "examSection": "agentforce-ai",
     "objective": "Explain what an agent is",
     "type": "single",
-    "stem": "What is grounding?",
+    "stem": "Which action source lets a developer write custom code that an agent can call?",
     "options": [
       {
         "id": "a",
-        "text": "Giving the agent real company data so answers rely on facts"
+        "text": "Apex"
       },
       {
         "id": "b",
-        "text": "Turning the agent off"
+        "text": "A page layout"
       },
       {
         "id": "c",
-        "text": "Encrypting the agent"
+        "text": "A report folder"
       },
       {
         "id": "d",
-        "text": "Cloning the agent"
+        "text": "A sharing rule"
       }
     ],
     "correct": [
       "a"
     ],
-    "explanation": "Grounding supplies factual, relevant data to the model so it does not guess.",
+    "explanation": "Agent actions can come from flows, prompt templates, Apex and APIs. Apex suits custom logic that flows and prompts cannot express.",
     "difficulty": 1,
     "tags": []
   },

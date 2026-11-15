@@ -123,7 +123,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "On delete only the old records exist.",
+    "explanation": "On delete there is no new version of the record, so Trigger.new is not available. Use Trigger.old or Trigger.oldMap to read the records being deleted.",
     "difficulty": 2,
     "tags": []
   },
@@ -155,7 +155,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Only after undelete exists.",
+    "explanation": "Salesforce offers only an after undelete event, because the record needs its Id restored first. Before and after exist for insert, update and delete.",
     "difficulty": 2,
     "tags": []
   },

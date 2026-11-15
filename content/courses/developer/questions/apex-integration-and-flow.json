@@ -155,7 +155,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "The callout limit is 100.",
+    "explanation": "Each transaction may make up to 100 callouts, and the combined callout time is limited to 120 seconds. Batch many records into one request where the other system allows it.",
     "difficulty": 2,
     "tags": []
   },
@@ -507,7 +507,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "JSON.serialize creates JSON text.",
+    "explanation": "JSON.serialize turns an Apex object into JSON text for a request body. JSON.deserialize and JSON.deserializeUntyped do the reverse for a response.",
     "difficulty": 1,
     "tags": []
   },
@@ -571,7 +571,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Move it to asynchronous Apex.",
+    "explanation": "Salesforce blocks a callout once DML has run in the same transaction (uncommitted work pending). Run the callout in a future method or queueable job so it happens in its own transaction.",
     "difficulty": 2,
     "tags": []
   },
@@ -668,7 +668,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Never hardcode secrets in source code.",
+    "explanation": "Passwords and tokens in code end up in source control and logs. Keep them in a Named Credential or External Credential so Salesforce stores and injects them safely.",
     "difficulty": 1,
     "tags": []
   }

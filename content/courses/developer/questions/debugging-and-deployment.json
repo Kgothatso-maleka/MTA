@@ -91,7 +91,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "A debug log is truncated at 20 MB.",
+    "explanation": "A debug log is cut off at 20 MB. Lower the log levels or filter by category when logs are truncated, or you may lose the lines you need.",
     "difficulty": 3,
     "tags": []
   },
@@ -123,7 +123,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Debug statements are tagged USER_DEBUG.",
+    "explanation": "Every System.debug statement appears in the log as a USER_DEBUG line. Filtering on that tag removes the noise from system events.",
     "difficulty": 1,
     "tags": []
   },

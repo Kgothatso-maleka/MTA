@@ -91,7 +91,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Use @isTest on classes and methods.",
+    "explanation": "@isTest marks a class or method as test code. Test code is not counted against the org's Apex size limit and its data is rolled back when the test ends.",
     "difficulty": 1,
     "tags": []
   },
@@ -155,7 +155,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Tests should create their own data.",
+    "explanation": "Tests do not see the org's existing records unless SeeAllData=true is set, which is discouraged. Create your own data so the test works in any org.",
     "difficulty": 1,
     "tags": []
   },
@@ -379,7 +379,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Real callouts are not allowed in tests.",
+    "explanation": "Tests are not allowed to make real callouts. Use Test.setMock with a class that implements HttpCalloutMock so the test gets a controlled fake response.",
     "difficulty": 1,
     "tags": []
   },
@@ -411,7 +411,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "200 is a standard batch of records.",
+    "explanation": "A trigger receives records in batches of up to 200, so inserting 200 records in one DML shows whether your code is bulk-safe. One record hides SOQL and DML in loops.",
     "difficulty": 1,
     "tags": []
   },
@@ -604,7 +604,7 @@
       "a",
       "b"
     ],
-    "explanation": "Cover bulk and negative scenarios.",
+    "explanation": "Good trigger tests cover a bulk run of 200 records and a negative case that expects an error. A test with no assertions, or one that relies on real customer data, proves nothing.",
     "difficulty": 1,
     "tags": []
   },

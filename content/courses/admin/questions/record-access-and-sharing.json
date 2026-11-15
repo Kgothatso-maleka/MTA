@@ -1,0 +1,869 @@
+[
+  {
+    "id": "ras-01",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Choose sharing settings",
+    "type": "single",
+    "stem": "OWD for Installation is Private. Who can see a record owned by user A?",
+    "options": [
+      {
+        "id": "a",
+        "text": "User A, and users above A in the role hierarchy if hierarchies are enabled"
+      },
+      {
+        "id": "b",
+        "text": "Everyone in the org"
+      },
+      {
+        "id": "c",
+        "text": "Only users with the same profile"
+      },
+      {
+        "id": "d",
+        "text": "Only the System Administrator profile"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "With Private OWD, the owner and (with Grant Access Using Hierarchies) users above them can see it, plus anyone given extra access.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ras-02",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Choose sharing settings",
+    "type": "single",
+    "stem": "Which statement about sharing rules is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They can only open up access, never restrict it"
+      },
+      {
+        "id": "b",
+        "text": "They can make a record more private than OWD"
+      },
+      {
+        "id": "c",
+        "text": "They can share records with a profile"
+      },
+      {
+        "id": "d",
+        "text": "They replace object permissions"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Sharing rules grant additional access. They cannot restrict below OWD and they do not target profiles.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ras-03",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Choose sharing settings",
+    "type": "single",
+    "stem": "Everyone should see Opportunities, but only the owner should be able to edit. Which OWD setting is right?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Public Read Only"
+      },
+      {
+        "id": "b",
+        "text": "Private"
+      },
+      {
+        "id": "c",
+        "text": "Public Read/Write"
+      },
+      {
+        "id": "d",
+        "text": "Controlled by Parent"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Public Read Only lets everyone see records while only the owner (and those given edit access) can change them.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "ras-04",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Choose sharing settings",
+    "type": "single",
+    "stem": "What does the role hierarchy grant?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Record access up the management chain"
+      },
+      {
+        "id": "b",
+        "text": "Object permissions to managers"
+      },
+      {
+        "id": "c",
+        "text": "Field-level security to managers"
+      },
+      {
+        "id": "d",
+        "text": "Login hours to managers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Roles affect record access only. Object and field permissions come from profiles and permission sets.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ras-05",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Choose sharing settings",
+    "type": "single",
+    "stem": "Manual sharing is available when the OWD of an object is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Private or Public Read Only"
+      },
+      {
+        "id": "b",
+        "text": "Public Read/Write only"
+      },
+      {
+        "id": "c",
+        "text": "Controlled by Parent only"
+      },
+      {
+        "id": "d",
+        "text": "Any setting, including Public Read/Write"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Manual sharing opens access beyond the baseline, so it is useful when OWD is Private or Public Read Only.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "ras-06",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Choose sharing settings",
+    "type": "single",
+    "stem": "Which OWD setting means access is determined by the parent record?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Controlled by Parent"
+      },
+      {
+        "id": "b",
+        "text": "Public Read Only"
+      },
+      {
+        "id": "c",
+        "text": "Private"
+      },
+      {
+        "id": "d",
+        "text": "Public Full Access"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Controlled by Parent makes child records follow the access of their parent, as with Contact on Account in some configurations.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ras-07",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Choose sharing settings",
+    "type": "multi",
+    "stem": "Which TWO targets can a sharing rule share records with? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Roles and subordinates"
+      },
+      {
+        "id": "b",
+        "text": "Public groups"
+      },
+      {
+        "id": "c",
+        "text": "Profiles"
+      },
+      {
+        "id": "d",
+        "text": "Permission sets"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Sharing rules target roles, roles and subordinates, and public groups. Profiles and permission sets are not valid targets.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "ras-08",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Choose sharing settings",
+    "type": "single",
+    "stem": "What does the Grant Access Using Hierarchies setting do for an object?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lets managers access records owned by their subordinates"
+      },
+      {
+        "id": "b",
+        "text": "Lets subordinates see their managers' records"
+      },
+      {
+        "id": "c",
+        "text": "Allows users to share without owning"
+      },
+      {
+        "id": "d",
+        "text": "Disables sharing rules"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "With it on, users higher in the role hierarchy get access to records owned by users below them.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ras-09",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Choose sharing settings",
+    "type": "single",
+    "stem": "Public Read/Write/Transfer is an OWD option for which objects?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leads and Cases"
+      },
+      {
+        "id": "b",
+        "text": "Accounts and Contacts"
+      },
+      {
+        "id": "c",
+        "text": "Opportunities and Products"
+      },
+      {
+        "id": "d",
+        "text": "All custom objects"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Transfer variant of Public Read/Write is available for Leads and Cases.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "ras-10",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Troubleshoot record access",
+    "type": "single",
+    "stem": "A sales rep can open the Installation tab but sees an empty list, and the OWD is Private. Which is the most likely reason?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They own no installations and nothing has been shared with them"
+      },
+      {
+        "id": "b",
+        "text": "Their page layout is wrong"
+      },
+      {
+        "id": "c",
+        "text": "The OWD is too open"
+      },
+      {
+        "id": "d",
+        "text": "Their role is too high"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "With a Private OWD a user sees only records they own or that are shared with them. An empty list usually means no record meets either condition.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ras-11",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Use the role hierarchy",
+    "type": "single",
+    "stem": "Which statement about the role hierarchy is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It gives record access upward but not object or field permissions"
+      },
+      {
+        "id": "b",
+        "text": "It replaces profiles"
+      },
+      {
+        "id": "c",
+        "text": "It can restrict access below the OWD"
+      },
+      {
+        "id": "d",
+        "text": "It lets you share with a profile"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Roles only extend record access. A manager still needs object permission from a profile or permission set.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ras-12",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Use the role hierarchy",
+    "type": "single",
+    "stem": "A custom object's OWD is Private. Should Grant Access Using Hierarchies be on?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is optional for custom objects, so turn it on if managers need the access"
+      },
+      {
+        "id": "b",
+        "text": "It cannot be turned off"
+      },
+      {
+        "id": "c",
+        "text": "It must be off"
+      },
+      {
+        "id": "d",
+        "text": "It only applies to standard objects"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "For custom objects you can choose whether managers inherit access through the hierarchy. On standard objects it is always on.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "ras-13",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Use sharing rules",
+    "type": "single",
+    "stem": "Which target can a sharing rule NOT use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A profile"
+      },
+      {
+        "id": "b",
+        "text": "A public group"
+      },
+      {
+        "id": "c",
+        "text": "A role"
+      },
+      {
+        "id": "d",
+        "text": "Roles and subordinates"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Sharing rules share with roles, roles and subordinates, and public groups. A profile is not a sharing target.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "ras-14",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Use sharing rules",
+    "type": "single",
+    "stem": "A criteria-based rule shares Installations where Type is Commercial with a group as Read Only. The OWD is Public Read/Write. What happens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The rule adds nothing because the OWD already gives more access"
+      },
+      {
+        "id": "b",
+        "text": "Group members lose edit access"
+      },
+      {
+        "id": "c",
+        "text": "Only the owner can edit"
+      },
+      {
+        "id": "d",
+        "text": "The rule overrides the OWD"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Sharing rules can only add access. They cannot reduce what the OWD already grants.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "ras-15",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Use manual sharing",
+    "type": "single",
+    "stem": "What happens to a manual share when the record owner changes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is removed"
+      },
+      {
+        "id": "b",
+        "text": "It is kept forever"
+      },
+      {
+        "id": "c",
+        "text": "It becomes a sharing rule"
+      },
+      {
+        "id": "d",
+        "text": "It becomes Read/Write"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Manual shares are lost when ownership changes, so they are weak for long-term needs.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ras-16",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Choose the least open tool",
+    "type": "single",
+    "stem": "A rep needs access to one customer account for a week. Which is the best fit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Manual sharing or an account team"
+      },
+      {
+        "id": "b",
+        "text": "Changing the OWD"
+      },
+      {
+        "id": "c",
+        "text": "A new profile"
+      },
+      {
+        "id": "d",
+        "text": "A new role for the whole department"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "One record for a short time is an exception, which is what manual sharing or a team handles.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "ras-17",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Choose the least open tool",
+    "type": "single",
+    "stem": "The Marketing department needs to see all Cases owned by Support, permanently, with read access. Which is best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A sharing rule to a Marketing public group"
+      },
+      {
+        "id": "b",
+        "text": "Manual sharing on each case"
+      },
+      {
+        "id": "c",
+        "text": "Changing the OWD of Case to Public Read/Write"
+      },
+      {
+        "id": "d",
+        "text": "View All Data"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A recurring group-level need is exactly what a sharing rule is for. The other options are too narrow or too broad.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ras-18",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Choose the least open tool",
+    "type": "single",
+    "stem": "Which permission gives a user access to every record of one object regardless of sharing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "View All on that object"
+      },
+      {
+        "id": "b",
+        "text": "Read on that object"
+      },
+      {
+        "id": "c",
+        "text": "Grant Access Using Hierarchies"
+      },
+      {
+        "id": "d",
+        "text": "Manual sharing"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "View All and Modify All on an object bypass sharing for that object. View All Data does it for every object.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ras-19",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Explain implicit sharing",
+    "type": "single",
+    "stem": "What does implicit sharing give a user who can see a contact?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Read access to the contact's parent account"
+      },
+      {
+        "id": "b",
+        "text": "Edit access to every account"
+      },
+      {
+        "id": "c",
+        "text": "Access to all contacts"
+      },
+      {
+        "id": "d",
+        "text": "Nothing"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Access to a child record gives the user read access to its parent account.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ras-20",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Use manual sharing, teams and Apex sharing",
+    "type": "single",
+    "stem": "Where do developers see the share records created by Apex managed sharing for a custom object?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In the object's __Share table"
+      },
+      {
+        "id": "b",
+        "text": "In the profile"
+      },
+      {
+        "id": "c",
+        "text": "In the role hierarchy"
+      },
+      {
+        "id": "d",
+        "text": "In a report type"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Each object with sharing has a share table, named ObjectName__Share for custom objects.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "ras-21",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Set the OWD",
+    "type": "single",
+    "stem": "After the admin changes an object's OWD, what runs in the background?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A sharing recalculation"
+      },
+      {
+        "id": "b",
+        "text": "A data import"
+      },
+      {
+        "id": "c",
+        "text": "A flow"
+      },
+      {
+        "id": "d",
+        "text": "A batch deletion"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Changing the sharing model recalculates access and can take time on large orgs.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ras-22",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Troubleshoot record access",
+    "type": "multi",
+    "stem": "Which TWO belong in the troubleshooting steps for a user who cannot see a record? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Check the user's object permission"
+      },
+      {
+        "id": "b",
+        "text": "Check the OWD and whether they are above the owner in the hierarchy"
+      },
+      {
+        "id": "c",
+        "text": "Rewrite the page layout"
+      },
+      {
+        "id": "d",
+        "text": "Clear their browser history"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Object permission and the OWD plus hierarchy come first. Layouts affect fields on screen and browser history rarely matters.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ras-23",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Use sharing rules",
+    "type": "multi",
+    "stem": "Which TWO can a sharing rule share records with? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A public group"
+      },
+      {
+        "id": "b",
+        "text": "A role and its subordinates"
+      },
+      {
+        "id": "c",
+        "text": "A profile"
+      },
+      {
+        "id": "d",
+        "text": "A single permission set"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Targets are roles, roles and subordinates, and public groups.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "ras-24",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Set the OWD",
+    "type": "single",
+    "stem": "Which OWD applies to the child in a master-detail relationship?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Controlled by Parent"
+      },
+      {
+        "id": "b",
+        "text": "Private only"
+      },
+      {
+        "id": "c",
+        "text": "Public Read/Write/Transfer"
+      },
+      {
+        "id": "d",
+        "text": "No Access"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The child has no owner field and inherits access from the master record.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "ras-25",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Choose the least open tool",
+    "type": "single",
+    "stem": "Which is the first thing to try when everyone should see an object but only owners should edit it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Set the OWD to Public Read Only"
+      },
+      {
+        "id": "b",
+        "text": "Create a sharing rule for each department"
+      },
+      {
+        "id": "c",
+        "text": "Use manual sharing for all records"
+      },
+      {
+        "id": "d",
+        "text": "Give everyone Modify All"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "One OWD setting meets the need. Sharing rules and manual shares would be needless work.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "ras-26",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Explain implicit sharing",
+    "type": "single",
+    "stem": "A user can see an account in a list but does not own it and has no sharing rule. What could explain it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Implicit sharing from a child contact or opportunity they can access"
+      },
+      {
+        "id": "b",
+        "text": "A broken validation rule"
+      },
+      {
+        "id": "c",
+        "text": "A deleted page layout"
+      },
+      {
+        "id": "d",
+        "text": "A wrong fiscal year"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Access to a child record can give read access to the parent account.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "ras-27",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Use manual sharing, teams and Apex sharing",
+    "type": "single",
+    "stem": "Which feature shares accounts by region and is built for sales structures that change often?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Territory management"
+      },
+      {
+        "id": "b",
+        "text": "Account teams"
+      },
+      {
+        "id": "c",
+        "text": "Queues"
+      },
+      {
+        "id": "d",
+        "text": "Validation rules"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Territory management assigns accounts to territories and shares them to the people in those territories.",
+    "difficulty": 2,
+    "tags": []
+  }
+]

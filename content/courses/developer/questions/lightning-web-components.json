@@ -347,7 +347,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "disconnectedCallback runs on removal.",
+    "explanation": "disconnectedCallback runs when the component is removed from the page. Use it to remove event listeners and timers so nothing leaks.",
     "difficulty": 2,
     "tags": []
   },

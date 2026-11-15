@@ -1,11 +1,11 @@
 ---
-title: Profiles, Permission Sets and Sharing
+title: Profiles and Permission Sets
 examSection: config-setup
 objectives:
   - 'Explain the four layers of Salesforce access: login, object, field and record'
   - 'Compare profiles, permission sets and permission set groups, and apply least privilege'
   - 'Read and set object permissions and field-level security, including their dependencies'
-  - 'Choose organization-wide defaults, role hierarchy, sharing rules and manual sharing to open up record access'
+  - 'Explain how profiles and permission sets differ from the record-sharing model'
   - 'Manage users safely, including freeze, deactivate, queues and public groups'
   - 'Troubleshoot "I can''t see it" and "I can see too much" using a repeatable checklist'
 youtubeId: null
@@ -108,50 +108,9 @@ Compare that with a page layout. Removing a field from a layout hides it only on
 
 ## The sharing model: which records?
 
-Sharing starts closed and opens up. You can **open** access beyond the baseline, but you can **never** use sharing to restrict below it.
+Profiles and permission sets decide **which objects and fields** a user may use. A separate system, the **sharing model**, decides **which records**. It starts closed at the organization-wide default and can only open up through the role hierarchy, sharing rules, manual sharing and teams. The next module, **Record Access and the Sharing Model**, covers it in full.
 
-### 1. Organization-wide defaults (OWD)
-
-OWD is the **most restrictive** baseline per object. The common settings are:
-
-| OWD | Meaning |
-|---|---|
-| **Private** | Only the owner (and people above them in the hierarchy) can see it |
-| **Public Read Only** | Everyone can see it, only the owner can edit |
-| **Public Read/Write** | Everyone can see and edit it |
-| **Public Read/Write/Transfer** | Same, plus changing the owner (Leads and Cases only) |
-| **Controlled by Parent** | Access follows the parent record |
-
-Start with the most restrictive setting that the business can live with, then open up.
-
-### 2. Role hierarchy
-
-Roles form a management tree. With "**Grant Access Using Hierarchies**" turned on for an object, people higher in the tree can see and edit the records owned by people beneath them. Roles are about **record access only**. They do not give object permissions or field access.
-
-### 3. Sharing rules
-
-A sharing rule automatically opens records to more people. There are two kinds: **owner-based** (records owned by certain people) and **criteria-based** (records that match a field condition). You can share with **roles, roles and subordinates, and public groups** (and territories, if your org uses them). Queues can be used to pick *which records* an owner-based rule covers, but not as the "share with" target. You **cannot** share with a profile. Sharing rules can only **add** access.
-
-### 4. Manual sharing
-
-When OWD is Private or Public Read Only, the record owner (or an admin, or someone above them) can click **Sharing** on a single record to share it with a person or group. This is handy but does not scale, so do not rely on it for ongoing business rules.
-
-### 5. Teams
-
-Account teams and opportunity teams let a record's team members get access to it.
-
-### The order of thinking
-
-When someone cannot see a record, ask in this order:
-
-1. Do they have **Read** on the object (profile or permission set)?
-2. Does **OWD** let them see it? If Private, are they the owner or above the owner in the role hierarchy?
-3. Is there a **sharing rule**, **team** or **manual share** that gives them access?
-4. Do they hold **View All** or **Modify All** on the object, or View All Data?
-
-:::exam-trap
-Sharing can only **open up**. If OWD is Private, no sharing rule can make a record *more* private. Also, "I want everyone to see it but only the owner to edit it" is **Public Read Only**, not Private plus a sharing rule.
-:::
+Remember the order for "I can't see it": **object permission first, then record access, then field-level security.**
 
 ## Managing users
 

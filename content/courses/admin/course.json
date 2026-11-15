@@ -53,6 +53,7 @@
   "moduleIds": [
     "objects-and-fields",
     "profiles-and-permission-sets",
+    "record-access-and-sharing",
     "data-import-export",
     "duplicates-and-data-quality",
     "reports",

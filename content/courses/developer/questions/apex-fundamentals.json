@@ -91,7 +91,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Lists are zero-based.",
+    "explanation": "Apex lists are zero-based, so the first item is list[0] and the last is list[list.size() - 1]. Asking for an index equal to the size throws a ListException.",
     "difficulty": 1,
     "tags": []
   },
@@ -443,7 +443,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Constants use static final.",
+    "explanation": "A constant is declared with static final, usually private. Final means the value is set once, and static means one copy belongs to the class, not each object.",
     "difficulty": 1,
     "tags": []
   },
@@ -475,7 +475,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Apex strings use single quotes.",
+    "explanation": "Apex strings use single quotes, such as 'Khanyisa'. Double quotes cause a compile error, which is a common slip for developers coming from other languages.",
     "difficulty": 1,
     "tags": []
   },
@@ -572,7 +572,7 @@
       "a",
       "b"
     ],
-    "explanation": "Apex has List, Set and Map.",
+    "explanation": "Apex has three collection types: List (ordered, duplicates allowed), Set (unique values) and Map (key to value pairs). It has no Stack or tuple type.",
     "difficulty": 1,
     "tags": []
   },
@@ -636,7 +636,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Static members belong to the class.",
+    "explanation": "A static member belongs to the class itself, so you call it as ClassName.method() without creating an object. An instance method needs an object first.",
     "difficulty": 1,
     "tags": []
   },
