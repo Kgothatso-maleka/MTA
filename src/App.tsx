@@ -1,4 +1,7 @@
 import { Link, Route, Routes } from 'react-router-dom';
+import CoursePage from './pages/CoursePage';
+import Home from './pages/Home';
+import LessonPage from './pages/LessonPage';
 
 export default function App() {
   return (
@@ -12,7 +15,10 @@ export default function App() {
       </header>
       <main>
         <Routes>
-          <Route path="/" element={<p>Salesforce exam prep and job-ready skills.</p>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/c/:courseId" element={<CoursePage />} />
+          <Route path="/c/:courseId/m/:moduleId" element={<LessonPage />} />
+          <Route path="*" element={<p>Page not found.</p>} />
         </Routes>
       </main>
     </div>
