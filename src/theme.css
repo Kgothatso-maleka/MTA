@@ -1,0 +1,32 @@
+:root {
+  --mta-black: #0B0B0B;
+  --mta-gold: #C9A227;
+  --mta-ink: #F5F1E6;
+  --mta-muted: #B8B2A0;
+  --mta-panel: #151515;
+  --mta-border: #2A2A2A;
+  --mta-good: #4CAF7A;
+  --mta-bad: #E0645C;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-head: 'Playfair Display', Georgia, serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--mta-black); color: var(--mta-ink); font-family: var(--font-body); line-height: 1.6; }
+h1, h2, h3 { font-family: var(--font-head); color: var(--mta-gold); line-height: 1.25; }
+a { color: var(--mta-gold); }
+button { font-family: inherit; cursor: pointer; background: var(--mta-gold); color: var(--mta-black); border: 0; border-radius: 6px; padding: 0.6rem 1rem; font-weight: 700; min-height: 44px; }
+button.secondary { background: transparent; color: var(--mta-gold); border: 1px solid var(--mta-gold); }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+:focus-visible { outline: 3px solid var(--mta-gold); outline-offset: 2px; }
+.container { max-width: 880px; margin: 0 auto; padding: 1rem; }
+.panel { background: var(--mta-panel); border: 1px solid var(--mta-border); border-radius: 10px; padding: 1rem; margin: 1rem 0; }
+.banner { border: 1px solid var(--mta-gold); border-radius: 8px; padding: 0.75rem 1rem; margin: 1rem 0; }
+.progress { height: 8px; background: var(--mta-border); border-radius: 4px; overflow: hidden; }
+.progress > span { display: block; height: 100%; background: var(--mta-gold); }
+aside.callout { border-left: 4px solid var(--mta-gold); background: var(--mta-panel); padding: 0.5rem 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+aside.callout > .callout-label { font-weight: 700; color: var(--mta-gold); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.05em; }
+aside.callout.exam-trap { border-left-color: var(--mta-bad); }
+aside.callout.on-the-job { border-left-color: var(--mta-good); }
+.video-frame { position: relative; aspect-ratio: 16 / 9; background: #000; border-radius: 10px; overflow: hidden; }
+.video-frame iframe, .video-frame button.thumb { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+label.option { display: flex; gap: 0.6rem; padding: 0.6rem; border: 1px solid var(--mta-border); border-radius: 8px; margin: 0.4rem 0; align-items: flex-start; }
