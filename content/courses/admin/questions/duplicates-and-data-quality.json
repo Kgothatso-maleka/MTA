@@ -735,5 +735,37 @@
     "explanation": "A dependent picklist filters its values by a controlling field, which keeps combinations consistent.",
     "difficulty": 1,
     "tags": []
+  },
+  {
+    "id": "asc-20",
+    "moduleId": "duplicates-and-data-quality",
+    "examSection": "data-analytics",
+    "objective": "Manage duplicates",
+    "type": "single",
+    "stem": "Reps keep creating the same lead twice. The admin wants to warn them before saving. Which is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A matching rule and a duplicate rule set to alert"
+      },
+      {
+        "id": "b",
+        "text": "A validation rule on every field"
+      },
+      {
+        "id": "c",
+        "text": "A sharing rule"
+      },
+      {
+        "id": "d",
+        "text": "A new record type"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Duplicate rules use matching rules to find likely duplicates and can alert or block.",
+    "difficulty": 1,
+    "tags": []
   }
 ]

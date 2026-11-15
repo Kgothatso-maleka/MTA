@@ -639,5 +639,69 @@
     "explanation": "With sharing respects the running user's record access.",
     "difficulty": 1,
     "tags": []
+  },
+  {
+    "id": "dsc-22",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Enforce security",
+    "type": "single",
+    "stem": "A class declared with sharing calls a method in a class declared without sharing. Which sharing does the called method use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The called class's own setting, without sharing"
+      },
+      {
+        "id": "b",
+        "text": "Always the caller's setting"
+      },
+      {
+        "id": "c",
+        "text": "Always user mode"
+      },
+      {
+        "id": "d",
+        "text": "Whichever is stricter"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A class's declared sharing applies to code in that class. Only inherited sharing takes the caller's mode.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "dsc-23",
+    "moduleId": "data-modeling-and-security",
+    "examSection": "dev-fundamentals",
+    "objective": "Enforce security",
+    "type": "single",
+    "stem": "A developer needs the query to respect the running user's field access and sharing. Which change does that?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Add WITH USER_MODE to the SOQL"
+      },
+      {
+        "id": "b",
+        "text": "Declare the class global"
+      },
+      {
+        "id": "c",
+        "text": "Add the transient keyword"
+      },
+      {
+        "id": "d",
+        "text": "Use Database.queryLocator"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "WITH USER_MODE enforces the user's object, field and sharing permissions in the query.",
+    "difficulty": 2,
+    "tags": []
   }
 ]

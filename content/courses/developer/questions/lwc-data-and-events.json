@@ -671,5 +671,102 @@
     "explanation": "refreshApex refreshes cached wire results.",
     "difficulty": 2,
     "tags": []
+  },
+  {
+    "id": "dsc-32",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Call Apex",
+    "type": "single",
+    "stem": "This wire is used.\n\n    @wire(getLate) late;\n\nand the Apex method is declared like this.\n\n    @AuraEnabled\n    public static List<Installation__c> getLate() { ... }\n\nWhat is the problem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The method must be @AuraEnabled(cacheable=true) to be wired"
+      },
+      {
+        "id": "b",
+        "text": "The method must return a Map"
+      },
+      {
+        "id": "c",
+        "text": "The method must be called imperatively with await"
+      },
+      {
+        "id": "d",
+        "text": "The class must be global"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Wired Apex methods must be cacheable. Methods that change data cannot be cacheable and are called imperatively.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsc-33",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Call Apex",
+    "type": "single",
+    "stem": "After a user clicks Save, an imperative Apex call updates a record, but the wired list on the page still shows the old data. What should the developer call?",
+    "options": [
+      {
+        "id": "a",
+        "text": "refreshApex on the wired result"
+      },
+      {
+        "id": "b",
+        "text": "dispatchEvent with bubbles"
+      },
+      {
+        "id": "c",
+        "text": "connectedCallback"
+      },
+      {
+        "id": "d",
+        "text": "NavigationMixin.Navigate"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "refreshApex re-reads a wired result so the page shows the new data.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsc-34",
+    "moduleId": "lwc-data-and-events",
+    "examSection": "user-interface",
+    "objective": "Use Lightning Data Service",
+    "type": "multi",
+    "stem": "Which TWO statements about @wire are true? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "It needs an Apex method with cacheable=true when it calls Apex"
+      },
+      {
+        "id": "b",
+        "text": "A $ prefix makes a parameter reactive"
+      },
+      {
+        "id": "c",
+        "text": "It can be used to call Apex methods that insert records"
+      },
+      {
+        "id": "d",
+        "text": "It runs only when a button is clicked"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Wire is reactive and supports only cacheable reads. Changes need imperative calls.",
+    "difficulty": 2,
+    "tags": []
   }
 ]

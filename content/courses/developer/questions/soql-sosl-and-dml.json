@@ -671,5 +671,165 @@
     "explanation": "Fields not selected cannot be read and cause an error.",
     "difficulty": 2,
     "tags": []
+  },
+  {
+    "id": "dsc-17",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Query relationships",
+    "type": "single",
+    "stem": "What does this code give?\n\n    List<Account> accs = [SELECT Name, (SELECT LastName FROM Contacts) FROM Account LIMIT 1];\n    Integer n = accs[0].Contacts.size();",
+    "options": [
+      {
+        "id": "a",
+        "text": "The number of contacts on the first account, which may be 0"
+      },
+      {
+        "id": "b",
+        "text": "A null value if there are no contacts"
+      },
+      {
+        "id": "c",
+        "text": "An error, because subqueries are not allowed"
+      },
+      {
+        "id": "d",
+        "text": "The total number of contacts in the org"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The child relationship returns a list, which is empty rather than null when there are no children.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsc-18",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Write SOQL",
+    "type": "single",
+    "stem": "How do you read the count from this query?\n\n    AggregateResult[] r = [SELECT COUNT(Id) total FROM Account];",
+    "options": [
+      {
+        "id": "a",
+        "text": "(Integer) r[0].get('total')"
+      },
+      {
+        "id": "b",
+        "text": "r[0].total"
+      },
+      {
+        "id": "c",
+        "text": "r.size()"
+      },
+      {
+        "id": "d",
+        "text": "r[0].count"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Aggregate results are read with get and the alias, and the value must be cast to the expected type.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsc-19",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Use DML",
+    "type": "single",
+    "stem": "Three accounts are inserted with this code. The second has no Name, which is required.\n\n    List<Database.SaveResult> r = Database.insert(accs, false);\n\nHow many accounts are saved?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2"
+      },
+      {
+        "id": "b",
+        "text": "0"
+      },
+      {
+        "id": "c",
+        "text": "3"
+      },
+      {
+        "id": "d",
+        "text": "1"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "With allOrNone set to false, the valid records are saved and the failing one is reported in its SaveResult.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsc-20",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Use DML",
+    "type": "single",
+    "stem": "The same three accounts are inserted with the statement insert accs; and the second record fails validation. What happens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A DmlException is thrown and none are saved"
+      },
+      {
+        "id": "b",
+        "text": "Two are saved and one fails quietly"
+      },
+      {
+        "id": "c",
+        "text": "All three are saved"
+      },
+      {
+        "id": "d",
+        "text": "Only the first is saved"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A plain DML statement is all or nothing. Any failure throws an exception and rolls back the statement.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsc-21",
+    "moduleId": "soql-sosl-and-dml",
+    "examSection": "dev-fundamentals",
+    "objective": "Write SOQL",
+    "type": "single",
+    "stem": "This method builds a query.\n\n    String q = 'SELECT Id FROM Account WHERE Name = \\'' + input + '\\'';\n    List<Account> a = Database.query(q);\n\nWhat is the main risk and the best fix?",
+    "options": [
+      {
+        "id": "a",
+        "text": "SOQL injection; use a bind variable such as :input"
+      },
+      {
+        "id": "b",
+        "text": "A governor limit; use SOSL"
+      },
+      {
+        "id": "c",
+        "text": "Mixed DML; use a future method"
+      },
+      {
+        "id": "d",
+        "text": "Heap size; use a Set"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Concatenating user input lets a user change the query. A bind variable in the query, or String.escapeSingleQuotes at minimum, prevents that.",
+    "difficulty": 2,
+    "tags": []
   }
 ]

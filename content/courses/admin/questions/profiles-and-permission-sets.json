@@ -703,5 +703,69 @@
     "explanation": "If a peer can see records, record access is probably fine, so check whether the user has Read on the object through their profile or permission sets.",
     "difficulty": 3,
     "tags": []
+  },
+  {
+    "id": "asc-04",
+    "moduleId": "profiles-and-permission-sets",
+    "examSection": "config-setup",
+    "objective": "Troubleshoot access",
+    "type": "single",
+    "stem": "A sales rep can open Installation records but the Discount field does not appear on the page or in reports. The page layout includes the field. What is the most likely cause?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Field-level security hides the field from the rep"
+      },
+      {
+        "id": "b",
+        "text": "The record type is wrong"
+      },
+      {
+        "id": "c",
+        "text": "The OWD is Private"
+      },
+      {
+        "id": "d",
+        "text": "The rep's role is too low"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "If a field is on the layout but still hidden, check field-level security on the profile and permission sets.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asc-05",
+    "moduleId": "profiles-and-permission-sets",
+    "examSection": "config-setup",
+    "objective": "Apply least privilege",
+    "type": "single",
+    "stem": "Finance needs to read every Installation record but must not edit anything, and no new role can be created. Which is the best option?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A permission set with View All on Installation"
+      },
+      {
+        "id": "b",
+        "text": "A sharing rule to the Finance profile"
+      },
+      {
+        "id": "c",
+        "text": "Modify All Data on the profile"
+      },
+      {
+        "id": "d",
+        "text": "A new page layout"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "View All on the object lets users read all records without a role change. Profiles are not sharing targets, and Modify All Data is far too wide.",
+    "difficulty": 3,
+    "tags": []
   }
 ]

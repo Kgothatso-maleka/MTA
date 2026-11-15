@@ -766,5 +766,133 @@
     "explanation": "Users need permission to run flows. A screen flow can then run in user or system context depending on its settings.",
     "difficulty": 3,
     "tags": []
+  },
+  {
+    "id": "asc-14",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Choose the right flow type",
+    "type": "single",
+    "stem": "A field on the same record must be set when the record is saved, using the fewest resources. Which flow type fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A record-triggered flow run before the save"
+      },
+      {
+        "id": "b",
+        "text": "A record-triggered flow run after the save"
+      },
+      {
+        "id": "c",
+        "text": "A scheduled flow"
+      },
+      {
+        "id": "d",
+        "text": "A screen flow"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Before-save flows update the triggering record without extra DML, so they are fastest.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asc-15",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Choose the right flow type",
+    "type": "single",
+    "stem": "When an Opportunity closes won, a related Installation record must be created. Which flow fits best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A record-triggered flow run after the save"
+      },
+      {
+        "id": "b",
+        "text": "A before-save flow"
+      },
+      {
+        "id": "c",
+        "text": "A screen flow"
+      },
+      {
+        "id": "d",
+        "text": "A scheduled flow"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Creating related records needs the record Id, so it is done after the save.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asc-16",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Choose the right flow type",
+    "type": "single",
+    "stem": "Every night, all open cases older than 5 days should get a task for a manager. Which tool fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A scheduled flow"
+      },
+      {
+        "id": "b",
+        "text": "A screen flow"
+      },
+      {
+        "id": "c",
+        "text": "A validation rule"
+      },
+      {
+        "id": "d",
+        "text": "An approval process"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Scheduled flows run on a schedule against a set of records.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "asc-17",
+    "moduleId": "flow-builder",
+    "examSection": "automation",
+    "objective": "Handle errors",
+    "type": "single",
+    "stem": "A record-triggered flow sometimes fails when a required field is blank, and the user sees a generic error. What should the admin add?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fault path that logs the error and shows a clear message"
+      },
+      {
+        "id": "b",
+        "text": "A page layout"
+      },
+      {
+        "id": "c",
+        "text": "A new profile"
+      },
+      {
+        "id": "d",
+        "text": "A larger heap"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Fault paths let a flow handle errors gracefully and tell someone what went wrong.",
+    "difficulty": 2,
+    "tags": []
   }
 ]

@@ -736,5 +736,37 @@
     "explanation": "Clear, concise instructions and explicit refusals improve behaviour.",
     "difficulty": 2,
     "tags": []
+  },
+  {
+    "id": "asc-29",
+    "moduleId": "agentforce-fundamentals",
+    "examSection": "agentforce-ai",
+    "objective": "Choose action sources",
+    "type": "single",
+    "stem": "An agent must look up an order's status from Salesforce data. Which is the usual way to give the agent that ability?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Add an action built from a flow"
+      },
+      {
+        "id": "b",
+        "text": "Write a Visualforce page"
+      },
+      {
+        "id": "c",
+        "text": "Create a report folder"
+      },
+      {
+        "id": "d",
+        "text": "Change the OWD"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Agent actions can be built from flows, prompt templates, Apex and APIs, and flows are the common admin choice.",
+    "difficulty": 1,
+    "tags": []
   }
 ]

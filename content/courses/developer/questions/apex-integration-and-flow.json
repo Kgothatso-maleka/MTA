@@ -671,5 +671,69 @@
     "explanation": "Passwords and tokens in code end up in source control and logs. Keep them in a Named Credential or External Credential so Salesforce stores and injects them safely.",
     "difficulty": 1,
     "tags": []
+  },
+  {
+    "id": "dsc-27",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Make callouts",
+    "type": "single",
+    "stem": "This code runs in one transaction.\n\n    insert new Invoice__c(Name = 'INV-1');\n    HttpResponse r = new Http().send(req);\n\nWhat happens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A CalloutException for uncommitted work pending"
+      },
+      {
+        "id": "b",
+        "text": "The invoice is inserted and the callout succeeds"
+      },
+      {
+        "id": "c",
+        "text": "The callout runs before the insert"
+      },
+      {
+        "id": "d",
+        "text": "The invoice insert is skipped"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A callout is not allowed after DML in the same transaction. Do the callout first, or run it in a future or queueable job.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsc-28",
+    "moduleId": "apex-integration-and-flow",
+    "examSection": "process-logic",
+    "objective": "Make callouts",
+    "type": "single",
+    "stem": "What is wrong with this endpoint?\n\n    req.setEndpoint('https://api.example.com/v1/invoices?key=abc123secret');",
+    "options": [
+      {
+        "id": "a",
+        "text": "A secret is hardcoded in code; use a Named Credential"
+      },
+      {
+        "id": "b",
+        "text": "The URL must use http"
+      },
+      {
+        "id": "c",
+        "text": "It needs a Remote Site Setting only"
+      },
+      {
+        "id": "d",
+        "text": "It needs a trigger"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Secrets in code are exposed in source control. A Named Credential stores the endpoint and authentication outside the code.",
+    "difficulty": 1,
+    "tags": []
   }
 ]

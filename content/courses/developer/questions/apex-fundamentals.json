@@ -704,5 +704,165 @@
     "explanation": "Apex has switch on with when and when else clauses.",
     "difficulty": 2,
     "tags": []
+  },
+  {
+    "id": "dsc-12",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Use collections",
+    "type": "single",
+    "stem": "What does this code print?\n\n    Set<String> s = new Set<String>{'a', 'b', 'a'};\n    System.debug(s.size());",
+    "options": [
+      {
+        "id": "a",
+        "text": "2"
+      },
+      {
+        "id": "b",
+        "text": "3"
+      },
+      {
+        "id": "c",
+        "text": "1"
+      },
+      {
+        "id": "d",
+        "text": "An error"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A set stores only unique values, so the duplicate 'a' is ignored and the size is 2.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsc-13",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Use collections",
+    "type": "single",
+    "stem": "What happens when this runs?\n\n    List<Integer> n = new List<Integer>{10, 20, 30};\n    Integer x = n[3];",
+    "options": [
+      {
+        "id": "a",
+        "text": "A ListException for an index out of bounds"
+      },
+      {
+        "id": "b",
+        "text": "x is set to null"
+      },
+      {
+        "id": "c",
+        "text": "x is set to 30"
+      },
+      {
+        "id": "d",
+        "text": "The code does not compile"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Valid indexes are 0 to 2. Reading index 3 throws a ListException at runtime.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsc-14",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Handle errors",
+    "type": "single",
+    "stem": "What happens at runtime?\n\n    Map<Id, Account> m = new Map<Id, Account>([SELECT Id, Name FROM Account]);\n    Account a = m.get(c.AccountId);\n    String n = a.Name;\n\nSuppose c.AccountId is null.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A NullPointerException on the last line"
+      },
+      {
+        "id": "b",
+        "text": "n is set to an empty string"
+      },
+      {
+        "id": "c",
+        "text": "The query is run again"
+      },
+      {
+        "id": "d",
+        "text": "A DmlException"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "get returns null when the key is missing, and reading a field from null throws a NullPointerException. Check for null first.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsc-15",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Handle errors",
+    "type": "single",
+    "stem": "What is the result?\n\n    try {\n        Account a;\n        a.Name = 'Test';\n    } catch (DmlException e) {\n        System.debug('DML');\n    } catch (Exception e) {\n        System.debug('General');\n    }",
+    "options": [
+      {
+        "id": "a",
+        "text": "It prints General"
+      },
+      {
+        "id": "b",
+        "text": "It prints DML"
+      },
+      {
+        "id": "c",
+        "text": "It prints both lines"
+      },
+      {
+        "id": "d",
+        "text": "It does not compile"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Reading or writing a field on a null variable throws a NullPointerException, which is not a DmlException, so the general catch handles it.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsc-16",
+    "moduleId": "apex-fundamentals",
+    "examSection": "dev-fundamentals",
+    "objective": "Use inheritance and interfaces",
+    "type": "single",
+    "stem": "A parent class has a method declared public virtual String greet(). A child class extends it. What must the child do to replace the method?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Declare the method with the override keyword"
+      },
+      {
+        "id": "b",
+        "text": "Declare it static"
+      },
+      {
+        "id": "c",
+        "text": "Use the final keyword"
+      },
+      {
+        "id": "d",
+        "text": "Nothing, it replaces it automatically"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Only virtual or abstract methods can be replaced, and the child method must be marked override.",
+    "difficulty": 2,
+    "tags": []
   }
 ]

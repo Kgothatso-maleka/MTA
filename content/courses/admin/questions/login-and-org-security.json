@@ -671,5 +671,69 @@
     "explanation": "Field Audit Trail is a paid add-on that extends field history retention.",
     "difficulty": 3,
     "tags": []
+  },
+  {
+    "id": "asc-06",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Secure logins",
+    "type": "single",
+    "stem": "Users must be forced to log in only from the office network. Which is the most precise tool?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Login IP ranges on the profile"
+      },
+      {
+        "id": "b",
+        "text": "Password complexity"
+      },
+      {
+        "id": "c",
+        "text": "Login hours on the profile"
+      },
+      {
+        "id": "d",
+        "text": "A longer session timeout"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Login IP ranges restrict where a profile's users can log in from. Login hours restrict when.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asc-07",
+    "moduleId": "login-and-org-security",
+    "examSection": "config-setup",
+    "objective": "Secure logins",
+    "type": "single",
+    "stem": "A user is locked out after repeated wrong passwords. Which admin action fixes it quickly?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unlock the user in Setup"
+      },
+      {
+        "id": "b",
+        "text": "Delete the user"
+      },
+      {
+        "id": "c",
+        "text": "Change the OWD"
+      },
+      {
+        "id": "d",
+        "text": "Clone the profile"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Admins can unlock a locked-out user from the user record or the Users page.",
+    "difficulty": 1,
+    "tags": []
   }
 ]

@@ -639,5 +639,69 @@
     "explanation": "Change sets and the CLI deploy metadata. The Import Wizard loads data.",
     "difficulty": 1,
     "tags": []
+  },
+  {
+    "id": "dsc-39",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Deploy changes",
+    "type": "single",
+    "stem": "A deployment to production includes a new class and its test. The team wants to avoid rerunning tests during the release window. What should they do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Run a validation earlier, then do a quick deploy"
+      },
+      {
+        "id": "b",
+        "text": "Skip the tests with a setting"
+      },
+      {
+        "id": "c",
+        "text": "Use a change set to bypass tests"
+      },
+      {
+        "id": "d",
+        "text": "Deploy to a scratch org"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A successful validation produces a deployment that can be quick deployed without running tests again.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsc-40",
+    "moduleId": "debugging-and-deployment",
+    "examSection": "testing-deploy",
+    "objective": "Use debug logs",
+    "type": "single",
+    "stem": "A debug log line reads 'USER_DEBUG|[12]|DEBUG|total=5'. What does it show?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Output from a System.debug call at line 12"
+      },
+      {
+        "id": "b",
+        "text": "A SOQL query at line 12"
+      },
+      {
+        "id": "c",
+        "text": "A DML statement at line 12"
+      },
+      {
+        "id": "d",
+        "text": "A limit warning"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "USER_DEBUG entries come from System.debug, and the number in brackets is the code line.",
+    "difficulty": 1,
+    "tags": []
   }
 ]

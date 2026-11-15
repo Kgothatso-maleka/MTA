@@ -734,5 +734,37 @@
     "explanation": "Clear instructions, examples and boundaries improve outputs.",
     "difficulty": 1,
     "tags": []
+  },
+  {
+    "id": "asc-30",
+    "moduleId": "prompt-builder-and-trust-layer",
+    "examSection": "agentforce-ai",
+    "objective": "Describe the Einstein Trust Layer",
+    "type": "single",
+    "stem": "A customer asks what protects their personal data when a prompt is sent to a language model. Which best describes the Trust Layer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Masking, zero data retention, toxicity detection and an audit trail around model calls"
+      },
+      {
+        "id": "b",
+        "text": "A new profile for AI users"
+      },
+      {
+        "id": "c",
+        "text": "A sharing rule for models"
+      },
+      {
+        "id": "d",
+        "text": "A larger storage limit"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The Trust Layer adds data masking, secure retrieval, zero data retention, toxicity detection and audit around calls to language models.",
+    "difficulty": 2,
+    "tags": []
   }
 ]

@@ -638,5 +638,37 @@
     "explanation": "Chatter supports posts, polls, questions, links and files.",
     "difficulty": 1,
     "tags": []
+  },
+  {
+    "id": "asc-28",
+    "moduleId": "chatter-appexchange-and-mobile",
+    "examSection": "productivity-collab",
+    "objective": "Choose the right Chatter group type",
+    "type": "single",
+    "stem": "The CEO wants a group where only managers can post and everyone else can only read. Which group type fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A broadcast-only group"
+      },
+      {
+        "id": "b",
+        "text": "A public group"
+      },
+      {
+        "id": "c",
+        "text": "An unlisted group"
+      },
+      {
+        "id": "d",
+        "text": "A private group"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Broadcast-only groups limit posting to owners and managers.",
+    "difficulty": 2,
+    "tags": []
   }
 ]

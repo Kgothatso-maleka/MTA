@@ -638,5 +638,37 @@
     "explanation": "Link the reports to one parent case and give agents and customers one article to use.",
     "difficulty": 2,
     "tags": []
+  },
+  {
+    "id": "asc-27",
+    "moduleId": "knowledge-omni-channel-and-service-tools",
+    "examSection": "service-support",
+    "objective": "Describe Omni-Channel",
+    "type": "single",
+    "stem": "Cases must be routed automatically to available agents based on capacity. Which feature fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Omni-Channel"
+      },
+      {
+        "id": "b",
+        "text": "Case merge"
+      },
+      {
+        "id": "c",
+        "text": "Web-to-Case"
+      },
+      {
+        "id": "d",
+        "text": "Quick Text"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Omni-Channel pushes work to agents based on presence and capacity.",
+    "difficulty": 1,
+    "tags": []
   }
 ]

@@ -1030,5 +1030,165 @@
     "explanation": "Field-level Required is enforced everywhere. Layout and help text apply only to the UI or give no enforcement.",
     "difficulty": 2,
     "tags": []
+  },
+  {
+    "id": "asc-08",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Use record types",
+    "type": "single",
+    "stem": "Two product lines need different picklist values for Stage and different page layouts. What should the admin use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Record types with a page layout assignment"
+      },
+      {
+        "id": "b",
+        "text": "A formula field"
+      },
+      {
+        "id": "c",
+        "text": "A validation rule"
+      },
+      {
+        "id": "d",
+        "text": "A list view"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Record types control picklist values and, with layout assignments, which layout each group sees.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asc-09",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Validate data",
+    "type": "single",
+    "stem": "A field must be required only when Status equals Closed. Which is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A validation rule"
+      },
+      {
+        "id": "b",
+        "text": "Make the field required on the layout"
+      },
+      {
+        "id": "c",
+        "text": "A roll-up summary"
+      },
+      {
+        "id": "d",
+        "text": "A picklist value"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A required field is always required. A validation rule can enforce a condition.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "asc-10",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Build Lightning pages",
+    "type": "single",
+    "stem": "A manager wants the Installation page to show a Discount Reason field only when Type equals Commercial. Which is the best fit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A conditional visibility rule in Dynamic Forms"
+      },
+      {
+        "id": "b",
+        "text": "A validation rule"
+      },
+      {
+        "id": "c",
+        "text": "A new profile"
+      },
+      {
+        "id": "d",
+        "text": "A record type for every type"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Dynamic Forms can show fields only when conditions are met, without separate layouts.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asc-11",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Create fields",
+    "type": "single",
+    "stem": "A picklist for Model must show only values that fit the selected Product Family. Which feature fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A dependent picklist"
+      },
+      {
+        "id": "b",
+        "text": "A formula field"
+      },
+      {
+        "id": "c",
+        "text": "A roll-up summary"
+      },
+      {
+        "id": "d",
+        "text": "A lookup filter"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Dependent picklists show values based on a controlling field.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "asc-12",
+    "moduleId": "objects-and-fields",
+    "examSection": "object-manager",
+    "objective": "Create fields",
+    "type": "single",
+    "stem": "Installation needs a count of its related Jobs shown on the parent. The relationship is master-detail. Which is the simplest option?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A roll-up summary field"
+      },
+      {
+        "id": "b",
+        "text": "A scheduled flow"
+      },
+      {
+        "id": "c",
+        "text": "An Apex trigger"
+      },
+      {
+        "id": "d",
+        "text": "A report on Jobs"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Roll-up summary fields count and total child records for the master record with no code.",
+    "difficulty": 1,
+    "tags": []
   }
 ]

@@ -639,5 +639,262 @@
     "explanation": "Trigger.operationType returns a System.TriggerOperation value.",
     "difficulty": 3,
     "tags": []
+  },
+  {
+    "id": "dsc-01",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Bulkify code",
+    "type": "single",
+    "stem": "A developer writes this trigger.\n\n    trigger ContactTrigger on Contact (before insert) {\n        for (Contact c : Trigger.new) {\n            Account a = [SELECT Id, Name FROM Account WHERE Id = :c.AccountId];\n            c.Description = a.Name;\n        }\n    }\n\n200 contacts are loaded in one data load. What happens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The load fails with a limit error after the 100th query"
+      },
+      {
+        "id": "b",
+        "text": "It succeeds because the trigger is a before trigger"
+      },
+      {
+        "id": "c",
+        "text": "It succeeds but only 100 contacts are saved"
+      },
+      {
+        "id": "d",
+        "text": "Salesforce splits the load into 200 queries automatically"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Each loop pass runs a query, so 200 records need 200 queries. The synchronous limit is 100, and the uncatchable limit exception rolls the whole load back. The fix is one query on a Set of AccountIds.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsc-02",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Write triggers",
+    "type": "single",
+    "stem": "What does this trigger do?\n\n    trigger InstallationTrigger on Installation__c (before insert) {\n        for (Installation__c i : Trigger.new) {\n            if (i.Planned_Date__c == null) { i.Planned_Date__c = Date.today().addDays(14); }\n        }\n    }",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fills a blank planned date on each new record with no DML statement"
+      },
+      {
+        "id": "b",
+        "text": "Inserts a second installation for each blank date"
+      },
+      {
+        "id": "c",
+        "text": "Fails because Trigger.new cannot be changed"
+      },
+      {
+        "id": "d",
+        "text": "Updates the date only after the record is committed"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "In a before trigger the records are not saved yet, so changing Trigger.new fields is saved automatically and needs no update statement.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsc-03",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Use context variables",
+    "type": "single",
+    "stem": "This after update trigger runs.\n\n    for (Account a : Trigger.new) {\n        a.Description = 'Reviewed';\n    }\n\nWhat is the result?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A runtime error, because records in after triggers are read-only"
+      },
+      {
+        "id": "b",
+        "text": "The description is saved normally"
+      },
+      {
+        "id": "c",
+        "text": "The description is saved only for the first record"
+      },
+      {
+        "id": "d",
+        "text": "The trigger runs twice"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Trigger.new is read-only in after triggers. To change the same records you must use a before trigger, or query and update separate copies, which risks recursion.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsc-04",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Prevent recursion",
+    "type": "single",
+    "stem": "A trigger on Opportunity must act only when Stage actually changes. Which condition is correct inside an after update loop?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Trigger.oldMap.get(o.Id).StageName != o.StageName"
+      },
+      {
+        "id": "b",
+        "text": "Trigger.old == Trigger.new"
+      },
+      {
+        "id": "c",
+        "text": "o.StageName != null"
+      },
+      {
+        "id": "d",
+        "text": "Trigger.isChanged"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "oldMap holds the previous values by Id, so comparing the old and new StageName detects a real change.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsc-05",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Prevent recursion",
+    "type": "single",
+    "stem": "An after update trigger updates the same object, which fires the trigger again. Which design prevents the second run?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A static Boolean in a handler class that is set after the first run"
+      },
+      {
+        "id": "b",
+        "text": "A global Boolean in the trigger body"
+      },
+      {
+        "id": "c",
+        "text": "A custom label"
+      },
+      {
+        "id": "d",
+        "text": "A validation rule"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Static variables keep their value for the whole transaction, so a flag set on the first pass can stop repeat processing. A variable declared inside the trigger body resets on every run.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsc-06",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Describe order of execution",
+    "type": "single",
+    "stem": "A before-save flow sets Priority to High on a Case. A before trigger on the same object then reads Trigger.new[0].Priority. What does it see?",
+    "options": [
+      {
+        "id": "a",
+        "text": "High, because before-save flows run before before triggers"
+      },
+      {
+        "id": "b",
+        "text": "The old value, because flows run last"
+      },
+      {
+        "id": "c",
+        "text": "Null, because flows never change fields"
+      },
+      {
+        "id": "d",
+        "text": "It depends on the user's profile"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Before-save flows run first in the order of execution, so the trigger sees the value the flow set.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsc-07",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Describe order of execution",
+    "type": "single",
+    "stem": "A validation rule requires Region__c to be filled. A before insert trigger fills Region__c when it is blank. A user saves a record with the field blank. What happens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The save succeeds, because the before trigger runs before validation rules"
+      },
+      {
+        "id": "b",
+        "text": "The save fails with the validation message"
+      },
+      {
+        "id": "c",
+        "text": "The save succeeds only for admins"
+      },
+      {
+        "id": "d",
+        "text": "The trigger is skipped"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Before triggers run before custom validation, so the trigger can supply the value and the rule then passes.",
+    "difficulty": 3,
+    "tags": []
+  },
+  {
+    "id": "dsc-08",
+    "moduleId": "apex-triggers-and-order-of-execution",
+    "examSection": "process-logic",
+    "objective": "Use context variables",
+    "type": "multi",
+    "stem": "Which TWO statements about a before insert trigger are true? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Trigger.new fields can be changed without DML"
+      },
+      {
+        "id": "b",
+        "text": "The records do not have Ids yet"
+      },
+      {
+        "id": "c",
+        "text": "Trigger.old contains the saved records"
+      },
+      {
+        "id": "d",
+        "text": "Trigger.newMap is available"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Records are not yet saved, so changes need no DML and there are no Ids. There is no Trigger.old on insert, and newMap needs Ids.",
+    "difficulty": 2,
+    "tags": []
   }
 ]

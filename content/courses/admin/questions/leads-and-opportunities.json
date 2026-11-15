@@ -704,5 +704,37 @@
     "explanation": "A lead is a person who might become a customer, before qualification and conversion.",
     "difficulty": 1,
     "tags": []
+  },
+  {
+    "id": "asc-24",
+    "moduleId": "leads-and-opportunities",
+    "examSection": "sales-marketing",
+    "objective": "Convert a lead",
+    "type": "single",
+    "stem": "After conversion, a custom field on the lead (Roof Type) is blank on the opportunity. What should the admin do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Map the lead field to an opportunity field"
+      },
+      {
+        "id": "b",
+        "text": "Convert the lead again"
+      },
+      {
+        "id": "c",
+        "text": "Make the field required"
+      },
+      {
+        "id": "d",
+        "text": "Use a record type"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Custom lead fields only carry over when mapped in the lead field mapping.",
+    "difficulty": 2,
+    "tags": []
   }
 ]

@@ -800,5 +800,69 @@
     "explanation": "A report shows fields that the report type offers and that the viewer's field-level security allows.",
     "difficulty": 3,
     "tags": []
+  },
+  {
+    "id": "asc-21",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Build reports",
+    "type": "single",
+    "stem": "A manager needs accounts that have no opportunities. Which report setup fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A custom report type with Accounts with or without Opportunities"
+      },
+      {
+        "id": "b",
+        "text": "A summary report on Opportunities"
+      },
+      {
+        "id": "c",
+        "text": "A dashboard filter"
+      },
+      {
+        "id": "d",
+        "text": "A formula field"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The 'with or without' relationship in a custom report type includes parents that have no children.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asc-22",
+    "moduleId": "reports",
+    "examSection": "data-analytics",
+    "objective": "Build reports",
+    "type": "single",
+    "stem": "Two blocks of data from different report types must be shown side by side in one report. Which format fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A joined report"
+      },
+      {
+        "id": "b",
+        "text": "A matrix report"
+      },
+      {
+        "id": "c",
+        "text": "A tabular report"
+      },
+      {
+        "id": "d",
+        "text": "A summary report"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Joined reports combine blocks from multiple report types.",
+    "difficulty": 2,
+    "tags": []
   }
 ]

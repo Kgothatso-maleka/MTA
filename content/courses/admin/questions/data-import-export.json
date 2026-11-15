@@ -864,5 +864,37 @@
     "explanation": "Data Loader can run from the command line, which lets you schedule jobs such as a nightly export.",
     "difficulty": 2,
     "tags": []
+  },
+  {
+    "id": "asc-19",
+    "moduleId": "data-import-export",
+    "examSection": "data-analytics",
+    "objective": "Choose an import tool",
+    "type": "single",
+    "stem": "A company has 200,000 accounts to load, with some already in Salesforce that must be updated by external ID. Which tool is best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data Loader with upsert"
+      },
+      {
+        "id": "b",
+        "text": "The Data Import Wizard"
+      },
+      {
+        "id": "c",
+        "text": "A Visualforce page"
+      },
+      {
+        "id": "d",
+        "text": "Manual entry"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Data Loader handles large volumes and upsert by external ID. The wizard has a lower record limit.",
+    "difficulty": 2,
+    "tags": []
   }
 ]

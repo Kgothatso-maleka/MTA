@@ -639,5 +639,102 @@
     "explanation": "Declarative automation runs on test DML, so expectations must include it.",
     "difficulty": 2,
     "tags": []
+  },
+  {
+    "id": "dsc-36",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Write tests",
+    "type": "single",
+    "stem": "The org has 500 accounts. This test passes or fails?\n\n    @isTest static void t() {\n        insert new List<Account>{ new Account(Name='A'), new Account(Name='B') };\n        System.assertEquals(2, [SELECT COUNT() FROM Account]);\n    }",
+    "options": [
+      {
+        "id": "a",
+        "text": "It passes, because tests cannot see org data by default"
+      },
+      {
+        "id": "b",
+        "text": "It fails because 502 accounts exist"
+      },
+      {
+        "id": "c",
+        "text": "It fails because tests need SeeAllData"
+      },
+      {
+        "id": "d",
+        "text": "It passes only in a sandbox"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Test methods start with an empty data set unless SeeAllData=true, so only the two inserted records are counted.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsc-37",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Write tests",
+    "type": "single",
+    "stem": "A test enqueues a queueable job and asserts on its result.\n\n    System.enqueueJob(new RecalcJob());\n    System.assertEquals(5, [SELECT COUNT() FROM Invoice__c]);\n\nThe assertion fails. What is the most likely fix?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wrap the enqueue in Test.startTest() and Test.stopTest()"
+      },
+      {
+        "id": "b",
+        "text": "Add SeeAllData=true"
+      },
+      {
+        "id": "c",
+        "text": "Use a future method"
+      },
+      {
+        "id": "d",
+        "text": "Delete the assertion"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Asynchronous work runs only when stopTest is called, so the assertion must come after Test.stopTest().",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsc-38",
+    "moduleId": "apex-testing",
+    "examSection": "testing-deploy",
+    "objective": "Write tests",
+    "type": "multi",
+    "stem": "Which TWO statements about test data are true? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Records created by a test are rolled back when it ends"
+      },
+      {
+        "id": "b",
+        "text": "Test code can use @testSetup to create shared data once"
+      },
+      {
+        "id": "c",
+        "text": "Tests should depend on existing production records"
+      },
+      {
+        "id": "d",
+        "text": "Test data counts toward storage limits permanently"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Test data is temporary and @testSetup shares setup across methods. Depending on org data makes tests fragile.",
+    "difficulty": 1,
+    "tags": []
   }
 ]

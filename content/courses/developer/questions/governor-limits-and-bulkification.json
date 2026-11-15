@@ -671,5 +671,102 @@
     "explanation": "200 is the standard batch size and exposes non-bulk code.",
     "difficulty": 1,
     "tags": []
+  },
+  {
+    "id": "dsc-09",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Bulkify code",
+    "type": "single",
+    "stem": "This code runs in one transaction.\n\n    List<Contact> contacts = [SELECT Id FROM Contact LIMIT 200];\n    for (Contact c : contacts) {\n        c.Title = 'Reviewed';\n        update c;\n    }\n\nWhat happens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It fails because 200 DML statements exceed the limit of 150"
+      },
+      {
+        "id": "b",
+        "text": "It succeeds with 1 DML statement"
+      },
+      {
+        "id": "c",
+        "text": "It succeeds because the list is under 10,000 rows"
+      },
+      {
+        "id": "d",
+        "text": "It runs 200 queries"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "One DML statement per record uses 200 statements, above the 150 limit. Collect the records in a list and run one update after the loop.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsc-10",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Bulkify code",
+    "type": "single",
+    "stem": "Which version of this code is bulk-safe?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Collect AccountIds in a Set, query once with WHERE Id IN :ids, store in a Map"
+      },
+      {
+        "id": "b",
+        "text": "Query inside the for loop with a LIMIT 1"
+      },
+      {
+        "id": "c",
+        "text": "Call a future method for each record"
+      },
+      {
+        "id": "d",
+        "text": "Use a while loop to repeat the query"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "One query per batch, with results held in a Map, uses a fixed number of queries however many records arrive.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsc-11",
+    "moduleId": "governor-limits-and-bulkification",
+    "examSection": "process-logic",
+    "objective": "Explain limits",
+    "type": "multi",
+    "stem": "Which TWO situations can both cause the error 'Too many SOQL queries: 101'? (Choose 2)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A query inside a loop that runs for many records"
+      },
+      {
+        "id": "b",
+        "text": "A trigger and a flow that each run many queries in the same transaction"
+      },
+      {
+        "id": "c",
+        "text": "One query that returns 60,000 rows"
+      },
+      {
+        "id": "d",
+        "text": "A DML statement on a list of 200 records"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "The 100 query limit is shared by the whole transaction. A loop or several automations adding queries can exceed it. Returning 60,000 rows hits the 50,000 row limit instead.",
+    "difficulty": 3,
+    "tags": []
   }
 ]

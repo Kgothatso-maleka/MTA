@@ -704,5 +704,37 @@
     "explanation": "Escalation rules are a service feature that act on cases, using business hours and age. They do not apply to opportunities or accounts, and reports are not records.",
     "difficulty": 1,
     "tags": []
+  },
+  {
+    "id": "asc-18",
+    "moduleId": "approvals-and-notifications",
+    "examSection": "automation",
+    "objective": "Build approval processes",
+    "type": "single",
+    "stem": "Discounts above 20% must be approved by the sales manager, and the record must stay locked meanwhile. Which tool fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An approval process"
+      },
+      {
+        "id": "b",
+        "text": "A validation rule"
+      },
+      {
+        "id": "c",
+        "text": "A page layout"
+      },
+      {
+        "id": "d",
+        "text": "A queue"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Approval processes route a record to approvers and can lock it while it is pending.",
+    "difficulty": 1,
+    "tags": []
   }
 ]

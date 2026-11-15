@@ -703,5 +703,101 @@
     "explanation": "Reassigning ownership, approvals, queue membership and rule references prevents broken processes.",
     "difficulty": 2,
     "tags": []
+  },
+  {
+    "id": "asc-01",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Manage users",
+    "type": "single",
+    "stem": "A sales rep has left Khanyisa Solar. She owns 120 open leads and is named as the default owner in a lead assignment rule. What is the correct order of actions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reassign her records, update the rule, then deactivate the user"
+      },
+      {
+        "id": "b",
+        "text": "Delete the user, then reassign her records"
+      },
+      {
+        "id": "c",
+        "text": "Freeze the user permanently and leave the rule"
+      },
+      {
+        "id": "d",
+        "text": "Change her profile to Chatter Free"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Users cannot be deleted, and deactivating is blocked while automation still names the user. Clean up first, then deactivate to free the licence.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asc-02",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Manage users",
+    "type": "single",
+    "stem": "The admin must stop a user from logging in immediately while a manager decides what to do with their records. The licence should stay assigned for now. Which action fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Freeze the user"
+      },
+      {
+        "id": "b",
+        "text": "Deactivate the user"
+      },
+      {
+        "id": "c",
+        "text": "Delete the user"
+      },
+      {
+        "id": "d",
+        "text": "Remove the profile"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Freezing blocks login at once without freeing the licence. Deactivation frees it and needs the cleanup first.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asc-03",
+    "moduleId": "org-setup-and-users",
+    "examSection": "config-setup",
+    "objective": "Describe sandboxes",
+    "type": "single",
+    "stem": "A team must test a major release against a copy of production data volume before go-live. Which sandbox fits best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Full sandbox"
+      },
+      {
+        "id": "b",
+        "text": "Developer sandbox"
+      },
+      {
+        "id": "c",
+        "text": "Developer Pro sandbox"
+      },
+      {
+        "id": "d",
+        "text": "Scratch org"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A Full sandbox copies all metadata and data, so it suits performance and volume testing.",
+    "difficulty": 2,
+    "tags": []
   }
 ]

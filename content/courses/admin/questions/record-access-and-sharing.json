@@ -865,5 +865,37 @@
     "explanation": "Territory management assigns accounts to territories and shares them to the people in those territories.",
     "difficulty": 2,
     "tags": []
+  },
+  {
+    "id": "asc-31",
+    "moduleId": "record-access-and-sharing",
+    "examSection": "config-setup",
+    "objective": "Choose OWD",
+    "type": "single",
+    "stem": "A custom object's OWD is Public Read Only. A manager wants to remove view access from people outside the team. Can a sharing rule do it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, sharing rules can only open access"
+      },
+      {
+        "id": "b",
+        "text": "Yes, by creating a restrictive rule"
+      },
+      {
+        "id": "c",
+        "text": "Yes, by sharing with a profile"
+      },
+      {
+        "id": "d",
+        "text": "Yes, by using a queue"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Sharing rules can only add access. To restrict, the OWD must be made more restrictive.",
+    "difficulty": 3,
+    "tags": []
   }
 ]

@@ -639,5 +639,37 @@
     "explanation": "LWC can sit inside Aura but not the other way.",
     "difficulty": 2,
     "tags": []
+  },
+  {
+    "id": "dsc-35",
+    "moduleId": "visualforce-and-aura",
+    "examSection": "user-interface",
+    "objective": "Secure pages",
+    "type": "single",
+    "stem": "A custom controller shows account data on a Visualforce page and is declared like this.\n\n    public class AccountCtrl { ... }\n\nWhich risk applies?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It runs without enforcing sharing unless declared with sharing"
+      },
+      {
+        "id": "b",
+        "text": "It cannot be used in a page"
+      },
+      {
+        "id": "c",
+        "text": "It is always read-only"
+      },
+      {
+        "id": "d",
+        "text": "It cannot run queries"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Custom controllers do not enforce sharing unless you add with sharing, and field security needs explicit checks.",
+    "difficulty": 2,
+    "tags": []
   }
 ]

@@ -702,5 +702,69 @@
     "explanation": "Web-to-Case creates cases from an HTML form.",
     "difficulty": 1,
     "tags": []
+  },
+  {
+    "id": "asc-25",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Capture cases",
+    "type": "single",
+    "stem": "Customers email help@khanyisa.example and cases must be created without software on company servers. Which option fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "On-Demand Email-to-Case"
+      },
+      {
+        "id": "b",
+        "text": "Web-to-Lead"
+      },
+      {
+        "id": "c",
+        "text": "An approval process"
+      },
+      {
+        "id": "d",
+        "text": "A macro"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "On-Demand Email-to-Case runs inside Salesforce and needs no server software.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "asc-26",
+    "moduleId": "case-management",
+    "examSection": "service-support",
+    "objective": "Set up entitlements and milestones",
+    "type": "single",
+    "stem": "Platinum customers must get a reply within 1 hour and the system must warn agents before the deadline. Which feature fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Entitlements and milestones"
+      },
+      {
+        "id": "b",
+        "text": "A validation rule"
+      },
+      {
+        "id": "c",
+        "text": "An email template"
+      },
+      {
+        "id": "d",
+        "text": "A report"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Entitlement processes use milestones with warning, violation and success actions to track response targets.",
+    "difficulty": 2,
+    "tags": []
   }
 ]

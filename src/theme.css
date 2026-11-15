@@ -30,3 +30,5 @@ aside.callout.on-the-job { border-left-color: var(--mta-good); }
 .video-frame { position: relative; aspect-ratio: 16 / 9; background: #000; border-radius: 10px; overflow: hidden; }
 .video-frame iframe, .video-frame button.thumb { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 label.option { display: flex; gap: 0.6rem; padding: 0.6rem; border: 1px solid var(--mta-border); border-radius: 8px; margin: 0.4rem 0; align-items: flex-start; }
+
+legend { white-space: pre-wrap; }

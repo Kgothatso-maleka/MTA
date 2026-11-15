@@ -671,5 +671,101 @@
     "explanation": "LWC bundles contain html, js, css and meta xml. Cmp is Aura and page is Visualforce.",
     "difficulty": 1,
     "tags": []
+  },
+  {
+    "id": "dsc-29",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Write templates",
+    "type": "single",
+    "stem": "A developer writes this LWC template line.\n\n    <p>Total: {count + 1}</p>\n\nWhat is the problem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Expressions are not allowed in braces; use a getter"
+      },
+      {
+        "id": "b",
+        "text": "count must be marked @track"
+      },
+      {
+        "id": "c",
+        "text": "The tag must be a lightning-formatted-number"
+      },
+      {
+        "id": "d",
+        "text": "Braces are only used in Aura"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "LWC bindings accept a property or getter name only. Create a get total() method that returns count + 1.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsc-30",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Write templates",
+    "type": "single",
+    "stem": "This list renders with a warning.\n\n    <template for:each={items} for:item=\"item\">\n        <li>{item.name}</li>\n    </template>\n\nWhat is missing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A unique key attribute on the li"
+      },
+      {
+        "id": "b",
+        "text": "An id on the template"
+      },
+      {
+        "id": "c",
+        "text": "A class on the li"
+      },
+      {
+        "id": "d",
+        "text": "The @api decorator"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Every element produced by for:each needs a unique key so the framework can track it.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsc-31",
+    "moduleId": "lightning-web-components",
+    "examSection": "user-interface",
+    "objective": "Use properties",
+    "type": "single",
+    "stem": "A component has this field: @api recordId; and its parent sets it. A developer changes this.recordId inside the child. What should be done instead?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dispatch an event so the parent changes it"
+      },
+      {
+        "id": "b",
+        "text": "Use @track on the field"
+      },
+      {
+        "id": "c",
+        "text": "Add the final keyword"
+      },
+      {
+        "id": "d",
+        "text": "Nothing, this is the recommended way"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Public properties flow down from the parent. A child should ask the parent to change them by sending an event.",
+    "difficulty": 3,
+    "tags": []
   }
 ]

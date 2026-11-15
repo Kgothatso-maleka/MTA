@@ -671,5 +671,37 @@
     "explanation": "An app page is a standalone Lightning page not tied to a single object.",
     "difficulty": 2,
     "tags": []
+  },
+  {
+    "id": "asc-13",
+    "moduleId": "lightning-app-builder-and-ui",
+    "examSection": "object-manager",
+    "objective": "Build Lightning pages",
+    "type": "single",
+    "stem": "Sales and Service teams want different home pages. Which feature controls this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lightning page assignment by app, record type or profile"
+      },
+      {
+        "id": "b",
+        "text": "A record type on Account"
+      },
+      {
+        "id": "c",
+        "text": "A validation rule"
+      },
+      {
+        "id": "d",
+        "text": "A report folder"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "In Lightning App Builder you can activate pages for specific apps, record types and profiles.",
+    "difficulty": 2,
+    "tags": []
   }
 ]

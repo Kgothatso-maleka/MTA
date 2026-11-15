@@ -671,5 +671,101 @@
     "explanation": "Async transactions allow 200 SOQL queries, with higher heap and CPU limits too.",
     "difficulty": 3,
     "tags": []
+  },
+  {
+    "id": "dsc-24",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write future methods",
+    "type": "single",
+    "stem": "What is wrong with this method?\n\n    @future\n    public static void updateAccounts(List<Account> accs) { update accs; }",
+    "options": [
+      {
+        "id": "a",
+        "text": "Future methods cannot take sObject parameters"
+      },
+      {
+        "id": "b",
+        "text": "Future methods cannot use DML"
+      },
+      {
+        "id": "c",
+        "text": "It is missing a return value"
+      },
+      {
+        "id": "d",
+        "text": "It must be global"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Future parameters must be primitives or collections of primitives. Pass a Set of Ids and query inside the method.",
+    "difficulty": 1,
+    "tags": []
+  },
+  {
+    "id": "dsc-25",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write batch Apex",
+    "type": "single",
+    "stem": "A batch class is run with Database.executeBatch(new CleanupBatch(), 200) against 1,000 records. How many times is execute called?",
+    "options": [
+      {
+        "id": "a",
+        "text": "5"
+      },
+      {
+        "id": "b",
+        "text": "1"
+      },
+      {
+        "id": "c",
+        "text": "200"
+      },
+      {
+        "id": "d",
+        "text": "1,000"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Each execute call handles one chunk of up to 200 records, so 1,000 records need 5 calls, and each call gets fresh governor limits.",
+    "difficulty": 2,
+    "tags": []
+  },
+  {
+    "id": "dsc-26",
+    "moduleId": "asynchronous-apex",
+    "examSection": "process-logic",
+    "objective": "Write scheduled Apex",
+    "type": "single",
+    "stem": "What does this schedule do?\n\n    System.schedule('Nightly', '0 0 2 * * ?', new NightlyJob());",
+    "options": [
+      {
+        "id": "a",
+        "text": "Runs NightlyJob every day at 2:00 a.m."
+      },
+      {
+        "id": "b",
+        "text": "Runs it once in two minutes"
+      },
+      {
+        "id": "c",
+        "text": "Runs it every two hours"
+      },
+      {
+        "id": "d",
+        "text": "Runs it on the second of each month"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The cron fields are seconds, minutes, hours, day of month, month and day of week, so 0 0 2 * * ? is 02:00 daily.",
+    "difficulty": 3,
+    "tags": []
   }
 ]

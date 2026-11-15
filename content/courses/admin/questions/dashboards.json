@@ -703,5 +703,37 @@
     "explanation": "Charts need grouped data, so a summary or matrix report is the right source. Joined reports cannot be sources.",
     "difficulty": 2,
     "tags": []
+  },
+  {
+    "id": "asc-23",
+    "moduleId": "dashboards",
+    "examSection": "data-analytics",
+    "objective": "Build dashboards",
+    "type": "single",
+    "stem": "Each sales rep should see only their own numbers on the same dashboard. Which setting fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Run as the logged-in user"
+      },
+      {
+        "id": "b",
+        "text": "Run as a specified manager"
+      },
+      {
+        "id": "c",
+        "text": "A public folder only"
+      },
+      {
+        "id": "d",
+        "text": "A dashboard subscription"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Dynamic dashboards run as the viewer, so each person sees data they are allowed to see.",
+    "difficulty": 2,
+    "tags": []
   }
 ]
